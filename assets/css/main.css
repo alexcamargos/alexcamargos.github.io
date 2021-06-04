@@ -142,10 +142,17 @@ main {
 
 #close-navbar {
     position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     top: 0;
-    right: 25px;
+    right: 0;
     font-size: var(--text-size);
-    margin-left: 60px;
+}
+
+#close-navbar:hover::before {
+    content: 'CLOSE ';
+    font-size: 32px;
 }
 
 #navbar {
@@ -193,7 +200,6 @@ main {
 #navbar a#close-navbar:hover {
     color: var(--light-blue);
 }
-
 /* *************** END OF - NAVIGATION-BAR *************** */
 
 
@@ -203,7 +209,6 @@ main {
     width: 100%;
     height: 100%;
 }
-
 /* *************** particles.js container *************** */
 
 
@@ -245,5 +250,4 @@ main {
 .content #typing {
     color: var(--light-blue);
 }
-
 /* *************** END OF MAIN-CONTENT *************** */
