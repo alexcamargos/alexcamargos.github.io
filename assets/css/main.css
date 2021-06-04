@@ -128,7 +128,17 @@ main {
     font-size: var(--text-size);
     cursor: pointer;
     color: var(--main-white);
+    transition: .5s;
 }
+
+#open-navbar:hover {
+    color: var(--light-blue)
+}
+
+#open-navbar:hover::after {
+    content: ' MENU';
+}
+
 
 #close-navbar {
     position: absolute;
