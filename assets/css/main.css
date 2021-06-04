@@ -49,6 +49,7 @@ main {
     height: 100vh;
     transition: margin-left 0.5s;
 }
+
 /* *************** END OF BASE STYLES *************** */
 
 
@@ -200,6 +201,7 @@ main {
 #navbar a#close-navbar:hover {
     color: var(--light-blue);
 }
+
 /* *************** END OF - NAVIGATION-BAR *************** */
 
 
@@ -209,6 +211,7 @@ main {
     width: 100%;
     height: 100%;
 }
+
 /* *************** particles.js container *************** */
 
 
@@ -251,3 +254,35 @@ main {
     color: var(--light-blue);
 }
 /* *************** END OF MAIN-CONTENT *************** */
+
+
+/* *************** MEDIA QUERIES *************** */
+@media only screen and (max-width: 1050px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .content .texts {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 30%;
+    }
+
+    .content .texts {
+        gap: 5px;
+    }
+}
+
+/* *************** END MEDIA QUERIES *************** */
