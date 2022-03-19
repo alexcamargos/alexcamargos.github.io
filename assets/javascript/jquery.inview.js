@@ -1,7 +1,7 @@
 /*
 # -------------------------------------------------------------------------------------------------
 #
-# Name: main.css
+# Name: jquery.inview.js
 # Version: 0.0.1
 #
 # Summary: alexcamargos.github.io
