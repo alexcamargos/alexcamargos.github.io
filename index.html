@@ -73,6 +73,12 @@
 
     <!-- START: Additional CSS Files -->
     <link rel="stylesheet" href="assets/stylesheet/animates/animate.css" />
+    <link
+      rel="stylesheet"
+      href="assets/stylesheet/animates/waving-hand-animation.css"
+    />
+
+    <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css" />
 
     <link rel="stylesheet" href="assets/stylesheet/main.css" />
 
@@ -158,8 +164,33 @@
       <video autoplay muted loop id="myVideo">
         <source src="assets/video/bg.mp4" type="video/mp4" />
       </video>
+      <!-- END: BACKGROUND VIDEO-->
+
+      <!-- START: HERO SECTION -->
+      <section id="fullpage" class="fullpage-default">
+        <div class="section animated-row" data-section="slide01">
+          <div class="section-inner">
+            <div class="welcome-box">
+              <span class="welcome-first animate" data-animate="fadeInUp"
+                ><span class="waving-hand">👋</span> Hello! My name is...</span
+              >
+              <h1 class="welcome-title animate" data-animate="fadeInUp">
+                Alexsander Lopes Camargos
+              </h1>
+              <p class="animate" data-animate="fadeInUp">
+                and I'm a <spam id="typing-effect"></spam>
+              </p>
+
+              <div class="scroll-down next-section animatevdata-animate="fadeInUp"">
+                <div class="scroll-down"></div>
+                <div class="scroll-down"></div>
+                <div class="scroll-down"></div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: HERO SECTION -->
     </div>
-    <!-- END: BACKGROUND VIDEO-->
 
     <!-- START: Third-Party JavaScript -->
 
@@ -208,11 +239,20 @@
     ></script>
     <!-- END: Owl Carousel v2.3.4 -->
 
+    <!-- START: TypeIt v8.3.3 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.3.3/index.umd.min.js"
+      integrity="sha512-d/eTagostAZ0seMsrK6Z8gHXrbiD8fJsWhJa5Cpgo1bZgsZjoWqh3DYLz4JgCiTD1nsHESS2NQPNc6G8s39BwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- END: TypeIt v8.3.3 -->
     <!-- END: Third-Party JavaScript -->
 
     <!-- START: Additional JavaScript -->
     <script src="assets/javascript/jquery.inview.js"></script>
     <script src="assets/javascript/custom.js"></script>
+    <script src="assets/javascript/typing.js"></script>
     <script src="assets/javascript/form.js"></script>
     <!-- END: Additional JavaScript -->
   </body>
