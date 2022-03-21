@@ -9,15 +9,15 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <!-- START: Favicon -->
+    <!-- START: FAVICON -->
     <link
       rel="shortcut icon"
       href="assets/img/favicon.jpg"
       type="image/x-icon"
     />
-    <!-- END: Favicon -->
+    <!-- END: FAVICON -->
 
-    <title>AlCamargos Portfólio</title>
+    <title>Alexsander Lopes Camargos Portfólio</title>
 
     <!-- START: Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +29,6 @@
     <!-- END: Google Fonts -->
 
     <!-- START: Third-party Stylesheets -->
-
     <!-- START: Bootstrap v4.6.1 -->
     <link
       rel="stylesheet"
@@ -71,19 +70,15 @@
     <!-- END: Owl Carousel v2.3.4 -->
     <!-- END: Third-party Stylesheets -->
 
-    <!-- START: Additional CSS Files -->
-    <link rel="stylesheet" href="assets/stylesheet/animates/animate.css" />
+    <link rel="stylesheet" href="assets/stylesheet/animates/aminate.min.css" />
     <link
       rel="stylesheet"
       href="assets/stylesheet/animates/waving-hand-animation.css"
     />
 
-    <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css" />
-
     <link rel="stylesheet" href="assets/stylesheet/main.css" />
 
     <link rel="stylesheet" href="assets/stylesheet/responsive.css" />
-    <!-- END: Additional CSS Files -->
   </head>
 
   <body>
@@ -101,64 +96,70 @@
       <!-- START: HEADER -->
       <header id="header">
         <div class="container-fluid">
-          <!-- START: NAVIGATION BAR -->
+          <!-- START: NAVBAR -->
           <div class="navbar">
-            <!-- START: HOME LINK -->
-            <a href="#" id="logo" title="Alexsander Lopes Camargos">
-              <svg
-                class="h-6 w-6 sm:h-6 sm:w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
-              <span>Alexsander Camargos</span>
-            </a>
-            <!-- END: HOME LINK -->
+            <!-- START: ALC HOME LINK -->
+            <div class="section">
+              <a href="#" id="logo" title="Alexsander Lopes Camargos">
+                <svg
+                  style="height: 2rem"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                Alexsander Camargos
+              </a>
+            </div>
+            <!-- END:  ALC HOME LINK -->
 
             <div class="navigation-row">
+              <!-- START: NAVIGATION BAR -->
               <nav id="navigation">
                 <!-- NAVBAR TOGGLE BUTTON -->
                 <button type="button" class="navbar-toggle">
-                  <i class="fa-light fa-bars"></i>
+                  <i class="fa fa-bars"></i>
                 </button>
+
                 <!-- START: NAVIGATION ITEMS -->
                 <div class="nav-box navbar-collapse">
                   <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                    <!-- HOME -->
                     <li data-menuanchor="slide01" class="active">
                       <a href="#slide01">Home</a>
                     </li>
+                    <!-- ABOUT ME -->
                     <li data-menuanchor="slide02">
                       <a href="#slide02">About Me</a>
                     </li>
+                    <!-- HOME -->
                     <li data-menuanchor="slide03">
                       <a href="#slide03">Services</a>
                     </li>
+                    <!-- PORTFOLIO -->
                     <li data-menuanchor="slide04">
-                      <a href="#slide05">Resume</a>
+                      <a href="#slide04">Portfolio</a>
                     </li>
+                    <!-- CONTACT ME -->
                     <li data-menuanchor="slide05">
-                      <a href="#slide05">Portfolio</a>
-                    </li>
-                    <li data-menuanchor="slide06">
-                      <a href="#slide07">Contact Me</a>
+                      <a href="#slide05">Contact Me</a>
                     </li>
                   </ul>
                 </div>
                 <!-- END: NAVIGATION ITEMS -->
               </nav>
+              <!-- END: NAVIGATION BAR -->
             </div>
           </div>
-          <!-- END: NAVIGATION BAR -->
+          <!-- START: NAVBAR -->
         </div>
       </header>
-      <!-- END: HEADER -->
 
       <!-- START: BACKGROUND VIDEO-->
       <video autoplay muted loop id="myVideo">
@@ -166,34 +167,89 @@
       </video>
       <!-- END: BACKGROUND VIDEO-->
 
-      <!-- START: HERO SECTION -->
-      <section id="fullpage" class="fullpage-default">
-        <div class="section animated-row" data-section="slide01">
-          <div class="section-inner">
-            <div class="welcome-box">
-              <span class="welcome-first animate" data-animate="fadeInUp"
-                ><span class="waving-hand">👋</span> Hello! My name is...</span
-              >
-              <h1 class="welcome-title animate" data-animate="fadeInUp">
-                Alexsander Lopes Camargos
-              </h1>
-              <p class="animate" data-animate="fadeInUp">
-                and I'm a <spam id="typing-effect"></spam>
-              </p>
 
-              <div class="scroll-down next-section animatevdata-animate="fadeInUp"">
-                <div class="scroll-down"></div>
-                <div class="scroll-down"></div>
-                <div class="scroll-down"></div>
-              </div>
-          </div>
-        </div>
-      </section>
-      <!-- END: HERO SECTION -->
-    </div>
+
+    <!-- START: SOCIAL MEDIAS -->
+    <section id="social-icons">
+      <div class="text-right">
+        <!-- START: SOCIAL MEDIA ITEMS -->
+        <ul class="social-icons">
+          <!-- Github -->
+          <li>
+            <a
+              href="https://github.com/alexcamargos"
+              target="_blank"
+              title="Github"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+
+          <!-- Linkedin -->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/alexcamargos"
+              target="_blank"
+              title="Linkedin"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+
+          <!-- Twitter -->
+          <li>
+            <a
+              href="https://twitter.com/alcamargos"
+              target="_blank"
+              title="Twitter"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+
+          <!-- Instagram -->
+          <li>
+            <a
+              href="https://www.instagram.com/alexlopescamargos"
+              target="_blank"
+              title="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+
+          <!-- Facebook -->
+          <li>
+            <a
+              href="https://www.fb.com/alexcamargos"
+              target="_blank"
+              title="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+
+          <!-- Strava -->
+          <li>
+            <a
+              href="https://www.strava.com/athletes/alcamargos"
+              target="_blank"
+              title="Strava"
+              ><i class="fa-brands fa-strava"></i
+            ></a>
+          </li>
+
+          <!-- Chess.com -->
+          <li>
+            <a
+              href="https://www.chess.com/member/alcamargos"
+              target="_blank"
+              title="Chess.com"
+              ><i class="fa-solid fa-chess"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- END: SOCIAL MEDIA ITEMS -->
+      </div>
+    </section>
+    <!-- END: SOCIAL MEDIAS -->
 
     <!-- START: Third-Party JavaScript -->
-
     <!-- START: jQuery v3.6.0 -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -212,19 +268,18 @@
     ></script>
     <!-- END: Bootstrap v4.6.1 -->
 
-    <!-- START: iScroll v2.3.4 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"
-      integrity="sha512-wstvQlySDtT//3yKfbxpy8AS5b4UQ0tnItav8dGCVLGO3u/Ymb6mUEgVzDL8a/DXdtiuhsTj2ElDsXQ+E2cDYA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- END: iScroll v2.3.4 -->
-
     <!-- START: fullPage v3.1.2 -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
       integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"
+      integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -239,6 +294,15 @@
     ></script>
     <!-- END: Owl Carousel v2.3.4 -->
 
+    <!-- START: protonet-jquery.inview v1.1.2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
+      integrity="sha512-D68mBFX2aQwVh2wV6uCDLmabIveaSQL3uVUo2Ze7VwxIeOcAd4C1/JagkVoObb/NLkYDrdvY3JHK1KOfenHVcA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- END: protonet-jquery.inview v1.1.2 -->
+
     <!-- START: TypeIt v8.3.3 -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.3.3/index.umd.min.js"
@@ -250,10 +314,9 @@
     <!-- END: Third-Party JavaScript -->
 
     <!-- START: Additional JavaScript -->
-    <script src="assets/javascript/jquery.inview.js"></script>
+    <script src="assets/javascript/form.js"></script>
     <script src="assets/javascript/custom.js"></script>
     <script src="assets/javascript/typing.js"></script>
-    <script src="assets/javascript/form.js"></script>
     <!-- END: Additional JavaScript -->
   </body>
 </html>
