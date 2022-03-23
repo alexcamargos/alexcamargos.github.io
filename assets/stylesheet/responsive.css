@@ -101,3 +101,82 @@
         margin-right: 15px;
     }
 }
+
+/* ***** EXTRA LARGE DEVICES: 1199px ***** */
+@media only screen and (max-width: 1199px) {
+    #fp-nav.fp-right {
+        right: 5px;
+    }
+
+    .welcome-title:before {
+        margin: 20px auto 15px;
+    }
+
+    .wide-col-laptop {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-img {
+        margin-right: 0;
+    }
+
+    .welcome-title {
+        font-size: 2rem;
+    }
+
+    .welcome-title:after {
+        margin-top: 15px;
+    }
+
+    .welcome-box {
+        font-size: 18px;
+    }
+
+    h1,
+    h2 {
+        font-size: 48px;
+    }
+
+    .counter-box {
+        font-size: 13px;
+    }
+
+    .count-number,
+    .counted {
+        margin-bottom: 5px;
+    }
+
+    .owl-nav {
+        margin-top: 35px;
+    }
+
+    .testimonial-content {
+        font-size: 16px;
+        padding: 20px 25px;
+    }
+
+    .testimonials-section {
+        padding-top: 10px;
+    }
+
+    .owl-carousel .owl-dots {
+        margin-top: 35px;
+    }
+
+    .social-icons li a {
+        width: 25px;
+        height: 30px;
+        display: inline-block;
+        line-height: 30px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 14px;
+    }
+
+    .menu-trigger {
+        margin: 0;
+    }
+}
