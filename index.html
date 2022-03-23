@@ -79,6 +79,8 @@
     <link rel="stylesheet" href="assets/stylesheet/main.css" />
 
     <link rel="stylesheet" href="assets/stylesheet/responsive.css" />
+
+    <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css">
   </head>
 
   <body>
@@ -186,11 +188,17 @@
 
               <!-- START: SCROLL DOWN INDICATOR -->
               <div
-                class="scroll-down next-section animate"
-                data-animate="fadeInUp"
-              >
-                <i class="fa-light fa-computer-mouse-scrollwheel"></i>
+                class="container-fluid scroll-down next-section animate"
+                data-animate="fadeInUp">
+                <div class="d-flex justify-content-center">
+                  <div class="scroll-down-icon-animate"></div>
+                  <div class="scroll-down-icon-animate"></div>
+                  <div class="scroll-down-icon-animate"></div>
+
+                  <span> </span>
+                </div>
                 <span>Scroll Down</span>
+
               </div>
               <!-- END: SCROLL DOWN INDICATOR -->
             </div>

@@ -529,11 +529,12 @@ a#logo:hover {
 }
 
 .next-section {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    left: 50%;
     transform: translateX(-50%);
-    bottom: 30px;
+    bottom: 0;
     cursor: pointer;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -541,6 +542,7 @@ a#logo:hover {
 
 .next-section span {
     margin-top: 15px;
+    margin-bottom: 3rem;
     display: block;
     text-transform: uppercase;
     font-size: 14px;

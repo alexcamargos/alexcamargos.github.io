@@ -16,7 +16,7 @@
 */
 
 /* SCROLL DOWN ANIMATION */
-.scroll-down {
+.scroll-down-icon-animate {
     position: absolute;
     width: 28px;
     height: 8px;
@@ -25,16 +25,16 @@
     animation: move 3s ease-out infinite;
 }
 
-.scroll-down:first-child {
+.scroll-down-icon-animate:first-child {
     animation: move 3s ease-out 1s infinite;
 }
 
-.scroll-down:nth-child(2) {
+.scroll-down-icon-animate:nth-child(2) {
     animation: move 3s ease-out 2s infinite;
 }
 
-.scroll-down:before,
-.scroll-down:after {
+.scroll-down-icon-animate:before,
+.scroll-down-icon-animate:after {
     content: " ";
     position: absolute;
     top: 0;
@@ -43,12 +43,12 @@
     background: #fff;
 }
 
-.scroll-down:before {
+.scroll-down-icon-animate:before {
     left: 0;
     transform: skew(0deg, 30deg);
 }
 
-.scroll-down:after {
+.scroll-down-icon-animate:after {
     right: 0;
     width: 50%;
     transform: skew(0deg, -30deg);
