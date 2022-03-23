@@ -387,7 +387,7 @@ a:focus {
 /* *************** END: BASE STYLES *************** */
 
 /* *************** START: HEADER STYLES *************** */
-#header  {
+#header {
     padding: 20px 0;
     position: fixed;
     left: 0;
@@ -476,3 +476,78 @@ a#logo:hover {
     display: block;
 }
 /* *************** END: HEADER STYLES *************** */
+
+/* *************** START: HERO STYLES *************** */
+.welcome-box {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 0px auto 30px;
+}
+
+.welcome-first {
+    font-size: 2.25rem;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.15rem;
+}
+
+.welcome-box p {
+    max-width: 620px;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.welcome-title {
+    font-weight: 700;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+}
+
+.welcome-box h1 {
+    color: var(--text-color-alt);
+    text-transform: uppercase;
+}
+
+.welcome-title h2 span {
+    font-size: 2.25rem;
+    display: block;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.15rem;
+}
+
+/* TypeIt */
+#typing-effect {
+    color: var(--text-color-alt);
+    text-transform: uppercase;
+}
+
+.welcome-box .btn {
+    margin-top: 10px;
+}
+
+.next-section {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.next-section span {
+    margin-top: 15px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.next-section i:hover {
+    opacity: 1;
+}
+/* *************** END: HERO STYLES *************** */
