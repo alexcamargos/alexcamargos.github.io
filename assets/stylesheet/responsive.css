@@ -262,3 +262,11 @@
         padding: 42px 45px;
     }
 }
+
+/* ***** MEDIUM DEVICES: 768px ***** */
+@media only screen and (min-width: 768px) {
+    .nav-box {
+        display: block !important;
+        height: auto !important;
+    }
+}
