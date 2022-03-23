@@ -28,26 +28,26 @@ new TypeIt("#typing-effect", {
     .type("student.", {
         delay: 300,
     })
-    .pause(1000)
+    .pause(2000)
     .delete(8)
     .type("developer.", {
         delay: 300,
     })
-    .pause(1000)
+    .pause(2000)
     .delete(10)
     .type("back-end developer.", {
         delay: 300,
     })
-    .pause(1000)
+    .pause(2000)
     .delete(19)
     .type("front-end developer.", {
         delay: 300,
     })
-    .pause(1000)
+    .pause(2000)
     .delete(20)
     .type("Junior full stack develope.", {
         delay: 300,
     })
-    .pause(5000)
+    .pause(8000)
     .delete(27)
     .go();
