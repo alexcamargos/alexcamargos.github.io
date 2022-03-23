@@ -551,3 +551,86 @@ a#logo:hover {
     opacity: 1;
 }
 /* *************** END: HERO STYLES *************** */
+
+/* *************** START: ABOUT ME STYLES *************** */
+.about-img {
+    margin: 0 auto 40px;
+    position: relative;
+}
+
+.about-img img {
+    border-radius: 1rem;
+    -webkit-box-shadow: var(--default-shadow);
+    box-shadow: var(--default-shadow);
+}
+
+.about-img img:hover {
+    -webkit-box-shadow: 1rem 2rem 4rem var(--base-shadow-color);
+    box-shadow: 1rem 2rem 4rem var(--base-shadow-color);
+}
+
+.about-contentbox {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.about-contentbox span {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.about-contentbox h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.facts-list {
+    margin-top: 30px;
+}
+
+.facts-list .item {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 30px 0px;
+    background: var(--background-color-alt);
+    color: var(--text-color-alt);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.facts-list .item:hover {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.counter-box span {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.counter-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    opacity: 0.75;
+}
+
+.facts-list .owl-dots {
+    margin-bottom: 30px;
+}
+
+.count-number,
+.counted {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+/* *************** END: ABOUT ME STYLES *************** */
