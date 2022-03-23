@@ -43,3 +43,345 @@
     --default-shadow: 0.5rem 1rem 2rem var(--base-shadow-color);
 }
 /* *************** END: VARIABLES *************** */
+
+/* *************** START: BASE STYLES *************** */
+html {
+    -ms-overflow-style: scrollbar;
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font: 16px/1.6 var(--font-family-sans-serif);
+    color: var(--text-color);
+    text-align: center;
+    background: var(--base-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin: 0 0 20px;
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--text-color);
+    outline: none;
+    text-decoration: underline;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    a:active {
+        background-color: transparent;
+    }
+}
+
+.alltrans,
+.social-icons li a,
+.owl-nav > button,
+.owl-nav > button:after,
+.counter-box,
+.about-img:after,
+.gallery-img img,
+.form-control,
+.owl-dot,
+.subscribe-row,
+.close-btn,
+.close-btn:before,
+.close-btn:after,
+.tag-btn,
+.btn {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#main {
+    padding: 0;
+    background: var(--text-color);
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.opacity-no {
+    opacity: 1 !important;
+}
+
+.wrapper-background-dark:after {
+    background: var(--base-color);
+    opacity: 0.95;
+}
+
+.section-inner {
+    padding: 20px 30px 0;
+}
+
+.fp-scrollable {
+    height: calc(100vh - 200px) !important;
+}
+
+#fp-nav ul li a span {
+    display: none;
+}
+
+.btn {
+    background: var(--text-color);
+    color: var(--base-color);
+    text-align: center;
+    line-height: 52px;
+    padding: 0 35px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--text-color);
+    border-color: var(--text-color);
+    background: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.btn.btn-xs {
+    line-height: 34px;
+    font-size: 12px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.btn.btn-outline {
+    background: none;
+    border-color: var(--text-color);
+    color: var(--text-color);
+    border-width: 1px;
+}
+
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+    background: var(--text-color);
+    color: var(--base-color);
+}
+
+.btn.btn-dark {
+    color: var(--base-color);
+    border-color: var(--base-color);
+}
+
+.btn.btn-dark:hover,
+.btn.btn-dark:focus {
+    background: var(--base-color);
+    color: var(--text-color);
+}
+
+#fullpage {
+    z-index: 99;
+}
+
+/* Overwriting styles for control arrows for slides */
+.controlArrow.prev {
+    left: 50px;
+}
+.controlArrow.next {
+    right: 50px;
+}
+
+/* BACKGROUND VIDEO */
+#video:after {
+    content: "";
+    opacity: 0.75;
+    background: var(--base-color); /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        var(--base-color) 0%,
+        var(--base-color-alt) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        top,
+        var(--base-color) 0%,
+        var(--base-color-alt) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        var(--base-color) 0%,
+        var(--base-color-alt) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--base-color)', endColorstr='var(--base-color-alt)',GradientType=0 ); /* IE6-9 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Owl Carousel */
+.owl-carousel .owl-stage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.owl-carousel .owl-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1 0 auto;
+}
+
+/* LOADING ANIMATIONS */
+.preloader {
+    background: -moz-linear-gradient(
+        top,
+        var(--base-color) 0%,
+        var(--base-color-alt) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        top,
+        var(--base-color) 0%,
+        var(--base-color-alt) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        var(--base-color) 0%,
+        var(--base-color-alt) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--base-color)', endColorstr='var(--base-color-alt)',GradientType=0 ); /* IE6-9 */
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+}
+
+.preloader-bounce {
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.preloader-bounce > span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0.3em;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-animation: bounce 0.6s infinite alternate;
+    animation: bounce 0.6s infinite alternate;
+    background: var(--text-color-alt);
+}
+
+.preloader-bounce > span:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    background: var(--text-color-alt);
+}
+
+.preloader-bounce > span:nth-child(3) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    background: var(--text-color-alt);
+}
+
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    to {
+        -webkit-transform: translateY(-1.2em);
+        transform: translateY(-1.2em);
+    }
+}
+
+@keyframes bounce {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    to {
+        -webkit-transform: translateY(-1.2em);
+        transform: translateY(-1.2em);
+    }
+}
+/* *************** END: BASE STYLES *************** */
