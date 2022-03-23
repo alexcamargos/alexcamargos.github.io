@@ -561,3 +561,14 @@
         left: 45%;
     }
 }
+
+/* ***** SMALL DEVICES: 320px ***** */
+@media only screen and (max-width: 320px) {
+    .gallery-overlay p {
+        display: none;
+    }
+
+    .testimonial-content:before {
+        left: 43%;
+    }
+}
