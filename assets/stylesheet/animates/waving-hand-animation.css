@@ -1,0 +1,67 @@
+/*
+# -------------------------------------------------------------------------------------------------
+#
+# Name: waving-hand-animation.css
+# Version: 0.0.1
+#
+# Summary: alexcamargos.github.io
+#          My Personal Portfolio.
+#
+# Author: Alexsander Lopes Camargos
+# Author-email: alcamargos@vivaldi.net
+#
+# License: MIT
+#
+# -------------------------------------------------------------------------------------------------
+*/
+
+/* *************** WAVING HAND ANIMATION *************** */
+.waving-hand {
+    display: inline-block;
+    animation-name: waving-hand-animation;
+    /* Change to speed up or slow down */
+    animation-duration: 2.5s;
+    /* Never stop waving */
+    animation-iteration-count: infinite;
+    /* Pivot around the bottom-left palm */
+    transform-origin: 70% 70%;
+}
+
+@keyframes waving-hand-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-5deg);
+    }
+
+    70% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/* *************** END OF - WAVING HAND ANIMATION *************** */
