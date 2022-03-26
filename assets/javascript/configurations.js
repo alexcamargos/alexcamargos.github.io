@@ -44,6 +44,7 @@
             }
         }
     };
+    // LOADING ANIMATIONS
     $(document).ready(function () {
         $(window).on("load", function () {
             $(".preloader").fadeOut();
@@ -68,6 +69,7 @@
                 });
             });
         });
+        // FACTS-LIST OWL-CAROUSEL
         if ($(".facts-list").length) {
             $(".facts-list").owlCarousel({
                 loop: true,
@@ -98,6 +100,7 @@
                 },
             });
         }
+        // SERVICES-LIST OWL-CAROUSEL
         if ($(".services-list").length) {
             $(".services-list").owlCarousel({
                 loop: true,
@@ -132,6 +135,7 @@
                 },
             });
         }
+        // PORTFOLIO OWL-CAROUSEL
         if ($(".gallery-list").length) {
             $(".gallery-list").owlCarousel({
                 loop: false,
@@ -161,6 +165,50 @@
                 },
             });
         }
+
+        // TypeIt
+        if ($("#typing-effect").length) {
+            new TypeIt("#typing-effect", {
+                waitUntilVisible: true,
+                speed: 150,
+                deleteSpeed: 75,
+                lifeLike: true,
+                breakLines: false,
+                loop: true,
+            })
+                .type("student.", {
+                    delay: 300,
+                })
+                .pause(2000)
+                .delete(8)
+                .type("data analyst.", {
+                    delay: 300,
+                })
+                .pause(2000)
+                .delete(12)
+                .type("eveloper.", {
+                    delay: 300,
+                })
+                .pause(2000)
+                .delete(10)
+                .type("back-end developer.", {
+                    delay: 300,
+                })
+                .pause(2000)
+                .delete(19)
+                .type("front-end developer.", {
+                    delay: 300,
+                })
+                .pause(2000)
+                .delete(20)
+                .type("Junior full stack develope.", {
+                    delay: 300,
+                })
+                .pause(8000)
+                .delete(27)
+                .go();
+        }
+        // fullPage.js
         if ($(".fullpage-default").length) {
             var myFullpage = new fullpage(".fullpage-default", {
                 licenseKey: " C7F41B00-5E824594-9A5EFB99-B556A3D5",
