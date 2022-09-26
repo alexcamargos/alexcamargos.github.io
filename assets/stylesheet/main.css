@@ -384,6 +384,47 @@ a:focus {
         transform: translateY(-1.2em);
     }
 }
+
+
+/* -------------- */
+.title-block h2 {
+    position: relative;
+}
+
+.title-block h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 400px;
+    height: 3px;
+    transform: translateX(-50%);
+    color: var(--background-color-alt);
+}
+
+.title-block h2::after {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    font-size: 20px; 
+    color: var(--text-color-alt);
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+
+.title-block #title-after::before {
+    background: var(--text-color-alt);
+}
+
+.title-block #title-after::after {
+    content: "who i am";
+}
+
+
+
+
+
 /* *************** END: BASE STYLES *************** */
 
 /* *************** START: HEADER STYLES *************** */
