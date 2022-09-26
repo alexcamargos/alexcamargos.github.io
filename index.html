@@ -1,996 +1,856 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- START: FAVICON -->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.jpg"
-      type="image/x-icon"
-    />
-    <!-- END: FAVICON -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <title>Alexsander Lopes Camargos Portfólio</title>
+  <!-- START: FAVICON -->
+  <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon" />
+  <!-- END: FAVICON -->
 
-    <!-- START: Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- END: Google Fonts -->
+  <title>Alexsander Lopes Camargos Portfólio</title>
 
-    <!-- START: Third-party Stylesheets -->
-    <!-- START: Bootstrap v4.6.1 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
-      integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- END: Bootstrap v4.6.1 -->
+  <!-- START: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- END: Google Fonts -->
 
-    <!-- START: Font Awesome Free v6.1.0 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- END: Font Awesome Free v6.1.0 -->
+  <!-- START: Third-party Stylesheets -->
+  <!-- START: Bootstrap  v5.2.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+    integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- END: Bootstrap  v5.2.1 -->
 
-    <!-- START: fullPage v3.1.2 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
-      integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- END: fullPage v3.1.2b-->
+  <!-- START: Font Awesome Free v6.1.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- END: Font Awesome Free v6.1.0 -->
 
-    <!-- START: Owl Carousel v2.3.4 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- END: Owl Carousel v2.3.4 -->
-    <!-- END: Third-party Stylesheets -->
+  <!-- START: fullPage 4.0.11 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css"
+    integrity="sha512-NGRhMiWY9pf5z8PLens7/u+LLwIPAu1dhJ7u9sHRWIo8TKrVbKiWlRdYRH3pVDCZA10zmobo+PBLGeLOREklBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- END: fullPage 4.0.11-->
 
-    <link rel="stylesheet" href="assets/stylesheet/animates/aminate.min.css" />
-    <link
-      rel="stylesheet"
-      href="assets/stylesheet/animates/waving-hand-animation.css"
-    />
+  <!-- START: Owl Carousel v2.3.4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- END: Owl Carousel v2.3.4 -->
+  <!-- END: Third-party Stylesheets -->
 
-    <link rel="stylesheet" href="assets/stylesheet/main.css" />
+  <link rel="stylesheet" href="assets/stylesheet/animates/aminate.min.css" />
+  <link rel="stylesheet" href="assets/stylesheet/animates/waving-hand-animation.css" />
 
-    <link rel="stylesheet" href="assets/stylesheet/responsive.css" />
+  <link rel="stylesheet" href="assets/stylesheet/main.css" />
 
-    <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css">
-  </head>
+  <link rel="stylesheet" href="assets/stylesheet/responsive.css" />
 
-  <body>
-    <div id="video">
-      <!-- START: LOADING ANIMATIONS -->
-      <div class="preloader">
-        <div class="preloader-bounce">
-          <span></span>
-          <span></span>
-          <span></span>
+  <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css">
+</head>
+
+<body>
+  <div id="video">
+    <!-- START: LOADING ANIMATIONS -->
+    <div class="preloader">
+      <div class="preloader-bounce">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- END: LOADING ANIMATIONS -->
+
+    <!-- START: HEADER -->
+    <header id="header">
+      <div class="container-fluid">
+        <!-- START: NAVBAR -->
+        <div class="navbar">
+          <!-- START: ALC HOME LINK -->
+          <div class="section d-flex gap-2 align-items-center">
+            <svg id="path-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <a href="#" id="logo" title="Alexsander Lopes Camargos">
+              Alexsander Camargos
+            </a>
+          </div>
+          <!-- END:  ALC HOME LINK -->
+
+          <div class="navigation-row">
+            <!-- START: NAVIGATION BAR -->
+            <nav id="navigation">
+              <!-- NAVBAR TOGGLE BUTTON -->
+              <button type="button" class="navbar-toggle">
+                <i class="fa fa-bars"></i>
+              </button>
+
+              <!-- START: NAVIGATION ITEMS -->
+              <div class="nav-box navbar-collapse">
+                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                  <!-- HOME -->
+                  <li data-menuanchor="slide01" class="active">
+                    <a href="#slide01">Home</a>
+                  </li>
+                  <!-- ABOUT ME -->
+                  <li data-menuanchor="slide02">
+                    <a href="#slide02">About Me</a>
+                  </li>
+                  <!-- HOME -->
+                  <li data-menuanchor="slide03">
+                    <a href="#slide03">Services</a>
+                  </li>
+                  <!-- PORTFOLIO -->
+                  <li data-menuanchor="slide04">
+                    <a href="#slide04">Portfolio</a>
+                  </li>
+                  <!-- CONTACT ME -->
+                  <li data-menuanchor="slide05">
+                    <a href="#slide05">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- END: NAVIGATION ITEMS -->
+            </nav>
+            <!-- END: NAVIGATION BAR -->
+          </div>
+        </div>
+        <!-- START: NAVBAR -->
+      </div>
+    </header>
+
+    <!-- START: BACKGROUND VIDEO -->
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/video/bg.mp4" type="video/mp4" />
+    </video>
+    <!-- END: BACKGROUND VIDEO -->
+
+    <!-- START: FULLPAGE -->
+    <div id="fullpage" class="fullpage-default">
+      <!-- START:  HERO SECTION -->
+      <div class="section animated-row" data-section="slide01">
+        <div class="section-inner">
+          <div class="welcome-box text-left">
+            <p class="welcome-first animate" data-animate="fadeInUp">
+              <span class="waving-hand">👋</span>
+              Hello! My name is...
+            </p>
+            <h1 class="welcome-title animate" data-animate="fadeInUp">
+              Alexsander Lopes Camargos
+            </h1>
+            <p class="animate" data-animate="fadeInUp">
+              and I'm a <span id="typing-effect"></span>
+            </p>
+
+            <!-- START: SCROLL DOWN INDICATOR -->
+            <div class="container-fluid scroll-down next-section animate" data-animate="fadeInUp">
+              <div class="d-flex justify-content-center">
+                <div class="scroll-down-icon-animate"></div>
+                <div class="scroll-down-icon-animate"></div>
+                <div class="scroll-down-icon-animate"></div>
+
+                <span> </span>
+              </div>
+              <span>Scroll Down</span>
+
+            </div>
+            <!-- END: SCROLL DOWN INDICATOR -->
+          </div>
         </div>
       </div>
-      <!-- END: LOADING ANIMATIONS -->
+      <!-- START:  HERO SECTION -->
+      <!-- </div> -->
 
-      <!-- START: HEADER -->
-      <header id="header">
-        <div class="container-fluid">
-          <!-- START: NAVBAR -->
-          <div class="navbar">
-            <!-- START: ALC HOME LINK -->
-            <div class="section d-flex gap-2 align-items-center">
-              <svg
-                id="path-svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
-              <a href="#" id="logo" title="Alexsander Lopes Camargos">
-                Alexsander Camargos
-              </a>
-            </div>
-            <!-- END:  ALC HOME LINK -->
-
-            <div class="navigation-row">
-              <!-- START: NAVIGATION BAR -->
-              <nav id="navigation">
-                <!-- NAVBAR TOGGLE BUTTON -->
-                <button type="button" class="navbar-toggle">
-                  <i class="fa fa-bars"></i>
-                </button>
-
-                <!-- START: NAVIGATION ITEMS -->
-                <div class="nav-box navbar-collapse">
-                  <ul class="navigation-menu nav navbar-nav navbars" id="nav">
-                    <!-- HOME -->
-                    <li data-menuanchor="slide01" class="active">
-                      <a href="#slide01">Home</a>
-                    </li>
-                    <!-- ABOUT ME -->
-                    <li data-menuanchor="slide02">
-                      <a href="#slide02">About Me</a>
-                    </li>
-                    <!-- HOME -->
-                    <li data-menuanchor="slide03">
-                      <a href="#slide03">Services</a>
-                    </li>
-                    <!-- PORTFOLIO -->
-                    <li data-menuanchor="slide04">
-                      <a href="#slide04">Portfolio</a>
-                    </li>
-                    <!-- CONTACT ME -->
-                    <li data-menuanchor="slide05">
-                      <a href="#slide05">Contact Me</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- END: NAVIGATION ITEMS -->
-              </nav>
-              <!-- END: NAVIGATION BAR -->
-            </div>
-          </div>
-          <!-- START: NAVBAR -->
-        </div>
-      </header>
-
-      <!-- START: BACKGROUND VIDEO -->
-      <video autoplay muted loop id="myVideo">
-        <source src="assets/video/bg.mp4" type="video/mp4" />
-      </video>
-      <!-- END: BACKGROUND VIDEO -->
-
-      <!-- START: FULLPAGE -->
-      <div id="fullpage" class="fullpage-default">
-        <!-- START:  HERO SECTION -->
-        <div class="section animated-row" data-section="slide01">
-          <div class="section-inner">
-            <div class="welcome-box text-left">
-              <p class="welcome-first animate" data-animate="fadeInUp">
-                <span class="waving-hand">👋</span>
-                Hello! My name is...
-              </p>
-              <h1 class="welcome-title animate" data-animate="fadeInUp">
-                Alexsander Lopes Camargos
-              </h1>
-              <p class="animate" data-animate="fadeInUp">
-                and I'm a <span id="typing-effect"></span>
-              </p>
-
-              <!-- START: SCROLL DOWN INDICATOR -->
-              <div
-                class="container-fluid scroll-down next-section animate"
-                data-animate="fadeInUp">
-                <div class="d-flex justify-content-center">
-                  <div class="scroll-down-icon-animate"></div>
-                  <div class="scroll-down-icon-animate"></div>
-                  <div class="scroll-down-icon-animate"></div>
-
-                  <span> </span>
-                </div>
-                <span>Scroll Down</span>
-
-              </div>
-              <!-- END: SCROLL DOWN INDICATOR -->
-            </div>
-          </div>
-        </div>
-        <!-- START:  HERO SECTION -->
-        <!-- </div> -->
-
-        <!-- START: ABOUT ME SECTION -->
-        <section class="section animated-row" data-section="slide02">
-          <div class="section-inner">
-            <div class="about-section">
-              <div class="row justify-content-center">
-                <div class="col-lg-8 wide-col-laptop">
-                  <!-- START: ABOUT ME SECTION TITLE -->
-                  <div class="title-block animate" data-animate="fadeInUp">
-                    <h2 id="title-after">About Me</h2>
-                    <!-- <h2>Who am i?</h2> -->
-                  </div>
-                  <!-- END: ABOUT ME SECTION TITLE -->
-
-                  <!-- START: ABOUT-SECTION -->
-                  <div class="about-section">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <!-- START: ABOUT CONTENTBOX -->
-                        <div class="about-contentbox">
-                          <!-- START: RESUME BOX -->
-                          <div class="animate" data-animate="fadeInUp">
-                            <p>
-                              Sou brasileiro, tenho 35 anos, sou apaixonado por
-                              resolver problemas, não tenho medo de enfrentar
-                              novos desafios, e é exatamente isso que busco ao
-                              aplicar meus conhecimentos em processos que
-                              transformem complexidade em simplicidade,
-                              auxiliando na resolução dos mais diversos
-                              problemas. Atuo por mais de 15 anos na área
-                              administrava, tenho formação superior em
-                              administração de empresas, com sólida experiência
-                              em rotinas/procedimentos administrativos e
-                              gerenciamento de pessoas.
-                            </p>
-                          </div>
-                          <!-- END: RESUME BOX -->
-
-                          <!-- START: FACTS-LIST OWL-CAROUSEL -->
-                          <div class="facts-list owl-carousel">
-                            <div class="item animate" data-animate="fadeInUp">
-                              <div class="counter-box">
-                                <i class="fa-thin fa-graduation-cap"></i>
-                                <span class="count-number">10</span>
-                                Certificates
-                              </div>
-                            </div>
-
-                            <div class="item animate" data-animate="fadeInUp">
-                              <div class="counter-box">
-                                <i
-                                  class="fa fa-trophy counter-icon"
-                                  aria-hidden="true"
-                                ></i
-                                ><span class="count-number">32</span> Awards Won
-                              </div>
-                            </div>
-
-                            <div class="item animate" data-animate="fadeInUp">
-                              <div class="counter-box">
-                                <i
-                                  class="fa fa-graduation-cap counter-icon"
-                                  aria-hidden="true"
-                                ></i
-                                ><span class="count-number">4</span> Degrees
-                              </div>
-                            </div>
-
-                            <div class="item animate" data-animate="fadeInUp">
-                              <div class="counter-box">
-                                <i
-                                  class="fa fa-desktop counter-icon"
-                                  aria-hidden="true"
-                                ></i
-                                ><span class="count-number">12</span> Working
-                                Years
-                              </div>
-                            </div>
-
-                            <div class="item animate" data-animate="fadeInUp">
-                              <div class="counter-box">
-                                <i
-                                  class="fa fa-support counter-icon"
-                                  aria-hidden="true"
-                                ></i
-                                ><span class="count-number">6</span> Team
-                                Members
-                              </div>
-                            </div>
-                          </div>
-                          <!-- END: FACTS-LIST OWL-CAROUSEL -->
-                        </div>
-                        <!-- END: ABOUT CONTENTBOX -->
-                      </div>
-
-                      <!-- START: ALC IMAGE -->
-                      <div class="col-md-6">
-                        <figure
-                          class="about-img animate"
-                          data-animate="fadeInUp"
-                        >
-                          <img
-                            src="assets/img/alcamargos.png"
-                            class="rounded"
-                            alt="Alexsander Lopes Camargos"
-                          />
-                        </figure>
-                      </div>
-                      <!-- END: ALC IMAGE -->
-                    </div>
-                  </div>
-                  <!-- END: ABOUT-SECTION -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- START: ABOUT ME SECTION -->
-
-        <!-- START: SERVICES SECTION-->
-        <section class="section animated-row" data-section="slide03">
-          <div class="section-inner">
+      <!-- START: ABOUT ME SECTION -->
+      <section class="section animated-row" data-section="slide02">
+        <div class="section-inner">
+          <div class="about-section">
             <div class="row justify-content-center">
-              <div class="col-md-8 wide-col-laptop">
-                <!-- START: SERVICES SECTION TITLE -->
+              <div class="col-lg-8 wide-col-laptop">
+                <!-- START: ABOUT ME SECTION TITLE -->
                 <div class="title-block animate" data-animate="fadeInUp">
-                  <span>Services</span>
-                  <h2>What I Do?</h2>
+                  <h2 id="title-after">About Me</h2>
+                  <!-- <h2>Who am i?</h2> -->
                 </div>
-                <!-- END: SERVICES SECTION TITLE -->
+                <!-- END: ABOUT ME SECTION TITLE -->
 
-                <!-- START: SERVICES SECTION -->
-                <div class="services-section">
-                  <!-- END: SERVICES-LIST OWL-CAROUSEL -->
-                  <div class="services-list owl-carousel">
-                    <!-- START: PYTHON SERVICE-BOX -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="service-box">
-                        <span class="service-icon">
-                          <i class="fa-brands fa-python"></i>
-                        </span>
-                        <h3>Python</h3>
-                        <p>
-                          Python is a programming language that lets you work
-                          more quickly and integrate your systems more
-                          effectively.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- END: PYTHON SERVICE-BOX -->
-
-                    <!-- START: HTML5 SERVICE-BOX -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="service-box">
-                        <span class="service-icon">
-                          <i class="fa-brands fa-html5"></i>
-                        </span>
-                        <h3>HTML5</h3>
-                        <p>
-                          "HTML5" is widely used as a buzzword to refer to
-                          modern web technologies, many of which (though by no
-                          means all) are developed at the WHATWG.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- END: HTML5 SERVICE-BOX -->
-
-                    <!-- START: CSS3 SERVICE-BOX -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="service-box">
-                        <span class="service-icon">
-                          <i class="fa-brands fa-css3-alt"></i>
-                        </span>
-                        <h3>CSS3</h3>
-                        <p>
-                          Cascading Style Sheets is a stylesheet language used
-                          to describe the presentation of a document written in
-                          HTML or XML (including XML dialects such as SVG,
-                          MathML or XHTML).
-                        </p>
-                      </div>
-                    </div>
-                    <!-- END: CSS3 SERVICE-BOX -->
-
-                    <!-- START: JAVASCRIPT  SERVICE-BOX -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="service-box">
-                        <span class="service-icon">
-                          <i class="fa-brands fa-js-square"></i>
-                        </span>
-                        <h3>JavaScript</h3>
-                        <p>
-                          JavaScript is a lightweight, interpreted, or
-                          just-in-time compiled programming language with
-                          first-class functions.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- END: JAVASCRIPT  SERVICE-BOX -->
-
-                    <!-- START: DATA ANALYSIS SERVICE-BOX -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="service-box">
-                        <span class="service-icon">
-                          <i class="fa-thin fa-chart-mixed"></i>
-                        </span>
-                        <h3>Data Analysis</h3>
-                        <p>
-                          Data Analysis is the process of systematically
-                          applying statistical and/or logical techniques to
-                          describe and illustrate, condense and recap, and
-                          evaluate data.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- END: DATA ANALYSIS SERVICE-BOX -->
-
-                    <!-- START: GNU/Linux SERVICE-BOX -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="service-box">
-                        <span class="service-icon">
-                          <i class="fa-brands fa-linux"></i>
-                        </span>
-                        <h3>GNU/Linux</h3>
-                        <p>
-                          GNU/Linux is a family of open-source Unix-like
-                          operating systems based on the Linux kernel, an
-                          operating system kernel first released by Linus
-                          Torvalds.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- END: GNU/Linux SERVICE-BOX -->
-
-                    <!-- START: GIT SERVICE-BOX -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="service-box">
-                        <span class="service-icon">
-                          <i class="fa-brands fa-git"></i>
-                        </span>
-                        <h3>GIT</h3>
-                        <p>
-                          Git is a free and open source distributed version
-                          control system designed to handle everything from
-                          small to very large projects with speed and
-                          efficiency.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- END: GIT SERVICE-BOX -->
-                  </div>
-                  <!-- END: SERVICES-LIST OWL-CAROUSEL -->
-                </div>
-                <!-- END: SERVICES SECTION -->
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- END: SERVICES SECTION -->
-
-        <!-- START: PORTFOLIO SECTION -->
-        <div class="section animated-row" data-section="slide04">
-          <div class="section-inner">
-            <div class="row justify-content-center">
-              <div class="col-md-8 wide-col-laptop">
-                <!-- START: PORTFOLIO SECTION TITLE -->
-                <div class="title-block animate" data-animate="fadeInUp">
-                  <span>Portfolio </span>
-                  <h2>what i’ve done?</h2>
-                </div>
-                <!-- END: PORTFOLIO SECTION TITLE -->
-
-                <!-- START: PORTFOLIO GALLERY SECTION -->
-                <div class="gallery-section">
-                  <!-- START: PORTFOLIO OWL-CAROUSEL -->
-                  <div class="gallery-list owl-carousel">
-                    <!-- START: PORTFOLIO ITEM -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="portfolio-item">
-                        <!-- START: THUMBNAIL -->
-                        <div class="thumb">
-                          <img src="assets/img/portfolio_template.jpg" alt="" />
-                        </div>
-                        <!-- END: THUMBNAIL -->
-
-                        <!-- START: THUMBNAIL INNER -->
-                        <div
-                          class="thumb-inner animate"
-                          data-animate="fadeInUp"
-                        >
-                          <h4>
-                            Simple Responsive Portfolio Template for Different
-                            Purposes
-                          </h4>
-
-                          <h5>HTML, CSS, JavaScript</h5>
-
-                          <div class="container-fluid">
-                            <div class="container-fluid">
-                              <a
-                                href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
-                                target="_blank"
-                              >
-                                <i class="fa-light fa-code"></i>
-                                GitHub Repository
-                              </a>
-
-                              <a
-                                href="https://learning-webdev.netlify.app/projects/nokia3310-snake"
-                                target="_blank"
-                              >
-                                <i class="fa-light fa-globe"></i>
-                                Live View
-                              </a>
-                            </div>
-                            <p>
-                              This website is a simple and reusable model for
-                              several purposes, such as projects, portfolio and
-                              events. Built after a process of self-learning of
-                              different web technologies, such as HTML5, CSS3,
-                              responsive development techniques and a little
-                              JavaScript (not much, actually).
-                            </p>
-                          </div>
-                        </div>
-                        <!-- END: THUMBNAIL INNER -->
-                      </div>
-                    </div>
-                    <!-- START: PORTFOLIO ITEM -->
-
-                    <!-- START: PORTFOLIO ITEM -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="portfolio-item">
-                        <!-- START: THUMBNAIL -->
-                        <div class="thumb">
-                          <img src="assets/img/portfolio_template.jpg" alt="" />
-                        </div>
-                        <!-- END: THUMBNAIL -->
-
-                        <!-- START: THUMBNAIL INNER -->
-                        <div
-                          class="thumb-inner animate"
-                          data-animate="fadeInUp"
-                        >
-                          <h4>
-                            Simple Responsive Portfolio Template for Different
-                            Purposes
-                          </h4>
-                          <h5>HTML, CSS, JavaScript</h5>
-
-                          <div class="section-inner">
-                            <i class="fa-light fa-code"></i>
-                            <a
-                              href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              GitHub Repository
-                            </a>
-                            <i class="fa-light fa-globe"></i>
-                            <a
-                              href="https://learning-webdev.netlify.app/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              Live View
-                            </a>
-
-                            <p>
-                              This website is a simple and reusable model for
-                              several purposes, such as projects, portfolio and
-                              events. Built after a process of self-learning of
-                              different web technologies, such as HTML5, CSS3,
-                              responsive development techniques and a little
-                              JavaScript (not much, actually).
-                            </p>
-                          </div>
-                        </div>
-                        <!-- END: THUMBNAIL INNER -->
-                      </div>
-                    </div>
-                    <!-- START: PORTFOLIO ITEM -->
-
-                    <!-- START: PORTFOLIO ITEM -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="portfolio-item">
-                        <!-- START: THUMBNAIL -->
-                        <div class="thumb">
-                          <img src="assets/img/portfolio_template.jpg" alt="" />
-                        </div>
-                        <!-- END: THUMBNAIL -->
-
-                        <!-- START: THUMBNAIL INNER -->
-                        <div
-                          class="thumb-inner animate"
-                          data-animate="fadeInUp"
-                        >
-                          <h4>
-                            Simple Responsive Portfolio Template for Different
-                            Purposes
-                          </h4>
-                          <h5>HTML, CSS, JavaScript</h5>
-
-                          <div class="section-inner">
-                            <i class="fa-light fa-code"></i>
-                            <a
-                              href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              GitHub Repository
-                            </a>
-                            <i class="fa-light fa-globe"></i>
-                            <a
-                              href="https://learning-webdev.netlify.app/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              Live View
-                            </a>
-
-                            <p>
-                              This website is a simple and reusable model for
-                              several purposes, such as projects, portfolio and
-                              events. Built after a process of self-learning of
-                              different web technologies, such as HTML5, CSS3,
-                              responsive development techniques and a little
-                              JavaScript (not much, actually).
-                            </p>
-                          </div>
-                        </div>
-                        <!-- END: THUMBNAIL INNER -->
-                      </div>
-                    </div>
-                    <!-- START: PORTFOLIO ITEM -->
-
-                    <!-- START: PORTFOLIO ITEM -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="portfolio-item">
-                        <!-- START: THUMBNAIL -->
-                        <div class="thumb">
-                          <img src="assets/img/portfolio_template.jpg" alt="" />
-                        </div>
-                        <!-- END: THUMBNAIL -->
-
-                        <!-- START: THUMBNAIL INNER -->
-                        <div
-                          class="thumb-inner animate"
-                          data-animate="fadeInUp"
-                        >
-                          <h4>
-                            Simple Responsive Portfolio Template for Different
-                            Purposes
-                          </h4>
-                          <h5>HTML, CSS, JavaScript</h5>
-
-                          <div class="section-inner">
-                            <i class="fa-light fa-code"></i>
-                            <a
-                              href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              GitHub Repository
-                            </a>
-                            <i class="fa-light fa-globe"></i>
-                            <a
-                              href="https://learning-webdev.netlify.app/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              Live View
-                            </a>
-
-                            <p>
-                              This website is a simple and reusable model for
-                              several purposes, such as projects, portfolio and
-                              events. Built after a process of self-learning of
-                              different web technologies, such as HTML5, CSS3,
-                              responsive development techniques and a little
-                              JavaScript (not much, actually).
-                            </p>
-                          </div>
-                        </div>
-                        <!-- END: THUMBNAIL INNER -->
-                      </div>
-                    </div>
-                    <!-- START: PORTFOLIO ITEM -->
-
-                    <!-- START: PORTFOLIO ITEM -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="portfolio-item">
-                        <!-- START: THUMBNAIL -->
-                        <div class="thumb">
-                          <img src="assets/img/portfolio_template.jpg" alt="" />
-                        </div>
-                        <!-- END: THUMBNAIL -->
-
-                        <!-- START: THUMBNAIL INNER -->
-                        <div
-                          class="thumb-inner animate"
-                          data-animate="fadeInUp"
-                        >
-                          <h4>
-                            Simple Responsive Portfolio Template for Different
-                            Purposes
-                          </h4>
-                          <h5>HTML, CSS, JavaScript</h5>
-
-                          <div class="section-inner">
-                            <i class="fa-light fa-code"></i>
-                            <a
-                              href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              GitHub Repository
-                            </a>
-                            <i class="fa-light fa-globe"></i>
-                            <a
-                              href="https://learning-webdev.netlify.app/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              Live View
-                            </a>
-
-                            <p>
-                              This website is a simple and reusable model for
-                              several purposes, such as projects, portfolio and
-                              events. Built after a process of self-learning of
-                              different web technologies, such as HTML5, CSS3,
-                              responsive development techniques and a little
-                              JavaScript (not much, actually).
-                            </p>
-                          </div>
-                        </div>
-                        <!-- END: THUMBNAIL INNER -->
-                      </div>
-                    </div>
-                    <!-- START: PORTFOLIO ITEM -->
-
-                    <!-- START: PORTFOLIO ITEM -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="portfolio-item">
-                        <!-- START: THUMBNAIL -->
-                        <div class="thumb">
-                          <img src="assets/img/portfolio_template.jpg" alt="" />
-                        </div>
-                        <!-- END: THUMBNAIL -->
-
-                        <!-- START: THUMBNAIL INNER -->
-                        <div
-                          class="thumb-inner animate"
-                          data-animate="fadeInUp"
-                        >
-                          <h4>
-                            Simple Responsive Portfolio Template for Different
-                            Purposes
-                          </h4>
-                          <h5>HTML, CSS, JavaScript</h5>
-
-                          <div class="section-inner">
-                            <i class="fa-light fa-code"></i>
-                            <a
-                              href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              GitHub Repository
-                            </a>
-                            <i class="fa-light fa-globe"></i>
-                            <a
-                              href="https://learning-webdev.netlify.app/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              Live View
-                            </a>
-
-                            <p>
-                              This website is a simple and reusable model for
-                              several purposes, such as projects, portfolio and
-                              events. Built after a process of self-learning of
-                              different web technologies, such as HTML5, CSS3,
-                              responsive development techniques and a little
-                              JavaScript (not much, actually).
-                            </p>
-                          </div>
-                        </div>
-                        <!-- END: THUMBNAIL INNER -->
-                      </div>
-                    </div>
-                    <!-- START: PORTFOLIO ITEM -->
-
-                    <!-- START: PORTFOLIO ITEM -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="portfolio-item">
-                        <!-- START: THUMBNAIL -->
-                        <div class="thumb">
-                          <img src="assets/img/portfolio_template.jpg" alt="" />
-                        </div>
-                        <!-- END: THUMBNAIL -->
-
-                        <!-- START: THUMBNAIL INNER -->
-                        <div
-                          class="thumb-inner animate"
-                          data-animate="fadeInUp"
-                        >
-                          <h4>
-                            Simple Responsive Portfolio Template for Different
-                            Purposes
-                          </h4>
-                          <h5>HTML, CSS, JavaScript</h5>
-
-                          <div class="section-inner">
-                            <i class="fa-light fa-code"></i>
-                            <a
-                              href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              GitHub Repository
-                            </a>
-                            <i class="fa-light fa-globe"></i>
-                            <a
-                              href="https://learning-webdev.netlify.app/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              Live View
-                            </a>
-
-                            <p>
-                              This website is a simple and reusable model for
-                              several purposes, such as projects, portfolio and
-                              events. Built after a process of self-learning of
-                              different web technologies, such as HTML5, CSS3,
-                              responsive development techniques and a little
-                              JavaScript (not much, actually).
-                            </p>
-                          </div>
-                        </div>
-                        <!-- END: THUMBNAIL INNER -->
-                      </div>
-                    </div>
-                    <!-- START: PORTFOLIO ITEM -->
-
-                    <!-- START: PORTFOLIO ITEM -->
-                    <div class="item animate" data-animate="fadeInUp">
-                      <div class="portfolio-item">
-                        <!-- START: THUMBNAIL -->
-                        <div class="thumb">
-                          <img src="assets/img/portfolio_template.jpg" alt="" />
-                        </div>
-                        <!-- END: THUMBNAIL -->
-
-                        <!-- START: THUMBNAIL INNER -->
-                        <div
-                          class="thumb-inner animate"
-                          data-animate="fadeInUp"
-                        >
-                          <h4>
-                            Simple Responsive Portfolio Template for Different
-                            Purposes
-                          </h4>
-                          <h5>HTML, CSS, JavaScript</h5>
-
-                          <div class="section-inner">
-                            <i class="fa-light fa-code"></i>
-                            <a
-                              href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              GitHub Repository
-                            </a>
-                            <i class="fa-light fa-globe"></i>
-                            <a
-                              href="https://learning-webdev.netlify.app/projects/nokia3310-snake"
-                              target="_blank"
-                            >
-                              Live View
-                            </a>
-
-                            <p>
-                              This website is a simple and reusable model for
-                              several purposes, such as projects, portfolio and
-                              events. Built after a process of self-learning of
-                              different web technologies, such as HTML5, CSS3,
-                              responsive development techniques and a little
-                              JavaScript (not much, actually).
-                            </p>
-                          </div>
-                        </div>
-                        <!-- END: THUMBNAIL INNER -->
-                      </div>
-                    </div>
-                    <!-- START: PORTFOLIO ITEM -->
-                  </div>
-                  <!-- END: PORTFOLIO OWL-CAROUSEL -->
-                </div>
-                <!-- END: PORTFOLIO GALLERY SECTION -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END: Portfolio SECTION -->
-
-        <!-- START: CONTACT SECTION -->
-        <div class="section animated-row" data-section="slide05">
-          <div class="section-inner">
-            <div class="row justify-content-center">
-              <div class="col-md-7 wide-col-laptop">
-                <!-- START: CONTACT SECTION TITLE -->
-                <div class="title-block animate" data-animate="fadeInUp">
-                  <span>Contact</span>
-                  <h2>Get In Touch!</h2>
-                </div>
-                <!-- END: CONTACT SECTION TITLE -->
-
-                <!-- START: CONTACT SECTION -->
-                <div class="contact-section">
+                <!-- START: ABOUT-SECTION -->
+                <div class="about-section">
                   <div class="row">
-                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                      <div class="contact-box">
-                        <div class="contact-row">
-                          <i class="fa-thin fa-map-location-dot"></i>
-                          Capelinha, Minas Gerais, Brasil
+                    <div class="col-md-6">
+                      <!-- START: ABOUT CONTENTBOX -->
+                      <div class="about-contentbox">
+                        <!-- START: RESUME BOX -->
+                        <div class="animate" data-animate="fadeInUp">
+                          <p>
+                            Sou brasileiro, tenho 35 anos, sou apaixonado por
+                            resolver problemas, não tenho medo de enfrentar
+                            novos desafios, e é exatamente isso que busco ao
+                            aplicar meus conhecimentos em processos que
+                            transformem complexidade em simplicidade,
+                            auxiliando na resolução dos mais diversos
+                            problemas. Atuo por mais de 15 anos na área
+                            administrava, tenho formação superior em
+                            administração de empresas, com sólida experiência
+                            em rotinas/procedimentos administrativos e
+                            gerenciamento de pessoas.
+                          </p>
                         </div>
+                        <!-- END: RESUME BOX -->
 
-                        <div class="contact-row">
-                          <i class="fa-thin fa-envelope"></i>
-                          <a href="mailto:alcamargos@vivaldi.net">
-                            alcamargos@vivaldi.net
-                          </a>
+                        <!-- START: FACTS-LIST OWL-CAROUSEL -->
+                        <div class="facts-list owl-carousel">
+                          <div class="item animate" data-animate="fadeInUp">
+                            <div class="counter-box">
+                              <i class="fa-thin fa-graduation-cap"></i>
+                              <span class="count-number">10</span>
+                              Certificates
+                            </div>
+                          </div>
+
+                          <div class="item animate" data-animate="fadeInUp">
+                            <div class="counter-box">
+                              <i class="fa fa-trophy counter-icon" aria-hidden="true"></i><span
+                                class="count-number">32</span> Awards Won
+                            </div>
+                          </div>
+
+                          <div class="item animate" data-animate="fadeInUp">
+                            <div class="counter-box">
+                              <i class="fa fa-graduation-cap counter-icon" aria-hidden="true"></i><span
+                                class="count-number">4</span> Degrees
+                            </div>
+                          </div>
+
+                          <div class="item animate" data-animate="fadeInUp">
+                            <div class="counter-box">
+                              <i class="fa fa-desktop counter-icon" aria-hidden="true"></i><span
+                                class="count-number">12</span> Working
+                              Years
+                            </div>
+                          </div>
+
+                          <div class="item animate" data-animate="fadeInUp">
+                            <div class="counter-box">
+                              <i class="fa fa-support counter-icon" aria-hidden="true"></i><span
+                                class="count-number">6</span> Team
+                              Members
+                            </div>
+                          </div>
                         </div>
+                        <!-- END: FACTS-LIST OWL-CAROUSEL -->
                       </div>
+                      <!-- END: ABOUT CONTENTBOX -->
                     </div>
 
-                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                      <!-- START: CONTACT FORM -->
-                      <form id="ajax-contact" method="post" action="#">
-                        <!-- START: INPUT NAME -->
-                        <div class="input-field">
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="name"
-                            id="name"
-                            required
-                            placeholder="Name"
-                          />
-                        </div>
-                        <!-- END: INPUT NAME -->
-
-                        <!-- START: INPUT EMAIL -->
-                        <div class="input-field">
-                          <input
-                            type="email"
-                            class="form-control"
-                            name="email"
-                            id="email"
-                            required
-                            placeholder="Email"
-                          />
-                        </div>
-                        <!-- END: INPUT EMAIL -->
-
-                        <!-- START: TEXTAREA MESSAGE -->
-                        <div class="input-field">
-                          <textarea
-                            class="form-control"
-                            name="message"
-                            id="message"
-                            required
-                            placeholder="Message"
-                          ></textarea>
-                        </div>
-                        <!-- END: TEXTAREA MESSAGE -->
-
-                        <!-- START: BUTTON SUBMIT -->
-
-                        <button class="btn" type="submit">Submit</button>
-                        <!-- END: BUTTON SUBMIT -->
-                      </form>
-                      <!-- END: CONTACT FORM -->
-
-                      <div id="form-messages" class="mt-3"></div>
+                    <!-- START: ALC IMAGE -->
+                    <div class="col-md-6">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <img src="assets/img/alcamargos.png" class="rounded" alt="Alexsander Lopes Camargos" />
+                      </figure>
                     </div>
+                    <!-- END: ALC IMAGE -->
                   </div>
                 </div>
-                <!-- END: CONTACT SECTION -->
+                <!-- END: ABOUT-SECTION -->
               </div>
             </div>
           </div>
         </div>
-        <!-- END: CONTACT SECTION -->
+      </section>
+      <!-- START: ABOUT ME SECTION -->
+
+      <!-- START: SERVICES SECTION-->
+      <section class="section animated-row" data-section="slide03">
+        <div class="section-inner">
+          <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+              <!-- START: SERVICES SECTION TITLE -->
+              <div class="title-block animate" data-animate="fadeInUp">
+                <span>Services</span>
+                <h2>What I Do?</h2>
+              </div>
+              <!-- END: SERVICES SECTION TITLE -->
+
+              <!-- START: SERVICES SECTION -->
+              <div class="services-section">
+                <!-- END: SERVICES-LIST OWL-CAROUSEL -->
+                <div class="services-list owl-carousel">
+                  <!-- START: PYTHON SERVICE-BOX -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="service-box">
+                      <span class="service-icon">
+                        <i class="fa-brands fa-python"></i>
+                      </span>
+                      <h3>Python</h3>
+                      <p>
+                        Python is a programming language that lets you work
+                        more quickly and integrate your systems more
+                        effectively.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- END: PYTHON SERVICE-BOX -->
+
+                  <!-- START: HTML5 SERVICE-BOX -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="service-box">
+                      <span class="service-icon">
+                        <i class="fa-brands fa-html5"></i>
+                      </span>
+                      <h3>HTML5</h3>
+                      <p>
+                        "HTML5" is widely used as a buzzword to refer to
+                        modern web technologies, many of which (though by no
+                        means all) are developed at the WHATWG.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- END: HTML5 SERVICE-BOX -->
+
+                  <!-- START: CSS3 SERVICE-BOX -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="service-box">
+                      <span class="service-icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                      </span>
+                      <h3>CSS3</h3>
+                      <p>
+                        Cascading Style Sheets is a stylesheet language used
+                        to describe the presentation of a document written in
+                        HTML or XML (including XML dialects such as SVG,
+                        MathML or XHTML).
+                      </p>
+                    </div>
+                  </div>
+                  <!-- END: CSS3 SERVICE-BOX -->
+
+                  <!-- START: JAVASCRIPT  SERVICE-BOX -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="service-box">
+                      <span class="service-icon">
+                        <i class="fa-brands fa-js-square"></i>
+                      </span>
+                      <h3>JavaScript</h3>
+                      <p>
+                        JavaScript is a lightweight, interpreted, or
+                        just-in-time compiled programming language with
+                        first-class functions.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- END: JAVASCRIPT  SERVICE-BOX -->
+
+                  <!-- START: DATA ANALYSIS SERVICE-BOX -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="service-box">
+                      <span class="service-icon">
+                        <i class="fa-thin fa-chart-mixed"></i>
+                      </span>
+                      <h3>Data Analysis</h3>
+                      <p>
+                        Data Analysis is the process of systematically
+                        applying statistical and/or logical techniques to
+                        describe and illustrate, condense and recap, and
+                        evaluate data.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- END: DATA ANALYSIS SERVICE-BOX -->
+
+                  <!-- START: GNU/Linux SERVICE-BOX -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="service-box">
+                      <span class="service-icon">
+                        <i class="fa-brands fa-linux"></i>
+                      </span>
+                      <h3>GNU/Linux</h3>
+                      <p>
+                        GNU/Linux is a family of open-source Unix-like
+                        operating systems based on the Linux kernel, an
+                        operating system kernel first released by Linus
+                        Torvalds.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- END: GNU/Linux SERVICE-BOX -->
+
+                  <!-- START: GIT SERVICE-BOX -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="service-box">
+                      <span class="service-icon">
+                        <i class="fa-brands fa-git"></i>
+                      </span>
+                      <h3>GIT</h3>
+                      <p>
+                        Git is a free and open source distributed version
+                        control system designed to handle everything from
+                        small to very large projects with speed and
+                        efficiency.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- END: GIT SERVICE-BOX -->
+                </div>
+                <!-- END: SERVICES-LIST OWL-CAROUSEL -->
+              </div>
+              <!-- END: SERVICES SECTION -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: SERVICES SECTION -->
+
+      <!-- START: PORTFOLIO SECTION -->
+      <div class="section animated-row" data-section="slide04">
+        <div class="section-inner">
+          <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+              <!-- START: PORTFOLIO SECTION TITLE -->
+              <div class="title-block animate" data-animate="fadeInUp">
+                <span>Portfolio </span>
+                <h2>what i’ve done?</h2>
+              </div>
+              <!-- END: PORTFOLIO SECTION TITLE -->
+
+              <!-- START: PORTFOLIO GALLERY SECTION -->
+              <div class="gallery-section">
+                <!-- START: PORTFOLIO OWL-CAROUSEL -->
+                <div class="gallery-list owl-carousel">
+                  <!-- START: PORTFOLIO ITEM -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="portfolio-item">
+                      <!-- START: THUMBNAIL -->
+                      <div class="thumb">
+                        <img src="assets/img/portfolio_template.jpg" alt="" />
+                      </div>
+                      <!-- END: THUMBNAIL -->
+
+                      <!-- START: THUMBNAIL INNER -->
+                      <div class="thumb-inner animate" data-animate="fadeInUp">
+                        <h4>
+                          Simple Responsive Portfolio Template for Different
+                          Purposes
+                        </h4>
+
+                        <h5>HTML, CSS, JavaScript</h5>
+
+                        <div class="container-fluid">
+                          <div class="container-fluid">
+                            <a href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
+                              target="_blank">
+                              <i class="fa-light fa-code"></i>
+                              GitHub Repository
+                            </a>
+
+                            <a href="https://learning-webdev.netlify.app/projects/nokia3310-snake" target="_blank">
+                              <i class="fa-light fa-globe"></i>
+                              Live View
+                            </a>
+                          </div>
+                          <p>
+                            This website is a simple and reusable model for
+                            several purposes, such as projects, portfolio and
+                            events. Built after a process of self-learning of
+                            different web technologies, such as HTML5, CSS3,
+                            responsive development techniques and a little
+                            JavaScript (not much, actually).
+                          </p>
+                        </div>
+                      </div>
+                      <!-- END: THUMBNAIL INNER -->
+                    </div>
+                  </div>
+                  <!-- START: PORTFOLIO ITEM -->
+
+                  <!-- START: PORTFOLIO ITEM -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="portfolio-item">
+                      <!-- START: THUMBNAIL -->
+                      <div class="thumb">
+                        <img src="assets/img/portfolio_template.jpg" alt="" />
+                      </div>
+                      <!-- END: THUMBNAIL -->
+
+                      <!-- START: THUMBNAIL INNER -->
+                      <div class="thumb-inner animate" data-animate="fadeInUp">
+                        <h4>
+                          Simple Responsive Portfolio Template for Different
+                          Purposes
+                        </h4>
+                        <h5>HTML, CSS, JavaScript</h5>
+
+                        <div class="section-inner">
+                          <i class="fa-light fa-code"></i>
+                          <a href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
+                            target="_blank">
+                            GitHub Repository
+                          </a>
+                          <i class="fa-light fa-globe"></i>
+                          <a href="https://learning-webdev.netlify.app/projects/nokia3310-snake" target="_blank">
+                            Live View
+                          </a>
+
+                          <p>
+                            This website is a simple and reusable model for
+                            several purposes, such as projects, portfolio and
+                            events. Built after a process of self-learning of
+                            different web technologies, such as HTML5, CSS3,
+                            responsive development techniques and a little
+                            JavaScript (not much, actually).
+                          </p>
+                        </div>
+                      </div>
+                      <!-- END: THUMBNAIL INNER -->
+                    </div>
+                  </div>
+                  <!-- START: PORTFOLIO ITEM -->
+
+                  <!-- START: PORTFOLIO ITEM -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="portfolio-item">
+                      <!-- START: THUMBNAIL -->
+                      <div class="thumb">
+                        <img src="assets/img/portfolio_template.jpg" alt="" />
+                      </div>
+                      <!-- END: THUMBNAIL -->
+
+                      <!-- START: THUMBNAIL INNER -->
+                      <div class="thumb-inner animate" data-animate="fadeInUp">
+                        <h4>
+                          Simple Responsive Portfolio Template for Different
+                          Purposes
+                        </h4>
+                        <h5>HTML, CSS, JavaScript</h5>
+
+                        <div class="section-inner">
+                          <i class="fa-light fa-code"></i>
+                          <a href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
+                            target="_blank">
+                            GitHub Repository
+                          </a>
+                          <i class="fa-light fa-globe"></i>
+                          <a href="https://learning-webdev.netlify.app/projects/nokia3310-snake" target="_blank">
+                            Live View
+                          </a>
+
+                          <p>
+                            This website is a simple and reusable model for
+                            several purposes, such as projects, portfolio and
+                            events. Built after a process of self-learning of
+                            different web technologies, such as HTML5, CSS3,
+                            responsive development techniques and a little
+                            JavaScript (not much, actually).
+                          </p>
+                        </div>
+                      </div>
+                      <!-- END: THUMBNAIL INNER -->
+                    </div>
+                  </div>
+                  <!-- START: PORTFOLIO ITEM -->
+
+                  <!-- START: PORTFOLIO ITEM -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="portfolio-item">
+                      <!-- START: THUMBNAIL -->
+                      <div class="thumb">
+                        <img src="assets/img/portfolio_template.jpg" alt="" />
+                      </div>
+                      <!-- END: THUMBNAIL -->
+
+                      <!-- START: THUMBNAIL INNER -->
+                      <div class="thumb-inner animate" data-animate="fadeInUp">
+                        <h4>
+                          Simple Responsive Portfolio Template for Different
+                          Purposes
+                        </h4>
+                        <h5>HTML, CSS, JavaScript</h5>
+
+                        <div class="section-inner">
+                          <i class="fa-light fa-code"></i>
+                          <a href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
+                            target="_blank">
+                            GitHub Repository
+                          </a>
+                          <i class="fa-light fa-globe"></i>
+                          <a href="https://learning-webdev.netlify.app/projects/nokia3310-snake" target="_blank">
+                            Live View
+                          </a>
+
+                          <p>
+                            This website is a simple and reusable model for
+                            several purposes, such as projects, portfolio and
+                            events. Built after a process of self-learning of
+                            different web technologies, such as HTML5, CSS3,
+                            responsive development techniques and a little
+                            JavaScript (not much, actually).
+                          </p>
+                        </div>
+                      </div>
+                      <!-- END: THUMBNAIL INNER -->
+                    </div>
+                  </div>
+                  <!-- START: PORTFOLIO ITEM -->
+
+                  <!-- START: PORTFOLIO ITEM -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="portfolio-item">
+                      <!-- START: THUMBNAIL -->
+                      <div class="thumb">
+                        <img src="assets/img/portfolio_template.jpg" alt="" />
+                      </div>
+                      <!-- END: THUMBNAIL -->
+
+                      <!-- START: THUMBNAIL INNER -->
+                      <div class="thumb-inner animate" data-animate="fadeInUp">
+                        <h4>
+                          Simple Responsive Portfolio Template for Different
+                          Purposes
+                        </h4>
+                        <h5>HTML, CSS, JavaScript</h5>
+
+                        <div class="section-inner">
+                          <i class="fa-light fa-code"></i>
+                          <a href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
+                            target="_blank">
+                            GitHub Repository
+                          </a>
+                          <i class="fa-light fa-globe"></i>
+                          <a href="https://learning-webdev.netlify.app/projects/nokia3310-snake" target="_blank">
+                            Live View
+                          </a>
+
+                          <p>
+                            This website is a simple and reusable model for
+                            several purposes, such as projects, portfolio and
+                            events. Built after a process of self-learning of
+                            different web technologies, such as HTML5, CSS3,
+                            responsive development techniques and a little
+                            JavaScript (not much, actually).
+                          </p>
+                        </div>
+                      </div>
+                      <!-- END: THUMBNAIL INNER -->
+                    </div>
+                  </div>
+                  <!-- START: PORTFOLIO ITEM -->
+
+                  <!-- START: PORTFOLIO ITEM -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="portfolio-item">
+                      <!-- START: THUMBNAIL -->
+                      <div class="thumb">
+                        <img src="assets/img/portfolio_template.jpg" alt="" />
+                      </div>
+                      <!-- END: THUMBNAIL -->
+
+                      <!-- START: THUMBNAIL INNER -->
+                      <div class="thumb-inner animate" data-animate="fadeInUp">
+                        <h4>
+                          Simple Responsive Portfolio Template for Different
+                          Purposes
+                        </h4>
+                        <h5>HTML, CSS, JavaScript</h5>
+
+                        <div class="section-inner">
+                          <i class="fa-light fa-code"></i>
+                          <a href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
+                            target="_blank">
+                            GitHub Repository
+                          </a>
+                          <i class="fa-light fa-globe"></i>
+                          <a href="https://learning-webdev.netlify.app/projects/nokia3310-snake" target="_blank">
+                            Live View
+                          </a>
+
+                          <p>
+                            This website is a simple and reusable model for
+                            several purposes, such as projects, portfolio and
+                            events. Built after a process of self-learning of
+                            different web technologies, such as HTML5, CSS3,
+                            responsive development techniques and a little
+                            JavaScript (not much, actually).
+                          </p>
+                        </div>
+                      </div>
+                      <!-- END: THUMBNAIL INNER -->
+                    </div>
+                  </div>
+                  <!-- START: PORTFOLIO ITEM -->
+
+                  <!-- START: PORTFOLIO ITEM -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="portfolio-item">
+                      <!-- START: THUMBNAIL -->
+                      <div class="thumb">
+                        <img src="assets/img/portfolio_template.jpg" alt="" />
+                      </div>
+                      <!-- END: THUMBNAIL -->
+
+                      <!-- START: THUMBNAIL INNER -->
+                      <div class="thumb-inner animate" data-animate="fadeInUp">
+                        <h4>
+                          Simple Responsive Portfolio Template for Different
+                          Purposes
+                        </h4>
+                        <h5>HTML, CSS, JavaScript</h5>
+
+                        <div class="section-inner">
+                          <i class="fa-light fa-code"></i>
+                          <a href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
+                            target="_blank">
+                            GitHub Repository
+                          </a>
+                          <i class="fa-light fa-globe"></i>
+                          <a href="https://learning-webdev.netlify.app/projects/nokia3310-snake" target="_blank">
+                            Live View
+                          </a>
+
+                          <p>
+                            This website is a simple and reusable model for
+                            several purposes, such as projects, portfolio and
+                            events. Built after a process of self-learning of
+                            different web technologies, such as HTML5, CSS3,
+                            responsive development techniques and a little
+                            JavaScript (not much, actually).
+                          </p>
+                        </div>
+                      </div>
+                      <!-- END: THUMBNAIL INNER -->
+                    </div>
+                  </div>
+                  <!-- START: PORTFOLIO ITEM -->
+
+                  <!-- START: PORTFOLIO ITEM -->
+                  <div class="item animate" data-animate="fadeInUp">
+                    <div class="portfolio-item">
+                      <!-- START: THUMBNAIL -->
+                      <div class="thumb">
+                        <img src="assets/img/portfolio_template.jpg" alt="" />
+                      </div>
+                      <!-- END: THUMBNAIL -->
+
+                      <!-- START: THUMBNAIL INNER -->
+                      <div class="thumb-inner animate" data-animate="fadeInUp">
+                        <h4>
+                          Simple Responsive Portfolio Template for Different
+                          Purposes
+                        </h4>
+                        <h5>HTML, CSS, JavaScript</h5>
+
+                        <div class="section-inner">
+                          <i class="fa-light fa-code"></i>
+                          <a href="https://github.com/alexcamargos/LearningHTML_CSS_JS/tree/master/projects/nokia3310-snake"
+                            target="_blank">
+                            GitHub Repository
+                          </a>
+                          <i class="fa-light fa-globe"></i>
+                          <a href="https://learning-webdev.netlify.app/projects/nokia3310-snake" target="_blank">
+                            Live View
+                          </a>
+
+                          <p>
+                            This website is a simple and reusable model for
+                            several purposes, such as projects, portfolio and
+                            events. Built after a process of self-learning of
+                            different web technologies, such as HTML5, CSS3,
+                            responsive development techniques and a little
+                            JavaScript (not much, actually).
+                          </p>
+                        </div>
+                      </div>
+                      <!-- END: THUMBNAIL INNER -->
+                    </div>
+                  </div>
+                  <!-- START: PORTFOLIO ITEM -->
+                </div>
+                <!-- END: PORTFOLIO OWL-CAROUSEL -->
+              </div>
+              <!-- END: PORTFOLIO GALLERY SECTION -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: Portfolio SECTION -->
+
+      <!-- START: CONTACT SECTION -->
+      <div class="section animated-row" data-section="slide05">
+        <div class="section-inner">
+          <div class="row justify-content-center">
+            <div class="col-md-7 wide-col-laptop">
+              <!-- START: CONTACT SECTION TITLE -->
+              <div class="title-block animate" data-animate="fadeInUp">
+                <span>Contact</span>
+                <h2>Get In Touch!</h2>
+              </div>
+              <!-- END: CONTACT SECTION TITLE -->
+
+              <!-- START: CONTACT SECTION -->
+              <div class="contact-section">
+                <div class="row">
+                  <div class="col-md-6 animate" data-animate="fadeInUp">
+                    <div class="contact-box">
+                      <div class="contact-row">
+                        <i class="fa-thin fa-map-location-dot"></i>
+                        Capelinha, Minas Gerais, Brasil
+                      </div>
+
+                      <div class="contact-row">
+                        <i class="fa-thin fa-envelope"></i>
+                        <a href="mailto:alcamargos@vivaldi.net">
+                          alcamargos@vivaldi.net
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 animate" data-animate="fadeInUp">
+                    <!-- START: CONTACT FORM -->
+                    <form id="ajax-contact" method="post" action="#">
+                      <!-- START: INPUT NAME -->
+                      <div class="input-field">
+                        <input type="text" class="form-control" name="name" id="name" required placeholder="Name" />
+                      </div>
+                      <!-- END: INPUT NAME -->
+
+                      <!-- START: INPUT EMAIL -->
+                      <div class="input-field">
+                        <input type="email" class="form-control" name="email" id="email" required placeholder="Email" />
+                      </div>
+                      <!-- END: INPUT EMAIL -->
+
+                      <!-- START: TEXTAREA MESSAGE -->
+                      <div class="input-field">
+                        <textarea class="form-control" name="message" id="message" required
+                          placeholder="Message"></textarea>
+                      </div>
+                      <!-- END: TEXTAREA MESSAGE -->
+
+                      <!-- START: BUTTON SUBMIT -->
+
+                      <button class="btn" type="submit">Submit</button>
+                      <!-- END: BUTTON SUBMIT -->
+                    </form>
+                    <!-- END: CONTACT FORM -->
+
+                    <div id="form-messages" class="mt-3"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- END: CONTACT SECTION -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: CONTACT SECTION -->
 
       <!-- END: FULLPAGE -->
     </div>
@@ -1002,72 +862,44 @@
         <ul class="social-icons">
           <!-- Github -->
           <li>
-            <a
-              href="https://github.com/alexcamargos"
-              target="_blank"
-              title="Github"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+            <a href="https://github.com/alexcamargos" target="_blank" title="Github"><i
+                class="fa-brands fa-github"></i></a>
           </li>
 
           <!-- Linkedin -->
           <li>
-            <a
-              href="https://www.linkedin.com/in/alexcamargos"
-              target="_blank"
-              title="Linkedin"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
+            <a href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="Linkedin"><i
+                class="fa-brands fa-linkedin-in"></i></a>
           </li>
 
           <!-- Twitter -->
           <li>
-            <a
-              href="https://twitter.com/alcamargos"
-              target="_blank"
-              title="Twitter"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
+            <a href="https://twitter.com/alcamargos" target="_blank" title="Twitter"><i
+                class="fa-brands fa-twitter"></i></a>
           </li>
 
           <!-- Instagram -->
           <li>
-            <a
-              href="https://www.instagram.com/alexlopescamargos"
-              target="_blank"
-              title="Instagram"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+            <a href="https://www.instagram.com/alexlopescamargos" target="_blank" title="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
           </li>
 
           <!-- Facebook -->
           <li>
-            <a
-              href="https://www.fb.com/alexcamargos"
-              target="_blank"
-              title="Facebook"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
+            <a href="https://www.fb.com/alexcamargos" target="_blank" title="Facebook"><i
+                class="fa-brands fa-facebook-f"></i></a>
           </li>
 
           <!-- Strava -->
           <li>
-            <a
-              href="https://www.strava.com/athletes/alcamargos"
-              target="_blank"
-              title="Strava"
-              ><i class="fa-brands fa-strava"></i
-            ></a>
+            <a href="https://www.strava.com/athletes/alcamargos" target="_blank" title="Strava"><i
+                class="fa-brands fa-strava"></i></a>
           </li>
 
           <!-- Chess.com -->
           <li>
-            <a
-              href="https://www.chess.com/member/alcamargos"
-              target="_blank"
-              title="Chess.com"
-              ><i class="fa-solid fa-chess"></i
-            ></a>
+            <a href="https://www.chess.com/member/alcamargos" target="_blank" title="Chess.com"><i
+                class="fa-solid fa-chess"></i></a>
           </li>
         </ul>
         <!-- END: SOCIAL MEDIA ITEMS -->
@@ -1076,66 +908,44 @@
     <!-- END: SOCIAL MEDIAS -->
 
     <!-- START: Third-Party JavaScript -->
-    <!-- START: jQuery v3.6.0 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- END: jQuery v3.6.0 -->
+    <!-- START: jjQuery v3.6.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- END: jQuery v3.6.1 -->
 
-    <!-- START: Bootstrap v4.6.1 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"
-      integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- END: Bootstrap v4.6.1 -->
+    <!-- START: Bootstrap  v5.2.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js"
+      integrity="sha512-vyRAVI0IEm6LI/fVSv/Wq/d0KUfrg3hJq2Qz5FlfER69sf3ZHlOrsLriNm49FxnpUGmhx+TaJKwJ+ByTLKT+Yg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- END: Bootstrap  v5.2.1 -->
 
-    <!-- START: fullPage v3.1.2 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
-      integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
+    <!-- START: fullPage 4.0.11 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js"
+      integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"
       integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- END: fullPage v3.1.2 -->
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- END: fullPage 4.0.11 -->
 
     <!-- START: Owl Carousel v2.3.4 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- END: Owl Carousel v2.3.4 -->
 
     <!-- START: protonet-jquery.inview v1.1.2 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
       integrity="sha512-D68mBFX2aQwVh2wV6uCDLmabIveaSQL3uVUo2Ze7VwxIeOcAd4C1/JagkVoObb/NLkYDrdvY3JHK1KOfenHVcA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- END: protonet-jquery.inview v1.1.2 -->
 
-    <!-- START: TypeIt v8.3.3 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.3.3/index.umd.min.js"
-      integrity="sha512-d/eTagostAZ0seMsrK6Z8gHXrbiD8fJsWhJa5Cpgo1bZgsZjoWqh3DYLz4JgCiTD1nsHESS2NQPNc6G8s39BwQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- START: TypeIt v8.7.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.0/index.umd.min.js"
+      integrity="sha512-TP2yhfs2NKscWoIXdL/+vDZPf5dLv0sndur65ZBvsLbwH88mtt5+2LpbAiqKIUfpAZ/5+4kRk83Flt73Tuk2vA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- END: TypeIt v8.3.3 -->
     <!-- END: Third-Party JavaScript -->
 
@@ -1143,5 +953,6 @@
     <script src="assets/javascript/configurations.js"></script>
     <script src="assets/javascript/form.js"></script>
     <!-- END: Additional JavaScript -->
-  </body>
+</body>
+
 </html>
