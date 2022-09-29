@@ -102,6 +102,19 @@ a#logo {
                 opacity: 1;
             }
         }
+
+        #code-fork {
+            display: flex;
+            justify-content: center;
+            line-height: 1.333rem;
+            width: 60%;
+            gap: .333rem;
+        }
+
+        i {
+            font-size: map.get(var.$fs, medium);
+            color: col.$lightest-slate;
+        }
     }
 }
 

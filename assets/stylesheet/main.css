@@ -365,6 +365,17 @@ a#logo:hover {
 .navbar-nav li a:hover {
   opacity: 1;
 }
+.navbar-nav li #code-fork {
+  display: flex;
+  justify-content: center;
+  line-height: 1.333rem;
+  width: 60%;
+  gap: 0.333rem;
+}
+.navbar-nav li i {
+  font-size: 1rem;
+  color: #ccd6f6;
+}
 
 .navbar-nav li a:hover::after,
 .navbar-nav li.active a:after {
