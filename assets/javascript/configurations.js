@@ -210,22 +210,22 @@
         }
         // fullPage.js
         if ($(".fullpage-default").length) {
-            var myFullpage = new fullpage(".fullpage-default", {
+            new fullpage("#fullpage", {
                 licenseKey: "2K99I-6QW27-243I9-9OBK9-KNQMQ",
                 anchors: [
-                    "welcome-box",
-                    "about-me",
+                    "welcome",
+                    "about",
                     "portfolio",
-                    "contact-me"
+                    "contact"
                 ],
                 slidesNavigation: true,
-                navigation: true,
+                navigation: false,
                 navigationPosition: "left",
                 navigationTooltips: [
-                    "welcome-box",
-                    "about-me",
+                    "welcome",
+                    "about",
                     "portfolio",
-                    "contact-me"
+                    "contact"
                 ],
                 menu: "#nav",
                 lazyLoad: true,

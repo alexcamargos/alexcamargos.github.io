@@ -324,6 +324,10 @@ a#logo:hover {
   flex-direction: row;
 }
 .navbar-nav li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.666rem;
   margin-left: 30px;
 }
 .navbar-nav li a {
@@ -331,7 +335,7 @@ a#logo:hover {
   color: #64ffda;
   font-size: 1rem;
   text-decoration: none;
-  opacity: 0.9;
+  opacity: 0.666;
 }
 .navbar-nav li a:after {
   content: "";
@@ -344,7 +348,7 @@ a#logo:hover {
   transform: scale(0);
   margin-top: 2px;
 }
-.navbar-nav li a :hover {
+.navbar-nav li a:hover {
   opacity: 1;
 }
 

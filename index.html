@@ -27,12 +27,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- END: Bootstrap  v5.2.1 -->
 
-  <!-- START: Font Awesome Free v6.1.0 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- END: Font Awesome Free v6.1.0 -->
-
   <!-- START: fullPage 4.0.11 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css"
     integrity="sha512-NGRhMiWY9pf5z8PLens7/u+LLwIPAu1dhJ7u9sHRWIo8TKrVbKiWlRdYRH3pVDCZA10zmobo+PBLGeLOREklBw=="
@@ -80,23 +74,29 @@
             </button>
 
             <!-- START: NAVIGATION ITEMS -->
-            <div class="nav-box navbar-collapse">
+            <div class="section nav-box navbar-collapse">
               <ul class="navigation-menu nav navbar-nav navbars" id="nav">
                 <!-- HOME -->
-                <li data-menuanchor="welcome-box" class="active">
-                  <a href="#welcome-box">Home</a>
+                <li data-menuanchor="welcome" class="active">
+                  <i class="fa-solid fa-house-chimney"></i>
+                  <a href="#welcome">
+                    Home
+                  </a>
                 </li>
                 <!-- ABOUT ME -->
-                <li data-menuanchor="about-me">
-                  <a href="#about-me">About Me</a>
+                <li data-menuanchor="about">
+                  <i class="fa-solid fa-user"></i>
+                  <a href="#about">About Me</a>
                 </li>
                 <!-- PORTFOLIO -->
                 <li data-menuanchor="portfolio">
+                  <i class="fa-solid fa-code"></i>
                   <a href="#portfolio">Portfolio</a>
                 </li>
                 <!-- CONTACT ME -->
-                <li data-menuanchor="contact-me">
-                  <a href="#contact-me">Contact Me</a>
+                <li data-menuanchor="contact">
+                  <i class="fa-regular fa-at"></i>
+                  <a href="#contact">Contact Me</a>
                 </li>
               </ul>
             </div>
@@ -112,7 +112,7 @@
   <!-- START: FULLPAGE -->
   <div id="fullpage" class="fullpage-default">
     <!-- START:  HERO SECTION -->
-    <div class="section animated-row" data-section="welcome-box">
+    <div class="section animated-row" data-section="welcome">
       <div class="section-inner">
         <div class="welcome-box text-left">
           <p class="welcome-first animate" data-animate="fadeInUp">
@@ -143,7 +143,7 @@
     <!-- START:  HERO SECTION -->
 
     <!-- START: ABOUT ME SECTION -->
-    <section class="section animated-row" data-section="about-me">
+    <section class="section animated-row" data-section="about">
       <div class="section-inner">
         <div class="about-section">
           <div class="row justify-content-center">
@@ -582,7 +582,7 @@
     <!-- END: Portfolio SECTION -->
 
     <!-- START: CONTACT SECTION -->
-    <div class="section animated-row" data-section="contact-me">
+    <div class="section animated-row" data-section="contact">
       <div class="section-inner">
         <div class="row justify-content-center">
           <div class="col-md-7 wide-col-laptop">
@@ -713,6 +713,10 @@
     integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- END: fullPage 4.0.11 -->
+
+  <!-- START: Font Awesome Free 6.2.0 -->
+  <script src="https://kit.fontawesome.com/c984e87752.js" crossorigin="anonymous"></script>
+  <!-- END: Font Awesome Free 6.2.0 -->
 
   <!-- START: Owl Carousel v2.3.4 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"

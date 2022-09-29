@@ -55,6 +55,10 @@ a#logo {
     flex-direction: row;
 
     li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .666rem;
         margin-left: 30px;
 
         a {
@@ -63,7 +67,7 @@ a#logo {
             font-size: map.get(var.$fs, medium);
             text-decoration: none;
             font-weight: map.get(var.$fs, normal);
-            opacity: 0.9;
+            opacity: 0.666;
 
             &:after {
                 content: "";
@@ -77,7 +81,7 @@ a#logo {
                 margin-top: 2px;
             }
 
-            :hover {
+            &:hover {
                 opacity: 1;
             }
         }
