@@ -305,11 +305,21 @@ a:hover, a:focus {
 }
 
 a#logo {
-  font-size: 1rem;
-  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  text-decoration: none;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+a#logo:hover:after {
+  content: "AlCamargos";
+  width: 0;
+  height: 2px;
+  background: #64ffda;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
 }
 a#logo:hover {
   color: #e6f1ff;
