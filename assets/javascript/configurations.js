@@ -235,14 +235,15 @@
                 responsiveSlides: true,
             });
         }
+        // Navigation bar
         $(document)
             .on("click", ".navbar-toggle", function () {
                 $(".navbar-collapse").slideToggle(300);
                 return false;
             })
-            .on("click", ".navigation-menu > li > a", function () {
-                $(".navbar-collapse").slideUp(300);
-            })
+            // .on("click", ".navigation-menu > li > a", function () {
+            //     // $(".navbar-collapse").slideUp(300);
+            // })
             .on("click", ".next-section", function () {
                 fullpage_api.moveSectionDown();
             });
