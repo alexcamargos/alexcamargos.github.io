@@ -1,0 +1,56 @@
+// -------------------------------------------------------------------------------------------------
+// Name: |_copyright .scss
+// Version: 0.5
+//
+// Summary: AlCamargos Portfólio
+//         My personal portfolio website built with HTML, CSS and JavaScript.
+//
+// Author: Alexsander Lopes Camargos
+// Author-email: alcamargos@vivaldi.net
+//
+// License: MIT
+// -------------------------------------------------------------------------------------------------
+
+
+@use "sass:map";
+@use "../colors" as col;
+@use "../_variables" as var;
+
+
+#copyright {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 40px;
+    padding: 0;
+    top: 50%;
+    cursor: pointer;
+    z-index: 199;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: col.$light-slate;
+    }
+
+    a {
+        margin: 20px auto;
+        padding: 10px;
+        text-decoration: none;
+        font-family: var.$font_nunito;
+        font-size: map.get(var.$fs, small);
+        letter-spacing: 0.1em;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        color: col.$light-slate;
+
+        &:hover {
+            color: col.$green;
+        }
+    }
+}

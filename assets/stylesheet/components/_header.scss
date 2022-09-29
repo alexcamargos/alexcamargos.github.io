@@ -1,0 +1,100 @@
+// -------------------------------------------------------------------------------------------------
+// Name: _colors;.scss
+// Version: 0.5
+//
+// Summary: AlCamargos Portfólio
+//         My personal portfolio website built with HTML, CSS and JavaScript.
+//
+// Author: Alexsander Lopes Camargos
+// Author-email: alcamargos@vivaldi.net
+//
+// License: MIT
+// -------------------------------------------------------------------------------------------------
+
+@use "sass:map";
+@use "../_colors" as col;
+@use "../_variables" as var;
+
+#path-svg {
+    height: 2rem;
+}
+
+#header {
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+a#logo {
+    font-size: map.get(var.$fs, medium);
+    text-decoration: none;
+    font-weight: map.get(var.$fw, bold);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+    &:hover {
+        color: col.$white;
+    }
+}
+
+// Navigation-bar
+.navbar {
+    padding: 0;
+
+    &-toggle {
+        display: none;
+    }
+}
+
+.navbar-nav {
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    li {
+        margin-left: 30px;
+
+        a {
+            display: block;
+            color: col.$green;
+            font-size: map.get(var.$fs, medium);
+            text-decoration: none;
+            font-weight: map.get(var.$fs, normal);
+            opacity: 0.9;
+
+            &:after {
+                content: "";
+                display: block;
+                height: 3px;
+                background: col.$light-navy;
+                -webkit-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                margin-top: 2px;
+            }
+
+            :hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.navbar-nav li a:hover::after,
+.navbar-nav li.active a:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background: col.$lightest-slate;
+}
+
+.navbar-nav li.active a {
+    opacity: 1;
+}
+
+.collapse:not(.show) {
+    display: block;
+}

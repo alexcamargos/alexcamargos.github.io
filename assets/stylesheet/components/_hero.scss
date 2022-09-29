@@ -1,0 +1,90 @@
+// -------------------------------------------------------------------------------------------------
+// Name: _hero.scss
+// Version: 0.5
+//
+// Summary: AlCamargos Portfólio
+//         My personal portfolio website built with HTML, CSS and JavaScript.
+//
+// Author: Alexsander Lopes Camargos
+// Author-email: alcamargos@vivaldi.net
+//
+// License: MIT
+// -------------------------------------------------------------------------------------------------
+
+@use "sass:map";
+@use "../_colors" as col;
+@use "../_variables" as var;
+
+
+.welcome-box {
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    font-size: map.get(var.$fs, medium);
+    line-height: 1.7;
+    margin: 0px auto 30px;
+    padding-left: 50px;
+}
+
+.welcome-first {
+    font-size: map.get(var.$fs, large);
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.15rem;
+    color: col.$green;
+
+    @media (max-width: 1440px) {
+        font-size: map.get(var.$fs, xxlarge);;
+    }
+}
+
+.welcome-box p {
+    max-width: 620px;
+    width: 100%;
+}
+
+.welcome-title {
+    font-weight: 700;
+    font-size: var.$fs_heading;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    color: col.$lightest-slate;
+}
+
+// TypeIt
+#typing-effect {
+    color: col.$green;
+    text-transform: uppercase;
+}
+
+.welcome-box .btn {
+    margin-top: 10px;
+}
+
+.next-section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: col.$green;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.next-section span {
+    margin-top: 15px;
+    margin-bottom: 3rem;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.next-section i:hover {
+    opacity: 1;
+}

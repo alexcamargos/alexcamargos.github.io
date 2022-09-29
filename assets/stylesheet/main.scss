@@ -1,0 +1,42 @@
+/*
+// -------------------------------------------------------------------------------------------------
+// Name: main.css
+// Version: 0.5
+//
+// Summary: AlCamargos Portfólio
+//         My personal portfolio website built with HTML, CSS and JavaScript.
+//
+// Author: Alexsander Lopes Camargos
+// Author-email: alcamargos@vivaldi.net
+//
+// License: MIT
+// -------------------------------------------------------------------------------------------------
+*/
+
+// Design of the Preloader.
+@import "components/preloader";
+
+// Basic styles.
+@import "components/base";
+@import "components/owl_carousel";
+
+// Design of Header section.
+@import "components/header";
+
+// Design of Hero Section.
+@import "components/hero";
+
+// Design of About Section.
+@import "components/about";
+
+// Design of Portfolio Section.
+@import "components/portfolio";
+
+// Design of Contact Section.
+@import "components/contact";
+
+// Design of Social Section.
+@import "components/social";
+
+// Design of Copyright Section.
+@import "components/copyright";

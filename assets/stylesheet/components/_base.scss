@@ -1,0 +1,225 @@
+// -------------------------------------------------------------------------------------------------
+// Name: _base.scss
+// Version: 0.5
+//
+// Summary: AlCamargos Portfólio
+//         My personal portfolio website built with HTML, CSS and JavaScript.
+//
+// Author: Alexsander Lopes Camargos
+// Author-email: alcamargos@vivaldi.net
+//
+// License: MIT
+// -------------------------------------------------------------------------------------------------
+
+@use "sass:map";
+
+@use "../colors" as col;
+@use "../_variables" as var;
+
+html {
+    -ms-overflow-style: scrollbar;
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var.$font_roboto;
+    font-size: map.get(var.$fs, medium);
+    background: var.$bg_color;
+    color: var.$text_color;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin: 0 0 20px;
+    font-weight: map.get(var.$fw, bold);
+}
+
+h1,
+h2 {
+    font-size: var.$fs_heading;
+}
+
+h3 {
+    font-size: var.$fs_subheading;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: map.get(var.$fs, medium);
+    font-weight: 600;
+}
+
+h5 {
+    font-size: map.get(var.$fs, small);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: map.get(var.$fs, xsmall);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    color: col.$green;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        &:active {
+            background-color: transparent;
+        }
+    }
+}
+
+#main {
+    padding: 0;
+}
+
+#fullpage {
+    z-index: 99;
+}
+
+#fp-nav ul li a span {
+    display: none;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.opacity-no {
+    opacity: 1 !important;
+}
+
+.fp-scrollable {
+    height: calc(100vh - 200px) !important;
+}
+
+.alltrans,
+.social-icons li a,
+.owl-nav > button,
+.owl-nav > button:after,
+.counter-box,
+.about-img:after,
+.gallery-img img,
+.form-control,
+.owl-dot,
+.subscribe-row,
+.close-btn,
+.close-btn:before,
+.close-btn:after,
+.tag-btn,
+.btn {
+    -webkit-transition: var.$transition;
+    transition: var.$transition;
+}
+
+.wrapper-background-dark:after {
+    background: col.$slate;
+    opacity: 0.95;
+}
+
+.section-inner {
+    padding: 20px 30px 0;
+    text-align: left;
+}
+
+.container-fluid {
+    padding: 0 20px;
+}
+
+
+// Sections titles.
+.title-block h2 {
+    position: relative;
+    color: col.$light-slate;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 400px;
+        height: 3px;
+        color: col.$lightest-slate;
+    }
+
+}
+
+.title-block #title-after::before {
+    background: col.$white;
+}
+
+.btn {
+    background: col.$light-navy !important;
+    color: col.$green !important;
+    font-weight: map.get(var.$fw, medium) !important;
+    text-align: center;
+    line-height: 52px;
+    padding: 0 35px;
+
+    &:hover,
+    &:focus {
+        background: col.$lightest-navy !important;
+        color: col.$white !important;
+        border-radius: 0.5rem !important;
+    }
+
+    &-outline {
+        border: 2px solid col.$green !important;
+
+        &:hover,
+        &:focus {
+            border-radius: 0.75rem !important;
+        }
+    }
+
+    &-dark {
+        background-color: col.$navy !important;
+        color: col.$lightest-slate !important;
+
+        &:hover,
+        &:focus {
+            color: col.$light-slate !important;
+        }
+    }
+
+    &-large {
+        line-height: 34px;
+        font-size: 12px;
+        padding: 0 20px;
+    }
+}

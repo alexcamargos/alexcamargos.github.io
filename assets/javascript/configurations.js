@@ -211,7 +211,7 @@
         // fullPage.js
         if ($(".fullpage-default").length) {
             var myFullpage = new fullpage(".fullpage-default", {
-                licenseKey: "C7F41B00-5E824594-9A5EFB99-B556A3D5",
+                licenseKey: "2K99I-6QW27-243I9-9OBK9-KNQMQ",
                 anchors: [
                     "welcome-box",
                     "about-me",

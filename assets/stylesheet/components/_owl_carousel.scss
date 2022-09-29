@@ -1,0 +1,36 @@
+// -------------------------------------------------------------------------------------------------
+// Name: owl_carousel.scss
+// Version: 0.5
+//
+// Summary: AlCamargos Portfólio
+//         My personal portfolio website built with HTML, CSS and JavaScript.
+//
+// Author: Alexsander Lopes Camargos
+// Author-email: alcamargos@vivaldi.net
+//
+// License: MIT
+// -------------------------------------------------------------------------------------------------
+
+%display-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// Overwriting styles for control arrows for slides
+.controlArrow.prev {
+    left: 50px;
+}
+.controlArrow.next {
+    right: 50px;
+}
+
+.owl-carousel .owl-stage {
+    @extend %display-flex;
+}
+
+.owl-carousel .owl-item {
+    @extend %display-flex;
+    flex: 1 0 auto;
+}
