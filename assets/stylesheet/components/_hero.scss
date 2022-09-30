@@ -96,8 +96,12 @@
         margin-bottom: 0.333rem;
         display: block;
         text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 500;
+        font-size: map.get(var.$fs, xsmall);
+        font-weight: map.get(var.$fw, medium);
+
+        @media only screen and (max-width: map.get(var.$breakpoint, small)) {
+            font-size: map.get(var.$fs, xxsmall);
+        }
     }
 
     i:hover {

@@ -479,8 +479,13 @@ a#logo:hover {
   margin-bottom: 0.333rem;
   display: block;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .next-section span {
+    font-size: 0.75rem;
+  }
 }
 .next-section i:hover {
   opacity: 1;
@@ -656,7 +661,7 @@ a#logo:hover {
   cursor: pointer;
   z-index: 199;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   #copyright {
     position: fixed;
     display: flex;
@@ -668,7 +673,7 @@ a#logo:hover {
     justify-content: center;
   }
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   #copyright::after {
     content: "";
     display: block;
@@ -687,10 +692,15 @@ a#logo:hover {
   letter-spacing: 0.1em;
   color: #a8b2d1;
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   #copyright a {
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #copyright a {
+    font-size: 0.4995rem;
   }
 }
 #copyright a:hover {
