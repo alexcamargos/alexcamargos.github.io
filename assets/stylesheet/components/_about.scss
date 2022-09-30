@@ -12,7 +12,6 @@
 // -------------------------------------------------------------------------------------------------
 
 @use "sass:map";
-
 @use "../colors" as col;
 @use "../_variables" as var;
 
@@ -23,17 +22,17 @@
     border-radius: 2rem;
 
     img {
-        width: 80%;
+        width: 50%;
     }
 
     &::after {
         content: "";
         display: block;
         position: absolute;
-        width: 80%;
+        width: 50%;
         height: 100%;
-        top: 15px;
-        left: 15px;
+        top: 10px;
+        left: 10px;
         border: 2px solid col.$green;
         z-index: -1;
 
@@ -46,16 +45,4 @@
 .about-contentbox {
     margin-top: 40px;
     text-align: left;
-
-    span {
-        font-size: 24px;
-        text-transform: uppercase;
-        font-weight: 300;
-    }
-
-    h2 {
-        font-size: 32px;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
 }

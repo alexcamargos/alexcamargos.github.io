@@ -11,7 +11,6 @@
 // License: MIT
 // -------------------------------------------------------------------------------------------------
 
-
 @use "sass:map";
 @use "_colors" as col;
 
@@ -55,16 +54,14 @@ $fw: (
     bold: 700,
 );
 
-// Colors definitions.
-$bg_color: col.$navy;
-$bg_color_alt: col.$light-navy;
-
-$text_color: col.$slate;
-$text_color_alt: col.$light-slate;
-
 // Transition definitions.
 $transition: all 0.4s ease;
 
-// SHADOW
+// Shadow
 $base-shadow-color: rgba(0, 0, 0, 0.333);
 $default-shadow: 0.5rem 1rem 2rem $base-shadow-color;
+
+// Margin and padding definitions.
+$margin: 0 0 20px;
+$title_margin: $margin;
+$subtitle_margin: 0 0 10px;

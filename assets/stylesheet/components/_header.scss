@@ -25,7 +25,6 @@
     width: 100%;
     height: 50px;
     text-align: center;
-
     padding: 20px 0;
     left: 0;
     right: 0;
@@ -35,12 +34,18 @@
 
 a#logo {
     display: flex;
-    gap: 1rem;
-    font-size: map.get(var.$fs, large);
+    gap: .5rem;
+    font-size: map.get(var.$fs, xsmall);
     font-weight: map.get(var.$fw, bold);
     text-decoration: none;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: var.$transition;
+    transition: var.$transition;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        &:active {
+            background-color: transparent;
+        }
+    }
 
     &:hover:after {
         content: "AlCamargos";
@@ -74,28 +79,27 @@ a#logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 0.666rem;
-        margin-left: 30px;
+        gap: 0.333rem;
+        margin-left: 20px;
 
         a {
             display: block;
             color: col.$green;
-            font-size: map.get(var.$fs, medium);
+            font-size: map.get(var.$fs, xxsmall);
             font-weight: map.get(var.$fs, normal);
             text-decoration: none;
-
             opacity: 0.666;
 
             &:after {
                 content: "";
                 display: block;
                 height: 3px;
+                margin-top: 2px;
                 background: col.$light-navy;
-                -webkit-transition: all 0.4s ease;
-                transition: all 0.4s ease;
+                -webkit-transition: var.$transition;
+                transition: var.$transition;
                 -webkit-transform: scale(0);
                 transform: scale(0);
-                margin-top: 2px;
             }
 
             &:hover {
@@ -112,7 +116,7 @@ a#logo {
         }
 
         i {
-            font-size: map.get(var.$fs, medium);
+            font-size: map.get(var.$fs, xsmall);
             color: col.$lightest-slate;
         }
     }

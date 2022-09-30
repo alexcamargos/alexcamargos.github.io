@@ -11,11 +11,9 @@
 // License: MIT
 // -------------------------------------------------------------------------------------------------
 
-
 @use "sass:map";
 @use "../colors" as col;
 @use "../_variables" as var;
-
 
 #copyright {
     position: fixed;
@@ -29,13 +27,28 @@
     cursor: pointer;
     z-index: 199;
 
+
+    @media only screen and (max-width: 767px) {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        top: 95%;
+        bottom: 0 !important;
+        justify-content: center;
+    }
+
+
     &::after {
-        content: "";
-        display: block;
-        width: 1px;
-        height: 90px;
-        margin: 0px auto;
-        background-color: col.$light-slate;
+        @media only screen and (min-width: 767px) {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 90px;
+            margin: 0px auto;
+            background-color: col.$light-slate;
+        }
     }
 
     a {
@@ -43,11 +56,14 @@
         padding: 10px;
         text-decoration: none;
         font-family: var.$font_nunito;
-        font-size: map.get(var.$fs, small);
+        font-size: map.get(var.$fs, xxsmall);
         letter-spacing: 0.1em;
-        -webkit-writing-mode: vertical-rl;
-        writing-mode: vertical-rl;
         color: col.$light-slate;
+
+        @media only screen and (min-width: 767px) {
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+        }
 
         &:hover {
             color: col.$green;

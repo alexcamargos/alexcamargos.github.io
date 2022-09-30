@@ -14,24 +14,6 @@
 @use "../colors" as col;
 @use "../_variables" as var;
 
-
-.contact-box {
-    text-align: left;
-
-    h4 {
-        font-size: 24px;
-
-        &:after {
-            content: "";
-            display: block;
-            width: 50px;
-            height: 2px;
-            background: col.$white;
-            margin: 12px 0;
-        }
-    }
-}
-
 .contact-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -46,14 +28,4 @@
     border-radius: 10px;
     padding: 30px;
     font-weight: 700;
-
-    i {
-        width: 55px;
-        font-size: 30px;
-        display: block;
-    }
-}
-
-.contact-row i.fa-envelope {
-    font-size: 25px;
 }
