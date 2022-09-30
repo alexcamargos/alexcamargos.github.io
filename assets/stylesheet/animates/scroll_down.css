@@ -44,7 +44,7 @@
 }
 
 .scroll-down-icon-animate:before {
-    left: 0;
+    /* left: 0; */
     transform: skew(0deg, 30deg);
 }
 
