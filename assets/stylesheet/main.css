@@ -513,6 +513,15 @@ a#logo:hover {
   opacity: 1;
 }
 
+.about-wrapper p {
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+}
+
 .about-img {
   margin: 0 auto 40px;
   position: relative;
