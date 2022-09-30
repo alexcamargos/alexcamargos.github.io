@@ -312,6 +312,11 @@ a#logo {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+@media only screen and (max-width: 575px) {
+  a#logo {
+    display: none;
+  }
+}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   a#logo:active {
     background-color: transparent;
@@ -325,12 +330,23 @@ a#logo:hover:after {
   -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 }
+@media only screen and (max-width: 768px) {
+  a#logo:hover:after {
+    content: "";
+  }
+}
 a#logo:hover {
   color: #e6f1ff;
 }
 
 .navbar {
+  margin-right: 100px;
   padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    margin-right: 50px;
+  }
 }
 .navbar-toggle {
   display: none;
@@ -355,6 +371,11 @@ a#logo:hover {
   text-decoration: none;
   opacity: 0.666;
 }
+@media only screen and (min-width: 768px) {
+  .navbar-nav li a {
+    font-size: 1.5rem;
+  }
+}
 .navbar-nav li a:after {
   content: "";
   display: block;
@@ -375,6 +396,7 @@ a#logo:hover {
   line-height: 1.333rem;
   width: 60%;
   gap: 0.333rem;
+  margin-left: 50px;
 }
 .navbar-nav li i {
   font-size: 1rem;

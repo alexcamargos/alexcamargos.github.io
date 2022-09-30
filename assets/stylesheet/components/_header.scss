@@ -41,6 +41,10 @@ a#logo {
     -webkit-transition: var.$transition;
     transition: var.$transition;
 
+    @media only screen and (max-width: map.get(var.$breakpoint, xsmall)) {
+        display: none;
+    }
+
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         &:active {
             background-color: transparent;
@@ -54,6 +58,10 @@ a#logo {
         background: col.$green;
         -webkit-transition: width 0.4s ease;
         transition: width 0.4s ease;
+
+        @media only screen and (max-width: map.get(var.$breakpoint, small)) {
+            content: "";
+        }
     }
 
     &:hover {
@@ -63,7 +71,12 @@ a#logo {
 
 // Navigation-bar
 .navbar {
+    margin-right: 100px;
     padding: 0;
+
+    @media only screen and (max-width: map.get(var.$breakpoint, small)) {
+        margin-right: 50px;
+    }
 
     &-toggle {
         display: none;
@@ -90,6 +103,10 @@ a#logo {
             text-decoration: none;
             opacity: 0.666;
 
+            @media only screen and (min-width: map.get(var.$breakpoint, small)) {
+                font-size: map.get(var.$fs, small);
+            }
+
             &:after {
                 content: "";
                 display: block;
@@ -113,6 +130,7 @@ a#logo {
             line-height: 1.333rem;
             width: 60%;
             gap: .333rem;
+            margin-left: 50px;
         }
 
         i {
