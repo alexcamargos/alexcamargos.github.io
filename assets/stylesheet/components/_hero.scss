@@ -15,6 +15,22 @@
 @use "../_colors" as col;
 @use "../_variables" as var;
 
+.welcome-box .welcome-title {
+    font-weight: map.get(var.$fw, bold);
+    font-size: clamp(map.get(var.$fs, xxsmall), -0.0656rem + 4.0778vw, map.get(var.$fs, xxlarge));
+    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
+    color: col.$lightest-slate;
+
+    @media only screen and (min-width: map.get(var.$breakpoint, medium)) {
+        letter-spacing: 0.125rem;
+    }
+
+    @media only screen and (min-width: map.get(var.$breakpoint, xlarge)) {
+        letter-spacing: 0.222rem;
+    }
+}
+
 .welcome-box {
     flex-direction: column;
     align-items: center;
@@ -24,38 +40,38 @@
     line-height: 1.666;
     margin: 0px auto 30px;
     padding-left: 50px;
+
+    p {
+        width: 100%;
+        max-width: map.get(var.$breakpoint, medium);
+        font-size: clamp(map.get(var.$fs, xxsmall), -0.0656rem + 4.0778vw, map.get(var.$fs, xxlarge));
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
 }
 
 .welcome-first {
-    font-size: map.get(var.$fs, small);
     display: block;
+    font-size: clamp(map.get(var.$fs, xxsmall), -0.0656rem + 4.0778vw, map.get(var.$fs, xxlarge));
     font-weight: map.get(var.$fw, normal);
     line-height: 1.2;
     letter-spacing: 0.1rem;
     color: col.$green;
-}
 
-.welcome-box p {
-    max-width: 620px;
-    width: 100%;
-}
+    @media only screen and (min-width: map.get(var.$breakpoint, medium)) {
+        letter-spacing: 0.2rem;
+    }
 
-.welcome-title {
-    font-weight: map.get(var.$fw, bold);
-    font-size: map.get(var.$fs, small);
-    margin-bottom: 10px;
-    letter-spacing: 0.1rem;
-    color: col.$lightest-slate;
+    @media only screen and (min-width: map.get(var.$breakpoint, xlarge)) {
+        letter-spacing: 0.222rem;
+    }
 }
 
 // TypeIt
 #typing-effect {
     color: col.$green;
-    text-transform: uppercase;
-}
-
-.welcome-box .btn {
-    margin-top: 10px;
 }
 
 .next-section {
@@ -68,23 +84,23 @@
     left: 0;
     color: col.$green;
     cursor: pointer;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: var.$transition;
+    transition: var.$transition;
 
-    @media only screen and (min-width: 767px) {
+    @media only screen and (min-width: map.get(var.$breakpoint, small)) {
         bottom: 0;
     }
-}
 
-.next-section span {
-    margin-top: 1.666rem;
-    margin-bottom: 0.333rem;
-    display: block;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
-}
+    span {
+        margin-top: 1.666rem;
+        margin-bottom: 0.333rem;
+        display: block;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+    }
 
-.next-section i:hover {
-    opacity: 1;
+    i:hover {
+        opacity: 1;
+    }
 }

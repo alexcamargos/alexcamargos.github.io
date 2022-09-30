@@ -396,6 +396,24 @@ a#logo:hover {
   display: block;
 }
 
+.welcome-box .welcome-title {
+  font-weight: 700;
+  font-size: clamp(0.75rem, -0.0656rem + 4.0778vw, 3.5rem);
+  margin-bottom: 10px;
+  letter-spacing: 0.1rem;
+  color: #ccd6f6;
+}
+@media only screen and (min-width: 991px) {
+  .welcome-box .welcome-title {
+    letter-spacing: 0.125rem;
+  }
+}
+@media only screen and (min-width: 1199px) {
+  .welcome-box .welcome-title {
+    letter-spacing: 0.222rem;
+  }
+}
+
 .welcome-box {
   flex-direction: column;
   align-items: center;
@@ -406,36 +424,36 @@ a#logo:hover {
   margin: 0px auto 30px;
   padding-left: 50px;
 }
+.welcome-box p {
+  width: 100%;
+  max-width: 991px;
+  font-size: clamp(0.75rem, -0.0656rem + 4.0778vw, 3.5rem);
+}
+.welcome-box .btn {
+  margin-top: 10px;
+}
 
 .welcome-first {
-  font-size: 1.5rem;
   display: block;
+  font-size: clamp(0.75rem, -0.0656rem + 4.0778vw, 3.5rem);
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.1rem;
   color: #64ffda;
 }
-
-.welcome-box p {
-  max-width: 620px;
-  width: 100%;
+@media only screen and (min-width: 991px) {
+  .welcome-first {
+    letter-spacing: 0.2rem;
+  }
 }
-
-.welcome-title {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  letter-spacing: 0.1rem;
-  color: #ccd6f6;
+@media only screen and (min-width: 1199px) {
+  .welcome-first {
+    letter-spacing: 0.222rem;
+  }
 }
 
 #typing-effect {
   color: #64ffda;
-  text-transform: uppercase;
-}
-
-.welcome-box .btn {
-  margin-top: 10px;
 }
 
 .next-section {
@@ -448,15 +466,14 @@ a#logo:hover {
   left: 0;
   color: #64ffda;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .next-section {
     bottom: 0;
   }
 }
-
 .next-section span {
   margin-top: 1.666rem;
   margin-bottom: 0.333rem;
@@ -465,7 +482,6 @@ a#logo:hover {
   font-size: 14px;
   font-weight: 500;
 }
-
 .next-section i:hover {
   opacity: 1;
 }

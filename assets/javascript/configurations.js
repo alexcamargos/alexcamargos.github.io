@@ -201,7 +201,7 @@
                 })
                 .pause(2000)
                 .delete(20)
-                .type("Junior full stack develope.", {
+                .type("junior full stack develope.", {
                     delay: 300,
                 })
                 .pause(8000)
