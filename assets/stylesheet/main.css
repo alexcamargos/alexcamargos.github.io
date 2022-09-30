@@ -91,7 +91,7 @@ body {
 
 body {
   font-family: "roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   background: #0a192f;
   color: #8892b0;
   text-align: center;
@@ -110,27 +110,27 @@ h6 {
 
 h1,
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-h4 {
   font-size: 1rem;
   font-weight: 600;
 }
 
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 h5 {
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 h6 {
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -307,7 +307,7 @@ a:hover, a:focus {
 a#logo {
   display: flex;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: all 0.4s ease;
@@ -347,7 +347,7 @@ a#logo:hover {
 .navbar-nav li a {
   display: block;
   color: #64ffda;
-  font-size: 1rem;
+  font-size: 2rem;
   text-decoration: none;
   opacity: 0.666;
 }
@@ -373,7 +373,7 @@ a#logo:hover {
   gap: 0.333rem;
 }
 .navbar-nav li i {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #ccd6f6;
 }
 
@@ -397,14 +397,14 @@ a#logo:hover {
   align-items: center;
   align-content: flex-start;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 1.7;
   margin: 0px auto 30px;
   padding-left: 50px;
 }
 
 .welcome-first {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   display: block;
   font-weight: 400;
   line-height: 1.2;
@@ -413,7 +413,7 @@ a#logo:hover {
 }
 @media (max-width: 1440px) {
   .welcome-first {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -424,7 +424,7 @@ a#logo:hover {
 
 .welcome-title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   letter-spacing: 0.2rem;
   color: #ccd6f6;
@@ -678,7 +678,7 @@ a#logo:hover {
   padding: 10px;
   text-decoration: none;
   font-family: "nunito", sans-serif;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1em;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
