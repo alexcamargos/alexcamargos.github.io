@@ -591,6 +591,11 @@ a#logo:hover {
   right: 0;
   z-index: 199;
 }
+@media only screen and (max-width: 768px) {
+  #social-icons {
+    display: none;
+  }
+}
 #social-icons ul {
   display: inline-flex;
   flex-direction: column;
