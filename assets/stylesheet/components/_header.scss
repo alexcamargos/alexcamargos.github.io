@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------------------------------
-// Name: _colors;.scss
+// Name: _header.scss
 // Version: 0.5
 //
 // Summary: AlCamargos Portfólio
@@ -34,7 +34,7 @@
 
 a#logo {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
     font-size: map.get(var.$fs, xsmall);
     font-weight: map.get(var.$fw, bold);
     text-decoration: none;
@@ -129,13 +129,21 @@ a#logo {
             justify-content: center;
             line-height: 1.333rem;
             width: 60%;
-            gap: .333rem;
+            gap: 0.333rem;
             margin-left: 50px;
+
+            i {
+                font-size: map.get(var.$fs, xsmall);
+            }
         }
 
         i {
             font-size: map.get(var.$fs, xsmall);
             color: col.$lightest-slate;
+
+            @media only screen and (min-width: map.get(var.$breakpoint, small)) {
+                font-size: map.get(var.$fs, small);
+            }
         }
     }
 }

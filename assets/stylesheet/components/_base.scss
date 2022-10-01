@@ -172,11 +172,10 @@ a {
         content: "";
         position: absolute;
         bottom: 0;
-        width: 400px;
+        width: clamp(5rem, 15rem + 15vw, 25rem);
         height: 3px;
         color: col.$lightest-slate;
     }
-
 }
 
 .title-block #title-after::before {

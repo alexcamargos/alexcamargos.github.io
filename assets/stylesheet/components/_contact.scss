@@ -11,21 +11,21 @@
 // License: MIT
 // -------------------------------------------------------------------------------------------------
 
+@use "sass:map";
 @use "../colors" as col;
 @use "../_variables" as var;
 
-.contact-row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 30px;
-    background: rgba(250, 250, 250, 0.25);
-    border-radius: 10px;
-    padding: 30px;
-    font-weight: 700;
+.contact-section {
+
+    p {
+        font-size: map.get(var.$fs, xsmall);
+
+        @media only screen and (max-width: map.get(var.$breakpoint, xsmall)) {
+            font-size: map.get(var.$fs, xxsmall);
+        }
+    }
+
+    .contact-wrapper {
+        max-width: 80%;
+    }
 }

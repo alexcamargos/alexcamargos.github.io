@@ -1,18 +1,3 @@
-@charset "UTF-8";
-/*
-// -------------------------------------------------------------------------------------------------
-// Name: main.css
-// Version: 0.5
-//
-// Summary: AlCamargos Portfólio
-//         My personal portfolio website built with HTML, CSS and JavaScript.
-//
-// Author: Alexsander Lopes Camargos
-// Author-email: alcamargos@vivaldi.net
-//
-// License: MIT
-// -------------------------------------------------------------------------------------------------
-*/
 .preloader {
   background: -moz-linear-gradient(top, #0a192f, 0%, #112240, 100%);
   background: -webkit-linear-gradient(top, #0a192f, 0%, #112240, 100%);
@@ -226,7 +211,7 @@ a:hover, a:focus {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 400px;
+  width: clamp(5rem, 15rem + 15vw, 25rem);
   height: 3px;
   color: #ccd6f6;
 }
@@ -398,9 +383,17 @@ a#logo:hover {
   gap: 0.333rem;
   margin-left: 50px;
 }
+.navbar-nav li #code-fork i {
+  font-size: 1rem;
+}
 .navbar-nav li i {
   font-size: 1rem;
   color: #ccd6f6;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-nav li i {
+    font-size: 1.5rem;
+  }
 }
 
 .navbar-nav li a:hover::after,
@@ -514,7 +507,12 @@ a#logo:hover {
 }
 
 .about-wrapper p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 575px) {
+  .about-wrapper p {
+    font-size: 0.75rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .about-wrapper {
@@ -531,7 +529,12 @@ a#logo:hover {
 .about-img img {
   width: 50%;
 }
-.about-img::after {
+@media only screen and (min-width: 768px) {
+  .about-img img {
+    width: 70%;
+  }
+}
+.about-img:after {
   content: "";
   display: block;
   position: absolute;
@@ -540,10 +543,13 @@ a#logo:hover {
   top: 10px;
   left: 10px;
   border: 2px solid #64ffda;
+  border-radius: 5px;
   z-index: -1;
 }
-.about-img::after:hover {
-  border: 1px solid #64ffda;
+@media only screen and (min-width: 768px) {
+  .about-img:after {
+    width: 70%;
+  }
 }
 
 .about-contentbox {
@@ -619,20 +625,16 @@ a#logo:hover {
   color: #e6f1ff;
 }
 
-.contact-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-  background: rgba(250, 250, 250, 0.25);
-  border-radius: 10px;
-  padding: 30px;
-  font-weight: 700;
+.contact-section p {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 575px) {
+  .contact-section p {
+    font-size: 0.75rem;
+  }
+}
+.contact-section .contact-wrapper {
+  max-width: 80%;
 }
 
 #social-icons {

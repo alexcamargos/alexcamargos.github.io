@@ -18,7 +18,11 @@
 .about-wrapper {
 
     p {
-        font-size: map.get(var.$fs, small);
+        font-size: map.get(var.$fs, xsmall);
+
+        @media only screen and (max-width: map.get(var.$breakpoint, xsmall)) {
+            font-size: map.get(var.$fs, xxsmall);
+        }
     }
 
     @media only screen and (max-width: map.get(var.$breakpoint, small)) {
@@ -34,9 +38,13 @@
 
     img {
         width: 50%;
+
+        @media only screen and (min-width: map.get(var.$breakpoint, small)) {
+            width: 70%;
+        }
     }
 
-    &::after {
+    &:after {
         content: "";
         display: block;
         position: absolute;
@@ -45,10 +53,12 @@
         top: 10px;
         left: 10px;
         border: 2px solid col.$green;
+        border-radius: 5px;
         z-index: -1;
 
-        &:hover {
-            border: 1px solid col.$green;
+
+        @media only screen and (min-width: map.get(var.$breakpoint, small)) {
+            width: 70%;
         }
     }
 }
