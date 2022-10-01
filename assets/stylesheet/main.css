@@ -287,6 +287,14 @@ a:hover, a:focus {
   top: 0;
   z-index: 999;
 }
+@media only screen and (max-width: 575px) {
+  #header .header-warper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 a#logo {
   display: flex;
@@ -349,6 +357,12 @@ a#logo:hover {
   gap: 0.333rem;
   margin-left: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .navbar-nav li {
+    margin-left: 5px;
+    gap: 10px;
+  }
+}
 .navbar-nav li a {
   display: block;
   color: #64ffda;
@@ -382,6 +396,21 @@ a#logo:hover {
   width: 60%;
   gap: 0.333rem;
   margin-left: 50px;
+}
+@media only screen and (max-width: 575px) {
+  .navbar-nav li #code-fork {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-nav li #code-fork {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-nav li #code-fork a {
+    margin-left: 10px;
+  }
 }
 .navbar-nav li #code-fork i {
   font-size: 1rem;

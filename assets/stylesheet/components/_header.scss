@@ -30,6 +30,15 @@
     right: 0;
     top: 0;
     z-index: 999;
+
+    @media only screen and (max-width: map.get(var.$breakpoint, xsmall)) {
+        .header-warper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 a#logo {
@@ -95,6 +104,11 @@ a#logo {
         gap: 0.333rem;
         margin-left: 20px;
 
+        @media only screen and (max-width: map.get(var.$breakpoint, small)) {
+            margin-left: 5px;
+            gap: 10px;
+        }
+
         a {
             display: block;
             color: col.$green;
@@ -131,6 +145,20 @@ a#logo {
             width: 60%;
             gap: 0.333rem;
             margin-left: 50px;
+
+            @media only screen and (max-width: map.get(var.$breakpoint, xsmall)) {
+                display: none;
+            }
+
+            @media only screen and (max-width: map.get(var.$breakpoint, small)) {
+                margin-left: 10px;
+            }
+
+            @media only screen and (max-width: map.get(var.$breakpoint, small)) {
+                a {
+                    margin-left: 10px;
+                }
+            }
 
             i {
                 font-size: map.get(var.$fs, xsmall);
