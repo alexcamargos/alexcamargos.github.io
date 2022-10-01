@@ -27,7 +27,7 @@ new TypeIt("#typing-effect",
     .delete(8)
     .type("data analyst.", { delay: 300, })
     .pause(2000)
-    .delete(12)
+    .delete(13)
     .type("developer.", { delay: 300, })
     .pause(2000)
     .delete(10)
@@ -39,5 +39,5 @@ new TypeIt("#typing-effect",
     .delete(20)
     .type("junior full stack developer.", { delay: 300, })
     .pause(8000)
-    .delete(27)
+    .delete(28)
     .go();
