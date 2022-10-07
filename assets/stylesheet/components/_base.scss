@@ -36,6 +36,9 @@ body {
     background: col.$bg;
     color: col.$text;
     text-align: center;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
 h1,
