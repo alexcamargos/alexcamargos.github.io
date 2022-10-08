@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full scroll-smooth bg-navy antialiased [font-feature-settings:'ss01'] js-focus-visible">
 
 <head>
   <meta charset="utf-8" />
@@ -26,99 +26,177 @@
   <link rel="stylesheet" href="assets/stylesheet/tailwind.css">
 
   <!-- START: Owl Carousel v2.3.4 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <!-- END: Owl Carousel v2.3.4 -->
   <!-- END: Third-party Stylesheets -->
 
   <!-- START: Stylesheets -->
   <link rel="stylesheet" href="assets/stylesheet/main.css" />
 
-  <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css" />
+  <!-- <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css" />
   <link rel="stylesheet" href="assets/stylesheet/animates/aminate.min.css" />
-  <link rel="stylesheet" href="assets/stylesheet/animates/waving-hand-animation.css" />
+  <link rel="stylesheet" href="assets/stylesheet/animates/waving-hand-animation.css" /> -->
   <!-- END: Stylesheets -->
 </head>
 
-<body>
+<body class="flex h-full flex-col">
+  <!-- START: Main Page Container -->
+  <div id="container">
 
-  <!-- START: Header -->
-  <header>
-    <!-- START: Header Container -->
-    <div class="header-container">
+    <!-- START: Header -->
+    <header class="py-4">
+      <!-- START: Header Container -->
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 font-nunito">
+        <!-- START: Navigation Bar -->
+        <div class="relative z-50 flex justify-between items-center">
+          <!-- START: Navigation Bar Container -->
+          <div class="navigation-bar_container">
+            <!-- START: Title -->
+            <div class="flex items-center md:gap-x-12">
+              <a class="inline-block rounded-lg py-1 px-2 sm:text-base md:text-lg text-slate hover:text-green"
+                href="https://alcamargos.me/" id="logo" title="Alexsander Lopes Camargos">
+                <i class="fa-solid fa-terminal text-green"></i>
+              </a>
+            </div>
+          </div>
+          <!-- END: Title -->
 
-    </div>
-    <!-- END: Header Container -->
-  </header>
-  <!-- END: Header -->
+          <!-- START: Navigation Bar Menu -->
+          <div class="navigation-bar_menu">
+            <nav class="relative z-50 flex justify-between">
+              <!-- START: Navigation Bar Menu Itens -->
+              <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                  <ul class="flex items-center md:gap-x-12">
+                    <!-- Home -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center  rounded-lg py-1 px-2 sm:text-sm md:text-base text-slate hover:text-green sm:gap-x-2 md:gap-x-4"
+                        href="#hero" accesskey="h" tabindex="1">
+                        <i class="fa-solid fa-house-chimney text-green"></i>
+                        Home
+                      </a>
+                    </li>
 
-  <!-- START: Main -->
-  <main>
-    <!-- START: Main Container -->
-    <div class="main-container">
+                    <!-- About -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center rounded-lg py-1 px-2 sm:text-sm md:text-base text-slate hover:text-green sm:gap-x-2 md:gap-x-4"
+                        href="#about" accesskey="a" tabindex="2">
+                        <i class="fa-solid fa-user text-green"></i>
+                        About
+                      </a>
+                    </li>
 
-      <!-- START: Hero Section -->
-      <section id="hero">
-        <!-- START: Hero Container -->
-        <div class="hero-container">
+                    <!-- Portfolio -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center rounded-lg py-1 px-2 sm:text-sm md:text-base text-slate hover:text-green sm:gap-x-2 md:gap-x-4"
+                        href="#portfolio" accesskey="p" tabindex="33">
+                        <i class="fa-solid fa-code text-green"></i>
+                        Portfolio
+                      </a>
+                    </li>
 
+                    <!-- Contact -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center rounded-lg py-1 px-2 sm:text-sm md:text-base text-slate hover:text-green sm:gap-x-2 md:gap-x-4"
+                        href="#contact" accesskey="c" tabindex="4">
+                        <i class="fa-regular fa-at text-green"></i>
+                        Contact
+                      </a>
+                    </li>
+                    <!-- Fork on GitHub -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center rounded-lg py-1 px-2 text-sm text-green hover:text-light sm:gap-x-2 md:gap-x-4est-slate"
+                        href="https://github.com/alexcamargos/alexcamargos.github.io" target="_blank" accesskey="f"
+                        tabindex="5">
+                        <i class="fa-solid fa-code-fork "></i>
+                        <i class="fa-solid fa-star"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- END: Navigation Bar Menu Itens -->
+                </div>
+              </div>
+
+            </nav>
+          </div>
+          <!-- END: Navigation Bar Container -->
         </div>
-        <!-- END: Hero Container -->
-      </section>
-      <!-- END: Hero Section -->
+        <!-- END: Navigation Bar -->
+      </div>
+      <!-- END: Header Container -->
+    </header>
+    <!-- END: Header -->
 
-      <!-- START: About Section -->
-      <section id="about">
-        <!-- START: About Container -->
-        <div class="about-container">
+    <!-- START: Main -->
+    <main>
+      <!-- START: Main Container -->
+      <div class="main-container">
 
-        </div>
-        <!-- END: About Container -->
-      </section>
-      <!-- END: About Section -->
+        <!-- START: Hero Section -->
+        <section id="hero">
+          <!-- START: Hero Container -->
+          <div class="hero-container">
 
-      <!-- START: Portfolio Section -->
-      <section id="portfolio">
-        <!-- START: Portfolio Container -->
-        <div class="portfolio-container">
+          </div>
+          <!-- END: Hero Container -->
+        </section>
+        <!-- END: Hero Section -->
 
-        </div>
-        <!-- END: Portfolio Container -->
-      </section>
-      <!-- END: Portfolio Section -->
+        <!-- START: About Section -->
+        <section id="about">
+          <!-- START: About Container -->
+          <div class="about-container">
 
-      <!-- START: Contact Section -->
-      <section id="contact">
-        <!-- START: Contact Container -->
-        <div class="contact-container">
+          </div>
+          <!-- END: About Container -->
+        </section>
+        <!-- END: About Section -->
 
-        </div>
-        <!-- END: Contact Container -->
-      </section>
-      <!-- END: Contact Section -->
+        <!-- START: Portfolio Section -->
+        <section id="portfolio">
+          <!-- START: Portfolio Container -->
+          <div class="portfolio-container">
 
-    </div>
-    <!-- END: Main Container -->
-  </main>
-  <!-- END: Main -->
+          </div>
+          <!-- END: Portfolio Container -->
+        </section>
+        <!-- END: Portfolio Section -->
 
-  <!-- START: Footer -->
-  <footer>
-    <!-- START: Footer Container -->
-    <div class="footer-container">
+        <!-- START: Contact Section -->
+        <section id="contact">
+          <!-- START: Contact Container -->
+          <div class="contact-container">
 
-    </div>
-    <!-- END: Footer Container -->
-  </footer>
-  <!-- END: Footer -->
+          </div>
+          <!-- END: Contact Container -->
+        </section>
+        <!-- END: Contact Section -->
+
+      </div>
+      <!-- END: Main Container -->
+    </main>
+    <!-- END: Main -->
+
+    <!-- START: Footer -->
+    <footer>
+      <!-- START: Footer Container -->
+      <div class="footer-container">
+
+      </div>
+      <!-- END: Footer Container -->
+    </footer>
+    <!-- END: Footer -->
+  </div>
+  <!-- END: Main Page Container -->
 
 
   <!-- START: Third-Party JavaScript -->
   <!-- START: jQuery v3.6.1 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <!-- END: jQuery v3.6.1 -->
 
   <!-- START: Font Awesome Free 6.2.0 -->
@@ -126,33 +204,33 @@
   <!-- END: Font Awesome Free 6.2.0 -->
 
   <!-- START: Owl Carousel v2.3.4 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <!-- END: Owl Carousel v2.3.4 -->
 
   <!-- START: protonet-jquery.inview v1.1.2 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
     integrity="sha512-D68mBFX2aQwVh2wV6uCDLmabIveaSQL3uVUo2Ze7VwxIeOcAd4C1/JagkVoObb/NLkYDrdvY3JHK1KOfenHVcA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <!-- END: protonet-jquery.inview v1.1.2 -->
 
   <!-- START: TypeIt v8.7.0 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.0/index.umd.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.0/index.umd.min.js"
     integrity="sha512-TP2yhfs2NKscWoIXdL/+vDZPf5dLv0sndur65ZBvsLbwH88mtt5+2LpbAiqKIUfpAZ/5+4kRk83Flt73Tuk2vA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <!-- END: TypeIt v8.3.3 -->
   <!-- END: Third-Party JavaScript -->
 
   <!-- START: Additional JavaScript -->
-  <script src="assets/javascript/configurations.js"></script>
+  <!-- <script src="assets/javascript/configurations.js"></script> -->
 
   <!-- TypeIt v8.7.0 Configuration -->
-  <script src="assets/javascript/typeit.js"></script>
+  <!-- <script src="assets/javascript/typeit.js"></script> -->
   <!-- FullPage v4.0.11 Configuration -->
-  <script src="assets/javascript/fullPage.js"></script>
+  <!-- <script src="assets/javascript/fullPage.js"></script> -->
 
-  <script src="assets/javascript/header_scroll.js"></script>
+  <!-- <script src="assets/javascript/header_scroll.js"></script> -->
   <!-- END: Additional JavaScript -->
 </body>
 
