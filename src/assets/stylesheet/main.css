@@ -1,4 +1,7 @@
 #container {
     min-height: 100%;
 }
- 
+
+.scroll-down-indicator {
+    width: -webkit-fill-available;
+}

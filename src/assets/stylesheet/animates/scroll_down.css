@@ -40,6 +40,11 @@
     top: 0;
     height: 100%;
     width: 51%;
+    background: #ccd6f6;
+}
+
+.scroll-down-icon-animate:hover::before,
+.scroll-down-icon-animate:hover::after {
     background: #64ffda;
 }
 
