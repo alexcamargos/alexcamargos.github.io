@@ -48,7 +48,7 @@
     <!-- START: Header -->
     <header class="py-4">
       <!-- START: Header Container -->
-      <div class="mx-8 max-w-7xl px-4 sm:px-6 lg:px-8 font-nunito">
+      <div class="container mx-8 max-w-7xl px-4 sm:px-6 lg:px-8 font-nunito">
         <!-- START: Navigation Bar -->
         <div class="relative z-50 flex justify-between items-center">
           <!-- START: Navigation Bar Container -->
@@ -132,14 +132,14 @@
     <!-- START: Main -->
     <main>
       <!-- START: Main Container -->
-      <div class="main-container divide-y-8 divide-navy">
+      <div class="main-container container mx-auto divide-y-8 divide-navy">
 
         <!-- START: Hero Section -->
         <section id="hero" class="h-screen min-h-fit max-h-fit mx-8 px-4 sm:px-6 lg:px-8 pt-48 pb-16">
           <!-- <section id="hero" class="h-screen mx-auto flex flex-col items-stretch px-4 py-1 sm:py-4"> -->
 
           <!-- START: Hero Container -->
-          <div class="hero-container grid grid-flow-row auto-rows-max gap-y-8 text-left">
+          <div class="hero-container container grid grid-flow-row auto-rows-max gap-y-8 text-left">
             <!-- <div class="hero-container flex flex-row justify-items-start auto-rows-max gap-y-8"> -->
 
             <p
@@ -192,7 +192,7 @@
         <!-- START: About Section -->
         <section id="about" class="mx-8 max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
           <!-- START: About Container -->
-          <div class="about-container flex flex-col md:flex-row gap-16">
+          <div class="about-container container flex flex-col md:flex-row gap-16">
             <!-- START: About Content -->
             <div class="about w-4/5 flex flex-col gap-6 text-base text-slate">
 
@@ -228,12 +228,73 @@
             <!-- START: About Picture -->
             <div class="about-picture mx-auto px-8">
               <figure class="about-picture_container container ease-in-out -rotate-6 hover:rotate-6 hover:sepia">
-                <img src="assets/img/profile-pic.png" class="rounded-xl shadow-lg" alt="Alexsander Lopes Camargos" />
+                <img src="assets/img/profile-pic.png" class="w-4/5 md:w-full rounded-xl shadow-lg" alt="Alexsander Lopes Camargos" />
               </figure>
             </div>
             <!-- END: About Picture -->
-
           </div>
+
+          <!-- START: Technologies I Use -->
+          <div class="technologies container mt-20 text-base">
+            <h2 class="text-lightest-slate">
+              Here are a few technologies I’ve been working with recently:
+            </h2>
+
+            <!-- START: Technologies List -->
+            <ul
+              class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 mt-8 text-slate font-nunito font-medium text-base md:text-lg lg:text-2xl xlg:text-3xl">
+              <!-- Python -->
+              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+              </li>
+
+              <!-- Linux -->
+              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
+                <i class="fa-brands fa-linux"></i>
+                <span>Linux</span>
+              </li>
+
+              <!-- Docker -->
+              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
+                <i class="fa-brands fa-docker"></i>
+                <span>Docker</span>
+              </li>
+
+              <!-- GIT -->
+              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
+                <i class="fa-brands fa-git"></i>
+                <span>Git</span>
+              </li>
+
+              <!-- DataBase -->
+              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
+                <i class="fa-solid fa-database"></i>
+                <span>Database</span>
+              </li>
+
+              <!-- HTML5 -->
+              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5</span>
+              </li>
+
+              <!-- CSS / SASS -->
+              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
+                <i class="fa-brands fa-sass"></i>
+                <span>Sass</span>
+              </li>
+
+              <!-- JavaScript -->
+              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
+                <i class="fa-brands fa-square-js"></i>
+                <span>JavaScript</span>
+              </li>
+            </ul>
+            <!-- END: Technologies List -->
+          </div>
+          <!-- END: Technologies I Use -->
+
           <!-- END: About Container -->
         </section>
         <!-- END: About Section -->
@@ -241,7 +302,7 @@
         <!-- START: Portfolio Section -->
         <section id="portfolio" class="mx-8 max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
           <!-- START: Portfolio Container -->
-          <div class="portfolio-container">
+          <div class="portfolio-container container">
 
           </div>
           <!-- END: Portfolio Container -->
@@ -252,7 +313,7 @@
         <section id="contact" class="mx-8 max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
           <!-- START: Contact Container -->
           <div
-            class="contact-container grid grid-flow-row auto-rows-max gap-y-8 justify-items-center text-base text-slate">
+            class="contact-container container grid grid-flow-row auto-rows-max gap-y-8 justify-items-center text-base text-slate">
 
             <h1 class="text-lightest-slate text-3xl font-nunito font-bold">
               Get In Touch
@@ -290,7 +351,7 @@
     <!-- START: Footer -->
     <footer>
       <!-- START: Footer Container -->
-      <div class="footer-container">
+      <div class="footer-container container">
 
       </div>
       <!-- END: Footer Container -->
