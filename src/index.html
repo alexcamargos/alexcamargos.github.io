@@ -41,7 +41,7 @@
   <!-- END: Stylesheets -->
 </head>
 
-<body class="flex h-full flex-col">
+<body class="flex h-full flex-col text-slate">
   <!-- START: Main Page Container -->
   <div id="container">
 
@@ -410,7 +410,7 @@
 
     <!-- START: Copyright -->
     <div id="copyright"
-      class="fixed top-1/2 ml-2 text-light-slate hover:text-green after:contents-[''] after:block after:m-auto after:w-px after:h-40 after:bg-light-slate hover:after:bg-light-green hover:after:text-green">
+      class="fixed top-1/2 ml-2 text-light-slate hover:text-green after:contents-[''] after:block after:m-auto after:w-px after:h-60 after:bg-light-slate hover:after:bg-light-green hover:after:text-green">
       <div orientation="right" class="inline-flex flex-col text-right ">
         <a class="pb-5  text-xs tracking-widest font-nunito" href="https://github.com/alexcamargos" target="_blank"
           title="Github">
@@ -423,8 +423,20 @@
     <!-- START: Footer -->
     <footer>
       <!-- START: Footer Container -->
-      <div class="footer-container container">
-
+      <div class="container mx-8 max-w-7xl px-4 pt-20 pb-2 sm:px-6 lg:px-8">
+        <div
+          class="container inline-flex flex-col gap-y-2 sm:flex-row items-center sm:justify-around text-xs sm:text-sm">
+          <span>
+            Copyright © 2022 -
+            <a class="hover:text-green" href="https://mit-license.org/" rel="noopener noreferrer" target="_blank">
+              MIT License
+            </a>
+          </span>
+          <a class="hover:text-green" href="https://github.com/alexcamargos/alexcamargos.github.io"
+            rel="noopener noreferrer" target="_blank">
+            Designed & Built by Alexsander Lopes Camargos
+          </a>
+        </div>
       </div>
       <!-- END: Footer Container -->
     </footer>
