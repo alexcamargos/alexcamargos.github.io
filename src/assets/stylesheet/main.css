@@ -5,3 +5,6 @@
 .scroll-down-indicator {
     width: -webkit-fill-available;
 }
+#copyright a {
+    writing-mode: vertical-rl;
+}
