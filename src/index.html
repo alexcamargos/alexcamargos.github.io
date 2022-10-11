@@ -1,492 +1,641 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full scroll-smooth bg-navy antialiased [font-feature-settings:'ss01'] js-focus-visible">
+<html
+  lang="en"
+  class="js-focus-visible h-full scroll-smooth bg-navy antialiased [font-feature-settings:'ss01']"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Self Developed personal website build HTML5, Sass and JavaScript"
+    />
+    <meta
+      name="author"
+      content="Alexsander Lopes Camargos - alcamargos@vivaldi.net"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Self Developed personal website build HTML5, Sass and JavaScript" />
-  <meta name="author" content="Alexsander Lopes Camargos - alcamargos@vivaldi.net" />
+    <!-- START: FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.jpg"
+      type="image/x-icon"
+    />
+    <!-- END: FAVICON -->
 
-  <!-- START: FAVICON -->
-  <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon" />
-  <!-- END: FAVICON -->
+    <title>Alexsander Lopes Camargos Portfólio</title>
 
-  <title>Alexsander Lopes Camargos Portfólio</title>
+    <!-- START: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- END: Google Fonts -->
 
-  <!-- START: Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <!-- END: Google Fonts -->
+    <!-- START: Third-party Stylesheets -->
 
-  <!-- START: Third-party Stylesheets -->
+    <!-- START: Tailwind CSS -->
+    <link rel="stylesheet" href="assets/stylesheet/tailwind.css" />
 
-  <!-- START: Tailwind CSS -->
-  <link rel="stylesheet" href="assets/stylesheet/tailwind.css">
-
-  <!-- START: Owl Carousel v2.3.4 -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    <!-- START: Owl Carousel v2.3.4 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-  <!-- END: Owl Carousel v2.3.4 -->
-  <!-- END: Third-party Stylesheets -->
+    <!-- END: Owl Carousel v2.3.4 -->
+    <!-- END: Third-party Stylesheets -->
 
-  <!-- START: Stylesheets -->
-  <link rel="stylesheet" href="assets/stylesheet/main.css" />
+    <!-- START: Stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheet/main.css" />
 
-  <!-- <link rel="stylesheet" href="assets/stylesheet/animates/aminate.min.css" /> -->
-  <link rel="stylesheet" href="assets/stylesheet/waving_hand_animation.css" />
-  <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css" />
-  <!-- END: Stylesheets -->
-</head>
+    <!-- <link rel="stylesheet" href="assets/stylesheet/animates/aminate.min.css" /> -->
+    <link rel="stylesheet" href="assets/stylesheet/waving_hand_animation.css" />
+    <link rel="stylesheet" href="assets/stylesheet/animates/scroll_down.css" />
+    <!-- END: Stylesheets -->
+  </head>
 
-<body class="flex h-full flex-col text-slate">
-  <!-- START: Main Page Container -->
-  <div id="container">
-
-    <!-- START: Header -->
-    <header class="py-4">
-      <!-- START: Header Container -->
-      <div class="mx-8 xlg:max-w-7xl font-nunito">
-        <!-- START: Navigation Bar -->
-        <div class="relative z-50 flex justify-between items-center">
-          <!-- START: Navigation Bar Container -->
-          <div class="navigation-bar_container">
-            <!-- START: Title -->
-            <div class="flex items-center md:gap-x-12">
-              <a class="inline-flex flex-row gap-x-4 items-center py-1 px-2 sm:text-base md:text-lg text-slate hover:text-green hover:after:content-['AlCamargos'] after:block after:text-green"
-                href="https://alcamargos.me/" id="logo" title="Alexsander Lopes Camargos">
-                <i class="fa-solid fa-terminal text-green"></i>
-              </a>
+  <body class="flex h-full flex-col text-slate">
+    <!-- START: Main Page Container -->
+    <div id="container">
+      <!-- START: Header -->
+      <header class="py-4">
+        <!-- START: Header Container -->
+        <div class="mx-8 font-nunito xlg:max-w-7xl">
+          <!-- START: Navigation Bar -->
+          <div class="relative z-50 flex items-center justify-between">
+            <!-- START: Navigation Bar Container -->
+            <div class="navigation-bar_container">
+              <!-- START: Title -->
+              <div class="flex items-center md:gap-x-12">
+                <a
+                  class="inline-flex flex-row items-center gap-x-4 py-1 px-2 text-slate after:block after:text-green hover:text-green hover:after:content-['AlCamargos'] sm:text-base md:text-lg"
+                  href="https://alcamargos.me/"
+                  id="logo"
+                  title="Alexsander Lopes Camargos"
+                >
+                  <i class="fa-solid fa-terminal text-green"></i>
+                </a>
+              </div>
             </div>
-          </div>
-          <!-- END: Title -->
+            <!-- END: Title -->
 
-          <!-- START: Navigation Bar Menu -->
-          <div class="navigation-bar_menu">
-            <nav class="relative z-50 flex justify-between">
-              <!-- START: Navigation Bar Menu Itens -->
-              <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div class="relative flex h-16 items-center justify-between">
-                  <ul class="flex items-center md:gap-x-12">
-                    <!-- Home -->
-                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 sm:text-sm md:text-base text-slate hover:text-green sm:gap-x-2 md:gap-x-4 transition-all duration-500"
-                        href="#hero" accesskey="h" tabindex="1">
-                        <i class="fa-solid fa-house-chimney text-green"></i>
-                        Home
-                      </a>
-                    </li>
+            <!-- START: Navigation Bar Menu -->
+            <div class="navigation-bar_menu">
+              <nav class="relative z-50 flex justify-between">
+                <!-- START: Navigation Bar Menu Itens -->
+                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                  <div class="relative flex h-16 items-center justify-between">
+                    <ul class="flex items-center md:gap-x-12">
+                      <!-- Home -->
+                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                        <a
+                          class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                          href="#hero"
+                          accesskey="h"
+                          tabindex="1"
+                        >
+                          <i class="fa-solid fa-house-chimney text-green"></i>
+                          Home
+                        </a>
+                      </li>
 
-                    <!-- About -->
-                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 sm:text-sm md:text-base text-slate hover:text-green sm:gap-x-2 md:gap-x-4 transition-all duration-500"
-                        href="#about" accesskey="a" tabindex="2">
-                        <i class="fa-solid fa-user text-green"></i>
-                        About
-                      </a>
-                    </li>
+                      <!-- About -->
+                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                        <a
+                          class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                          href="#about"
+                          accesskey="a"
+                          tabindex="2"
+                        >
+                          <i class="fa-solid fa-user text-green"></i>
+                          About
+                        </a>
+                      </li>
 
-                    <!-- Portfolio -->
-                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 sm:text-sm md:text-base text-slate hover:text-green sm:gap-x-2 md:gap-x-4 transition-all duration-500"
-                        href="#portfolio" accesskey="p" tabindex="33">
-                        <i class="fa-solid fa-code text-green"></i>
-                        Portfolio
-                      </a>
-                    </li>
+                      <!-- Portfolio -->
+                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                        <a
+                          class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                          href="#portfolio"
+                          accesskey="p"
+                          tabindex="33"
+                        >
+                          <i class="fa-solid fa-code text-green"></i>
+                          Portfolio
+                        </a>
+                      </li>
 
-                    <!-- Contact -->
-                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 sm:text-sm md:text-base text-slate hover:text-green sm:gap-x-2 md:gap-x-4 transition-all duration-500"
-                        href="#contact" accesskey="c" tabindex="4">
-                        <i class="fa-regular fa-at text-green"></i>
-                        Contact
-                      </a>
-                    </li>
-                    <!-- Fork on GitHub -->
-                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 text-sm text-green hover:text-slate-light sm:gap-x-2 md:gap-x-4"
-                        href="https://github.com/alexcamargos/alexcamargos.github.io" target="_blank" accesskey="f"
-                        tabindex="5">
-                        <i class="fa-solid fa-code-fork "></i>
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- END: Navigation Bar Menu Itens -->
+                      <!-- Contact -->
+                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                        <a
+                          class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                          href="#contact"
+                          accesskey="c"
+                          tabindex="4"
+                        >
+                          <i class="fa-regular fa-at text-green"></i>
+                          Contact
+                        </a>
+                      </li>
+                      <!-- Fork on GitHub -->
+                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                        <a
+                          class="inline-flex place-items-center py-1 px-2 text-sm text-green hover:text-slate-light sm:gap-x-2 md:gap-x-4"
+                          href="https://github.com/alexcamargos/alexcamargos.github.io"
+                          target="_blank"
+                          accesskey="f"
+                          tabindex="5"
+                        >
+                          <i class="fa-solid fa-code-fork"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- END: Navigation Bar Menu Itens -->
+                  </div>
                 </div>
-              </div>
-
-            </nav>
-          </div>
-          <!-- END: Navigation Bar Container -->
-        </div>
-        <!-- END: Navigation Bar -->
-      </div>
-      <!-- END: Header Container -->
-    </header>
-    <!-- END: Header -->
-
-    <!-- START: Main -->
-    <main>
-      <!-- START: Main Container -->
-      <div class="main-container mx-auto divide-y-8 divide-navy">
-
-        <!-- START: Hero Section -->
-        <section id="hero" class="h-screen min-h-fit max-h-fit mx-8 px-4 sm:px-6 lg:px-8 pt-48 pb-16">
-          <!-- <section id="hero" class="h-screen mx-auto flex flex-col items-stretch px-4 py-1 sm:py-4"> -->
-
-          <!-- START: Hero Container -->
-          <div class="hero-container container grid grid-flow-row auto-rows-max gap-y-8 text-left">
-            <!-- <div class="hero-container flex flex-row justify-items-start auto-rows-max gap-y-8"> -->
-
-            <p
-              class="mx-4 max-w-4xl font-display xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl tracking-tight text-green">
-              <span class="waving-hand">👋</span>
-              Hello! My name is...
-            </p>
-
-            <p
-              class="mx-4 max-w-4xl font-display font-medium xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl tracking-tight text-slate-lightest">
-
-              <span class="relative whitespace-nowrap">
-                <svg aria-hidden="true" viewBox="0 0 418 42"
-                  class="absolute top-3/4 left-0 h-[0.58em] w-full fill-navy-lightest" preserveAspectRatio="none">
-                  <path
-                    d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
-                  </path>
-                </svg>
-                <span class="relative">Alexsander Lopes Camargos</span>
-              </span>
-            </p>
-
-            <p
-              class="mx-4 max-w-4xl font-display xs:text-xl sm:text-1xl md:text-3xl lg:text-5xl tracking-tight text-slate">
-              and I'm a
-              <span id="typing-effect" class="text-green"></span>
-            </p>
-
-            <!-- START: Scroll Down Indicator -->
-            <div class="scroll-down-indicator absolute flex items-baseline justify-center bottom-2 text-sm">
-              <div class="absolute flex flex-row justify-center bottom-24 hover:origin-top">
-                <div class="scroll-down-icon-animate"></div>
-                <div class="scroll-down-icon-animate"></div>
-                <div class="scroll-down-icon-animate"></div>
-                <span></span>
-              </div>
-              <span
-                class="absolute bottom-0 transition ease-in-out font-semibold	cursor-none xs:text-sm sm:text-base md:text-lg lg:text-xl text-slate hover:text-green hover:-translate-y-1 hover:scale-110">
-                Scroll Down
-              </span>
-
+              </nav>
             </div>
-            <!-- END: Scroll Down Indicator -->
-
+            <!-- END: Navigation Bar Container -->
           </div>
-          <!-- END: Hero Container -->
-        </section>
-        <!-- END: Hero Section -->
+          <!-- END: Navigation Bar -->
+        </div>
+        <!-- END: Header Container -->
+      </header>
+      <!-- END: Header -->
 
-        <!-- START: About Section -->
-        <section id="about" class="mx-8 max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
-          <!-- START: About Container -->
-          <div class="about-container container flex flex-col md:flex-row gap-16">
-            <!-- START: About Content -->
-            <div class="about w-4/5 flex flex-col gap-6 text-base text-slate">
+      <!-- START: Main -->
+      <main>
+        <!-- START: Main Container -->
+        <div class="main-container mx-auto divide-y-8 divide-navy">
+          <!-- START: Hero Section -->
+          <section
+            id="hero"
+            class="mx-8 h-screen max-h-fit min-h-fit px-4 pt-48 pb-16 sm:px-6 lg:px-8"
+          >
+            <!-- <section id="hero" class="h-screen mx-auto flex flex-col items-stretch px-4 py-1 sm:py-4"> -->
 
-              <h1 class="text-slate-lightest text-3xl font-nunito font-bold">
-                Who I am
-              </h1>
+            <!-- START: Hero Container -->
+            <div
+              class="hero-container container grid grid-flow-row auto-rows-max gap-y-8 text-left"
+            >
+              <!-- <div class="hero-container flex flex-row justify-items-start auto-rows-max gap-y-8"> -->
 
-              <!-- START: About Me -->
-              <p>
-                Hi! I'm Brazilian, I'm 37 years old, I'm passionate about solving problems,
-                I'm not afraid to face new challenges, and that's exactly what I'm looking
-                for when applying my knowledge in processes that transform complexity into
-                simplicity, helping to solve the most diverse problems. I have been working
-                for more than 15 years in the administrative area, I have a degree in
-                business administration, with solid experience in administrative
-                routines/procedures and people management.
+              <p
+                class="font-display mx-4 max-w-4xl tracking-tight text-green xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl"
+              >
+                <span class="waving-hand">👋</span>
+                Hello! My name is...
               </p>
-              <!-- END: About Me -->
 
-              <!-- START: Resume -->
+              <p
+                class="font-display mx-4 max-w-4xl font-medium tracking-tight text-slate-lightest xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl"
+              >
+                <span class="relative whitespace-nowrap">
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 418 42"
+                    class="absolute top-3/4 left-0 h-[0.58em] w-full fill-navy-lightest"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"
+                    ></path>
+                  </svg>
+                  <span class="relative">Alexsander Lopes Camargos</span>
+                </span>
+              </p>
+
+              <p
+                class="font-display sm:text-1xl mx-4 max-w-4xl tracking-tight text-slate xs:text-xl md:text-3xl lg:text-5xl"
+              >
+                and I'm a
+                <span id="typing-effect" class="text-green"></span>
+              </p>
+
+              <!-- START: Scroll Down Indicator -->
+              <div
+                class="scroll-down-indicator absolute bottom-2 flex items-baseline justify-center text-sm"
+              >
+                <div
+                  class="absolute bottom-24 flex flex-row justify-center hover:origin-top"
+                >
+                  <div class="scroll-down-icon-animate"></div>
+                  <div class="scroll-down-icon-animate"></div>
+                  <div class="scroll-down-icon-animate"></div>
+                  <span></span>
+                </div>
+                <span
+                  class="absolute bottom-0 cursor-none font-semibold text-slate transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green xs:text-sm sm:text-base md:text-lg lg:text-xl"
+                >
+                  Scroll Down
+                </span>
+              </div>
+              <!-- END: Scroll Down Indicator -->
+            </div>
+            <!-- END: Hero Container -->
+          </section>
+          <!-- END: Hero Section -->
+
+          <!-- START: About Section -->
+          <section
+            id="about"
+            class="mx-8 max-w-7xl px-4 pt-20 pb-16 sm:px-6 lg:px-8"
+          >
+            <!-- START: About Container -->
+            <div
+              class="about-container container flex flex-col gap-16 md:flex-row"
+            >
+              <!-- START: About Content -->
+              <div class="about flex w-4/5 flex-col gap-6 text-base text-slate">
+                <h1 class="font-nunito text-3xl font-bold text-slate-lightest">
+                  Who I am
+                </h1>
+
+                <!-- START: About Me -->
+                <p>
+                  Hi! I'm Brazilian, I'm 37 years old, I'm passionate about
+                  solving problems, I'm not afraid to face new challenges, and
+                  that's exactly what I'm looking for when applying my knowledge
+                  in processes that transform complexity into simplicity,
+                  helping to solve the most diverse problems. I have been
+                  working for more than 15 years in the administrative area, I
+                  have a degree in business administration, with solid
+                  experience in administrative routines/procedures and people
+                  management.
+                </p>
+                <!-- END: About Me -->
+
+                <!-- START: Resume -->
+                <div class="resume">
+                  <a
+                    href="https://www.linkedin.com/in/alexcamargos"
+                    target="_blank"
+                    title="Linkedin"
+                  >
+                    <div
+                      class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate"
+                    >
+                      Resume
+                    </div>
+                  </a>
+                </div>
+                <!-- END: Resume -->
+              </div>
+              <!-- END: About Content -->
+
+              <!-- START: About Picture -->
+              <div class="about-picture mx-auto px-8">
+                <figure
+                  class="about-picture_container container -rotate-6 overflow-hidden bg-fixed opacity-50 transition duration-500 ease-in-out hover:rotate-6 hover:opacity-100"
+                >
+                  <img
+                    class="w-4/5 rounded-xl shadow-lg md:w-full"
+                    src="assets/img/profile-pic.png"
+                    alt="Alexsander Lopes Camargos"
+                  />
+                </figure>
+              </div>
+              <!-- END: About Picture -->
+            </div>
+            <!-- END: About Container -->
+
+            <!-- START: Technologies I Use -->
+            <div class="technologies container mt-20 text-base">
+              <h2 class="text-slate-lightest">
+                Here are a few technologies I’ve been working with recently:
+              </h2>
+
+              <!-- START: Technologies List -->
+              <ul
+                class="mt-8 grid grid-cols-1 gap-4 font-nunito text-base font-medium text-slate xs:grid-cols-2 md:grid-cols-4 md:text-lg lg:text-2xl xlg:text-3xl"
+              >
+                <!-- Python -->
+                <li
+                  class="inline-flex items-center gap-3 before:text-green before:content-['▹']"
+                >
+                  <i class="fa-brands fa-python"></i>
+                  <span>Python</span>
+                </li>
+
+                <!-- Linux -->
+                <li
+                  class="inline-flex items-center gap-3 before:text-green before:content-['▹']"
+                >
+                  <i class="fa-brands fa-linux"></i>
+                  <span>Linux</span>
+                </li>
+
+                <!-- Docker -->
+                <li
+                  class="inline-flex items-center gap-3 before:text-green before:content-['▹']"
+                >
+                  <i class="fa-brands fa-docker"></i>
+                  <span>Docker</span>
+                </li>
+
+                <!-- GIT -->
+                <li
+                  class="inline-flex items-center gap-3 before:text-green before:content-['▹']"
+                >
+                  <i class="fa-brands fa-git"></i>
+                  <span>Git</span>
+                </li>
+
+                <!-- DataBase -->
+                <li
+                  class="inline-flex items-center gap-3 before:text-green before:content-['▹']"
+                >
+                  <i class="fa-solid fa-database"></i>
+                  <span>Database</span>
+                </li>
+
+                <!-- HTML5 -->
+                <li
+                  class="inline-flex items-center gap-3 before:text-green before:content-['▹']"
+                >
+                  <i class="fa-brands fa-html5"></i>
+                  <span>HTML5</span>
+                </li>
+
+                <!-- CSS / SASS -->
+                <li
+                  class="inline-flex items-center gap-3 before:text-green before:content-['▹']"
+                >
+                  <i class="fa-brands fa-sass"></i>
+                  <span>Sass</span>
+                </li>
+
+                <!-- JavaScript -->
+                <li
+                  class="inline-flex items-center gap-3 before:text-green before:content-['▹']"
+                >
+                  <i class="fa-brands fa-square-js"></i>
+                  <span>JavaScript</span>
+                </li>
+              </ul>
+              <!-- END: Technologies List -->
+            </div>
+            <!-- END: Technologies I Use -->
+
+            <!-- END: About Container -->
+          </section>
+          <!-- END: About Section -->
+
+          <!-- START: Portfolio Section -->
+          <section
+            id="portfolio"
+            class="mx-8 max-w-7xl px-4 pt-20 pb-16 sm:px-6 lg:px-8"
+          >
+            <!-- START: Portfolio Container -->
+            <div class="portfolio-container container"></div>
+            <!-- END: Portfolio Container -->
+          </section>
+          <!-- END: Portfolio Section -->
+
+          <!-- START: Contact Section -->
+          <section
+            id="contact"
+            class="mx-8 max-w-7xl px-4 pt-20 pb-16 sm:px-6 lg:px-8"
+          >
+            <!-- START: Contact Container -->
+            <div
+              class="contact-container container grid grid-flow-row auto-rows-max justify-items-center gap-y-8 text-base text-slate"
+            >
+              <h2 class="font-nunito text-3xl font-bold text-slate-lightest">
+                Get In Touch
+              </h2>
+
+              <p class="max-w-screen-xs">
+                My inbox is always open. If you want to offer me an opportunity,
+                have a question or just want to say hi, I will try my best you
+                answer you!
+              </p>
+
+              <!-- START: SAY HELLO BOX -->
               <div class="resume">
-                <a href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="Linkedin">
+                <a
+                  href="mailto:alcamargos@vivaldi.net"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <div
-                    class="inline-flex items-center justify-center leading-4 rounded py-2 px-6 font-roboto text-base font-semibold border-2 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-navy text-green hover:bg-navy-light hover:text-slate active:bg-navy-light active:text-slate focus-visible:outline-green-light border-green">
-                    Resume
+                    class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate"
+                  >
+                    Say Hello
                   </div>
                 </a>
               </div>
-              <!-- END: Resume -->
+              <!-- END: SAY HELLO BOX -->
             </div>
-            <!-- END: About Content -->
+            <!-- END: Contact Container -->
+          </section>
+          <!-- END: Contact Section -->
+        </div>
+        <!-- END: Main Container -->
+      </main>
+      <!-- END: Main -->
 
-            <!-- START: About Picture -->
-            <div class="about-picture mx-auto px-8">
-              <figure
-                class="about-picture_container container overflow-hidden bg-fixed transition duration-500 ease-in-out -rotate-6 hover:rotate-6 opacity-50 hover:opacity-100">
-                <img class="w-4/5 md:w-full rounded-xl shadow-lg" src="assets/img/profile-pic.png"
-                  alt="Alexsander Lopes Camargos" />
-              </figure>
-            </div>
-            <!-- END: About Picture -->
-          </div>
-          <!-- END: About Container -->
-
-          <!-- START: Technologies I Use -->
-          <div class="technologies container mt-20 text-base">
-            <h2 class="text-slate-lightest">
-              Here are a few technologies I’ve been working with recently:
-            </h2>
-
-            <!-- START: Technologies List -->
-            <ul
-              class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 mt-8 text-slate font-nunito font-medium text-base md:text-lg lg:text-2xl xlg:text-3xl">
-              <!-- Python -->
-              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
-                <i class="fa-brands fa-python"></i>
-                <span>Python</span>
-              </li>
-
-              <!-- Linux -->
-              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
-                <i class="fa-brands fa-linux"></i>
-                <span>Linux</span>
-              </li>
-
-              <!-- Docker -->
-              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
-                <i class="fa-brands fa-docker"></i>
-                <span>Docker</span>
-              </li>
-
-              <!-- GIT -->
-              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
-                <i class="fa-brands fa-git"></i>
-                <span>Git</span>
-              </li>
-
-              <!-- DataBase -->
-              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
-                <i class="fa-solid fa-database"></i>
-                <span>Database</span>
-              </li>
-
-              <!-- HTML5 -->
-              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
-                <i class="fa-brands fa-html5"></i>
-                <span>HTML5</span>
-              </li>
-
-              <!-- CSS / SASS -->
-              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
-                <i class="fa-brands fa-sass"></i>
-                <span>Sass</span>
-              </li>
-
-              <!-- JavaScript -->
-              <li class="before:content-['▹'] before:text-green inline-flex items-center gap-3">
-                <i class="fa-brands fa-square-js"></i>
-                <span>JavaScript</span>
-              </li>
-            </ul>
-            <!-- END: Technologies List -->
-          </div>
-          <!-- END: Technologies I Use -->
-
-          <!-- END: About Container -->
-        </section>
-        <!-- END: About Section -->
-
-        <!-- START: Portfolio Section -->
-        <section id="portfolio" class="mx-8 max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
-          <!-- START: Portfolio Container -->
-          <div class="portfolio-container container">
-
-          </div>
-          <!-- END: Portfolio Container -->
-        </section>
-        <!-- END: Portfolio Section -->
-
-        <!-- START: Contact Section -->
-        <section id="contact" class="mx-8 max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
-          <!-- START: Contact Container -->
-          <div
-            class="contact-container container grid grid-flow-row auto-rows-max gap-y-8 justify-items-center text-base text-slate">
-
-            <h2 class="text-slate-lightest text-3xl font-nunito font-bold">
-              Get In Touch
-            </h2>
-
-            <p class="max-w-screen-xs">
-              My inbox is always open. If you want to offer me an opportunity,
-              have a question or just want to say hi,
-              I will try my best you answer you!
-            </p>
-
-            <!-- START: SAY HELLO BOX -->
-            <div class="resume">
-              <a href="mailto:alcamargos@vivaldi.net" rel="noopener noreferrer" target="_blank">
-                <div
-                  class="inline-flex items-center justify-center leading-4 rounded py-2 px-6 font-roboto text-base font-semibold border-2 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-navy text-green hover:bg-navy-light hover:text-slate active:bg-navy-light active:text-slate focus-visible:outline-green-light border-green">
-                  Say Hello
-                </div>
-              </a>
-            </div>
-            <!-- END: SAY HELLO BOX -->
-
-          </div>
-          <!-- END: Contact Container -->
-        </section>
-        <!-- END: Contact Section -->
-
-      </div>
-      <!-- END: Main Container -->
-    </main>
-    <!-- END: Main -->
-
-    <!-- START: Copyright -->
-    <div id="copyright"
-      class="hidden sm:block fixed top-1/2 ml-4 lg:ml-5 xlg:ml-6 text-slate-light hover:text-green after:contents-[''] after:block after:m-auto after:w-px after:h-screen after:bg-slate-light hover:after:bg-green-light hover:after:text-green">
-      <div orientation="right" class="inline-flex flex-col text-right ">
-        <a class="pb-5  text-xs tracking-widest font-nunito" href="https://github.com/alexcamargos" target="_blank"
-          title="Github">
-          Designed & Built by AlCamargos
-        </a>
-      </div>
-    </div>
-    <!-- END: Copyright -->
-
-    <!-- START: Social Medias -->
-    <div id="social-icons" class="hidden sm:block fixed top-1/2 right-[5%] xlg:right-[4%] -translate-y-1/2">
-      <!-- START: Social Medias Container -->
-      <div class="container">
-        <!-- START: Social Medias Items -->
-        <ul class="inline-flex flex-col gap-1">
-          <!-- Github -->
-          <li>
-            <a class="flex items-center justify-center w-12 h-12 rounded bg-navy-light hover:bg-navy-lightest font-roboto font-bold text-2xl text-center text-slate-light hover:text-green"
-              href="https://github.com/alexcamargos" target="_blank" title="Github">
-              <i class="fa-brands fa-github"></i></a>
-          </li>
-
-          <!-- Linkedin -->
-          <li>
-            <a class="flex items-center justify-center w-12 h-12 rounded bg-navy-light hover:bg-navy-lightest font-roboto font-bold text-2xl text-center text-slate-light hover:text-green"
-              href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="Linkedin">
-              <i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-
-          <!-- Twitter -->
-          <li>
-            <a class="flex items-center justify-center w-12 h-12 rounded bg-navy-light hover:bg-navy-lightest font-roboto font-bold text-2xl text-center text-slate-light hover:text-green"
-              href="https://twitter.com/alcamargos" target="_blank" title="Twitter">
-              <i class="fa-brands fa-twitter"></i></a>
-          </li>
-
-          <!-- Instagram -->
-          <li>
-            <a class="flex items-center justify-center w-12 h-12 rounded bg-navy-light hover:bg-navy-lightest font-roboto font-bold text-2xl text-center text-slate-light hover:text-green"
-              href="https://www.instagram.com/alexlopescamargos" target="_blank" title="Instagram">
-              <i class="fa-brands fa-instagram"></i></a>
-          </li>
-
-          <!-- Facebook -->
-          <li>
-            <a class="flex items-center justify-center w-12 h-12 rounded bg-navy-light hover:bg-navy-lightest font-roboto font-bold text-2xl text-center text-slate-light hover:text-green"
-              href="https://www.fb.com/alexcamargos" target="_blank" title="Facebook">
-              <i class="fa-brands fa-facebook-f"></i></a>
-          </li>
-
-          <!-- Strava -->
-          <li>
-            <a class="flex items-center justify-center w-12 h-12 rounded bg-navy-light hover:bg-navy-lightest font-roboto font-bold text-2xl text-center text-slate-light hover:text-green"
-              href="https://www.strava.com/athletes/alcamargos" target="_blank" title="Strava">
-              <i class="fa-brands fa-strava"></i></a>
-          </li>
-
-          <!-- Chess.com -->
-          <li>
-            <a class="flex items-center justify-center w-12 h-12 rounded bg-navy-light hover:bg-navy-lightest font-roboto font-bold text-2xl text-center text-slate-light hover:text-green"
-              href="https://www.chess.com/member/alcamargos" target="_blank" title="Chess.com">
-              <i class="fa-solid fa-chess"></i></a>
-          </li>
-        </ul>
-        <!-- END: Social Medias Items -->
-      </div>
-      <!-- END: Social Medias Container -->
-    </div>
-    <!-- END: Social Medias -->
-
-    <!-- START: Footer -->
-    <footer>
-      <!-- START: Footer Container -->
-      <div class="container mx-8 max-w-7xl px-4 pt-20 pb-2 sm:px-6 lg:px-8">
-        <div
-          class="container inline-flex flex-col gap-y-2 sm:flex-row items-center sm:justify-around text-xs sm:text-sm">
-          <span>
-            Copyright © 2022 -
-            <a class="hover:text-green" href="https://mit-license.org/" rel="noopener noreferrer" target="_blank">
-              MIT License
-            </a>
-          </span>
-          <a class="hover:text-green" href="https://github.com/alexcamargos/alexcamargos.github.io"
-            rel="noopener noreferrer" target="_blank">
-            Designed & Built by Alexsander Lopes Camargos
+      <!-- START: Copyright -->
+      <div
+        id="copyright"
+        class="after:contents-[''] fixed top-1/2 ml-4 hidden text-slate-light after:m-auto after:block after:h-screen after:w-px after:bg-slate-light hover:text-green hover:after:bg-green-light hover:after:text-green sm:block lg:ml-5 xlg:ml-6"
+      >
+        <div orientation="right" class="inline-flex flex-col text-right">
+          <a
+            class="pb-5 font-nunito text-xs tracking-widest"
+            href="https://github.com/alexcamargos"
+            target="_blank"
+            title="Github"
+          >
+            Designed & Built by AlCamargos
           </a>
         </div>
       </div>
-      <!-- END: Footer Container -->
-    </footer>
-    <!-- END: Footer -->
-  </div>
-  <!-- END: Main Page Container -->
+      <!-- END: Copyright -->
 
+      <!-- START: Social Medias -->
+      <div
+        id="social-icons"
+        class="fixed top-1/2 right-[5%] hidden -translate-y-1/2 sm:block xlg:right-[4%]"
+      >
+        <!-- START: Social Medias Container -->
+        <div class="container">
+          <!-- START: Social Medias Items -->
+          <ul class="inline-flex flex-col gap-1">
+            <!-- Github -->
+            <li>
+              <a
+                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+                href="https://github.com/alexcamargos"
+                target="_blank"
+                title="Github"
+              >
+                <i class="fa-brands fa-github"></i
+              ></a>
+            </li>
 
-  <!-- START: Third-Party JavaScript -->
-  <!-- START: jQuery v3.6.1 -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            <!-- Linkedin -->
+            <li>
+              <a
+                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+                href="https://www.linkedin.com/in/alexcamargos"
+                target="_blank"
+                title="Linkedin"
+              >
+                <i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+
+            <!-- Twitter -->
+            <li>
+              <a
+                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+                href="https://twitter.com/alcamargos"
+                target="_blank"
+                title="Twitter"
+              >
+                <i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+
+            <!-- Instagram -->
+            <li>
+              <a
+                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+                href="https://www.instagram.com/alexlopescamargos"
+                target="_blank"
+                title="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+
+            <!-- Facebook -->
+            <li>
+              <a
+                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+                href="https://www.fb.com/alexcamargos"
+                target="_blank"
+                title="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+
+            <!-- Strava -->
+            <li>
+              <a
+                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+                href="https://www.strava.com/athletes/alcamargos"
+                target="_blank"
+                title="Strava"
+              >
+                <i class="fa-brands fa-strava"></i
+              ></a>
+            </li>
+
+            <!-- Chess.com -->
+            <li>
+              <a
+                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+                href="https://www.chess.com/member/alcamargos"
+                target="_blank"
+                title="Chess.com"
+              >
+                <i class="fa-solid fa-chess"></i
+              ></a>
+            </li>
+          </ul>
+          <!-- END: Social Medias Items -->
+        </div>
+        <!-- END: Social Medias Container -->
+      </div>
+      <!-- END: Social Medias -->
+
+      <!-- START: Footer -->
+      <footer>
+        <!-- START: Footer Container -->
+        <div class="container mx-8 max-w-7xl px-4 pt-20 pb-2 sm:px-6 lg:px-8">
+          <div
+            class="container inline-flex flex-col items-center gap-y-2 text-xs sm:flex-row sm:justify-around sm:text-sm"
+          >
+            <span>
+              Copyright © 2022 -
+              <a
+                class="hover:text-green"
+                href="https://mit-license.org/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                MIT License
+              </a>
+            </span>
+            <a
+              class="hover:text-green"
+              href="https://github.com/alexcamargos/alexcamargos.github.io"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Designed & Built by Alexsander Lopes Camargos
+            </a>
+          </div>
+        </div>
+        <!-- END: Footer Container -->
+      </footer>
+      <!-- END: Footer -->
+    </div>
+    <!-- END: Main Page Container -->
+
+    <!-- START: Third-Party JavaScript -->
+    <!-- START: jQuery v3.6.1 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-  <!-- END: jQuery v3.6.1 -->
+    <!-- END: jQuery v3.6.1 -->
 
-  <!-- START: Font Awesome Free 6.2.0 -->
-  <script src="https://kit.fontawesome.com/c984e87752.js" crossorigin="anonymous"></script>
-  <!-- END: Font Awesome Free 6.2.0 -->
+    <!-- START: Font Awesome Free 6.2.0 -->
+    <script
+      src="https://kit.fontawesome.com/c984e87752.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- END: Font Awesome Free 6.2.0 -->
 
-  <!-- START: Owl Carousel v2.3.4 -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    <!-- START: Owl Carousel v2.3.4 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-  <!-- END: Owl Carousel v2.3.4 -->
+    <!-- END: Owl Carousel v2.3.4 -->
 
-  <!-- START: protonet-jquery.inview v1.1.2 -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
+    <!-- START: protonet-jquery.inview v1.1.2 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
     integrity="sha512-D68mBFX2aQwVh2wV6uCDLmabIveaSQL3uVUo2Ze7VwxIeOcAd4C1/JagkVoObb/NLkYDrdvY3JHK1KOfenHVcA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-  <!-- END: protonet-jquery.inview v1.1.2 -->
+    <!-- END: protonet-jquery.inview v1.1.2 -->
 
-  <!-- START: TypeIt v8.7.0 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.0/index.umd.min.js"
-    integrity="sha512-TP2yhfs2NKscWoIXdL/+vDZPf5dLv0sndur65ZBvsLbwH88mtt5+2LpbAiqKIUfpAZ/5+4kRk83Flt73Tuk2vA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- END: TypeIt v8.3.3 -->
-  <!-- END: Third-Party JavaScript -->
+    <!-- START: TypeIt v8.7.0 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.0/index.umd.min.js"
+      integrity="sha512-TP2yhfs2NKscWoIXdL/+vDZPf5dLv0sndur65ZBvsLbwH88mtt5+2LpbAiqKIUfpAZ/5+4kRk83Flt73Tuk2vA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- END: TypeIt v8.3.3 -->
+    <!-- END: Third-Party JavaScript -->
 
-  <!-- START: Additional JavaScript -->
-  <!-- <script src="assets/javascript/configurations.js"></script> -->
+    <!-- START: Additional JavaScript -->
+    <!-- <script src="assets/javascript/configurations.js"></script> -->
 
-  <!-- TypeIt v8.7.0 Configuration -->
-  <script src="assets/javascript/typeit.js"></script>
-  <!-- FullPage v4.0.11 Configuration -->
-  <!-- <script src="assets/javascript/fullPage.js"></script> -->
+    <!-- TypeIt v8.7.0 Configuration -->
+    <script src="assets/javascript/typeit.js"></script>
+    <!-- FullPage v4.0.11 Configuration -->
+    <!-- <script src="assets/javascript/fullPage.js"></script> -->
 
-  <!-- <script src="assets/javascript/header_scroll.js"></script> -->
-  <!-- END: Additional JavaScript -->
-</body>
-
+    <!-- <script src="assets/javascript/header_scroll.js"></script> -->
+    <!-- END: Additional JavaScript -->
+  </body>
 </html>
