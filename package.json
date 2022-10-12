@@ -1,4 +1,17 @@
 {
+  "name": "static",
+  "author": "Alexsander Lopes Camargos",
+  "license": "MIT License",
+  "version": "1.0.0",
+  "description": "A personal portfolio project made with Html, Tailwind Css & JavaScript.",
+  "main": "index.html",
+  "scripts": {
+    "build:tailwind": "tailwindcss -i ./src/assets/stylesheet/tailwind.src.css -o ./src/assets/stylesheet/tailwind.css --watch",
+    "build:tailwind-minify": "tailwindcss -i ./src/assets/stylesheet/tailwind.src.css -o ./src/assets/stylesheet/tailwind.min.css --minify"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  },
   "devDependencies": {
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
