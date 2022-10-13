@@ -852,6 +852,10 @@ video {
   row-gap: 0.5rem;
 }
 
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .divide-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1095,6 +1099,17 @@ video {
   font-feature-settings: 'ss01';
 }
 
+.before\:font-nunito::before {
+  content: var(--tw-content);
+  font-family: nunito, sans-serif;
+}
+
+.before\:text-base::before {
+  content: var(--tw-content);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .before\:text-green::before {
   content: var(--tw-content);
   --tw-text-opacity: 1;
@@ -1103,6 +1118,21 @@ video {
 
 .before\:content-\[\'\25B9\'\]::before {
   --tw-content: '▹';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'teste\'\]::before {
+  --tw-content: 'teste';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'What\\\2019s_Next\?\'\]::before {
+  --tw-content: 'What\’s Next?';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'What\2019s_Next\?\'\]::before {
+  --tw-content: 'What’s Next?';
   content: var(--tw-content);
 }
 
@@ -1190,6 +1220,12 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(204 214 246 / var(--tw-bg-opacity));
+}
+
+.after\:text-base::after {
+  content: var(--tw-content);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .after\:text-green::after {
