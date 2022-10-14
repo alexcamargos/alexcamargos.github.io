@@ -1340,6 +1340,17 @@ video {
   color: rgb(100 255 218 / var(--tw-text-opacity));
 }
 
+.after\:text-slate-lightest::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(204 214 246 / var(--tw-text-opacity));
+}
+
+.after\:content-\[\'AlCamargos\'\]::after {
+  --tw-content: 'AlCamargos';
+  content: var(--tw-content);
+}
+
 .hover\:origin-top:hover {
   transform-origin: top;
 }
@@ -1385,6 +1396,11 @@ video {
   color: rgb(136 146 176 / var(--tw-text-opacity));
 }
 
+.hover\:text-slate-lightest:hover {
+  --tw-text-opacity: 1;
+  color: rgb(204 214 246 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -1426,6 +1442,18 @@ video {
   content: var(--tw-content);
   --tw-text-opacity: 1;
   color: rgb(100 255 218 / var(--tw-text-opacity));
+}
+
+.hover\:after\:text-slate-lightest:hover::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(204 214 246 / var(--tw-text-opacity));
+}
+
+.after\:hover\:text-slate-lightest:hover::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(204 214 246 / var(--tw-text-opacity));
 }
 
 .hover\:after\:content-\[\'AlCamargos\'\]:hover::after {
@@ -1578,6 +1606,31 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .sm\:after\:content-\[\'AlCamargos\'\]::after {
+    --tw-content: 'AlCamargos';
+    content: var(--tw-content);
+  }
+
+  .sm\:after\:content-\[\'\'\]::after {
+    --tw-content: '';
+    content: var(--tw-content);
+  }
+
+  .sm\:hover\:after\:content-\[\'AlCamargos\'\]:hover::after {
+    --tw-content: 'AlCamargos';
+    content: var(--tw-content);
+  }
+
+  .sm\:after\:hover\:content-\[\'AlCamargos\'\]:hover::after {
+    --tw-content: 'AlCamargos';
+    content: var(--tw-content);
+  }
+
+  .sm\:hover\:after\:content-\[\'AlexCamargos\'\]:hover::after {
+    --tw-content: 'AlexCamargos';
+    content: var(--tw-content);
+  }
 }
 
 @media (min-width: 768px) {
@@ -1637,6 +1690,14 @@ video {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .lg\:pr-2 {
+    padding-right: 0.5rem;
   }
 
   .lg\:text-6xl {
