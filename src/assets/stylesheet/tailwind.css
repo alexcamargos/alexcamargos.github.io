@@ -637,14 +637,6 @@ video {
   top: 50%;
 }
 
-.right-\[5\%\] {
-  right: 5%;
-}
-
-.right-1 {
-  right: 0.25rem;
-}
-
 .right-2 {
   right: 0.5rem;
 }
@@ -793,12 +785,12 @@ video {
   width: 3rem;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
-}
-
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .max-w-screen-xs {
@@ -1182,9 +1174,46 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+:root {
+  --scrollbar-width: 10px;
+  --scrollbar-thumb-color: #495670;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #172a45 #0a192f;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 25 47 / var(--tw-bg-opacity));
+}
+
+.scrollbar::-webkit-scrollbar-track:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 12 27 / var(--tw-bg-opacity));
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border: 3px solid #0a192f;
+  border-radius: 10px;
+  background: var(--scrollbar-thumb-color);
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-color);
+}
+
 .\[font-feature-settings\:\'ss01\'\] {
   font-feature-settings: 'ss01';
 }
+
+/* Scrollbar Styles */
 
 .selection\:font-nunito *::-moz-selection {
   font-family: nunito, sans-serif;
@@ -1340,12 +1369,6 @@ video {
   color: rgb(100 255 218 / var(--tw-text-opacity));
 }
 
-.after\:text-slate-lightest::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: rgb(204 214 246 / var(--tw-text-opacity));
-}
-
 .after\:content-\[\'AlCamargos\'\]::after {
   --tw-content: 'AlCamargos';
   content: var(--tw-content);
@@ -1396,11 +1419,6 @@ video {
   color: rgb(136 146 176 / var(--tw-text-opacity));
 }
 
-.hover\:text-slate-lightest:hover {
-  --tw-text-opacity: 1;
-  color: rgb(204 214 246 / var(--tw-text-opacity));
-}
-
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -1438,27 +1456,16 @@ video {
   background-color: rgb(170 255 236 / var(--tw-bg-opacity));
 }
 
-.hover\:after\:text-green:hover::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: rgb(100 255 218 / var(--tw-text-opacity));
-}
-
-.hover\:after\:text-slate-lightest:hover::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: rgb(204 214 246 / var(--tw-text-opacity));
-}
-
 .after\:hover\:text-slate-lightest:hover::after {
   content: var(--tw-content);
   --tw-text-opacity: 1;
   color: rgb(204 214 246 / var(--tw-text-opacity));
 }
 
-.hover\:after\:content-\[\'AlCamargos\'\]:hover::after {
-  --tw-content: 'AlCamargos';
+.hover\:after\:text-green:hover::after {
   content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(100 255 218 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -1607,26 +1614,6 @@ video {
     line-height: 1.75rem;
   }
 
-  .sm\:after\:content-\[\'AlCamargos\'\]::after {
-    --tw-content: 'AlCamargos';
-    content: var(--tw-content);
-  }
-
-  .sm\:after\:content-\[\'\'\]::after {
-    --tw-content: '';
-    content: var(--tw-content);
-  }
-
-  .sm\:hover\:after\:content-\[\'AlCamargos\'\]:hover::after {
-    --tw-content: 'AlCamargos';
-    content: var(--tw-content);
-  }
-
-  .sm\:after\:hover\:content-\[\'AlCamargos\'\]:hover::after {
-    --tw-content: 'AlCamargos';
-    content: var(--tw-content);
-  }
-
   .sm\:hover\:after\:content-\[\'AlexCamargos\'\]:hover::after {
     --tw-content: 'AlexCamargos';
     content: var(--tw-content);
@@ -1722,10 +1709,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .xlg\:right-\[4\%\] {
-    right: 4%;
-  }
-
   .xlg\:ml-6 {
     margin-left: 1.5rem;
   }
