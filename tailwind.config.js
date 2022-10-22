@@ -14,16 +14,23 @@ module.exports = {
             "2xl": "1199px",
         },
         colors: {
-            "navy-dark": "#020c1b",
-            navy: "#0a192f",
-            "navy-light": "#112240",
-            "navy-lightest": "#233554",
-            "slate-dark": "#172a45",
-            slate: "#8892b0",
-            "slate-light": "#a8b2d1",
-            "slate-lightest": "#ccd6f6",
-            green: "#64ffda",
-            "green-light": "#aaffec",
+            navy: {
+                DEFAULT: "#0a192f",
+                dark: "#020c1b",
+                light: "#112240",
+                lightest: "#233554",
+            },
+            slate: {
+                DEFAULT: "#8892b0",
+                dark: "#172a45",
+                light: "#a8b2d1",
+                lightest: "#ccd6f6",
+            },
+            green: {
+                DEFAULT: "#64ffda",
+                dark: "#3ae3c1",
+                light: "#aaffec",
+            },
             white: "#e6f1ff",
         },
         fontFamily: {
