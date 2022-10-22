@@ -1,6 +1,40 @@
+/*
+// -------------------------------------------------------------------------------------------------
+// Name: tailwind.src.css
+// Version: 0.0.5
+//
+// Summary: alexcamargos.github.io
+//          My Personal Portfolio.
+//
+// Author: Alexsander Lopes Camargos
+// Author-email: alcamargos@vivaldi.net
+//
+// License: MIT
+// -------------------------------------------------------------------------------------------------
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    /* Navigation button active indicator */
+    .active_indicator {
+        @apply !text-green-light;
+    }
+
+    .transition-all-300-500 {
+        @apply transition-all delay-300 duration-500 ease-in-out;
+    }
+
+    .section {
+        @apply mx-8 px-4 pt-36 pb-16 sm:px-6 lg:px-8;
+    }
+
+    .title {
+        @apply mt-5 mb-10 flex flex-col-reverse gap-x-2 font-nunito text-3xl font-bold text-slate-lightest after:absolute after:h-[1px] after:w-1/2 after:bg-navy-lightest;
+    }
+}
 
 /* Scrollbar Styles */
 @layer utilities {
