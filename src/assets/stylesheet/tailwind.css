@@ -1,7 +1,7 @@
 /*
 // -------------------------------------------------------------------------------------------------
 // Name: tailwind.src.css
-// Version: 0.0.5
+// Version: 0.0.8
 //
 // Summary: alexcamargos.github.io
 //          My Personal Portfolio.
@@ -425,6 +425,18 @@ video {
   height: auto;
 }
 
+#container {
+  min-height: 100%;
+}
+
+.scroll-down-indicator {
+  width: -webkit-fill-available;
+}
+
+#copyright a {
+  writing-mode: vertical-rl;
+}
+
 /* Navigation button active indicator */
 
 .active_indicator {
@@ -432,12 +444,16 @@ video {
   color: rgb(170 255 236 / var(--tw-text-opacity)) !important;
 }
 
+/* Transition */
+
 .transition-all-300-500 {
   transition-property: all;
   transition-delay: 300ms;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Section */
 
 .section {
   margin-left: 2rem;
@@ -462,6 +478,8 @@ video {
   }
 }
 
+/* Section title */
+
 .title {
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
@@ -485,6 +503,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(35 53 84 / var(--tw-bg-opacity));
 }
+
+/* Technologies I've been working with recently highlighter */
 
 .highlighter {
   transition-property: all;
@@ -539,6 +559,200 @@ video {
   content: var(--tw-content);
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+/* *************** WAVING HAND ANIMATION *************** */
+
+.waving-hand {
+  display: inline-block;
+  -webkit-animation-name: waving-hand-animation;
+          animation-name: waving-hand-animation;
+  /* Change to speed up or slow down */
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  /* Never stop waving */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /* Pivot around the bottom-left palm */
+  transform-origin: 70% 70%;
+}
+
+@-webkit-keyframes waving-hand-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(-5deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes waving-hand-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(-5deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* SCROLL DOWN ANIMATION */
+
+.scroll-down-icon-animate {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  -webkit-animation: move 3s ease-out infinite;
+          animation: move 3s ease-out infinite;
+}
+
+.scroll-down-icon-animate:first-child {
+  -webkit-animation: move 3s ease-out 1s infinite;
+          animation: move 3s ease-out 1s infinite;
+}
+
+.scroll-down-icon-animate:nth-child(2) {
+  -webkit-animation: move 3s ease-out 2s infinite;
+          animation: move 3s ease-out 2s infinite;
+}
+
+.scroll-down-icon-animate:before,
+    .scroll-down-icon-animate:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #ccd6f6;
+}
+
+.scroll-down-icon-animate:hover::before,
+    .scroll-down-icon-animate:hover::after {
+  background: #64ffda;
+}
+
+.scroll-down-icon-animate:before {
+  /* left: 0; */
+  transform: skew(0deg, 30deg);
+}
+
+.scroll-down-icon-animate:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@-webkit-keyframes move {
+  25% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@-webkit-keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
 }
 
 *, ::before, ::after {
@@ -915,10 +1129,6 @@ video {
 
 .max-w-screen-xs {
   max-width: 480px;
-}
-
-.max-w-7xl {
-  max-width: 80rem;
 }
 
 .-translate-y-1\/2 {
@@ -1744,11 +1954,6 @@ html {
 @media (min-width: 991px) {
   .lg\:ml-5 {
     margin-left: 1.25rem;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .lg\:pl-8 {
