@@ -32,7 +32,13 @@
     }
 
     .title {
-        @apply mt-5 mb-10 flex flex-col-reverse gap-x-2 font-nunito text-3xl font-bold text-slate-lightest after:absolute after:h-[1px] after:w-1/2 after:bg-navy-lightest;
+        @apply mt-5 mb-10 flex flex-col-reverse gap-x-2 font-nunito text-3xl font-bold text-slate-lightest
+            after:absolute after:h-[1px] after:w-1/2 after:bg-navy-lightest;
+    }
+
+    .highlighter {
+        @apply transition-all-300-500 inline-flex items-center gap-3
+            before:text-green before:content-['▹'] hover:before:animate-bounce;
     }
 }
 
