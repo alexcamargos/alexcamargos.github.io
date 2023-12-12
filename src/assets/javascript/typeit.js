@@ -1,6 +1,6 @@
 // -------------------------------------------------------------------------------------------------
 // Name: configurations.js
-// Version: 0.0.1
+// Version: 0.0.2
 //
 // Summary: alexcamargos.github.io
 //          My Personal Portfolio.
@@ -25,19 +25,13 @@ new TypeIt("#typing-effect",
     .type("student.", { delay: 300, })
     .pause(2000)
     .delete(8)
-    .type("data analyst.", { delay: 300, })
+    .type("business intelligence analyst.", { delay: 300, })
     .pause(2000)
-    .delete(13)
-    .type("developer.", { delay: 300, })
+    .delete(30)
+    .type("data analysis student.", { delay: 300, })
+    .pause(4000)
+    .delete(22)
+    .type("data science student.", { delay: 300, })
     .pause(2000)
-    .delete(10)
-    .type("back-end developer.", { delay: 300, })
-    .pause(2000)
-    .delete(19)
-    .type("front-end developer.", { delay: 300, })
-    .pause(2000)
-    .delete(20)
-    .type("junior full stack developer.", { delay: 300, })
-    .pause(8000)
-    .delete(28)
+    .delete(21)
     .go();
