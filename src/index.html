@@ -1,780 +1,587 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  class="js-focus-visible scrollbar h-full scroll-smooth bg-navy antialiased [font-feature-settings:'ss01']"
->
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Self Developed personal website build HTML5, Sass and JavaScript"
-    />
-    <meta
-      name="author"
-      content="Alexsander Lopes Camargos - alcamargos@vivaldi.net"
-    />
+<html lang="en"
+  class="js-focus-visible scrollbar h-full scroll-smooth bg-navy antialiased [font-feature-settings:'ss01']">
 
-    <!-- START: FAVICON -->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.jpg"
-      type="image/x-icon"
-    />
-    <!-- END: FAVICON -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Self Developed personal website build HTML5, Sass and JavaScript" />
+  <meta name="author" content="Alexsander Lopes Camargos - alcamargos@vivaldi.net" />
 
-    <title>Alexsander Lopes Camargos Portfólio</title>
+  <!-- START: FAVICON -->
+  <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon" />
+  <!-- END: FAVICON -->
 
-    <!-- START: Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- END: Google Fonts -->
+  <title>Alexsander Lopes Camargos Portfólio</title>
 
-    <!-- START: Tailwind CSS -->
-    <!-- Development version -->
-    <!-- <link rel="stylesheet" href="assets/stylesheet/tailwind.css" /> -->
-    <!-- Production version -->
-    <link rel="stylesheet" href="assets/stylesheet/tailwind.min.css" />
-    <!-- END: Tailwind CSS -->
-  </head>
+  <!-- START: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- END: Google Fonts -->
 
-  <body class="flex h-full flex-col text-slate">
-    <!-- START: Main Page Container -->
-    <div id="container mx-auto">
-      <!-- START: Header -->
-      <header id="header" class="fixed z-50 w-full py-4">
-        <!-- START: Header Container -->
-        <div class="mx-8 font-nunito">
-          <!-- START: Navigation Bar -->
-          <div class="relative z-50 flex items-center justify-between">
-            <!-- START: Navigation Bar Container -->
-            <div class="navigation-bar_container">
-              <!-- START: Title -->
-              <div class="flex items-center md:gap-x-12">
-                <a
-                  class="transition-all-300-500 inline-flex flex-row items-center gap-x-4 py-1 px-2 text-slate after:block after:text-green after:content-['AlCamargos'] after:hover:text-slate-lightest sm:text-base sm:hover:after:content-['AlexCamargos'] md:text-lg"
-                  href="https://alcamargos.me/"
-                  id="logo"
-                  title="Alexsander Lopes Camargos"
-                >
-                  <i class="fa-solid fa-terminal text-green"></i>
-                </a>
-              </div>
+  <!-- START: Tailwind CSS -->
+  <!-- Development version -->
+  <!-- <link rel="stylesheet" href="assets/stylesheet/tailwind.css" /> -->
+  <!-- Production version -->
+  <link rel="stylesheet" href="assets/stylesheet/tailwind.min.css" />
+  <!-- END: Tailwind CSS -->
+</head>
+
+<body class="flex h-full flex-col text-slate">
+  <!-- START: Main Page Container -->
+  <div id="container mx-auto">
+    <!-- START: Header -->
+    <header id="header" class="fixed z-50 w-full py-4">
+      <!-- START: Header Container -->
+      <div class="mx-8 font-nunito">
+        <!-- START: Navigation Bar -->
+        <div class="relative z-50 flex items-center justify-between">
+          <!-- START: Navigation Bar Container -->
+          <div class="navigation-bar_container">
+            <!-- START: Title -->
+            <div class="flex items-center md:gap-x-12">
+              <a class="transition-all-300-500 inline-flex flex-row items-center gap-x-4 py-1 px-2 text-slate after:block after:text-green after:content-['AlCamargos'] after:hover:text-slate-lightest sm:text-base sm:hover:after:content-['AlexCamargos'] md:text-lg"
+                href="https://alexcamargos.github.io/" id="logo" title="Alexsander Lopes Camargos">
+                <i class="fa-solid fa-terminal text-green"></i>
+              </a>
             </div>
-            <!-- END: Title -->
-
-            <!-- START: Navigation Bar Menu -->
-            <div class="navigation-bar_menu">
-              <nav class="z-50 flex justify-between">
-                <!-- START: Navigation Bar Menu Itens -->
-                <div class="mx-auto px-2 sm:px-6 lg:pl-8 lg:pr-2">
-                  <div class="relative flex h-16 items-center justify-between">
-                    <ul class="flex items-center md:gap-x-12">
-                      <!-- Home -->
-                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                        <a
-                          class="active_indicator inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
-                          href="#hero"
-                          accesskey="h"
-                          tabindex="1"
-                        >
-                          <i class="fa-solid fa-house-chimney"></i>
-                          Home
-                        </a>
-                      </li>
-
-                      <!-- About -->
-                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                        <a
-                          class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
-                          href="#about"
-                          accesskey="a"
-                          tabindex="2"
-                        >
-                          <i class="fa-solid fa-user"></i>
-                          About
-                        </a>
-                      </li>
-
-                      <!-- Portfolio -->
-                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                        <a
-                          class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
-                          href="#portfolio"
-                          accesskey="p"
-                          tabindex="33"
-                        >
-                          <i class="fa-solid fa-code"></i>
-                          Portfolio
-                        </a>
-                      </li>
-
-                      <!-- Contact -->
-                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                        <a
-                          class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
-                          href="#contact"
-                          accesskey="c"
-                          tabindex="4"
-                        >
-                          <i class="fa-regular fa-at"></i>
-                          Contact
-                        </a>
-                      </li>
-                      <!-- Fork on GitHub -->
-                      <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                        <a
-                          class="inline-flex place-items-center py-1 px-2 text-sm text-slate-light hover:text-green sm:gap-x-2 md:gap-x-4"
-                          href="https://github.com/alexcamargos/alexcamargos.github.io"
-                          target="_blank"
-                          accesskey="f"
-                          tabindex="5"
-                        >
-                          <i class="fa-solid fa-code-fork"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </a>
-                      </li>
-                    </ul>
-                    <!-- END: Navigation Bar Menu Itens -->
-                  </div>
-                </div>
-              </nav>
-            </div>
-            <!-- END: Navigation Bar Container -->
           </div>
-          <!-- END: Navigation Bar -->
+          <!-- END: Title -->
+
+          <!-- START: Navigation Bar Menu -->
+          <div class="navigation-bar_menu">
+            <nav class="z-50 flex justify-between">
+              <!-- START: Navigation Bar Menu Itens -->
+              <div class="mx-auto px-2 sm:px-6 lg:pl-8 lg:pr-2">
+                <div class="relative flex h-16 items-center justify-between">
+                  <ul class="flex items-center md:gap-x-12">
+                    <!-- Home -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="active_indicator inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                        href="#hero" accesskey="h" tabindex="1">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        Home
+                      </a>
+                    </li>
+
+                    <!-- About -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                        href="#about" accesskey="a" tabindex="2">
+                        <i class="fa-solid fa-user"></i>
+                        About
+                      </a>
+                    </li>
+
+                    <!-- Portfolio -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                        href="#portfolio" accesskey="p" tabindex="33">
+                        <i class="fa-solid fa-code"></i>
+                        Portfolio
+                      </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                        href="#contact" accesskey="c" tabindex="4">
+                        <i class="fa-regular fa-at"></i>
+                        Contact
+                      </a>
+                    </li>
+                    <!-- Fork on GitHub -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center py-1 px-2 text-sm text-slate-light hover:text-green sm:gap-x-2 md:gap-x-4"
+                        href="https://github.com/alexcamargos/alexcamargos.github.io" target="_blank" accesskey="f"
+                        tabindex="5">
+                        <i class="fa-solid fa-code-fork"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- END: Navigation Bar Menu Itens -->
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!-- END: Navigation Bar Container -->
         </div>
-        <!-- END: Header Container -->
-      </header>
-      <!-- END: Header -->
+        <!-- END: Navigation Bar -->
+      </div>
+      <!-- END: Header Container -->
+    </header>
+    <!-- END: Header -->
 
-      <!-- START: Main -->
-      <main>
-        <!-- START: Main Container -->
-        <div id="main-container" class="divide-y-[60px] divide-navy">
-          <!-- START: Hero Section -->
-          <section
-            id="hero"
-            class="section container my-auto h-screen w-screen pt-48"
-          >
-            <!-- <section id="hero" class="h-screen mx-auto flex flex-col items-stretch px-4 py-1 sm:py-4"> -->
+    <!-- START: Main -->
+    <main>
+      <!-- START: Main Container -->
+      <div id="main-container" class="divide-y-[60px] divide-navy">
+        <!-- START: Hero Section -->
+        <section id="hero" class="section container my-auto h-screen w-screen pt-48">
+          <!-- <section id="hero" class="h-screen mx-auto flex flex-col items-stretch px-4 py-1 sm:py-4"> -->
 
-            <!-- START: Hero Container -->
-            <div
-              class="hero-container container grid grid-flow-row auto-rows-max gap-y-8 pt-36 text-left"
-            >
-              <!-- <div class="hero-container flex flex-row justify-items-start auto-rows-max gap-y-8"> -->
+          <!-- START: Hero Container -->
+          <div class="hero-container container grid grid-flow-row auto-rows-max gap-y-8 pt-36 text-left">
+            <!-- <div class="hero-container flex flex-row justify-items-start auto-rows-max gap-y-8"> -->
 
-              <p
-                class="font-display mx-4 max-w-4xl tracking-tight text-green xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl"
-              >
-                <span class="waving-hand">👋</span>
-                Hello! My name is...
-              </p>
+            <p
+              class="font-display mx-4 max-w-4xl tracking-tight text-green xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl">
+              <span class="waving-hand">👋</span>
+              Hello! My name is...
+            </p>
 
-              <p
-                class="font-display mx-4 max-w-4xl font-medium tracking-tight text-slate-lightest xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl"
-              >
-                <span class="relative whitespace-nowrap">
-                  <svg
-                    aria-hidden="true"
-                    viewBox="0 0 418 42"
-                    class="absolute top-3/4 left-0 h-[0.58em] w-full fill-navy-lightest"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"
-                    ></path>
-                  </svg>
-                  <span class="relative">Alexsander Lopes Camargos</span>
-                </span>
-              </p>
+            <p
+              class="font-display mx-4 max-w-4xl font-medium tracking-tight text-slate-lightest xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl">
+              <span class="relative whitespace-nowrap">
+                <svg aria-hidden="true" viewBox="0 0 418 42"
+                  class="absolute top-3/4 left-0 h-[0.58em] w-full fill-navy-lightest" preserveAspectRatio="none">
+                  <path
+                    d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                  </path>
+                </svg>
+                <span class="relative">Alexsander Lopes Camargos</span>
+              </span>
+            </p>
 
-              <p
-                class="font-display sm:text-1xl mx-4 max-w-4xl tracking-tight text-slate xs:text-xl md:text-3xl lg:text-5xl"
-              >
-                and I'm a
-                <span id="typing-effect" class="text-green"></span>
-              </p>
+            <p
+              class="font-display sm:text-1xl mx-4 max-w-4xl tracking-tight text-slate xs:text-xl md:text-3xl lg:text-5xl">
+              and I'm a
+              <span id="typing-effect" class="text-green"></span>
+            </p>
 
-              <!-- START: Scroll Down Indicator -->
-              <div
-                class="scroll-down-indicator absolute bottom-2 flex items-baseline justify-center text-sm"
-              >
-                <div
-                  class="absolute bottom-24 flex flex-row justify-center hover:origin-top"
-                >
-                  <div class="scroll-down-icon-animate"></div>
-                  <div class="scroll-down-icon-animate"></div>
-                  <div class="scroll-down-icon-animate"></div>
-                  <span></span>
-                </div>
-                <span
-                  class="absolute bottom-0 cursor-none font-semibold text-slate transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green xs:text-sm sm:text-base md:text-lg lg:text-xl"
-                >
-                  Scroll Down
-                </span>
+            <!-- START: Scroll Down Indicator -->
+            <div class="scroll-down-indicator absolute bottom-2 flex items-baseline justify-center text-sm">
+              <div class="absolute bottom-24 flex flex-row justify-center hover:origin-top">
+                <div class="scroll-down-icon-animate"></div>
+                <div class="scroll-down-icon-animate"></div>
+                <div class="scroll-down-icon-animate"></div>
+                <span></span>
               </div>
-              <!-- END: Scroll Down Indicator -->
+              <span
+                class="absolute bottom-0 cursor-none font-semibold text-slate transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green xs:text-sm sm:text-base md:text-lg lg:text-xl">
+                Scroll Down
+              </span>
             </div>
-            <!-- END: Hero Container -->
-          </section>
-          <!-- END: Hero Section -->
-          <div id="content-container" class="container mx-auto">
-            <!-- START: About Section -->
-            <section id="about" class="section">
-              <!-- START: About Container -->
-              <div
-                class="about-container container flex flex-col gap-16 md:flex-row"
-              >
-                <!-- START: About Content -->
-                <div
-                  class="about flex w-4/5 flex-col gap-6 text-base text-slate"
-                >
-                  <h1 class="title">Who I am</h1>
+            <!-- END: Scroll Down Indicator -->
+          </div>
+          <!-- END: Hero Container -->
+        </section>
+        <!-- END: Hero Section -->
+        <div id="content-container" class="container mx-auto">
+          <!-- START: About Section -->
+          <section id="about" class="section">
+            <!-- START: About Container -->
+            <div class="about-container container flex flex-col gap-16 md:flex-row">
+              <!-- START: About Content -->
+              <div class="about flex w-4/5 flex-col gap-6 text-base text-slate">
+                <h1 class="title">Who I am</h1>
 
-                  <!-- START: About Me -->
-                  <p>
-                    Hi! I'm Brazilian, I'm 37 years old, I'm passionate about
-                    solving problems, I'm not afraid to face new challenges, and
-                    that's exactly what I'm looking for when applying my
-                    knowledge in processes that transform complexity into
-                    simplicity, helping to solve the most diverse problems. I
-                    have been working for more than 15 years in the
-                    administrative area, I have a degree in business
-                    administration, with solid experience in administrative
-                    routines/procedures and people management.
-                  </p>
-                  <!-- END: About Me -->
-
-                  <!-- START: Resume -->
-                  <div class="resume">
-                    <a
-                      href="https://www.linkedin.com/in/alexcamargos"
-                      target="_blank"
-                      title="LinkedIn"
-                    >
-                      <div
-                        class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate"
-                      >
-                        Resume
-                      </div>
-                    </a>
-                  </div>
-                  <!-- END: Resume -->
-                </div>
-                <!-- END: About Content -->
-
-                <!-- START: About Picture -->
-                <div class="about-picture mx-auto px-8">
-                  <figure
-                    class="placeholder:about-picture_container container -rotate-6 overflow-hidden bg-fixed pt-24 opacity-50 transition duration-500 ease-in-out hover:rotate-6 hover:opacity-100"
-                  >
-                    <img
-                      class="w-4/5 rounded-xl shadow-lg md:w-full"
-                      src="assets/img/profile-pic.png"
-                      alt="Alexsander Lopes Camargos"
-                    />
-                  </figure>
-                </div>
-                <!-- END: About Picture -->
-              </div>
-              <!-- END: About Container -->
-
-              <!-- START: Technologies I Use -->
-              <div class="technologies container mt-20 text-base">
-                <h2 class="text-slate-lightest">
-                  Here are a few technologies I've been working with recently:
-                </h2>
-
-                <!-- START: Technologies List -->
-                <ul
-                  class="mt-8 grid grid-cols-1 gap-4 font-nunito text-base font-medium text-slate xs:grid-cols-2 md:grid-cols-4 md:text-lg lg:text-2xl xlg:text-3xl"
-                >
-                  <!-- Python -->
-                  <li class="highlighter">
-                    <i class="fa-brands fa-python"></i>
-                    <span>Python</span>
-                  </li>
-
-                  <!-- Linux -->
-                  <li class="highlighter">
-                    <i class="fa-brands fa-linux"></i>
-                    <span>Linux</span>
-                  </li>
-
-                  <!-- Docker -->
-                  <li class="highlighter">
-                    <i class="fa-brands fa-docker"></i>
-                    <span>Docker</span>
-                  </li>
-
-                  <!-- GIT -->
-                  <li class="highlighter">
-                    <i class="fa-brands fa-git"></i>
-                    <span>Git</span>
-                  </li>
-
-                  <!-- DataBase -->
-                  <li class="highlighter">
-                    <i class="fa-solid fa-database"></i>
-                    <span>Database</span>
-                  </li>
-
-                  <!-- HTML5 -->
-                  <li class="highlighter">
-                    <i class="fa-brands fa-html5"></i>
-                    <span>HTML5</span>
-                  </li>
-
-                  <!-- CSS / SASS -->
-                  <li class="highlighter">
-                    <i class="fa-brands fa-sass"></i>
-                    <span>Sass</span>
-                  </li>
-
-                  <!-- JavaScript -->
-                  <li class="highlighter">
-                    <i class="fa-brands fa-square-js"></i>
-                    <span>JavaScript</span>
-                  </li>
-                </ul>
-                <!-- END: Technologies List -->
-              </div>
-              <!-- END: Technologies I Use -->
-
-              <!-- END: About Container -->
-            </section>
-            <!-- END: About Section -->
-
-            <!-- START: Portfolio Section -->
-            <section id="portfolio" class="section">
-              <!-- START: Portfolio Container -->
-              <div class="portfolio-container container">
-                <h1 class="title">Some Things I've Built</h1>
-                <!-- START: Projects List -->
-                <ul class="flex flex-col">
-                  <!-- START: Project 1 -->
-                  <l1
-                    class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0"
-                  >
-                    <!-- START: Project Image -->
-                    <picture
-                      id="project-image"
-                      class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7"
-                    >
-                      <img
-                        class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
-                        src="https://via.placeholder.com/700x438.png?text=Project+Image+(700x438)"
-                        alt="Project Image"
-                      />
-                    </picture>
-                    <!-- END: Project Image -->
-
-                    <!-- START: Project Content -->
-                    <div
-                      id="project-content"
-                      class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right"
-                    >
-                      <p
-                        id="project-overline"
-                        class="my-3 font-nunito text-sm font-normal text-green"
-                      >
-                        Featured Project
-                      </p>
-                      <!-- Project Title -->
-                      <h3 id="project-title" class="mb-5 text-xl font-semibold">
-                        <a
-                          class="text-slate-light hover:text-green"
-                          href="https://github.com/alexcamargos"
-                          target="_blank"
-                        >
-                          Project Title
-                        </a>
-                      </h3>
-                      <!-- START: Project Description -->
-                      <div
-                        id="project-description"
-                        class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6"
-                      >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Quos dignissimos reprehenderit dolore, voluptatem
-                        earum odio similique eligendi corrupti doloribus, cumque
-                        quia vero. Quod ut ab tempore quam eius, rem labore.
-                      </div>
-                      <!-- END: Project Description -->
-
-                      <!-- START: Technologies Used -->
-                      <div
-                        id="project-tech-list"
-                        class="sm:flex sm:justify-end"
-                      >
-                        <ul
-                          class="mt-6 mb-3 flex flex-col items-center gap-3 font-nunito text-sm 2xs:flex-row 2xs:content-end"
-                        >
-                          <li class="ml-3">HTML5</li>
-                          <li class="ml-3">Sass</li>
-                          <li class="ml-3">JavaScript</li>
-                        </ul>
-                      </div>
-                      <!-- END: Technologies Used -->
-
-                      <!-- START: Project Links -->
-                      <div
-                        id="project-links"
-                        class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg"
-                      >
-                        <a
-                          class="ml-3 inline-flex items-center gap-3 hover:text-green"
-                          href="https://github.com/alexcamargos"
-                          target="_blank"
-                          title="GitHub"
-                        >
-                          GitHub
-                          <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a
-                          class="ml-3 inline-flex items-center gap-3 hover:text-green"
-                          href="https://github.com/alexcamargos"
-                          target="_blank"
-                          title="Live Demo"
-                        >
-                          Preview
-                          <i class="fa-solid fa-external-link"></i>
-                        </a>
-                      </div>
-                      <!-- END: Project Links -->
-                    </div>
-                    <!-- END: Project Content -->
-                  </l1>
-                  <!-- END: Project 1 -->
-                  <l1
-                    class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0"
-                  >
-                    <!-- START: Project Image -->
-                    <picture
-                      id="project-image"
-                      class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7"
-                    >
-                      <img
-                        class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
-                        src="https://via.placeholder.com/700x438.png?text=Project+Image+(700x438)"
-                        alt="Project Image"
-                      />
-                    </picture>
-                    <!-- END: Project Image -->
-
-                    <!-- START: Project Content -->
-                    <div
-                      id="project-content"
-                      class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right"
-                    >
-                      <p
-                        id="project-overline"
-                        class="my-3 font-nunito text-sm font-normal text-green"
-                      >
-                        Featured Project
-                      </p>
-                      <!-- Project Title -->
-                      <h3 id="project-title" class="mb-5 text-xl font-semibold">
-                        <a
-                          class="text-slate-light hover:text-green"
-                          href="https://github.com/alexcamargos"
-                          target="_blank"
-                        >
-                          Project Title
-                        </a>
-                      </h3>
-                      <!-- START: Project Description -->
-                      <div
-                        id="project-description"
-                        class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6"
-                      >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Quos dignissimos reprehenderit dolore, voluptatem
-                        earum odio similique eligendi corrupti doloribus, cumque
-                        quia vero. Quod ut ab tempore quam eius, rem labore.
-                      </div>
-                      <!-- END: Project Description -->
-
-                      <!-- START: Technologies Used -->
-                      <div
-                        id="project-tech-list"
-                        class="sm:flex sm:justify-end"
-                      >
-                        <ul
-                          class="mt-6 mb-3 flex flex-col items-center gap-3 font-nunito text-sm 2xs:flex-row 2xs:content-end"
-                        >
-                          <li class="ml-3">HTML5</li>
-                          <li class="ml-3">Sass</li>
-                          <li class="ml-3">JavaScript</li>
-                        </ul>
-                      </div>
-                      <!-- END: Technologies Used -->
-
-                      <!-- START: Project Links -->
-                      <div
-                        id="project-links"
-                        class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg"
-                      >
-                        <a
-                          class="ml-3 inline-flex items-center gap-3 hover:text-green"
-                          href="https://github.com/alexcamargos"
-                          target="_blank"
-                          title="GitHub"
-                        >
-                          GitHub
-                          <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a
-                          class="ml-3 inline-flex items-center gap-3 hover:text-green"
-                          href="https://github.com/alexcamargos"
-                          target="_blank"
-                          title="Live Demo"
-                        >
-                          Preview
-                          <i class="fa-solid fa-external-link"></i>
-                        </a>
-                      </div>
-                      <!-- END: Project Links -->
-                    </div>
-                    <!-- END: Project Content -->
-                  </l1>
-                  <!-- START: Project 2 -->
-
-                  <!-- END: Project 2 -->
-                </ul>
-                <!-- END: Projects List -->
-              </div>
-              <!-- END: Portfolio Container -->
-            </section>
-            <!-- END: Portfolio Section -->
-
-            <!-- START: Contact Section -->
-            <section id="contact" class="section">
-              <!-- START: Contact Container -->
-              <div
-                class="contact-container container grid grid-flow-row auto-rows-max justify-items-center gap-y-8 text-base text-slate"
-              >
-                <h2
-                  class="flex flex-col items-center gap-y-4 font-nunito text-3xl font-bold text-slate-lightest before:font-nunito before:text-base before:text-green before:content-['What\’s_Next?']"
-                >
-                  Get In Touch
-                </h2>
-
-                <p class="max-w-screen-xs">
-                  My inbox is always open. If you want to offer me an
-                  opportunity, have a question or just want to say hi, I will
-                  try my best you answer you!
+                <!-- START: About Me -->
+                <p>
+                  Hi! I'm Brazilian, I'm 37 years old, I'm passionate about
+                  solving problems, I'm not afraid to face new challenges, and
+                  that's exactly what I'm looking for when applying my
+                  knowledge in processes that transform complexity into
+                  simplicity, helping to solve the most diverse problems. I
+                  have been working for more than 15 years in the
+                  administrative area, I have a degree in business
+                  administration, with solid experience in administrative
+                  routines/procedures and people management.
                 </p>
 
-                <!-- START: SAY HELLO BOX -->
+                <p>
+                  Find out more<a class="ml-3 inline-flex items-center gap-3 hover:text-green" href="about.html"
+                    target="_self" title="About me">about me</a>.
+                </p>
+                <!-- END: About Me -->
+
+                <!-- START: Resume -->
                 <div class="resume">
-                  <a
-                    href="mailto:alcamargos@vivaldi.net"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                  <a href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="LinkedIn">
                     <div
-                      class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate"
-                    >
-                      Say Hello
+                      class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate">
+                      Resume
                     </div>
                   </a>
                 </div>
-                <!-- END: SAY HELLO BOX -->
+                <!-- END: Resume -->
               </div>
-              <!-- END: Contact Container -->
-            </section>
-            <!-- END: Contact Section -->
-          </div>
-        </div>
-        <!-- END: Main Container -->
-      </main>
-      <!-- END: Main -->
+              <!-- END: About Content -->
 
-      <!-- START: Copyright -->
-      <div
-        id="copyright"
-        class="fixed top-1/2 ml-4 hidden text-slate-light after:m-auto after:block after:h-screen after:w-px after:bg-slate-light hover:text-green hover:after:bg-green-light hover:after:text-green sm:block lg:ml-5 xlg:ml-6"
-      >
-        <div orientation="right" class="inline-flex flex-col text-right">
-          <a
-            class="pb-5 font-nunito text-xs tracking-widest"
-            href="https://github.com/alexcamargos"
-            target="_blank"
-            title="Github"
-          >
-            Designed & Built by AlCamargos
+              <!-- START: About Picture -->
+              <div class="about-picture mx-auto px-8">
+                <figure
+                  class="placeholder:about-picture_container container -rotate-6 overflow-hidden bg-fixed pt-24 opacity-50 transition duration-500 ease-in-out hover:rotate-6 hover:opacity-100">
+                  <img class="w-4/5 rounded-xl shadow-lg md:w-full" src="assets/img/profile-pic.png"
+                    alt="Alexsander Lopes Camargos" />
+                </figure>
+              </div>
+              <!-- END: About Picture -->
+            </div>
+            <!-- END: About Container -->
+
+            <!-- START: Technologies I Use -->
+            <div class="technologies container mt-20 text-base">
+              <h2 class="text-slate-lightest">
+                Here are a few technologies I've been working with recently:
+              </h2>
+
+              <!-- START: Technologies List -->
+              <ul
+                class="mt-8 grid grid-cols-1 gap-4 font-nunito text-base font-medium text-slate xs:grid-cols-2 md:grid-cols-4 md:text-lg lg:text-2xl xlg:text-3xl">
+                <!-- Python -->
+                <li class="highlighter">
+                  <i class="fa-brands fa-python"></i>
+                  <span>Python</span>
+                </li>
+
+                <!-- Linux -->
+                <li class="highlighter">
+                  <i class="fa-brands fa-linux"></i>
+                  <span>Linux</span>
+                </li>
+
+                <!-- Docker -->
+                <li class="highlighter">
+                  <i class="fa-brands fa-docker"></i>
+                  <span>Docker</span>
+                </li>
+
+                <!-- GIT -->
+                <li class="highlighter">
+                  <i class="fa-brands fa-git"></i>
+                  <span>Git</span>
+                </li>
+
+                <!-- DataBase -->
+                <li class="highlighter">
+                  <i class="fa-solid fa-database"></i>
+                  <span>Database</span>
+                </li>
+
+                <!-- HTML5 -->
+                <li class="highlighter">
+                  <i class="fa-brands fa-html5"></i>
+                  <span>HTML5</span>
+                </li>
+
+                <!-- CSS / SASS -->
+                <li class="highlighter">
+                  <i class="fa-brands fa-sass"></i>
+                  <span>Sass</span>
+                </li>
+
+                <!-- JavaScript -->
+                <li class="highlighter">
+                  <i class="fa-brands fa-square-js"></i>
+                  <span>JavaScript</span>
+                </li>
+              </ul>
+              <!-- END: Technologies List -->
+            </div>
+            <!-- END: Technologies I Use -->
+
+            <!-- END: About Container -->
+          </section>
+          <!-- END: About Section -->
+
+          <!-- START: Portfolio Section -->
+          <section id="portfolio" class="section">
+            <!-- START: Portfolio Container -->
+            <div class="portfolio-container container">
+              <h1 class="title">Some Things I've Built</h1>
+              <!-- START: Projects List -->
+              <ul class="flex flex-col">
+                <!-- START: Project pyFundamentus -->
+                <l1 class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
+                  <!-- START: Project Image -->
+                  <picture id="project-image"
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    <img
+                      class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
+                      src="assets/img/projects/pyfundamentus.jpg" alt="Project Image" />
+                  </picture>
+                  <!-- END: Project Image -->
+
+                  <!-- START: Project Content -->
+                  <div id="project-content"
+                    class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                      Featured Project
+                    </p>
+                    <!-- Project Title -->
+                    <h3 id="project-title" class="mb-5 text-xl font-semibold">
+                      <a class="text-slate-light hover:text-green" href="https://github.com/alexcamargos/pyFundamentus"
+                        target="_blank">
+                        Python Fundamentus
+                      </a>
+                    </h3>
+                    <!-- START: Project Description -->
+                    <div id="project-description"
+                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      The Python Fundamentus is an API developed in Python designed to facilitate
+                      quick access to the main fundamental indicators of the most relevant stocks in
+                      the Brazilian market. By utilizing the information available on the
+                      Fundamentus website, it provides detailed financial and fundamentalist
+                      information of companies listed on B3, this project aims to bring the wealth
+                      of financial data directly to your Python applications in an efficient and
+                      organized manner.
+                    </div>
+                    <!-- END: Project Description -->
+
+                    <!-- START: Technologies Used -->
+                    <div id="project-tech-list" class="sm:flex sm:justify-end">
+                      <ul
+                        class="mt-6 mb-3 flex flex-col items-center gap-3 font-nunito text-sm 2xs:flex-row 2xs:content-end">
+                        <li class="ml-3">Python</li>
+                        <li class="ml-3">Beautiful Soup</li>
+                        <li class="ml-3">Requests</li>
+                      </ul>
+                    </div>
+                    <!-- END: Technologies Used -->
+
+                    <!-- START: Project Links -->
+                    <div id="project-links"
+                      class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                        href="https://github.com/alexcamargos/pyFundamentus" target="_blank" title="GitHub">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <!-- END: Project Content -->
+                  </div>
+                  <!-- END: pyFundamentus Content -->
+                </l1>
+                <!-- END: START: Project pyFundamentus -->
+                
+                <l1 class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
+                  <!-- START: Project Image -->
+                  <picture id="project-image"
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    <img
+                      class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
+                      src="https://via.placeholder.com/700x438.png?text=Project+Image+(700x438)" alt="Project Image" />
+                  </picture>
+                  <!-- END: Project Image -->
+
+                  <!-- START: Project Content -->
+                  <div id="project-content"
+                    class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                      Featured Project
+                    </p>
+                    <!-- Project Title -->
+                    <h3 id="project-title" class="mb-5 text-xl font-semibold">
+                      <a class="text-slate-light hover:text-green" href="https://github.com/alexcamargos"
+                        target="_blank">
+                        Project Title
+                      </a>
+                    </h3>
+                    <!-- START: Project Description -->
+                    <div id="project-description"
+                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Quos dignissimos reprehenderit dolore, voluptatem
+                      earum odio similique eligendi corrupti doloribus, cumque
+                      quia vero. Quod ut ab tempore quam eius, rem labore.
+                    </div>
+                    <!-- END: Project Description -->
+
+                    <!-- START: Technologies Used -->
+                    <div id="project-tech-list" class="sm:flex sm:justify-end">
+                      <ul
+                        class="mt-6 mb-3 flex flex-col items-center gap-3 font-nunito text-sm 2xs:flex-row 2xs:content-end">
+                        <li class="ml-3">HTML5</li>
+                        <li class="ml-3">Sass</li>
+                        <li class="ml-3">JavaScript</li>
+                      </ul>
+                    </div>
+                    <!-- END: Technologies Used -->
+
+                    <!-- START: Project Links -->
+                    <div id="project-links"
+                      class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                        href="https://github.com/alexcamargos" target="_blank" title="GitHub">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                        href="https://github.com/alexcamargos" target="_blank" title="Live Demo">
+                        Preview
+                        <i class="fa-solid fa-external-link"></i>
+                      </a>
+                    </div>
+                    <!-- END: Project Links -->
+                  </div>
+                  <!-- END: Project Content -->
+                </l1>
+                <!-- START: Project 2 -->
+
+                <!-- END: Project 2 -->
+              </ul>
+              <!-- END: Projects List -->
+            </div>
+            <!-- END: Portfolio Container -->
+          </section>
+          <!-- END: Portfolio Section -->
+
+          <!-- START: Contact Section -->
+          <section id="contact" class="section">
+            <!-- START: Contact Container -->
+            <div
+              class="contact-container container grid grid-flow-row auto-rows-max justify-items-center gap-y-8 text-base text-slate">
+              <h2
+                class="flex flex-col items-center gap-y-4 font-nunito text-3xl font-bold text-slate-lightest before:font-nunito before:text-base before:text-green before:content-['What\’s_Next?']">
+                Get In Touch
+              </h2>
+
+              <p class="max-w-screen-xs">
+                My inbox is always open. If you want to offer me an
+                opportunity, have a question or just want to say hi, I will
+                try my best you answer you!
+              </p>
+
+              <!-- START: SAY HELLO BOX -->
+              <div class="resume">
+                <a href="mailto:alcamargos@vivaldi.net" rel="noopener noreferrer" target="_blank">
+                  <div
+                    class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate">
+                    Say Hello
+                  </div>
+                </a>
+              </div>
+              <!-- END: SAY HELLO BOX -->
+            </div>
+            <!-- END: Contact Container -->
+          </section>
+          <!-- END: Contact Section -->
+        </div>
+      </div>
+      <!-- END: Main Container -->
+    </main>
+    <!-- END: Main -->
+
+    <!-- START: Copyright -->
+    <div id="copyright"
+      class="fixed top-1/2 ml-4 hidden text-slate-light after:m-auto after:block after:h-screen after:w-px after:bg-slate-light hover:text-green hover:after:bg-green-light hover:after:text-green sm:block lg:ml-5 xlg:ml-6">
+      <div orientation="right" class="inline-flex flex-col text-right">
+        <a class="pb-5 font-nunito text-xs tracking-widest" href="https://github.com/alexcamargos" target="_blank"
+          title="Github">
+          Designed & Built by AlCamargos
+        </a>
+      </div>
+    </div>
+    <!-- END: Copyright -->
+
+    <!-- START: Social Medias -->
+    <div id="social-icons" class="fixed top-1/2 right-2 hidden -translate-y-1/2 sm:block">
+      <!-- START: Social Medias Container -->
+      <div class="container">
+        <!-- START: Social Medias Items -->
+        <ul class="inline-flex flex-col gap-1">
+          <!-- Github -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://github.com/alexcamargos" target="_blank" title="Github">
+              <i class="fa-brands fa-github"></i></a>
+          </li>
+
+          <!-- Linkedin -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="Linkedin">
+              <i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+
+          <!-- Twitter -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://twitter.com/alcamargos" target="_blank" title="Twitter">
+              <i class="fa-brands fa-twitter"></i></a>
+          </li>
+
+          <!-- Instagram -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.instagram.com/alexlopescamargos" target="_blank" title="Instagram">
+              <i class="fa-brands fa-instagram"></i></a>
+          </li>
+
+          <!-- Facebook -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.fb.com/alexcamargos" target="_blank" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+
+          <!-- Strava -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.strava.com/athletes/alcamargos" target="_blank" title="Strava">
+              <i class="fa-brands fa-strava"></i></a>
+          </li>
+
+          <!-- Chess.com -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.chess.com/member/alcamargos" target="_blank" title="Chess.com">
+              <i class="fa-solid fa-chess"></i></a>
+          </li>
+        </ul>
+        <!-- END: Social Medias Items -->
+      </div>
+      <!-- END: Social Medias Container -->
+    </div>
+    <!-- END: Social Medias -->
+
+    <!-- START: Footer -->
+    <footer>
+      <!-- START: Footer Container -->
+      <div class="container mx-8 px-8 pt-20 pb-2">
+        <div
+          class="container inline-flex flex-col items-center gap-y-2 text-xs sm:flex-row sm:justify-around sm:text-sm">
+          <span>
+            Copyright © 2022 - 2023
+            <a class="hover:text-green" href="https://mit-license.org/" rel="noopener noreferrer" target="_blank">
+              MIT License
+            </a>
+          </span>
+          <a class="hover:text-green" href="https://github.com/alexcamargos/alexcamargos.github.io"
+            rel="noopener noreferrer" target="_blank">
+            Designed & Built by Alexsander Lopes Camargos
           </a>
         </div>
       </div>
-      <!-- END: Copyright -->
+      <!-- END: Footer Container -->
+    </footer>
+    <!-- END: Footer -->
+  </div>
+  <!-- END: Main Page Container -->
 
-      <!-- START: Social Medias -->
-      <div
-        id="social-icons"
-        class="fixed top-1/2 right-2 hidden -translate-y-1/2 sm:block"
-      >
-        <!-- START: Social Medias Container -->
-        <div class="container">
-          <!-- START: Social Medias Items -->
-          <ul class="inline-flex flex-col gap-1">
-            <!-- Github -->
-            <li>
-              <a
-                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
-                href="https://github.com/alexcamargos"
-                target="_blank"
-                title="Github"
-              >
-                <i class="fa-brands fa-github"></i
-              ></a>
-            </li>
+  <!-- START: Third-Party JavaScript -->
 
-            <!-- Linkedin -->
-            <li>
-              <a
-                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
-                href="https://www.linkedin.com/in/alexcamargos"
-                target="_blank"
-                title="Linkedin"
-              >
-                <i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </li>
+  <!-- START: Font Awesome Free 6.2.0 -->
+  <script src="https://kit.fontawesome.com/c984e87752.js" crossorigin="anonymous"></script>
+  <!-- END: Font Awesome Free 6.2.0 -->
 
-            <!-- Twitter -->
-            <li>
-              <a
-                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
-                href="https://twitter.com/alcamargos"
-                target="_blank"
-                title="Twitter"
-              >
-                <i class="fa-brands fa-twitter"></i
-              ></a>
-            </li>
+  <!-- START: TypeIt v8.7.0 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.0/index.umd.min.js"
+    integrity="sha512-TP2yhfs2NKscWoIXdL/+vDZPf5dLv0sndur65ZBvsLbwH88mtt5+2LpbAiqKIUfpAZ/5+4kRk83Flt73Tuk2vA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- END: TypeIt v8.3.3 -->
+  <!-- END: Third-Party JavaScript -->
 
-            <!-- Instagram -->
-            <li>
-              <a
-                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
-                href="https://www.instagram.com/alexlopescamargos"
-                target="_blank"
-                title="Instagram"
-              >
-                <i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
+  <!-- START: Additional JavaScript -->
 
-            <!-- Facebook -->
-            <li>
-              <a
-                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
-                href="https://www.fb.com/alexcamargos"
-                target="_blank"
-                title="Facebook"
-              >
-                <i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
+  <!-- TypeIt v8.7.0 Configuration -->
+  <script src="assets/javascript/typeit.js"></script>
+  <script src="assets/javascript/header.js"></script>
+  <!-- END: Additional JavaScript -->
+</body>
 
-            <!-- Strava -->
-            <li>
-              <a
-                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
-                href="https://www.strava.com/athletes/alcamargos"
-                target="_blank"
-                title="Strava"
-              >
-                <i class="fa-brands fa-strava"></i
-              ></a>
-            </li>
-
-            <!-- Chess.com -->
-            <li>
-              <a
-                class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
-                href="https://www.chess.com/member/alcamargos"
-                target="_blank"
-                title="Chess.com"
-              >
-                <i class="fa-solid fa-chess"></i
-              ></a>
-            </li>
-          </ul>
-          <!-- END: Social Medias Items -->
-        </div>
-        <!-- END: Social Medias Container -->
-      </div>
-      <!-- END: Social Medias -->
-
-      <!-- START: Footer -->
-      <footer>
-        <!-- START: Footer Container -->
-        <div class="container mx-8 px-8 pt-20 pb-2">
-          <div
-            class="container inline-flex flex-col items-center gap-y-2 text-xs sm:flex-row sm:justify-around sm:text-sm"
-          >
-            <span>
-              Copyright © 2022 - 2023
-              <a
-                class="hover:text-green"
-                href="https://mit-license.org/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                MIT License
-              </a>
-            </span>
-            <a
-              class="hover:text-green"
-              href="https://github.com/alexcamargos/alexcamargos.github.io"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Designed & Built by Alexsander Lopes Camargos
-            </a>
-          </div>
-        </div>
-        <!-- END: Footer Container -->
-      </footer>
-      <!-- END: Footer -->
-    </div>
-    <!-- END: Main Page Container -->
-
-    <!-- START: Third-Party JavaScript -->
-
-    <!-- START: Font Awesome Free 6.2.0 -->
-    <script
-      src="https://kit.fontawesome.com/c984e87752.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- END: Font Awesome Free 6.2.0 -->
-
-    <!-- START: TypeIt v8.7.0 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.0/index.umd.min.js"
-      integrity="sha512-TP2yhfs2NKscWoIXdL/+vDZPf5dLv0sndur65ZBvsLbwH88mtt5+2LpbAiqKIUfpAZ/5+4kRk83Flt73Tuk2vA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- END: TypeIt v8.3.3 -->
-    <!-- END: Third-Party JavaScript -->
-
-    <!-- START: Additional JavaScript -->
-
-    <!-- TypeIt v8.7.0 Configuration -->
-    <script src="assets/javascript/typeit.js"></script>
-    <script src="assets/javascript/header.js"></script>
-    <!-- END: Additional JavaScript -->
-  </body>
 </html>
