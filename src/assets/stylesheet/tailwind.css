@@ -456,52 +456,29 @@ video {
 /* Section */
 
 .section {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 9rem;
-  padding-bottom: 4rem;
+    @apply mx-8 px-4 pt-36 pb-16 sm:px-6 lg:px-8;
 }
 
 @media (min-width: 640px) {
   .section {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    @apply px-6;
   }
 }
 
 @media (min-width: 991px) {
   .section {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    @apply px-8;
   }
 }
 
 /* Section title */
 
 .title {
-  margin-top: 1.25rem;
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column-reverse;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-  font-family: nunito, sans-serif;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(204 214 246 / var(--tw-text-opacity));
+    @apply mt-5 mb-10 flex flex-col-reverse gap-x-2 font-nunito text-3xl font-bold text-slate-lightest;
 }
 
 .title::after {
-  position: absolute;
-  height: 1px;
-  width: 50%;
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 53 84 / var(--tw-bg-opacity));
+    @apply absolute h-px w-1/2 bg-navy-lightest;
 }
 
 /* Technologies I've been working with recently highlighter */
@@ -564,7 +541,7 @@ video {
 /* *************** WAVING HAND ANIMATION *************** */
 
 .waving-hand {
-  display: inline-block;
+    @apply inline-block;
   -webkit-animation-name: waving-hand-animation;
           animation-name: waving-hand-animation;
   /* Change to speed up or slow down */
