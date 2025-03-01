@@ -1,6 +1,6 @@
-# My Personal Portfolio
+# My Data Analysis & Business Intelligence Portfolio
 
-A personal portfolio project made with Html, Sass & JavaScript.
+I developed this personal website using HTML5, Sass, and JavaScript to showcase my work in data analysis and business intelligence. Here, I share projects, insights, and solutions that demonstrate my expertise in transforming data into strategic business decisions.
 
 ## View Project in Execution
 
@@ -9,17 +9,24 @@ You can check this website on this [link](https://alexcamargos.github.io).
 ## Technologies
 
 - HTML5
-- Sass 
+- Tailwind CSS
 - JavaScript
+- Animações CSS personalizadas
 
 ## Prerequisites
 
 You need a modern browser, just clone the repository, open the index.html
 and edit it as you like. After edit share with me your version. :happy:
 
+```bash
+
+git clone https://github.com/alexcamargos/alexcamargos.github.io.git
+
+```
+
 ## License
 
-Copyright (c) 2022 - **Alexsander Lopes Camargos**
+Copyright (c) 2022 - 2025 by **Alexsander Lopes Camargos**
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
