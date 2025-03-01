@@ -18,6 +18,7 @@
 @charset "UTF-8";
 body {
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .animate {
     opacity: 0;
