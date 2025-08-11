@@ -86,3 +86,15 @@ window.addEventListener("scroll", function () {
         header.classList.remove("bg-navy-dark");
     }
 });
+
+// Add a scroll class to the header when scrolled past its height.
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('#header');
+    const navHeight = header.offsetHeight;
+
+    if (window.scrollY >= navHeight) {
+        header.classList.add('scroll');
+    } else {
+        header.classList.remove('scroll');
+    }
+});
