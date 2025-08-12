@@ -45,15 +45,48 @@ O projeto foi construído utilizando um conjunto de tecnologias modernas de fron
 - [x] **Código Fonte Aberto:** Disponível para a comunidade com licença MIT.
 
 
-## Prerequisites
+## 🚀 Rodando o Projeto Localmente
 
-You need a modern browser, just clone the repository, open the index.html
-and edit it as you like. After edit share with me your version. :happy:
+Para clonar e rodar esta aplicação em sua máquina local, você precisará ter o Git e o Node.js instalados. Siga os passos abaixo.
 
+### Pré-requisitos
+
+* **Git:** Você pode baixar e instalar a partir do [site oficial do Git](https://git-scm.com/).
+* **Node.js:** É necessário para gerenciar as dependências do projeto. Recomendamos a versão LTS. Baixe e instale a partir do [site oficial do Node.js](https://nodejs.org/). O `npm` (Node Package Manager) já vem incluído na instalação.
+
+### Passo a Passo
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/alexcamargos/alexcamargos.github.io.git](https://github.com/alexcamargos/alexcamargos.github.io.git)
+    ```
+
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd alexcamargos.github.io
+    ```
+
+3.  **Instale as dependências:**
+    Este comando lerá o `package.json` e instalará todas as dependências de desenvolvimento necessárias, como o próprio Tailwind CSS.
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o ambiente de desenvolvimento:**
+    Este projeto utiliza um script para compilar o Tailwind CSS em tempo real, permitindo que você veja suas alterações de estilo refletidas imediatamente.
+
+    ```bash
+    npm run dev
+    ```
+
+5.  **Visualize o projeto:**
+    Após o comando anterior ser executado com sucesso, simplesmente abra o arquivo `index.html` em seu navegador de preferência. As alterações nos seus arquivos de estilo serão compiladas automaticamente.
+
+### Para Gerar os Arquivos de Produção
+
+Se você desejar apenas gerar os arquivos finais e otimizados (por exemplo, o CSS minificado), utilize o script de build:
 ```bash
-
-git clone https://github.com/alexcamargos/alexcamargos.github.io.git
-
+npm run build
 ```
 
 ## 🧠 Desafios e Aprendizados
