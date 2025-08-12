@@ -65,6 +65,17 @@ Este projeto está em constante evolução. Alguns dos próximos recursos planej
 - [ ] Integrar um CMS Headless (ex: Strapi, Sanity) para gerenciar o conteúdo dos projetos.
 
 
+## 📬 Contato
+
+Sempre em busca de evolução, atualmente dedico meus estudos à estatística aplicada e modelagem de séries temporais. Meu propósito é claro: crescer profissionalmente, compartilhar o que aprendo e ser um agente de transformação nos projetos em que me envolvo.
+
+Adoraria me conectar e discutir como minha paixão por dados e as habilidades demonstradas neste projeto podem agregar valor à sua organização.
+
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu.email@exemplo.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-usuario/)
+
+
 ## License
 
 Copyright (c) 2022 - 2025 by **Alexsander Lopes Camargos**
