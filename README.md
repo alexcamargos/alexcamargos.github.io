@@ -21,6 +21,24 @@ demonstrasse minhas habilidades em desenvolvimento front-end, atenção ao desig
 construir uma experiência de usuário agradável, transformando um simples portfólio em um projeto de
 software por si só.
 
+- [Data Analysis \& Business Intelligence Portfolio | Alexsander Lopes Camargos](#data-analysis--business-intelligence-portfolio--alexsander-lopes-camargos)
+  - [📖 Sobre o Projeto](#-sobre-o-projeto)
+  - [🚀 Demonstração ao Vivo](#-demonstração-ao-vivo)
+  - [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+  - [✨ Funcionalidades](#-funcionalidades)
+  - [🚀 Rodando o Projeto Localmente](#-rodando-o-projeto-localmente)
+    - [Pré-requisitos](#pré-requisitos)
+    - [Passo a Passo](#passo-a-passo)
+    - [Para Gerar os Arquivos de Produção](#para-gerar-os-arquivos-de-produção)
+  - [🧠 Desafios e Aprendizados](#-desafios-e-aprendizados)
+    - [1. Automação do Deploy com GitHub Actions](#1-automação-do-deploy-com-github-actions)
+    - [2. Otimização de Performance com Tailwind CSS](#2-otimização-de-performance-com-tailwind-css)
+    - [3. Design Responsivo com Foco em Storytelling](#3-design-responsivo-com-foco-em-storytelling)
+  - [🔮 Próximos Passos](#-próximos-passos)
+  - [📬 Contato](#-contato)
+  - [🎨 Color Reference](#-color-reference)
+  - [License](#license)
+
 
 ## 🚀 Demonstração ao Vivo
 
