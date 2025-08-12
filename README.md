@@ -1,4 +1,4 @@
-# Data Analysis & Business Intelligence Portfolio | Alexsander Camargos
+# Data Analysis & Business Intelligence Portfolio | Alexsander Lopes Camargos
 
 *Um portfólio interativo e responsivo construído para demonstrar visualmente minhas competências em transformar dados em insights e soluções de negócio.*
 
@@ -9,7 +9,18 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-I developed this personal website using HTML5, Sass, and JavaScript to showcase my work in data analysis and business intelligence. Here, I share projects, insights, and solutions that demonstrate my expertise in transforming data into strategic business decisions.
+
+## 📖 Sobre o Projeto
+
+Este projeto é a minha vitrine profissional como desenvolvedor focado em Data Analysis e Business
+Intelligence. O principal objetivo é centralizar e apresentar meus projetos mais relevantes de uma
+forma clara, visualmente atraente e interativa.
+
+A motivação foi criar uma plataforma que não apenas listasse meus trabalhos, mas que também
+demonstrasse minhas habilidades em desenvolvimento front-end, atenção ao design e capacidade de
+construir uma experiência de usuário agradável, transformando um simples portfólio em um projeto de
+software por si só.
+
 
 ## View Project in Execution
 
