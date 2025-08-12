@@ -31,8 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: List source files
-        run: ls -R src
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -42,8 +40,6 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: List dist files
-        run: ls -R dist
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
