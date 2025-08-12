@@ -56,6 +56,15 @@ git clone https://github.com/alexcamargos/alexcamargos.github.io.git
 
 ```
 
+## 🔮 Próximos Passos
+
+Este projeto está em constante evolução. Alguns dos próximos recursos planejados são:
+
+- [ ] Implementar um modo "dark/light".
+- [ ] Realizar testes de acessibilidade (a11y) para garantir conformidade com os padrões WCAG.
+- [ ] Integrar um CMS Headless (ex: Strapi, Sanity) para gerenciar o conteúdo dos projetos.
+
+
 ## License
 
 Copyright (c) 2022 - 2025 by **Alexsander Lopes Camargos**
