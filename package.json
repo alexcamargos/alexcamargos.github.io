@@ -7,10 +7,16 @@
   "main": "index.html",
   "scripts": {
     "clean": "rimraf dist",
-    "copy:assets": "copyfiles -u 1 src/assets/** dist",
+
     "copy:html": "copyfiles -u 1 src/*.html dist",
+    "copy:stylesheet": "copyfiles -u 1 src/assets/stylesheet/* dist",
+    "copy:javascript": "copyfiles -u 1 src/assets/javascript/* dist",
+    "copy:imagens": "copyfiles -u 1 src/assets/img/**/* dist",
+    "copy:video": "copyfiles -u 1 src/assets/video/* dist",
+
     "build:css": "tailwindcss -i ./src/assets/stylesheet/tailwind.src.css -o ./dist/assets/stylesheet/tailwind.min.css --minify",
-    "build": "npm run clean && npm run copy:html && npm run copy:assets && npm run build:css",
+    "build": "npm run clean && npm run copy:html && npm run copy:stylesheet && npm run copy:javascript && npm run copy:imagens && npm run copy:video && npm run build:css",
+
     "dev": "tailwindcss -i ./src/assets/stylesheet/tailwind.src.css -o ./dist/assets/stylesheet/tailwind.css --watch"
   },
   "dependencies": {
