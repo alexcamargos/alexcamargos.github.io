@@ -26,12 +26,14 @@ software por si só.
 
 You can check this website on this [link](https://alexcamargos.github.io).
 
-## Technologies
+## 🛠️ Tech Stack
 
-- HTML5
-- Tailwind CSS
-- JavaScript
-- Animações CSS personalizadas
+O projeto foi construído utilizando um conjunto de tecnologias modernas de front-end, com foco em performance e manutenibilidade.
+
+- **HTML5:** Estruturação semântica do conteúdo.
+- **Tailwind CSS:** Framework utility-first para estilização rápida e responsiva.
+- **JavaScript (ES6+):** Manipulação do DOM e interatividade.
+- **Sass:** Utilizado na fase de desenvolvimento para modularizar e organizar os estilos customizados (compilado para CSS).
 
 ## Prerequisites
 
