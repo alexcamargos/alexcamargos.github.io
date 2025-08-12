@@ -28,6 +28,10 @@ O projeto está online e totalmente funcional. Clique no botão abaixo para nave
 
 [![Acessar Projeto](https://img.shields.io/badge/Acessar-Portfólio_Online-brightgreen?style=for-the-badge&logo=rocket)](https://alexcamargos.github.io)
 
+<br>
+
+![Demonstração do Portfólio](demo.gif)
+
 
 ## 🛠️ Tecnologias Utilizadas
 
