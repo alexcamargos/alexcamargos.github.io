@@ -56,6 +56,27 @@ git clone https://github.com/alexcamargos/alexcamargos.github.io.git
 
 ```
 
+## 🧠 Desafios e Aprendizados
+
+A construção deste portfólio foi uma jornada de aprendizado prático. Abaixo, detalho os principais desafios técnicos que enfrentei e as competências que desenvolvi ao superá-los.
+
+### 1. Automação do Deploy com GitHub Actions
+* **Problema:** O processo inicial de deploy era manual. A cada alteração, eu precisava gerar os arquivos de produção e enviá-los para o repositório do GitHub Pages. Este método era lento, repetitivo e suscetível a erros humanos.
+* **Solução:** Implementei um workflow de Integração Contínua e Deploy Contínuo (CI/CD) utilizando GitHub Actions. Criei um arquivo de configuração (`.yml`) que automatiza todo o processo: a cada `push` para a branch principal (`main`), a Action é acionada, o ambiente é configurado e o código do projeto é automaticamente publicado no GitHub Pages.
+* **Aprendizado:** Este desafio me proporcionou uma imersão prática em automação e DevOps. Aprendi a sintaxe YAML, a estruturar pipelines de CI/CD e a importância de automatizar tarefas para garantir consistência, agilidade e confiabilidade no ciclo de vida de um software.
+
+### 2. Otimização de Performance com Tailwind CSS
+* **Problema:** O framework Tailwind CSS é extremamente poderoso, mas seu arquivo CSS em ambiente de desenvolvimento é muito grande, contendo milhares de classes utilitárias. Publicar o site com este arquivo resultaria em um tempo de carregamento lento e uma má pontuação em ferramentas de performance como o Lighthouse.
+* **Solução:** Configurei de forma precisa o arquivo `tailwind.config.js`. Utilizando a funcionalidade `content` (anteriormente `purge`), instruí o compilador Just-In-Time (JIT) do Tailwind a analisar todos os arquivos `HTML` e `JS` do projeto, removendo todas as classes não utilizadas no build final de produção.
+* **Aprendizado:** Aprofundei meu conhecimento em otimização de "assets" para front-end. Compreendi na prática o conceito de "tree-shaking" de estilos e a diferença crucial entre um build de desenvolvimento e um de produção, uma habilidade essencial para criar aplicações web rápidas e eficientes.
+
+### 3. Design Responsivo com Foco em Storytelling
+
+* **Problema:** Garantir que o site fosse funcional em diferentes tamanhos de tela (responsividade) era o básico. O verdadeiro desafio era manter a "narrativa" do portfólio — a história que ele conta sobre minha jornada e projetos — consistente e impactante, seja em um monitor wide-screen ou na tela de um celular.
+* **Solução:** Adotei uma abordagem **Mobile-First**, projetando primeiro para a menor viewport para garantir que a hierarquia de informações e o conteúdo essencial fossem sólidos. Em seguida, utilizei as classes responsivas do Tailwind (como `md:` e `lg:`) para aprimorar progressivamente o layout em telas maiores, ajustando grades, a direção de elementos flex e o espaçamento para otimizar a experiência de leitura e a fluidez da navegação.
+* **Aprendizado:** Fui além da implementação técnica da responsividade e entrei no campo do Design de Experiência do Usuário (UX). Aprendi a tomar decisões de design conscientes para garantir que a jornada do usuário e o storytelling do projeto permaneçam coesos e eficazes, independentemente do dispositivo utilizado para acessá-lo.
+
+
 ## 🔮 Próximos Passos
 
 Este projeto está em constante evolução. Alguns dos próximos recursos planejados são:
