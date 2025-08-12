@@ -35,6 +35,16 @@ O projeto foi construído utilizando um conjunto de tecnologias modernas de fron
 - **JavaScript (ES6+):** Manipulação do DOM e interatividade.
 - **Sass:** Utilizado na fase de desenvolvimento para modularizar e organizar os estilos customizados (compilado para CSS).
 
+
+## ✨ Funcionalidades
+
+- [x] **Design Totalmente Responsivo:** Experiência de usuário consistente em desktops, tablets e smartphones.
+- [x] **Animações de Scroll (On-scroll):** Elementos que surgem de forma suave conforme o usuário navega pela página.
+- [x] **Tema de Cores Profissional:** Paleta de cores (inspirada na seção Color Reference) aplicada consistentemente.
+- [x] **Links Sociais e de Contato:** Acesso rápido ao meu GitHub, LinkedIn e e-mail.
+- [x] **Código Fonte Aberto:** Disponível para a comunidade com licença MIT.
+
+
 ## Prerequisites
 
 You need a modern browser, just clone the repository, open the index.html
