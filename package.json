@@ -7,7 +7,7 @@
   "main": "index.html",
   "scripts": {
     "clean": "rimraf dist",
-    "copy:assets": "copyfiles -u 1 src/assets/**/* dist",
+    "copy:assets": "copyfiles -u 1 src/assets/** dist",
     "copy:html": "copyfiles -u 1 src/*.html dist",
     "build:css": "tailwindcss -i ./src/assets/stylesheet/tailwind.src.css -o ./dist/assets/stylesheet/tailwind.min.css --minify",
     "build": "npm run clean && npm run copy:html && npm run copy:assets && npm run build:css",
