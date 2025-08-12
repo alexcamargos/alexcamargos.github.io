@@ -1,4 +1,13 @@
-# My Data Analysis & Business Intelligence Portfolio
+# Data Analysis & Business Intelligence Portfolio | Alexsander Camargos
+
+*Um portfólio interativo e responsivo construído para demonstrar visualmente minhas competências em transformar dados em insights e soluções de negócio.*
+
+![License](https://img.shields.io/badge/license-MIT-green)
+![Maintained](https://img.shields.io/badge/status-maintained-brightgreen)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 I developed this personal website using HTML5, Sass, and JavaScript to showcase my work in data analysis and business intelligence. Here, I share projects, insights, and solutions that demonstrate my expertise in transforming data into strategic business decisions.
 
