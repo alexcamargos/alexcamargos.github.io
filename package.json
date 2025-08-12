@@ -11,7 +11,7 @@
     "copy:html": "copyfiles -u 1 src/*.html dist",
     "copy:stylesheet": "copyfiles -u 1 src/assets/stylesheet/* dist",
     "copy:javascript": "copyfiles -u 1 src/assets/javascript/* dist",
-    "copy:imagens": "copyfiles -u 1 src/assets/img/**/* dist",
+    "copy:imagens": "copyfiles -u 1 src/assets/img/* src/assets/img/**/* dist",
     "copy:video": "copyfiles -u 1 src/assets/video/* dist",
 
     "build:css": "tailwindcss -i ./src/assets/stylesheet/tailwind.src.css -o ./dist/assets/stylesheet/tailwind.min.css --minify",
