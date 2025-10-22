@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"
-  class="js-focus-visible scrollbar h-full scroll-smooth bg-navy antialiased [font-feature-settings:'ss01']">
+  class="js-focus-visible scrollbar h-full scroll-smooth bg-white dark:bg-navy antialiased [font-feature-settings:'ss01']">
 
 <head>
   <meta charset="utf-8" />
@@ -32,11 +32,11 @@
   <!-- END: Tailwind CSS -->
 </head>
 
-<body class="flex h-full flex-col text-slate">
+<body class="flex h-full flex-col text-gray-800 dark:text-slate">
   <!-- START: Main Page Container -->
   <div id="container mx-auto">
     <!-- START: Header -->
-    <header id="header" class="fixed z-50 w-full py-4">
+    <header id="header" class="fixed z-50 w-full py-4 bg-white dark:bg-navy">
       <!-- START: Header Container -->
       <div class="mx-8 font-nunito">
         <!-- START: Navigation Bar -->
@@ -45,9 +45,9 @@
           <div class="navigation-bar_container">
             <!-- START: Title -->
             <div class="flex items-center md:gap-x-12">
-              <a class="transition-all-300-500 inline-flex flex-row items-center gap-x-4 py-1 px-2 text-slate after:block after:text-green after:content-['AlCamargos'] after:hover:text-slate-lightest sm:text-base sm:hover:after:content-['AlexCamargos'] md:text-lg"
+              <a class="transition-all-300-500 inline-flex flex-row items-center gap-x-4 py-1 px-2 text-gray-800 dark:text-slate after:block after:text-blue-600 dark:after:text-green after:content-['AlCamargos'] after:hover:text-black dark:after:hover:text-slate-lightest sm:text-base sm:hover:after:content-['AlexCamargos'] md:text-lg"
                 href="https://alexcamargos.github.io/" id="logo" title="Alexsander Lopes Camargos">
-                <i class="fa-solid fa-terminal text-green"></i>
+                <i class="fa-solid fa-terminal text-blue-600 dark:text-green"></i>
               </a>
             </div>
           </div>
@@ -62,7 +62,7 @@
                   <ul class="flex items-center md:gap-x-12">
                     <!-- Home -->
                     <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="active_indicator inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                      <a class="active_indicator inline-flex place-items-center py-1 px-2 text-gray-800 dark:text-slate transition-all duration-500 hover:text-blue-600 dark:hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
                         href="#hero" accesskey="h" tabindex="1">
                         <i class="fa-solid fa-house-chimney"></i>
                         Home
@@ -71,7 +71,7 @@
 
                     <!-- About -->
                     <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                      <a class="inline-flex place-items-center py-1 px-2 text-gray-800 dark:text-slate transition-all duration-500 hover:text-blue-600 dark:hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
                         href="#about" accesskey="a" tabindex="2">
                         <i class="fa-solid fa-user"></i>
                         About
@@ -80,7 +80,7 @@
 
                     <!-- Portfolio -->
                     <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                      <a class="inline-flex place-items-center py-1 px-2 text-gray-800 dark:text-slate transition-all duration-500 hover:text-blue-600 dark:hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
                         href="#portfolio" accesskey="p" tabindex="33">
                         <i class="fa-solid fa-code"></i>
                         Portfolio
@@ -89,7 +89,7 @@
 
                     <!-- Contact -->
                     <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                      <a class="inline-flex place-items-center py-1 px-2 text-gray-800 dark:text-slate transition-all duration-500 hover:text-blue-600 dark:hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
                         href="#contact" accesskey="c" tabindex="4">
                         <i class="fa-regular fa-at"></i>
                         Contact
@@ -97,12 +97,18 @@
                     </li>
                     <!-- Fork on GitHub -->
                     <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
-                      <a class="inline-flex place-items-center py-1 px-2 text-sm text-slate-light hover:text-green sm:gap-x-2 md:gap-x-4"
+                      <a class="inline-flex place-items-center py-1 px-2 text-sm text-gray-600 dark:text-slate-light hover:text-blue-600 dark:hover:text-green sm:gap-x-2 md:gap-x-4"
                         href="https://github.com/alexcamargos/alexcamargos.github.io" target="_blank" accesskey="f"
                         tabindex="5">
                         <i class="fa-solid fa-code-fork"></i>
                         <i class="fa-solid fa-star"></i>
                       </a>
+                    </li>
+                    <!-- Theme Switcher -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <button id="theme-switcher" class="inline-flex place-items-center py-1 px-2 text-sm text-gray-600 dark:text-slate-light hover:text-blue-600 dark:hover:text-green sm:gap-x-2 md:gap-x-4">
+                        <i class="fa-solid fa-sun"></i>
+                      </button>
                     </li>
                   </ul>
                   <!-- END: Navigation Bar Menu Itens -->
@@ -121,7 +127,7 @@
     <!-- START: Main -->
     <main>
       <!-- START: Main Container -->
-      <div id="main-container" class="divide-y-[60px] divide-navy">
+      <div id="main-container" class="divide-y-[60px] divide-gray-200 dark:divide-navy">
         <!-- START: Hero Section -->
         <section id="hero" class="section container my-auto h-screen w-screen pt-48">
           <!-- <section id="hero" class="h-screen mx-auto flex flex-col items-stretch px-4 py-1 sm:py-4"> -->
@@ -131,16 +137,16 @@
             <!-- <div class="hero-container flex flex-row justify-items-start auto-rows-max gap-y-8"> -->
 
             <p
-              class="font-display mx-4 max-w-4xl tracking-tight text-green xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl">
+              class="font-display mx-4 max-w-4xl tracking-tight text-blue-600 dark:text-green xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl">
               <span class="waving-hand">👋</span>
               Hello! My name is...
             </p>
 
             <p
-              class="font-display mx-4 max-w-4xl font-medium tracking-tight text-slate-lightest xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl">
+              class="font-display mx-4 max-w-4xl font-medium tracking-tight text-gray-800 dark:text-slate-lightest xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl">
               <span class="relative whitespace-nowrap">
                 <svg aria-hidden="true" viewBox="0 0 418 42"
-                  class="absolute top-3/4 left-0 h-[0.58em] w-full fill-navy-lightest" preserveAspectRatio="none">
+                  class="absolute top-3/4 left-0 h-[0.58em] w-full fill-blue-100 dark:fill-navy-lightest" preserveAspectRatio="none">
                   <path
                     d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
                   </path>
@@ -150,9 +156,9 @@
             </p>
 
             <p
-              class="font-display sm:text-1xl mx-4 max-w-4xl tracking-tight text-slate xs:text-xl md:text-3xl lg:text-5xl">
+              class="font-display sm:text-1xl mx-4 max-w-4xl tracking-tight text-gray-600 dark:text-slate xs:text-xl md:text-3xl lg:text-5xl">
               and I'm a
-              <span id="typing-effect" class="text-green"></span>
+              <span id="typing-effect" class="text-blue-600 dark:text-green"></span>
             </p>
 
             <!-- START: Scroll Down Indicator -->
@@ -164,7 +170,7 @@
                 <span></span>
               </div>
               <span
-                class="absolute bottom-0 cursor-none font-semibold text-slate transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green xs:text-sm sm:text-base md:text-lg lg:text-xl"
+                class="absolute bottom-0 cursor-none font-semibold text-gray-800 dark:text-slate transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-600 dark:hover:text-green xs:text-sm sm:text-base md:text-lg lg:text-xl"
                 onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">
                 Scroll Down
               </span>
@@ -180,7 +186,7 @@
             <!-- START: About Container -->
             <div class="about-container container flex flex-col gap-16 md:flex-row">
               <!-- START: About Content -->
-              <div class="about flex w-4/5 flex-col gap-6 text-base text-slate">
+              <div class="about flex w-4/5 flex-col gap-6 text-base text-gray-800 dark:text-slate">
                 <h1 class="title">Who I am</h1>
 
                 <!-- START: About Me -->
@@ -194,7 +200,7 @@
                   knowledge to foster impactful outcomes.
                 </p>
 
-                <p><a class="ml-3 inline-flex items-center gap-3 hover:text-green" href="about.html" target="_self"
+                <p><a class="ml-3 inline-flex items-center gap-3 hover:text-blue-600 dark:hover:text-green" href="about.html" target="_self"
                     title="About me">Discover more about my journey</a>.
                 </p>
                 <!-- END: About Me -->
@@ -203,7 +209,7 @@
                 <div class="resume">
                   <a href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="LinkedIn">
                     <div
-                      class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate">
+                      class="inline-flex items-center justify-center rounded border-2 border-blue-600 dark:border-green bg-transparent dark:bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-blue-600 dark:text-green hover:bg-blue-50 dark:hover:bg-navy-light hover:text-gray-800 dark:hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-200 dark:focus-visible:outline-green-light active:bg-blue-100 dark:active:bg-navy-light active:text-gray-900 dark:active:text-slate">
                       Resume
                     </div>
                   </a>
@@ -225,7 +231,7 @@
 
             <!-- START: Technologies I Use -->
             <div class="technologies container grid items-center gap-3 mt-20 text-base">
-              <h2 class="text-slate-lightest">
+              <h2 class="text-gray-800 dark:text-slate-lightest">
                 Here are a few technologies I've been working with recently:
               </h2>
 
@@ -237,7 +243,7 @@
                     <i class="fa-solid fa-laptop-code"></i>
                     Languages & Tools
                   </h3>
-                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-gray-700 dark:text-slate-lightest">
                     <li><strong>Languages:</strong> Python, R, SQL</li>
                     <li><strong>Processing Libraries:</strong> PySpark, Pandas, Polars, NumPy, DuckDB</li>
                     <li><strong>Visualization Libraries:</strong> Matplotlib, Seaborn, Plotly</li>
@@ -251,7 +257,7 @@
                     <i class="fa-solid fa-robot"></i>
                     Modeling & Machine Learning
                   </h3>
-                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-gray-700 dark:text-slate-lightest">
                     <li><strong>Libraries:</strong> Scikit-learn, Statsmodels</li>
                     <li><strong>Techniques:</strong> Classification, Regression, Clustering, Random Forest, SVM, Gradient Boosting (AdaBoost, XGBoost)</li>
                     <li><strong>Model Validation:</strong> Cross-validation, Performance Metrics (Accuracy, Precision, Recall, F1-Score, AUC-ROC)</li>
@@ -264,7 +270,7 @@
                     <i class="fa-solid fa-chart-line"></i>
                     Data Visualization & Storytelling
                   </h3>
-                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-gray-700 dark:text-slate-lightest">
                     <li><strong>BI Tools:</strong> Power BI, Tableau, Looker Studio</li>
                     <li><strong>Code Dashboards:</strong> Streamlit, Rill, Evidence</li>
                     <li><strong>Techniques:</strong> Data Storytelling, Stakeholder Communication</li>
@@ -277,7 +283,7 @@
                     <i class="fa-solid fa-database"></i>
                     Engineering & Databases
                   </h3>
-                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-gray-700 dark:text-slate-lightest">
                     <li><strong>SQL Databases:</strong> PostgreSQL, MySQL, MariaDB, SQL Server</li>
                     <li><strong>NoSQL Databases:</strong> MongoDB</li>
                     <li><strong>Access Tools:</strong> Datagrip, DBeaver</li>
@@ -290,7 +296,7 @@
                     <i class="fa-solid fa-cloud"></i>
                     Cloud & Data Pipelines
                   </h3>
-                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-gray-700 dark:text-slate-lightest">
                     <li><strong>Cloud Platforms:</strong> AWS, Azure, Oracle Cloud</li>
                     <li><strong>Data Platforms:</strong> Databricks, MotherDuck</li>
                     <li><strong>Deployment:</strong> Vercel, Netlify, Linode</li>
@@ -314,7 +320,7 @@
                 <l1 class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
                   <!-- START: Project Image -->
                   <picture id="project-image"
-                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-blue-100 dark:before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
                     <img loading="lazy"
                       class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
                       src="assets/img/projects/pyfundamentus.jpg" alt="Project Image" />
@@ -324,19 +330,19 @@
                   <!-- START: Project Content -->
                   <div id="project-content"
                     class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
-                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-blue-600 dark:text-green">
                       Featured Project
                     </p>
                     <!-- Project Title -->
                     <h3 id="project-title" class="mb-5 text-xl font-semibold">
-                      <a class="text-slate-light hover:text-green" href="https://github.com/alexcamargos/pyFundamentus"
+                      <a class="text-gray-700 dark:text-slate-light hover:text-blue-600 dark:hover:text-green" href="https://github.com/alexcamargos/pyFundamentus"
                         target="_blank">
                         Python Fundamentus
                       </a>
                     </h3>
                     <!-- START: Project Description -->
                     <div id="project-description"
-                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      class="relative rounded font-nunito text-gray-700 dark:text-slate-light hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-navy-dark sm:bg-gray-100 dark:sm:bg-navy-light sm:p-6">
                       The Python Fundamentus is an API developed in Python
                       designed to facilitate quick access to the main
                       fundamental indicators of the most relevant stocks in
@@ -364,12 +370,12 @@
                     <!-- START: Project Links -->
                     <div id="project-links"
                       class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
-                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-blue-600 dark:hover:text-green"
                         href="https://github.com/alexcamargos/pyFundamentus" target="_blank" title="GitHub">
                         GitHub
                         <i class="fa-brands fa-github"></i>
                       </a>
-                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-blue-600 dark:hover:text-green"
                         href="https://pypi.org/project/pyfundamentus" target="_blank" title="GitHub">
                         PyPI
                         <i class="fa-brands fa-python"></i>
@@ -385,7 +391,7 @@
                 <l1 class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
                   <!-- START: Project Image -->
                   <picture id="project-image"
-                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-blue-100 dark:before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
                     <img loading="lazy"
                       class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
                       src="assets/img/projects/if_data.jpg" alt="Project Image" />
@@ -395,19 +401,19 @@
                   <!-- START: Project Content -->
                   <div id="project-content"
                     class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
-                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-blue-600 dark:text-green">
                       Featured Project
                     </p>
                     <!-- Project Title -->
                     <h3 id="project-title" class="mb-5 text-xl font-semibold">
-                      <a class="text-slate-light hover:text-green"
+                      <a class="text-gray-700 dark:text-slate-light hover:text-blue-600 dark:hover:text-green"
                         href="https://github.com/alexcamargos/bacen-ifdata-scraper" target="_blank">
                         Bacen IF.data AutoScraper & Data Manager
                       </a>
                     </h3>
                     <!-- START: Project Description -->
                     <div id="project-description"
-                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      class="relative rounded font-nunito text-gray-700 dark:text-slate-light hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-navy-dark sm:bg-gray-100 dark:sm:bg-navy-light sm:p-6">
                       The Central Bank of Brazil (Bacen) publishes detailed
                       reports on a quarterly basis, featuring a wide range of
                       data about financial institutions, available through the
@@ -434,7 +440,7 @@
                     <!-- START: Project Links -->
                     <div id="project-links"
                       class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
-                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-blue-600 dark:hover:text-green"
                         href="https://github.com/alexcamargos/bacen-ifdata-scraper" target="_blank" title="GitHub">
                         GitHub
                         <i class="fa-brands fa-github"></i>
@@ -450,7 +456,7 @@
                 <l1 class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
                   <!-- START: Project Image -->
                   <picture id="project-image"
-                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-blue-100 dark:before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
                     <img loading="lazy"
                       class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
                       src="assets/img/projects/mpmd.png" alt="Project Image" />
@@ -460,19 +466,19 @@
                   <!-- START: Project Content -->
                   <div id="project-content"
                     class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
-                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-blue-600 dark:text-green">
                       Featured Project
                     </p>
                     <!-- Project Title -->
                     <h3 id="project-title" class="mb-5 text-xl font-semibold">
-                      <a class="text-slate-light hover:text-green"
+                      <a class="text-gray-700 dark:text-slate-light hover:text-blue-600 dark:hover:text-green"
                         href="https://www.novypro.com/project/nobel-prize-master-data-power-bi" target="_blank">
                         Nobel Prize Master Data
                       </a>
                     </h3>
                     <!-- START: Project Description -->
                     <div id="project-description"
-                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      class="relative rounded font-nunito text-gray-700 dark:text-slate-light hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-navy-dark sm:bg-gray-100 dark:sm:bg-navy-light sm:p-6">
                       This project, through a report in Power BI, analyzes
                       Nobel Prize laureates from 1901 to 2019 to explore
                       trends, global recognition, and diversity. Focusing on
@@ -504,7 +510,7 @@
                     <!-- START: Project Links -->
                     <div id="project-links"
                       class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
-                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-blue-600 dark:hover:text-green"
                         href="https://www.novypro.com/project/nobel-prize-master-data-power-bi" target="_blank"
                         title="Live Demo">
                         Preview
@@ -521,7 +527,7 @@
                 <l1 class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
                   <!-- START: Project Image -->
                   <picture id="project-image"
-                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-blue-100 dark:before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
                     <img loading="lazy"
                       class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
                       src="assets/img/projects/space_race.png" alt="Project Image" />
@@ -531,19 +537,19 @@
                   <!-- START: Project Content -->
                   <div id="project-content"
                     class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
-                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-blue-600 dark:text-green">
                       Featured Project
                     </p>
                     <!-- Project Title -->
                     <h3 id="project-title" class="mb-5 text-xl font-semibold">
-                      <a class="text-slate-light hover:text-green"
+                      <a class="text-gray-700 dark:text-slate-light hover:text-blue-600 dark:hover:text-green"
                         href="https://www.novypro.com/project/corrida-espacial" target="_blank">
                         Space Race
                       </a>
                     </h3>
                     <!-- START: Project Description -->
                     <div id="project-description"
-                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      class="relative rounded font-nunito text-gray-700 dark:text-slate-light hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-navy-dark sm:bg-gray-100 dark:sm:bg-navy-light sm:p-6">
                       This project, titled "Corrida Espacial" (Space Race), presents a comprehensive
                       Power BI dashboard analyzing global space missions throughout history,
                       encompassing 4,630 missions with an impressive 89.89% success rate. The
@@ -576,7 +582,7 @@
                     <!-- START: Project Links -->
                     <div id="project-links"
                       class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
-                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-blue-600 dark:hover:text-green"
                         href="https://www.novypro.com/project/corrida-espaciali" target="_blank"
                         title="Live Demo">
                         Preview
@@ -601,9 +607,9 @@
           <section id="contact" class="section">
             <!-- START: Contact Container -->
             <div
-              class="contact-container container grid grid-flow-row auto-rows-max justify-items-center gap-y-8 text-base text-slate">
+              class="contact-container container grid grid-flow-row auto-rows-max justify-items-center gap-y-8 text-base text-gray-800 dark:text-slate">
               <h2
-                class="flex flex-col items-center gap-y-4 font-nunito text-3xl font-bold text-slate-lightest before:font-nunito before:text-base before:text-green before:content-['What\’s_Next?']">
+                class="flex flex-col items-center gap-y-4 font-nunito text-3xl font-bold text-gray-800 dark:text-slate-lightest before:font-nunito before:text-base before:text-blue-600 dark:before:text-green before:content-['What\’s_Next?']">
                 Get In Touch
               </h2>
 
@@ -617,7 +623,7 @@
               <div class="resume">
                 <a href="mailto:alcamargos@vivaldi.net" rel="noopener noreferrer" target="_blank">
                   <div
-                    class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate">
+                    class="inline-flex items-center justify-center rounded border-2 border-blue-600 dark:border-green bg-transparent dark:bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-blue-600 dark:text-green hover:bg-blue-50 dark:hover:bg-navy-light hover:text-gray-800 dark:hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-200 dark:focus-visible:outline-green-light active:bg-blue-100 dark:active:bg-navy-light active:text-gray-900 dark:active:text-slate">
                     Say Hello
                   </div>
                 </a>
@@ -635,7 +641,7 @@
 
     <!-- START: Copyright -->
     <div id="copyright"
-      class="fixed top-1/2 ml-4 hidden text-slate-light after:m-auto after:block after:h-screen after:w-px after:bg-slate-light hover:text-green hover:after:bg-green-light hover:after:text-green sm:block lg:ml-5 xlg:ml-6">
+      class="fixed top-1/2 ml-4 hidden text-gray-600 dark:text-slate-light after:m-auto after:block after:h-screen after:w-px after:bg-gray-600 dark:after:bg-slate-light hover:text-blue-600 dark:hover:text-green hover:after:bg-blue-600 dark:hover:after:bg-green-light hover:after:text-blue-600 dark:hover:after:text-green sm:block lg:ml-5 xlg:ml-6">
       <div orientation="right" class="inline-flex flex-col text-right">
         <a class="pb-5 font-nunito text-xs tracking-widest" href="https://github.com/alexcamargos" target="_blank"
           title="Github">
@@ -653,49 +659,49 @@
         <ul class="inline-flex flex-col gap-1">
           <!-- Github -->
           <li>
-            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-gray-200 dark:bg-navy-light text-center font-roboto text-2xl font-bold text-gray-700 dark:text-slate-light hover:bg-gray-300 dark:hover:bg-navy-lightest hover:text-blue-600 dark:hover:text-green"
               href="https://github.com/alexcamargos" target="_blank" title="Github">
               <i class="fa-brands fa-github"></i></a>
           </li>
 
           <!-- Linkedin -->
           <li>
-            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-gray-200 dark:bg-navy-light text-center font-roboto text-2xl font-bold text-gray-700 dark:text-slate-light hover:bg-gray-300 dark:hover:bg-navy-lightest hover:text-blue-600 dark:hover:text-green"
               href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="Linkedin">
               <i class="fa-brands fa-linkedin-in"></i></a>
           </li>
 
           <!-- Twitter -->
           <li>
-            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-gray-200 dark:bg-navy-light text-center font-roboto text-2xl font-bold text-gray-700 dark:text-slate-light hover:bg-gray-300 dark:hover:bg-navy-lightest hover:text-blue-600 dark:hover:text-green"
               href="https://twitter.com/alcamargos" target="_blank" title="Twitter">
               <i class="fa-brands fa-twitter"></i></a>
           </li>
 
           <!-- Instagram -->
           <li>
-            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-gray-200 dark:bg-navy-light text-center font-roboto text-2xl font-bold text-gray-700 dark:text-slate-light hover:bg-gray-300 dark:hover:bg-navy-lightest hover:text-blue-600 dark:hover:text-green"
               href="https://www.instagram.com/alexlopescamargos" target="_blank" title="Instagram">
               <i class="fa-brands fa-instagram"></i></a>
           </li>
 
           <!-- Facebook -->
           <li>
-            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-gray-200 dark:bg-navy-light text-center font-roboto text-2xl font-bold text-gray-700 dark:text-slate-light hover:bg-gray-300 dark:hover:bg-navy-lightest hover:text-blue-600 dark:hover:text-green"
               href="https://www.fb.com/alexcamargos" target="_blank" title="Facebook">
               <i class="fa-brands fa-facebook-f"></i></a>
           </li>
 
           <!-- Strava -->
           <li>
-            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-gray-200 dark:bg-navy-light text-center font-roboto text-2xl font-bold text-gray-700 dark:text-slate-light hover:bg-gray-300 dark:hover:bg-navy-lightest hover:text-blue-600 dark:hover:text-green"
               href="https://www.strava.com/athletes/alcamargos" target="_blank" title="Strava">
               <i class="fa-brands fa-strava"></i></a>
           </li>
 
           <!-- Chess.com -->
           <li>
-            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-gray-200 dark:bg-navy-light text-center font-roboto text-2xl font-bold text-gray-700 dark:text-slate-light hover:bg-gray-300 dark:hover:bg-navy-lightest hover:text-blue-600 dark:hover:text-green"
               href="https://www.chess.com/member/alcamargos" target="_blank" title="Chess.com">
               <i class="fa-solid fa-chess"></i></a>
           </li>
@@ -714,11 +720,11 @@
           class="container inline-flex flex-col items-center gap-y-2 text-xs sm:flex-row sm:justify-around sm:text-sm">
           <span>
             Copyright © 2022 - 2025
-            <a class="hover:text-green" href="https://mit-license.org/" rel="noopener noreferrer" target="_blank">
+            <a class="hover:text-blue-600 dark:hover:text-green" href="https://mit-license.org/" rel="noopener noreferrer" target="_blank">
               MIT License
             </a>
           </span>
-          <a class="hover:text-green" href="https://github.com/alexcamargos/alexcamargos.github.io"
+          <a class="hover:text-blue-600 dark:hover:text-green" href="https://github.com/alexcamargos/alexcamargos.github.io"
             rel="noopener noreferrer" target="_blank">
             Designed & Built by Alexsander Lopes Camargos
           </a>
@@ -749,6 +755,7 @@
   <!-- TypeIt v8.7.0 Configuration -->
   <script defer src="assets/javascript/typeit.js"></script>
   <script defer src="assets/javascript/header.js"></script>
+  <script defer src="assets/javascript/theme-switcher.js"></script>
   <!-- END: Additional JavaScript -->
 </body>
 
