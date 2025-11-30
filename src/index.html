@@ -57,6 +57,16 @@
           </div>
           <!-- END: Title -->
 
+          <!-- START: Mobile Menu Button -->
+          <div class="flex items-center sm:hidden">
+            <button id="mobile-menu-btn" type="button" class="text-slate hover:text-green focus:outline-none"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <!-- END: Mobile Menu Button -->
+
           <!-- START: Navigation Bar Menu -->
           <div class="navigation-bar_menu">
             <nav class="z-50 flex justify-between">
@@ -116,6 +126,90 @@
           <!-- END: Navigation Bar Container -->
         </div>
         <!-- END: Navigation Bar -->
+
+        <!-- START: Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay"
+          class="fixed inset-0 z-40 hidden bg-navy-dark/50 backdrop-blur-sm transition-opacity opacity-0"></div>
+        <!-- END: Mobile Menu Overlay -->
+
+        <!-- START: Mobile Menu Sidebar -->
+        <div id="mobile-menu"
+          class="fixed top-0 right-0 z-50 h-screen w-3/4 max-w-sm translate-x-full transform bg-navy-light shadow-2xl transition-transform duration-300 ease-in-out hidden sm:hidden">
+          <div class="flex h-full flex-col overflow-y-auto py-6 px-6">
+            <div class="flex items-center justify-end">
+              <button id="mobile-menu-close-btn" type="button" class="text-slate hover:text-green focus:outline-none">
+                <span class="sr-only">Close menu</span>
+                <i class="fa-solid fa-xmark text-2xl"></i>
+              </button>
+            </div>
+            <div class="mt-8 flex-1">
+              <ul class="flex flex-col gap-y-6">
+                <!-- Mobile Home -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="#hero">
+                    <i class="fa-solid fa-house-chimney w-6 text-center"></i>
+                    Home
+                  </a>
+                </li>
+                <!-- Mobile About -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="#about">
+                    <i class="fa-solid fa-user w-6 text-center"></i>
+                    About
+                  </a>
+                </li>
+                <!-- Mobile Portfolio -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="#portfolio">
+                    <i class="fa-solid fa-code w-6 text-center"></i>
+                    Portfolio
+                  </a>
+                </li>
+                <!-- Mobile Contact -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="#contact">
+                    <i class="fa-regular fa-at w-6 text-center"></i>
+                    Contact
+                  </a>
+                </li>
+                <!-- Mobile Resume -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="https://www.linkedin.com/in/alexcamargos" target="_blank">
+                    <i class="fa-solid fa-file-lines w-6 text-center"></i>
+                    Resume
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Mobile Social Icons -->
+            <div class="mt-auto border-t border-slate-dark pt-6">
+              <ul class="flex justify-center gap-x-6">
+                <li>
+                  <a class="text-slate hover:text-green" href="https://github.com/alexcamargos" target="_blank">
+                    <i class="fa-brands fa-github text-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-slate hover:text-green" href="https://www.linkedin.com/in/alexcamargos"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-slate hover:text-green" href="https://twitter.com/alcamargos" target="_blank">
+                    <i class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- END: Mobile Menu Sidebar -->
       </div>
       <!-- END: Header Container -->
     </header>
@@ -753,6 +847,7 @@
   <!-- TypeIt v8.7.0 Configuration -->
   <script defer src="assets/javascript/typeit.js"></script>
   <script defer src="assets/javascript/header.js"></script>
+  <script defer src="assets/javascript/mobile_menu.js"></script>
   <!-- END: Additional JavaScript -->
 </body>
 
