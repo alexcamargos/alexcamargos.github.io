@@ -1,6 +1,6 @@
 // -------------------------------------------------------------------------------------------------
 // Name: header.js
-// Version: 0.0.3
+// Version: 0.0.4
 //
 // Summary: alexcamargos.github.io
 //          My Personal Portfolio.
@@ -11,90 +11,89 @@
 // License: MIT
 // -------------------------------------------------------------------------------------------------
 
-// Check if the current page is about.html.
-if (window.location.pathname.includes("about.html")) {
-    // Remove 'active_indicator' from other links.
-    document.querySelectorAll("header ul li a").forEach((link) => {
-        link.classList.remove("active_indicator", "text-green");
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector("header");
+    const navLinks = document.querySelectorAll("header ul li a");
+    const sections = document.querySelectorAll("main section[id]");
 
-    // Add 'text-green' to the About menu item by default.
-    let aboutLink = document.querySelector(
-        "header ul li a[href*='index.html#about']"
-    );
-    if (aboutLink) {
-        aboutLink.classList.add("text-green");
-    }
-
-    // Add hover effects to change text colors on mouseover.
-    let menuItems = document.querySelectorAll("header ul li a");
-
-    menuItems.forEach((item) => {
-        item.addEventListener("mouseover", function () {
-            item.classList.add("text-green");
-        });
-
-        item.addEventListener("mouseout", function () {
-            // Ensure the "About" link stays green.
-            if (!item.href.includes("about.html")) {
-                item.classList.remove("text-green");
-            }
-        });
-    });
-} else {
-    // Original behavior for other pages.
-
-    // Change the section's indicator based on scroll position.
-    window.addEventListener("scroll", function () {
-        let sections = document.querySelectorAll("main section[id]");
-        let checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4;
-
-        for (let section of sections) {
-            let sectionTop = section.offsetTop;
-            let sectionHeight = section.offsetHeight;
-            let sectionId = section.getAttribute("id");
-
-            let checkpointStart = checkpoint >= sectionTop;
-            let checkpointEnd = checkpoint <= sectionTop + sectionHeight;
-
-            if (checkpointStart && checkpointEnd) {
-                document
-                    .querySelector(`header ul li a[href*=${sectionId}]`)
-                    .classList.add("active_indicator");
-                document
-                    .querySelector(`header ul li a[href*=${sectionId}] i`)
-                    .classList.add("active_indicator");
-            } else {
-                document
-                    .querySelector(`header ul li a[href*=${sectionId}]`)
-                    .classList.remove("active_indicator");
-                document
-                    .querySelector(`header ul li a[href*=${sectionId}] i`)
-                    .classList.remove("active_indicator");
-            }
+    // Function to handle header background on scroll
+    const handleHeaderScroll = () => {
+        if (window.scrollY >= header.offsetHeight) {
+            header.classList.add("bg-navy-dark", "scroll");
+        } else {
+            header.classList.remove("bg-navy-dark", "scroll");
         }
-    });
-}
+    };
 
-// Change the header background color when the user scrolls the page.
-window.addEventListener("scroll", function () {
-    let header = document.querySelector("header");
+    // Add scroll listener for header background (passive for performance)
+    window.addEventListener("scroll", handleHeaderScroll, { passive: true });
 
-    if (window.scrollY >= header.offsetHeight) {
-        header.classList.add("bg-navy-dark");
+    // Check if the current page is about.html
+    if (window.location.pathname.includes("about.html")) {
+        // Remove 'active_indicator' from other links.
+        navLinks.forEach((link) => {
+            link.classList.remove("active_indicator", "text-green");
+        });
+
+        // Add 'text-green' to the About menu item by default.
+        const aboutLink = document.querySelector(
+            "header ul li a[href*='index.html#about']"
+        );
+        if (aboutLink) {
+            aboutLink.classList.add("text-green");
+        }
+
+        // Add hover effects to change text colors on mouseover.
+        navLinks.forEach((item) => {
+            item.addEventListener("mouseover", function () {
+                item.classList.add("text-green");
+            });
+
+            item.addEventListener("mouseout", function () {
+                // Ensure the "About" link stays green.
+                if (!item.href.includes("about.html")) {
+                    item.classList.remove("text-green");
+                }
+            });
+        });
     } else {
-        header.classList.remove("bg-navy-dark");
-    }
-});
+        // Intersection Observer for Scroll Spy (Active Indicator)
+        // Triggers when the element crosses the middle of the viewport
+        const observerOptions = {
+            root: null,
+            rootMargin: "-50% 0px -50% 0px",
+            threshold: 0
+        };
 
-// Add a scroll class to the header when scrolled past its height.
-window.addEventListener('scroll', function () {
-    const header = document.querySelector('#header');
-    const navHeight = header.offsetHeight;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
 
-    if (window.scrollY >= navHeight) {
-        header.classList.add('scroll');
-    } else {
-        header.classList.remove('scroll');
+                    // Remove active class from all links
+                    navLinks.forEach((link) => {
+                        link.classList.remove("active_indicator");
+                        const icon = link.querySelector("i");
+                        if (icon) icon.classList.remove("active_indicator");
+                    });
+
+                    // Add active class to the corresponding link
+                    // Using href*="#id" to match anchor links
+                    const activeLink = document.querySelector(
+                        `header ul li a[href*="#${id}"]`
+                    );
+
+                    if (activeLink) {
+                        activeLink.classList.add("active_indicator");
+                        const icon = activeLink.querySelector("i");
+                        if (icon) icon.classList.add("active_indicator");
+                    }
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
     }
 });
