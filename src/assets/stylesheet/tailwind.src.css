@@ -209,4 +209,13 @@
     .scrollbar::-webkit-scrollbar-thumb:hover {
         background: var(--scrollbar-thumb-color);
     }
+
+    /* Scroll Reveal Animation Classes */
+    .reveal {
+        @apply opacity-0 translate-y-8 transition-all duration-1000 ease-out;
+    }
+    
+    .reveal-visible {
+        @apply opacity-100 translate-y-0;
+    }
 }
