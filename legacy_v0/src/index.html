@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en"
+  class="js-focus-visible scrollbar h-full scroll-smooth bg-navy antialiased [font-feature-settings:'ss01']">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="developed this personal website using HTML5, Sass, and JavaScript to showcase my work in data analysis and business intelligence. Here, I share projects, insights, and solutions that demonstrate my expertise in transforming data into strategic business decisions." />
+  <meta name="author" content="Alexsander Lopes Camargos - alcamargos@vivaldi.net" />
+  <meta name="keywords" content="business intelligence, data analysis, data science, python, portfolio" />
+  <meta property="og:title" content="Alexsander Lopes Camargos | Data Analysis & Business Intelligence Portfolio" />
+  <meta property="og:description"
+    content="developed this personal website using HTML5, Sass, and JavaScript to showcase my work in data analysis and business intelligence. Here, I share projects, insights, and solutions that demonstrate my expertise in transforming data into strategic business decisions." />
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/alexcamargos/alexcamargos/refs/heads/main/work_table.png" />
+
+  <!-- START: FAVICON -->
+  <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon" />
+  <!-- END: FAVICON -->
+
+  <title>Alexsander Lopes Camargos | Data Analysis & Business Intelligence Portfolio</title>
+
+  <!-- START: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" />
+  <!-- END: Google Fonts -->
+
+  <!-- START: Tailwind CSS -->
+  <!-- Development version -->
+  <!-- <link rel="stylesheet" href="assets/stylesheet/tailwind.css" /> -->
+  <!-- Production version -->
+  <link rel="stylesheet" href="assets/stylesheet/tailwind.min.css" />
+  <!-- END: Tailwind CSS -->
+</head>
+
+<body class="flex h-full flex-col text-slate">
+  <!-- START: Main Page Container -->
+  <div id="container mx-auto">
+    <!-- START: Header -->
+    <header id="header" class="fixed z-50 w-full py-4">
+      <!-- START: Header Container -->
+      <div class="mx-8 font-nunito">
+        <!-- START: Navigation Bar -->
+        <div class="relative z-50 flex items-center justify-between">
+          <!-- START: Navigation Bar Container -->
+          <div class="navigation-bar_container">
+            <!-- START: Title -->
+            <div class="flex items-center md:gap-x-12">
+              <a class="transition-all-300-500 inline-flex flex-row items-center gap-x-4 py-1 px-2 text-slate after:block after:text-green after:content-['AlCamargos'] after:hover:text-slate-lightest sm:text-base sm:hover:after:content-['AlexCamargos'] md:text-lg"
+                href="https://alexcamargos.github.io/" id="logo" title="Alexsander Lopes Camargos">
+                <i class="fa-solid fa-terminal text-green"></i>
+              </a>
+            </div>
+          </div>
+          <!-- END: Title -->
+
+          <!-- START: Mobile Menu Button -->
+          <div class="flex items-center sm:hidden">
+            <button id="mobile-menu-btn" type="button" class="text-slate hover:text-green focus:outline-none"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <!-- END: Mobile Menu Button -->
+
+          <!-- START: Navigation Bar Menu -->
+          <div class="navigation-bar_menu">
+            <nav class="z-50 flex justify-between">
+              <!-- START: Navigation Bar Menu Itens -->
+              <div class="mx-auto px-2 sm:px-6 lg:pl-8 lg:pr-2">
+                <div class="relative flex h-16 items-center justify-between">
+                  <ul class="flex items-center md:gap-x-12">
+                    <!-- Home -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="active_indicator inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                        href="#hero">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        Home
+                      </a>
+                    </li>
+
+                    <!-- About -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                        href="#about">
+                        <i class="fa-solid fa-user"></i>
+                        About
+                      </a>
+                    </li>
+
+                    <!-- Portfolio -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                        href="#portfolio">
+                        <i class="fa-solid fa-code"></i>
+                        Portfolio
+                      </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center py-1 px-2 text-slate transition-all duration-500 hover:text-green sm:gap-x-2 sm:text-sm md:gap-x-4 md:text-base"
+                        href="#contact">
+                        <i class="fa-regular fa-at"></i>
+                        Contact
+                      </a>
+                    </li>
+                    <!-- Fork on GitHub -->
+                    <li class="hidden sm:flex sm:gap-x-2 md:gap-x-6">
+                      <a class="inline-flex place-items-center py-1 px-2 text-sm text-slate-light hover:text-green sm:gap-x-2 md:gap-x-4"
+                        href="https://github.com/alexcamargos/alexcamargos.github.io" target="_blank">
+                        <i class="fa-solid fa-code-fork"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- END: Navigation Bar Menu Itens -->
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!-- END: Navigation Bar Container -->
+        </div>
+        <!-- END: Navigation Bar -->
+
+        <!-- START: Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay"
+          class="fixed inset-0 z-40 hidden bg-navy-dark/50 backdrop-blur-sm transition-opacity opacity-0"></div>
+        <!-- END: Mobile Menu Overlay -->
+
+        <!-- START: Mobile Menu Sidebar -->
+        <div id="mobile-menu"
+          class="fixed top-0 right-0 z-50 h-screen w-3/4 max-w-sm translate-x-full transform bg-navy-light shadow-2xl transition-transform duration-300 ease-in-out hidden sm:hidden">
+          <div class="flex h-full flex-col overflow-y-auto py-6 px-6">
+            <div class="flex items-center justify-end">
+              <button id="mobile-menu-close-btn" type="button" class="text-slate hover:text-green focus:outline-none">
+                <span class="sr-only">Close menu</span>
+                <i class="fa-solid fa-xmark text-2xl"></i>
+              </button>
+            </div>
+            <div class="mt-8 flex-1">
+              <ul class="flex flex-col gap-y-6">
+                <!-- Mobile Home -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="#hero">
+                    <i class="fa-solid fa-house-chimney w-6 text-center"></i>
+                    Home
+                  </a>
+                </li>
+                <!-- Mobile About -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="#about">
+                    <i class="fa-solid fa-user w-6 text-center"></i>
+                    About
+                  </a>
+                </li>
+                <!-- Mobile Portfolio -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="#portfolio">
+                    <i class="fa-solid fa-code w-6 text-center"></i>
+                    Portfolio
+                  </a>
+                </li>
+                <!-- Mobile Contact -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="#contact">
+                    <i class="fa-regular fa-at w-6 text-center"></i>
+                    Contact
+                  </a>
+                </li>
+                <!-- Mobile Resume -->
+                <li>
+                  <a class="mobile-link flex items-center gap-x-4 text-lg font-medium text-slate hover:text-green"
+                    href="https://www.linkedin.com/in/alexcamargos" target="_blank">
+                    <i class="fa-solid fa-file-lines w-6 text-center"></i>
+                    Resume
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Mobile Social Icons -->
+            <div class="mt-auto border-t border-slate-dark pt-6">
+              <ul class="flex justify-center gap-x-6">
+                <li>
+                  <a class="text-slate hover:text-green" href="https://github.com/alexcamargos" target="_blank">
+                    <i class="fa-brands fa-github text-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-slate hover:text-green" href="https://www.linkedin.com/in/alexcamargos"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-slate hover:text-green" href="https://twitter.com/alcamargos" target="_blank">
+                    <i class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- END: Mobile Menu Sidebar -->
+      </div>
+      <!-- END: Header Container -->
+    </header>
+    <!-- END: Header -->
+
+    <!-- START: Main -->
+    <main>
+      <!-- START: Main Container -->
+      <div id="main-container" class="divide-y-[60px] divide-navy">
+        <!-- START: Hero Section -->
+        <section id="hero" class="section container my-auto h-screen w-screen pt-48">
+          <!-- <section id="hero" class="h-screen mx-auto flex flex-col items-stretch px-4 py-1 sm:py-4"> -->
+
+          <!-- START: Hero Container -->
+          <div class="hero-container container grid grid-flow-row auto-rows-max gap-y-8 pt-36 text-left">
+            <!-- <div class="hero-container flex flex-row justify-items-start auto-rows-max gap-y-8"> -->
+
+            <p
+              class="font-display mx-4 max-w-4xl tracking-tight text-green xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl">
+              <span class="waving-hand">👋</span>
+              Hello! My name is...
+            </p>
+
+            <h1
+              class="font-display mx-4 max-w-4xl font-medium tracking-tight text-slate-lightest xs:text-xl sm:text-2xl md:text-4xl lg:text-6xl">
+              <span class="relative whitespace-nowrap">
+                <svg aria-hidden="true" viewBox="0 0 418 42"
+                  class="absolute top-3/4 left-0 h-[0.58em] w-full fill-navy-lightest" preserveAspectRatio="none">
+                  <path
+                    d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                  </path>
+                </svg>
+                <span class="relative">Alexsander Lopes Camargos</span>
+              </span>
+            </h1>
+
+            <p
+              class="font-display sm:text-1xl mx-4 max-w-4xl tracking-tight text-slate xs:text-xl md:text-3xl lg:text-5xl">
+              and I'm a
+              <span id="typing-effect" class="text-green"></span>
+            </p>
+
+            <!-- START: Scroll Down Indicator -->
+            <div class="scroll-down-indicator absolute bottom-2 flex items-baseline justify-center text-sm">
+              <div class="absolute bottom-24 flex flex-row justify-center hover:origin-top">
+                <div class="scroll-down-icon-animate"></div>
+                <div class="scroll-down-icon-animate"></div>
+                <div class="scroll-down-icon-animate"></div>
+                <span></span>
+              </div>
+              <span
+                class="absolute bottom-0 cursor-none font-semibold text-slate transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green xs:text-sm sm:text-base md:text-lg lg:text-xl"
+                onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">
+                Scroll Down
+              </span>
+            </div>
+            <!-- END: Scroll Down Indicator -->
+          </div>
+          <!-- END: Hero Container -->
+        </section>
+        <!-- END: Hero Section -->
+        <div id="content-container" class="container mx-auto">
+          <!-- START: About Section -->
+          <section id="about" class="section">
+            <!-- START: About Container -->
+            <div class="about-container container flex flex-col gap-16 md:flex-row">
+              <!-- START: About Content -->
+              <div class="about flex w-4/5 flex-col gap-6 text-base text-slate">
+                <h2 class="title">Who I am</h2>
+
+                <p class="text-lg font-medium text-green">
+                  Passionate about creating intelligent systems that solve real-world problems
+                </p>
+
+                <!-- START: About Me -->
+                <p>
+                  I’m Alexsander Lopes Camargos, a Business Intelligence Analyst at Sicoob Credijequitinhonha,
+                  transforming raw data into strategic business impact. With a unique blend of 15+ years in
+                  administrative leadership and deep technical expertise in data engineering, analytics, and
+                  visualization, I bridge business acumen with data science to solve complex challenges.
+                </p>
+
+                <p>
+                  My philosophy is simple: technology enables solutions, but business understanding drives value. I
+                  specialize in the full data lifecycle—from ELT pipelines (SQL, Python) and statistical modeling to
+                  compelling visualizations (Tableau, Power BI)—always focusing on tangible outcomes:
+                </p>
+
+                <ul>
+                  <li>Boosted customer acquisition by 10% through segmentation analysis that uncovered hidden market
+                    opportunities.</li>
+                  <li>Reduced critical report generation time by 90% via query optimization and automation, enabling
+                    daily KPI access for executive decision-making.</li>
+                  <li>Streamlined data workflows by modernizing legacy systems, accelerating insights delivery by 5x for
+                    cross-functional teams.</li>
+                </ul>
+
+                <p>
+                  Armed with degrees in Business Administration and Economics—and currently advancing my skills in
+                  time-series forecasting and applied statistics—I thrive where analytical rigor meets real-world
+                  impact. I don’t just build dashboards; I uncover the stories in data that redefine strategy.
+                </p>
+
+                <p>
+                  Let’s connect to discuss how I can help your organization turn data into a competitive advantage.
+                </p>
+
+                <p><a class="ml-3 inline-flex items-center gap-3 hover:text-green" href="about.html" target="_self"
+                    title="About me">Discover more about my journey</a>.
+                </p>
+                <!-- END: About Me -->
+
+                <!-- START: Resume -->
+                <div class="resume">
+                  <a href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="LinkedIn">
+                    <div
+                      class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate">
+                      Resume
+                    </div>
+                  </a>
+                </div>
+                <!-- END: Resume -->
+              </div>
+              <!-- END: About Content -->
+
+              <!-- START: About Picture -->
+              <div class="about-picture mx-auto px-8">
+                <figure class="container -rotate-6 overflow-hidden bg-fixed pt-24">
+                  <img loading="lazy" class="w-4/5 rounded-xl shadow-lg md:w-full" src="assets/img/profile-pic.png"
+                    alt="Alexsander Lopes Camargos" />
+                </figure>
+              </div>
+              <!-- END: About Picture -->
+            </div>
+            <!-- END: About Container -->
+
+            <!-- START: Technologies I Use -->
+            <div class="technologies container grid items-center gap-3 mt-20 text-base">
+              <h2 class="text-slate-lightest">
+                Here are a few technologies I've been working with recently:
+              </h2>
+
+              <!-- START: Technologies List -->
+              <ul class="tech-list ml-6 mt-2">
+                <!-- Languages & Tools -->
+                <li class="my-6 mb-5">
+                  <h3 class="flex items-center gap-x-4 text-xl font-semibold">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    Languages & Tools
+                  </h3>
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                    <li><strong>Languages:</strong> Python, R, SQL</li>
+                    <li><strong>Processing Libraries:</strong> PySpark, Pandas, Polars, NumPy, DuckDB</li>
+                    <li><strong>Visualization Libraries:</strong> Matplotlib, Seaborn, Plotly</li>
+                    <li><strong>Business Intelligence:</strong> DAX, Power Query M</li>
+                  </ul>
+                </li>
+
+                <!-- Modeling & Machine Learning -->
+                <li class="my-6 mb-5">
+                  <h3 class="flex items-center gap-x-4 text-xl font-semibold">
+                    <i class="fa-solid fa-robot"></i>
+                    Modeling & Machine Learning
+                  </h3>
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                    <li><strong>Libraries:</strong> Scikit-learn, Statsmodels</li>
+                    <li><strong>Techniques:</strong> Classification, Regression, Clustering, Random Forest, SVM,
+                      Gradient Boosting (AdaBoost, XGBoost)</li>
+                    <li><strong>Model Validation:</strong> Cross-validation, Performance Metrics (Accuracy, Precision,
+                      Recall, F1-Score, AUC-ROC)</li>
+                  </ul>
+                </li>
+
+                <!-- Data Visualization & Storytelling -->
+                <li class="my-6 mb-5">
+                  <h3 class="flex items-center gap-x-4 text-xl font-semibold">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Data Visualization & Storytelling
+                  </h3>
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                    <li><strong>BI Tools:</strong> Power BI, Tableau, Looker Studio</li>
+                    <li><strong>Code Dashboards:</strong> Streamlit, Rill, Evidence</li>
+                    <li><strong>Techniques:</strong> Data Storytelling, Stakeholder Communication</li>
+                  </ul>
+                </li>
+
+                <!-- Engineering & Databases -->
+                <li class="my-6 mb-5">
+                  <h3 class="flex items-center gap-x-4 text-xl font-semibold">
+                    <i class="fa-solid fa-database"></i>
+                    Engineering & Databases
+                  </h3>
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                    <li><strong>SQL Databases:</strong> PostgreSQL, MySQL, MariaDB, SQL Server</li>
+                    <li><strong>NoSQL Databases:</strong> MongoDB</li>
+                    <li><strong>Access Tools:</strong> Datagrip, DBeaver</li>
+                  </ul>
+                </li>
+
+                <!-- Cloud & Data Pipelines -->
+                <li class="my-6 mb-5">
+                  <h3 class="flex items-center gap-x-4 text-xl font-semibold">
+                    <i class="fa-solid fa-cloud"></i>
+                    Cloud & Data Pipelines
+                  </h3>
+                  <ul class="grid items-center gap-1 ml-10 mt-2 list-disc text-slate-lightest">
+                    <li><strong>Cloud Platforms:</strong> AWS, Azure, Oracle Cloud</li>
+                    <li><strong>Data Platforms:</strong> Databricks, MotherDuck</li>
+                    <li><strong>Deployment:</strong> Vercel, Netlify, Linode</li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- END: Technologies List -->
+            </div>
+            <!-- END: Technologies I Use -->
+          </section>
+          <!-- END: About Section -->
+
+          <!-- START: Portfolio Section -->
+          <section id="portfolio" class="section">
+            <!-- START: Portfolio Container -->
+            <div class="portfolio-container container">
+              <h2 class="title">Some Things I've Built</h2>
+              <!-- START: Projects List -->
+              <ul class="flex flex-col">
+                <!-- START: Project pyFundamentus -->
+                <li class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
+                  <!-- START: Project Image -->
+                  <picture id="project-image"
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    <img loading="lazy"
+                      class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
+                      src="assets/img/projects/pyfundamentus.jpg" alt="Project Image" />
+                  </picture>
+                  <!-- END: Project Image -->
+
+                  <!-- START: Project Content -->
+                  <div id="project-content"
+                    class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                      Featured Project
+                    </p>
+                    <!-- Project Title -->
+                    <h3 id="project-title" class="mb-5 text-xl font-semibold">
+                      <a class="text-slate-light hover:text-green" href="https://github.com/alexcamargos/pyFundamentus"
+                        target="_blank">
+                        Python Fundamentus
+                      </a>
+                    </h3>
+                    <!-- START: Project Description -->
+                    <div id="project-description"
+                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      The Python Fundamentus is an API developed in Python
+                      designed to facilitate quick access to the main
+                      fundamental indicators of the most relevant stocks in
+                      the Brazilian market. By utilizing the information
+                      available on the Fundamentus website, it provides
+                      detailed financial and fundamentalist information of
+                      companies listed on B3, this project aims to bring the
+                      wealth of financial data directly to your Python
+                      applications in an efficient and organized manner.
+                    </div>
+                    <!-- END: Project Description -->
+
+                    <!-- START: Technologies Used -->
+                    <div id="project-tech-list" class="sm:flex sm:justify-end">
+                      <ul
+                        class="mt-6 mb-3 flex flex-col items-center gap-3 font-nunito text-sm 2xs:flex-row 2xs:content-end">
+                        <li class="ml-3">Python</li>
+                        <li class="ml-3">Scraping</li>
+                        <li class="ml-3">Beautiful Soup</li>
+                        <li class="ml-3">Requests</li>
+                      </ul>
+                    </div>
+                    <!-- END: Technologies Used -->
+
+                    <!-- START: Project Links -->
+                    <div id="project-links"
+                      class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                        href="https://github.com/alexcamargos/pyFundamentus" target="_blank" title="GitHub">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                        href="https://pypi.org/project/pyfundamentus" target="_blank" title="GitHub">
+                        PyPI
+                        <i class="fa-brands fa-python"></i>
+                      </a>
+                    </div>
+                    <!-- END: Project Content -->
+                  </div>
+                  <!-- END: pyFundamentus Content -->
+                </li>
+                <!-- END: START: Project pyFundamentus -->
+
+                <!-- START: Project Bacen IF.data AutoScraper & Data Manager -->
+                <li class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
+                  <!-- START: Project Image -->
+                  <picture id="project-image"
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    <img loading="lazy"
+                      class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
+                      src="assets/img/projects/if_data.jpg" alt="Project Image" />
+                  </picture>
+                  <!-- END: Project Image -->
+
+                  <!-- START: Project Content -->
+                  <div id="project-content"
+                    class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                      Featured Project
+                    </p>
+                    <!-- Project Title -->
+                    <h3 id="project-title" class="mb-5 text-xl font-semibold">
+                      <a class="text-slate-light hover:text-green"
+                        href="https://github.com/alexcamargos/bacen-ifdata-scraper" target="_blank">
+                        Bacen IF.data AutoScraper & Data Manager
+                      </a>
+                    </h3>
+                    <!-- START: Project Description -->
+                    <div id="project-description"
+                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      The Central Bank of Brazil (Bacen) publishes detailed
+                      reports on a quarterly basis, featuring a wide range of
+                      data about financial institutions, available through the
+                      IF.data Portal. Although this data is valuable, it
+                      requires careful processing and analysis to extract
+                      significant information. The main goal of this project
+                      is to apply data mining techniques to the datasets from
+                      the IF.data Portal with the aim of creating insights
+                      about the Brazilian financial system.
+                    </div>
+                    <!-- END: Project Description -->
+
+                    <!-- START: Technologies Used -->
+                    <div id="project-tech-list" class="sm:flex sm:justify-end">
+                      <ul
+                        class="mt-6 mb-3 flex flex-col items-center gap-3 font-nunito text-sm 2xs:flex-row 2xs:content-end">
+                        <li class="ml-3">Python</li>
+                        <li class="ml-3">Selenium</li>
+                        <li class="ml-3">pathlib</li>
+                      </ul>
+                    </div>
+                    <!-- END: Technologies Used -->
+
+                    <!-- START: Project Links -->
+                    <div id="project-links"
+                      class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                        href="https://github.com/alexcamargos/bacen-ifdata-scraper" target="_blank" title="GitHub">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <!-- END: Project Links -->
+                  </div>
+                  <!-- END: Project Content -->
+                </li>
+                <!-- END: Project Bacen IF.data AutoScraper & Data Manager -->
+
+                <!-- START: Nobel Prize Master Data -->
+                <li class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
+                  <!-- START: Project Image -->
+                  <picture id="project-image"
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    <img loading="lazy"
+                      class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
+                      src="assets/img/projects/mpmd.png" alt="Project Image" />
+                  </picture>
+                  <!-- END: Project Image -->
+
+                  <!-- START: Project Content -->
+                  <div id="project-content"
+                    class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                      Featured Project
+                    </p>
+                    <!-- Project Title -->
+                    <h3 id="project-title" class="mb-5 text-xl font-semibold">
+                      <a class="text-slate-light hover:text-green"
+                        href="https://www.novypro.com/project/nobel-prize-master-data-power-bi" target="_blank">
+                        Nobel Prize Master Data
+                      </a>
+                    </h3>
+                    <!-- START: Project Description -->
+                    <div id="project-description"
+                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      This project, through a report in Power BI, analyzes
+                      Nobel Prize laureates from 1901 to 2019 to explore
+                      trends, global recognition, and diversity. Focusing on
+                      the geographical distribution, it highlights the
+                      leadership of the United States with 272 awards (35.74%
+                      of the total), followed by the United Kingdom and
+                      Germany, reflecting the dominance of certain nations and
+                      the universality of the award. Utilizing Power BI's
+                      analytical tools for dynamic and interactive
+                      visualization, the project encourages discussion on its
+                      findings, underscoring the historical impact of the
+                      Nobel Prize and fostering debates on excellence in
+                      science, literature, and peace, promoting a deeper
+                      understanding of its significance and evolution.
+                    </div>
+                    <!-- END: Project Description -->
+
+                    <!-- START: Technologies Used -->
+                    <div id="project-tech-list" class="sm:flex sm:justify-end">
+                      <ul
+                        class="mt-6 mb-3 flex flex-col items-center gap-3 font-nunito text-sm 2xs:flex-row 2xs:content-end">
+                        <li class="ml-3">Microsoft Power BI</li>
+                        <li class="ml-3">Microsoft Power Query</li>
+                        <li class="ml-3">DAX (Data Analysis Expressions)</li>
+                      </ul>
+                    </div>
+                    <!-- END: Technologies Used -->
+
+                    <!-- START: Project Links -->
+                    <div id="project-links"
+                      class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                        href="https://www.novypro.com/project/nobel-prize-master-data-power-bi" target="_blank"
+                        title="Live Demo">
+                        Preview
+                        <i class="fa-solid fa-external-link"></i>
+                      </a>
+                    </div>
+                    <!-- END: Project Links -->
+                  </div>
+                  <!-- END: Project Content -->
+                </li>
+                <!-- END: Nobel Prize Master Data -->
+
+                <!-- START: Space Race -->
+                <li class="relative mb-20 grid grid-cols-12 items-center gap-3 rounded-md border-2 p-4 sm:border-0">
+                  <!-- START: Project Image -->
+                  <picture id="project-image"
+                    class="invisible relative z-10 col-start-1 col-end-13 row-start-1 row-end-2 max-w-screen-xs before:absolute before:inset-0 before:w-full before:bg-navy-lightest before:opacity-50 before:transition before:duration-500 before:ease-in-out before:content-[''] hover:shadow-md hover:shadow-navy-dark before:hover:opacity-0 sm:visible sm:col-start-1 sm:col-end-7">
+                    <img loading="lazy"
+                      class="h-full w-full rounded transition duration-500 ease-in-out hover:shadow-lg hover:blur-none"
+                      src="assets/img/projects/space_race.png" alt="Project Image" />
+                  </picture>
+                  <!-- END: Project Image -->
+
+                  <!-- START: Project Content -->
+                  <div id="project-content"
+                    class="relative z-40 col-start-1 col-end-13 row-start-1 row-end-2 text-left sm:col-start-5 sm:col-end-13 sm:text-right">
+                    <p id="project-overline" class="my-3 font-nunito text-sm font-normal text-green">
+                      Featured Project
+                    </p>
+                    <!-- Project Title -->
+                    <h3 id="project-title" class="mb-5 text-xl font-semibold">
+                      <a class="text-slate-light hover:text-green"
+                        href="https://www.novypro.com/project/corrida-espacial" target="_blank">
+                        Space Race
+                      </a>
+                    </h3>
+                    <!-- START: Project Description -->
+                    <div id="project-description"
+                      class="relative rounded font-nunito text-slate-light hover:shadow-md hover:shadow-navy-dark sm:bg-navy-light sm:p-6">
+                      This project, titled "Corrida Espacial" (Space Race), presents a comprehensive
+                      Power BI dashboard analyzing global space missions throughout history,
+                      encompassing 4,630 missions with an impressive 89.89% success rate. The
+                      visualization highlights the dominance of the USA (1,467 missions) and Russia
+                      (1,416 missions) in space exploration, while also tracking contributions from
+                      emerging space powers like Kazakhstan, China, and France. On the
+                      organizational front, RVSN USSR leads with 1,777 missions, followed by various
+                      agencies and companies including CASC, Arianespace, and NASA. The dashboard
+                      provides temporal analysis showing mission frequency since 1960, with notable
+                      peaks in the 1970s and recent years (reaching 157 missions), alongside
+                      geographical launch site distribution and rocket performance metrics covering
+                      370 different rocket models across 62 companies. This interactive tool offers
+                      valuable insights into the evolution and current state of humanity's space
+                      exploration endeavors, serving as a historical record of our collective
+                      achievements beyond Earth.
+                    </div>
+                    <!-- END: Project Description -->
+
+                    <!-- START: Technologies Used -->
+                    <div id="project-tech-list" class="sm:flex sm:justify-end">
+                      <ul
+                        class="mt-6 mb-3 flex flex-col items-center gap-3 font-nunito text-sm 2xs:flex-row 2xs:content-end">
+                        <li class="ml-3">Microsoft Power BI</li>
+                        <li class="ml-3">Microsoft Power Query</li>
+                        <li class="ml-3">DAX (Data Analysis Expressions)</li>
+                      </ul>
+                    </div>
+                    <!-- END: Technologies Used -->
+
+                    <!-- START: Project Links -->
+                    <div id="project-links"
+                      class="flex flex-col items-center gap-3 text-base 2xs:flex-row sm:justify-end sm:text-lg">
+                      <a class="ml-3 inline-flex items-center gap-3 hover:text-green"
+                        href="https://www.novypro.com/project/corrida-espaciali" target="_blank" title="Live Demo">
+                        Preview
+                        <i class="fa-solid fa-external-link"></i>
+                      </a>
+                    </div>
+                    <!-- END: Project Links -->
+                  </div>
+                  <!-- END: Project Content -->
+                </li>
+
+
+                <!-- END: Corrida Espacial -->
+              </ul>
+              <!-- END: Projects List -->
+            </div>
+            <!-- END: Portfolio Container -->
+          </section>
+          <!-- END: Portfolio Section -->
+
+          <!-- START: Contact Section -->
+          <section id="contact" class="section">
+            <!-- START: Contact Container -->
+            <div
+              class="contact-container container grid grid-flow-row auto-rows-max justify-items-center gap-y-8 text-base text-slate">
+              <h2
+                class="flex flex-col items-center gap-y-4 font-nunito text-3xl font-bold text-slate-lightest before:font-nunito before:text-base before:text-green before:content-['What\’s_Next?']">
+                Get In Touch
+              </h2>
+
+              <p class="max-w-screen-xs">
+                My inbox is always open. If you want to offer me an
+                opportunity, have a question or just want to say hi, I will
+                try my best you answer you!
+              </p>
+
+              <!-- START: SAY HELLO BOX -->
+              <div class="resume">
+                <a href="mailto:alcamargos@vivaldi.net" rel="noopener noreferrer" target="_blank">
+                  <div
+                    class="inline-flex items-center justify-center rounded border-2 border-green bg-navy py-2 px-6 font-roboto text-base font-semibold leading-4 text-green hover:bg-navy-light hover:text-slate focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-light active:bg-navy-light active:text-slate">
+                    Say Hello
+                  </div>
+                </a>
+              </div>
+              <!-- END: SAY HELLO BOX -->
+            </div>
+            <!-- END: Contact Container -->
+          </section>
+          <!-- END: Contact Section -->
+        </div>
+      </div>
+      <!-- END: Main Container -->
+    </main>
+    <!-- END: Main -->
+
+    <!-- START: Copyright -->
+    <div id="copyright"
+      class="fixed top-1/2 ml-4 hidden text-slate-light after:m-auto after:block after:h-screen after:w-px after:bg-slate-light hover:text-green hover:after:bg-green-light hover:after:text-green sm:block lg:ml-5 xlg:ml-6">
+      <div orientation="right" class="inline-flex flex-col text-right">
+        <a class="pb-5 font-nunito text-xs tracking-widest" href="https://github.com/alexcamargos" target="_blank"
+          title="Github">
+          Designed & Built by AlCamargos
+        </a>
+      </div>
+    </div>
+    <!-- END: Copyright -->
+
+    <!-- START: Social Medias -->
+    <div id="social-icons" class="fixed top-1/2 right-2 hidden -translate-y-1/2 sm:block">
+      <!-- START: Social Medias Container -->
+      <div class="container">
+        <!-- START: Social Medias Items -->
+        <ul class="inline-flex flex-col gap-1">
+          <!-- Github -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://github.com/alexcamargos" target="_blank" title="Github">
+              <i class="fa-brands fa-github"></i></a>
+          </li>
+
+          <!-- Linkedin -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.linkedin.com/in/alexcamargos" target="_blank" title="Linkedin">
+              <i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+
+          <!-- Twitter -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://twitter.com/alcamargos" target="_blank" title="Twitter">
+              <i class="fa-brands fa-twitter"></i></a>
+          </li>
+
+          <!-- Instagram -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.instagram.com/alexlopescamargos" target="_blank" title="Instagram">
+              <i class="fa-brands fa-instagram"></i></a>
+          </li>
+
+          <!-- Facebook -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.fb.com/alexcamargos" target="_blank" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+
+          <!-- Strava -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.strava.com/athletes/alcamargos" target="_blank" title="Strava">
+              <i class="fa-brands fa-strava"></i></a>
+          </li>
+
+          <!-- Chess.com -->
+          <li>
+            <a class="flex h-12 w-12 items-center justify-center rounded bg-navy-light text-center font-roboto text-2xl font-bold text-slate-light hover:bg-navy-lightest hover:text-green"
+              href="https://www.chess.com/member/alcamargos" target="_blank" title="Chess.com">
+              <i class="fa-solid fa-chess"></i></a>
+          </li>
+        </ul>
+        <!-- END: Social Medias Items -->
+      </div>
+      <!-- END: Social Medias Container -->
+    </div>
+    <!-- END: Social Medias -->
+
+    <!-- START: Footer -->
+    <footer>
+      <!-- START: Footer Container -->
+      <div class="container mx-8 px-8 pt-20 pb-2">
+        <div
+          class="container inline-flex flex-col items-center gap-y-2 text-xs sm:flex-row sm:justify-around sm:text-sm">
+          <span>
+            Copyright © 2022 - 2025
+            <a class="hover:text-green" href="https://mit-license.org/" rel="noopener noreferrer" target="_blank">
+              MIT License
+            </a>
+          </span>
+          <a class="hover:text-green" href="https://github.com/alexcamargos/alexcamargos.github.io"
+            rel="noopener noreferrer" target="_blank">
+            Designed & Built by Alexsander Lopes Camargos
+          </a>
+        </div>
+      </div>
+      <!-- END: Footer Container -->
+    </footer>
+    <!-- END: Footer -->
+  </div>
+  <!-- END: Main Page Container -->
+
+  <!-- START: Third-Party JavaScript -->
+
+  <!-- START: Font Awesome Free 6.2.0 -->
+  <script async src="https://kit.fontawesome.com/c984e87752.js" crossorigin="anonymous"></script>
+  <!-- END: Font Awesome Free -->
+
+  <!-- START: TypeIt v8.8.7 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.8.7/index.umd.min.js"
+    integrity="sha512-w9+WtnRcS5TEPBd/CalFufJcL86KNh81FYMLkH9jbW46+XnKmdciHk+qhueq+thFd11nt2cV6JSX+nvfFLylgw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <!-- END: TypeIt -->
+  <!-- END: Third-Party JavaScript -->
+
+  <!-- START: Additional JavaScript -->
+
+  <!-- TypeIt v8.7.0 Configuration -->
+  <script defer src="assets/javascript/typeit.js"></script>
+  <script defer src="assets/javascript/header.js"></script>
+  <script defer src="assets/javascript/mobile_menu.js"></script>
+  <!-- END: Additional JavaScript -->
+</body>
+
+</html>
