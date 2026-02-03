@@ -1,0 +1,10 @@
+{
+    "HELLO": "Olá Mundo",
+    "HERO": {
+        "TITLE_1": "Traduzindo Dados em",
+        "TITLE_2": "Decisões Estratégicas",
+        "SUBTITLE": "Cientista de Dados Sênior | Economista | Especialista em Analytics",
+        "BTN_PROJECTS": "Ver Projetos",
+        "BTN_CV": "Baixar CV"
+    }
+}
