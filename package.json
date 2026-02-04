@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-v1",
+  "name": "alcamargos-portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:gh": "ng build --base-href /alexcamargos.github.io/ && copy dist\\portfolio-v1\\browser\\index.html dist\\portfolio-v1\\browser\\404.html",
-    "deploy": "npx angular-cli-ghpages --dir=dist/portfolio-v1/browser"
+    "build:gh": "ng build --base-href /alexcamargos.github.io/ && copy dist\\alcamargos-portfolio\\browser\\index.html dist\\alcamargos-portfolio\\browser\\404.html",
+    "deploy": "npx angular-cli-ghpages --dir=dist/alcamargos-portfolio/browser"
   },
   "prettier": {
     "printWidth": 100,
