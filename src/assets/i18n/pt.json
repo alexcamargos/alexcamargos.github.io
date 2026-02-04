@@ -3,8 +3,41 @@
     "HERO": {
         "TITLE_1": "Traduzindo Dados em",
         "TITLE_2": "Decisões Estratégicas",
-        "SUBTITLE": "Cientista de Dados Sênior | Economista | Especialista em Analytics",
+        "SUBTITLE": "Analista de BI Sênior | Engenheiro de Dados | Transformando Dados em Estratégia",
         "BTN_PROJECTS": "Ver Projetos",
         "BTN_CV": "Baixar CV"
+    },
+    "ABOUT": {
+        "TITLE": "Quem sou eu",
+        "TEXT": "Faço a ponte entre a engenharia de dados técnica e a tomada de decisão estratégica. Com mais de 15 anos de experiência, transformo dados brutos em insights acionáveis que geram impacto de negócio.",
+        "STATS": {
+            "YEARS": "15+ Anos de XP",
+            "PROJECTS": "Pipelines Criados",
+            "IMPACT": "Impacto Estratégico"
+        }
+    },
+    "FOOTER": {
+        "RIGHTS": "Todos os direitos reservados",
+        "BUILT_WITH": "Design e Desenvolvimento por"
+    },
+    "SKILLS": {
+        "TITLE": "Arsenal Técnico",
+        "LANGUAGES_TOOLS": "Linguagens & Ferramentas",
+        "MODELING_ML": "Modelagem & Machine Learning",
+        "VISUALIZATION_STORYTELLING": "Visualização de Dados & Storytelling",
+        "ENGINEERING_DB": "Engenharia & Banco de Dados",
+        "CLOUD_PIPELINES": "Cloud & Pipelines de Dados"
+    },
+    "EDUCATION": {
+        "TITLE": "Formação Acadêmica",
+        "MBA_DS": "MBA em Data Science e Analytics",
+        "POS_STATS": "Pós-Graduação em Estatística Aplicada",
+        "MBA_BI": "MBA em Business Intelligence",
+        "BSC_ECON": "Bacharelado em Ciências Econômicas",
+        "BSC_ADMIN": "Bacharelado em Administração",
+        "USP": "USP/Esalq",
+        "ANHANGUERA": "Anhanguera Educacional",
+        "UNICESUMAR": "Universidade Cesumar",
+        "UNINTER": "Centro Universitário Internacional UNINTER"
     }
 }

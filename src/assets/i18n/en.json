@@ -3,8 +3,41 @@
     "HERO": {
         "TITLE_1": "Translating Data into",
         "TITLE_2": "Strategic Decisions",
-        "SUBTITLE": "Senior Data Scientist | Economist | Analytics Expert",
+        "SUBTITLE": "Senior Business Intelligence Analyst | Data Engineer | Turning Data into Strategy",
         "BTN_PROJECTS": "View Work",
         "BTN_CV": "Download CV"
+    },
+    "ABOUT": {
+        "TITLE": "Who I am",
+        "TEXT": "I bridge the gap between technical data engineering and strategic business decision-making. With 15+ years of experience, I transform raw data into actionable insights that drive business impact.",
+        "STATS": {
+            "YEARS": "15+ Years Experience",
+            "PROJECTS": "Data Pipelines Built",
+            "IMPACT": "Strategic Impact"
+        }
+    },
+    "FOOTER": {
+        "RIGHTS": "All Rights Reserved",
+        "BUILT_WITH": "Designed & Built by"
+    },
+    "SKILLS": {
+        "TITLE": "Technical Arsenal",
+        "LANGUAGES_TOOLS": "Languages & Tools",
+        "MODELING_ML": "Modeling & Machine Learning",
+        "VISUALIZATION_STORYTELLING": "Data Visualization & Storytelling",
+        "ENGINEERING_DB": "Engineering & Databases",
+        "CLOUD_PIPELINES": "Cloud & Data Pipelines"
+    },
+    "EDUCATION": {
+        "TITLE": "Education",
+        "MBA_DS": "MBA in Data Science and Analytics",
+        "POS_STATS": "Postgraduate in Applied Statistics",
+        "MBA_BI": "MBA in Business Intelligence",
+        "BSC_ECON": "B.Sc. in Economics",
+        "BSC_ADMIN": "B.Sc. in Business Administration",
+        "USP": "USP/Esalq",
+        "ANHANGUERA": "Anhanguera Educacional",
+        "UNICESUMAR": "Universidade Cesumar",
+        "UNINTER": "UNINTER International University Center"
     }
 }
