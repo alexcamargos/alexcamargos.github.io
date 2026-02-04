@@ -1,29 +1,51 @@
 {
-  "name": "alexcamargos.github.io",
-  "author": "Alexsander Lopes Camargos",
-  "license": "MIT License",
-  "version": "1.0.0",
-  "description": "A personal portfolio project made with Html, Tailwind Css & JavaScript.",
-  "main": "index.html",
+  "name": "alcamargos-portfolio",
+  "version": "0.0.0",
   "scripts": {
-    "clean": "rimraf dist",
-    "copy:html": "copyfiles -u 1 src/*.html dist",
-    "copy:stylesheet": "copyfiles -u 1 src/assets/stylesheet/* dist",
-    "copy:javascript": "copyfiles -u 1 src/assets/javascript/* dist",
-    "copy:imagens": "copyfiles -u 1 src/assets/img/* src/assets/img/**/* dist",
-    "copy:video": "copyfiles -u 1 src/assets/video/* dist",
-    "build:css": "tailwindcss -i ./src/assets/stylesheet/tailwind.src.css -o ./dist/assets/stylesheet/tailwind.min.css --minify",
-    "build": "npm run clean && npm run copy:html && npm run copy:stylesheet && npm run copy:javascript && npm run copy:imagens && npm run copy:video && npm run build:css",
-    "dev": "tailwindcss -i ./src/assets/stylesheet/tailwind.src.css -o ./dist/assets/stylesheet/tailwind.css --watch"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "build:gh": "ng build --base-href /alexcamargos.github.io/ && copy dist\\alcamargos-portfolio\\browser\\index.html dist\\alcamargos-portfolio\\browser\\404.html",
+    "deploy": "npx angular-cli-ghpages --dir=dist/alcamargos-portfolio/browser"
   },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "packageManager": "npm@11.6.2",
   "dependencies": {
-    "tailwindcss": "^3.1.8"
+    "@angular/common": "^21.1.0",
+    "@angular/compiler": "^21.1.0",
+    "@angular/core": "^21.1.0",
+    "@angular/forms": "^21.1.0",
+    "@angular/platform-browser": "^21.1.0",
+    "@angular/router": "^21.1.0",
+    "@ngx-translate/core": "^17.0.0",
+    "@ngx-translate/http-loader": "^17.0.0",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "rxjs": "~7.8.0",
+    "tailwindcss": "^3.4.19",
+    "tslib": "^2.3.0",
+    "zone.js": "^0.16.0"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13",
-    "rimraf": "^6.0.1",
-    "tailwindcss": "^3.1.8"
+    "@angular/build": "^21.1.2",
+    "@angular/cli": "^21.1.2",
+    "@angular/compiler-cli": "^21.1.0",
+    "jsdom": "^27.1.0",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
   }
 }
