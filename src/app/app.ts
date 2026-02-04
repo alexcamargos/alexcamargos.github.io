@@ -11,7 +11,7 @@ import { FooterComponent } from './components/footer/footer';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('portfolio-v1');
+  protected readonly title = signal('alcamargos-portfolio');
   private translate = inject(TranslateService);
 
   constructor() {
