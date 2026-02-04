@@ -1,5 +1,10 @@
 {
     "HELLO": "Olá Mundo",
+    "NAV": {
+        "PROJECTS": "Projetos",
+        "EXPERTISE": "Expertise",
+        "EDUCATION": "Formação"
+    },
     "HERO": {
         "TITLE_1": "Traduzindo Dados em",
         "TITLE_2": "Decisões Estratégicas",
@@ -39,5 +44,10 @@
         "ANHANGUERA": "Anhanguera Educacional",
         "UNICESUMAR": "Universidade Cesumar",
         "UNINTER": "Centro Universitário Internacional UNINTER"
+    },
+    "ABOUT_SECTION": {
+        "TITLE": "O Estrategista por trás do Código",
+        "HOOK": "Transformando volatilidade em direção. Com base sólida em Economia e 15 anos de liderança, não crio apenas modelos—eu engenho vantagens competitivas. Conecto algoritmos complexos a decisões estratégicas, usando Ciência de Dados para resolver problemas que realmente impactam o negócio.",
+        "HUMAN": "Para além do código, sou movido pela curiosidade intelectual. Seja mergulhando nos avanços de LLMs, revisitando teorias econométricas ou analisando tendências de mercado com um bom café, acredito que uma mente equilibrada e questionadora constrói as soluções mais resilientes."
     }
 }

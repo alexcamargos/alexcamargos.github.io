@@ -1,5 +1,10 @@
 {
     "HELLO": "Hello World",
+    "NAV": {
+        "PROJECTS": "Projects",
+        "EXPERTISE": "Expertise",
+        "EDUCATION": "Education"
+    },
     "HERO": {
         "TITLE_1": "Translating Data into",
         "TITLE_2": "Strategic Decisions",
@@ -39,5 +44,10 @@
         "ANHANGUERA": "Anhanguera Educacional",
         "UNICESUMAR": "Universidade Cesumar",
         "UNINTER": "UNINTER International University Center"
+    },
+    "ABOUT_SECTION": {
+        "TITLE": "The Strategist Behind the Code",
+        "HOOK": "Transforming market volatility into clear signals. With a strong foundation in Economics and over 15 years of leadership, I don't just train models—I engineer competitive advantages. My work bridges the gap between complex algorithms and strategic decision-making, using high-end Data Science and Engineering to solve the problems that actually move the needle.",
+        "HUMAN": "Beyond the code, I am a lifelong learner driven by curiosity. Whether I'm deep-diving into the latest papers on Large Language Models, exploring new econometric theories, or simply analyzing market trends over coffee, I believe that a balanced, inquisitive mind creates the most resilient solutions."
     }
 }
