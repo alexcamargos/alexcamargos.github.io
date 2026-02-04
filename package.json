@@ -7,6 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "e2e": "cypress run",
+    "e2e:open": "cypress open",
+    "e2e:headless": "cypress run --headless --browser chrome",
     "build:gh": "ng build --base-href /alexcamargos.github.io/ && copy dist\\alcamargos-portfolio\\browser\\index.html dist\\alcamargos-portfolio\\browser\\404.html",
     "deploy": "npx angular-cli-ghpages --dir=dist/alcamargos-portfolio/browser"
   },
@@ -44,6 +47,7 @@
     "@angular/build": "^21.1.2",
     "@angular/cli": "^21.1.2",
     "@angular/compiler-cli": "^21.1.0",
+    "cypress": "^15.10.0",
     "jsdom": "^27.1.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
