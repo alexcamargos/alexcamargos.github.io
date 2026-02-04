@@ -54,56 +54,65 @@
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center text-slate-900 dark:text-white mb-16">Technical Arsenal</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            @for (skill of skills; track skill.category) {
             <div class="space-y-6">
                 <h3
-                    class="text-xl font-semibold text-sky-700 dark:text-sky-400 border-b border-slate-200 dark:border-slate-800 pb-2">
-                    Data Engineering</h3>
-                <ul class="space-y-3 text-slate-600 dark:text-slate-400">
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-sky-500 rounded-full"></span>Python
-                        (Pandas, NumPy)</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-sky-500 rounded-full"></span>Apache
-                        Spark / PySpark</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-sky-500 rounded-full"></span>SQL & NoSQL
-                        Databases</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-sky-500 rounded-full"></span>Airflow /
-                        ETL Pipelines</li>
+                    [class]="'text-xl font-semibold border-b border-slate-200 dark:border-slate-800 pb-2 ' + skill.colorClass">
+                    {{ skill.category | translate }}
+                </h3>
+                <ul class="space-y-4 text-slate-600 dark:text-slate-400">
+                    @for (item of skill.items; track item.name) {
+                    <li class="flex items-start gap-3">
+                        <span [class]="'mt-2 w-2 h-2 rounded-full shrink-0 ' + skill.bgClass"></span>
+                        <div>
+                            <span class="font-semibold text-slate-800 dark:text-slate-200 block">{{ item.name }}:</span>
+                            <span class="text-sm leading-relaxed">{{ item.value }}</span>
+                        </div>
+                    </li>
+                    }
                 </ul>
             </div>
+            }
+        </div>
+    </div>
+</section>
 
-            <div class="space-y-6">
-                <h3
-                    class="text-xl font-semibold text-emerald-600 dark:text-emerald-400 border-b border-slate-200 dark:border-slate-800 pb-2">
-                    Machine Learning</h3>
-                <ul class="space-y-3 text-slate-600 dark:text-slate-400">
-                    <li class="flex items-center gap-3"><span
-                            class="w-2 h-2 bg-emerald-500 rounded-full"></span>Scikit-Learn</li>
-                    <li class="flex items-center gap-3"><span
-                            class="w-2 h-2 bg-emerald-500 rounded-full"></span>Statistical Modeling</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-emerald-500 rounded-full"></span>PowerBI
-                        / Tableau</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-emerald-500 rounded-full"></span>Credit
-                        Risk Scoring</li>
-                </ul>
+<section class="py-24 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-slate-900 dark:text-white mb-16">{{ 'EDUCATION.TITLE' | translate
+            }}</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            @for (item of education; track item.degree) {
+            <div
+                class="group relative p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-all duration-300">
+                <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-16 h-16 text-slate-900 dark:text-white" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+                </div>
+
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 pr-8">{{ item.degree | translate }}
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 mb-4">{{ item.school | translate }}</p>
+
+                <div class="flex items-center gap-3">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-sky-100 text-sky-800 dark:bg-sky-900/30 dark:text-sky-300">
+                        {{ item.year }}
+                    </span>
+                    @if (item.status === 'Forecast') {
+                    <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Forecast</span>
+                    }
+                </div>
             </div>
-
-            <div class="space-y-6">
-                <h3
-                    class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 pb-2">
-                    Dev & Cloud</h3>
-                <ul class="space-y-3 text-slate-600 dark:text-slate-400">
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-indigo-500 rounded-full"></span>Angular
-                        v18+</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-indigo-500 rounded-full"></span>Docker &
-                        Kubernetes</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-indigo-500 rounded-full"></span>AWS /
-                        Azure</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-indigo-500 rounded-full"></span>Git &
-                        CI/CD</li>
-                </ul>
-            </div>
-
+            }
         </div>
     </div>
 </section>
