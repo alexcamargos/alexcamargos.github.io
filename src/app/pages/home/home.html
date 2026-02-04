@@ -42,21 +42,8 @@
                 </div>
 
                 <!-- Code Content -->
-                <div class="font-mono text-sm leading-relaxed p-6 text-slate-300">
-                    <p><span class="text-pink-400">import</span> pandas <span class="text-pink-400">as</span> pd</p>
-                    <p><span class="text-pink-400">from</span> sklearn.ensemble <span
-                            class="text-pink-400">import</span> RandomForestClassifier</p>
-                    <br>
-                    <p class="text-slate-500"># Loading monetary correction indexes</p>
-                    <p>df = pd.read_parquet(<span class="text-green-400">'s3://datalake/ipca_series.parquet'</span>)</p>
-                    <br>
-                    <p class="text-slate-500"># Predicting credit risk</p>
-                    <p>model = RandomForestClassifier(n_estimators=<span class="text-orange-400">100</span>)</p>
-                    <p>model.fit(X_train, y_train)</p>
-                    <br>
-                    <p><span class="text-blue-400">print</span>(<span class="text-green-400">f"Business Impact: <span
-                                class="text-yellow-300">{{ '{' }}model.score(X_test, y_test):.2%{{ '}' }}</span>
-                            accuracy"</span>)</p>
+                <div class="font-mono text-sm leading-relaxed p-6 text-slate-300 min-h-[300px]">
+                    <div [innerHTML]="displayedCode()"></div>
                 </div>
             </div>
 
@@ -68,45 +55,70 @@
     </div>
 </section>
 
-<section id="about" class="py-24 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
-    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <!-- Text Content -->
-        <div class="space-y-6">
-            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                <span class="w-12 h-1 bg-sky-500 rounded-full"></span>
-                {{ 'ABOUT_SECTION.TITLE' | translate }}
-            </h2>
+<section id="background" class="relative py-24 bg-slate-900 overflow-hidden">
+    <!-- Decorative ambient glow -->
+    <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-sky-500/10 blur-[150px] rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-cyan-500/10 blur-[100px] rounded-full pointer-events-none">
+    </div>
 
-            <p
-                class="text-lg leading-relaxed text-slate-700 dark:text-slate-300 font-medium border-l-4 border-slate-200 dark:border-slate-800 pl-4">
-                {{ 'ABOUT_SECTION.HOOK' | translate }}
-            </p>
+    <div class="container mx-auto px-6">
+        <!-- Bio + Photo Row -->
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-20">
+            <!-- Text Column -->
+            <div class="lg:w-1/2 space-y-6 z-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-white flex items-center gap-4">
+                    <span class="w-12 h-1 bg-sky-500 rounded-full"></span>
+                    {{ 'ABOUT_SECTION.TITLE' | translate }}
+                </h2>
 
-            <p class="text-base leading-relaxed text-slate-600 dark:text-slate-400">
-                {{ 'ABOUT_SECTION.HUMAN' | translate }}
-            </p>
+                <p class="text-lg leading-relaxed text-slate-300 font-medium border-l-4 border-sky-500/50 pl-4">
+                    {{ 'ABOUT_SECTION.HOOK' | translate }}
+                </p>
+
+                <p class="text-base leading-relaxed text-slate-400">
+                    {{ 'ABOUT_SECTION.HUMAN' | translate }}
+                </p>
+            </div>
+
+            <!-- Photo Column -->
+            <div class="lg:w-1/2 flex justify-center lg:justify-end relative">
+                <!-- Subtle ambient glow behind photo -->
+                <div class="absolute inset-0 bg-sky-500/20 blur-[80px] rounded-full -z-10"></div>
+
+                <img src="assets/images/profile-pic.jpg" alt="Alexandre Camargos"
+                    class="relative w-72 md:w-80 lg:w-96 h-auto object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 ease-in-out z-10">
+            </div>
         </div>
 
-        <!-- Decorative / Profile Image Area -->
-        <div class="relative group">
-            <div
-                class="absolute -inset-1 bg-gradient-to-r from-sky-600 to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200">
-            </div>
-            <div
-                class="relative bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700">
-                <div class="flex items-center gap-4 mb-4">
-                    <div
-                        class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-2xl">
-                        ♟️
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 dark:text-white">Continuous Evolution</h4>
-                        <p class="text-xs text-slate-500 uppercase tracking-wide">Economics • Data • AI</p>
+        <!-- Education Section (Integrated) -->
+        <div class="border-t border-slate-800 pt-16">
+            <h3 class="text-2xl font-bold text-white mb-10 flex items-center gap-3">
+                <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                </svg>
+                {{ 'EDUCATION.TITLE' | translate }}
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                @for (item of education; track item.degree) {
+                <div
+                    class="group relative p-5 bg-slate-800/70 rounded-xl border border-slate-700 hover:border-sky-500/50 hover:bg-slate-800 transition-all duration-300">
+                    <h4 class="text-base font-bold text-white mb-1 leading-tight">{{ item.degree | translate }}</h4>
+                    <p class="text-sm text-slate-400 mb-3">{{ item.school | translate }}</p>
+
+                    <div class="flex items-center gap-2">
+                        <span
+                            class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-sky-900/50 text-sky-300">
+                            {{ item.year }}
+                        </span>
+                        @if (item.status === 'Forecast') {
+                        <span class="text-xs text-amber-400 uppercase tracking-wider font-semibold">In Progress</span>
+                        }
                     </div>
                 </div>
-                <div class="h-1 w-full bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
-                    <div class="h-full w-3/4 bg-sky-500 rounded-full animate-pulse"></div>
-                </div>
+                }
             </div>
         </div>
     </div>
@@ -149,53 +161,20 @@
                     <li class="flex items-start gap-2">
                         <span [class]="'mt-1.5 w-1.5 h-1.5 rounded-full shrink-0 ' + skill.bgClass"></span>
                         <div>
-                            <span class="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-0.5">{{
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1">{{
                                 item.name }}</span>
-                            <span class="text-sm text-slate-700 dark:text-slate-300 leading-snug block">{{ item.value
-                                }}</span>
+                            <div class="flex flex-wrap">
+                                @for (tag of item.tags; track tag) {
+                                <span
+                                    class="inline-block bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded mr-2 mb-2 text-slate-700 dark:text-slate-300 font-medium text-sm leading-relaxed">
+                                    {{ tag }}
+                                </span>
+                                }
+                            </div>
                         </div>
                     </li>
                     }
                 </ul>
-            </div>
-            }
-        </div>
-    </div>
-</section>
-
-<section id="education" class="py-24 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-slate-900 dark:text-white mb-16">{{ 'EDUCATION.TITLE' | translate
-            }}</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            @for (item of education; track item.degree) {
-            <div
-                class="group relative p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-all duration-300">
-                <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                    <svg class="w-16 h-16 text-slate-900 dark:text-white" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path
-                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                    </svg>
-                </div>
-
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 pr-8">{{ item.degree | translate }}
-                </h3>
-                <p class="text-slate-600 dark:text-slate-400 mb-4">{{ item.school | translate }}</p>
-
-                <div class="flex items-center gap-3">
-                    <span
-                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-sky-100 text-sky-800 dark:bg-sky-900/30 dark:text-sky-300">
-                        {{ item.year }}
-                    </span>
-                    @if (item.status === 'Forecast') {
-                    <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Forecast</span>
-                    }
-                </div>
             </div>
             }
         </div>
