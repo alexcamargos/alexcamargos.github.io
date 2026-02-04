@@ -1,0 +1,59 @@
+<article
+    class="flex flex-col h-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden hover:shadow-xl hover:border-sky-500/50 transition-all duration-300 group">
+
+    <div class="p-6 flex-grow space-y-4">
+        <div class="flex justify-between items-start">
+            <h3
+                class="text-xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+                {{ project().title }}
+            </h3>
+            <span class="text-slate-400 dark:text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+            </span>
+        </div>
+
+        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            {{ project().shortDescription }}
+        </p>
+
+        <div
+            class="bg-emerald-50 dark:bg-emerald-900/10 border border-emerald-100 dark:border-emerald-800/30 p-3 rounded-lg">
+            <p class="text-xs font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-wide mb-1">Business
+                Impact</p>
+            <p class="text-sm font-medium text-slate-800 dark:text-slate-200">{{ project().businessImpact }}</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2 pt-2">
+            @for (tech of project().techStack; track tech) {
+            <span
+                class="px-2 py-1 text-xs font-mono font-medium text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 rounded">
+                {{ tech }}
+            </span>
+            }
+        </div>
+
+        <div class="flex gap-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+            @if (project().links.github) {
+            <a [href]="project().links.github" target="_blank"
+                class="text-sm font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+                GitHub
+            </a>
+            }
+            @if (project().links.live) {
+            <a [href]="project().links.live" target="_blank"
+                class="text-sm font-semibold text-sky-600 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300 flex items-center gap-2">
+                Live Demo &rarr;
+            </a>
+            }
+        </div>
+    </div>
+</article>
