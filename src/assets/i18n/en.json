@@ -1,6 +1,7 @@
 {
     "HELLO": "Hello World",
     "NAV": {
+        "ABOUT_ME": "About",
         "PROJECTS": "Projects",
         "EXPERTISE": "Expertise",
         "EDUCATION": "Education"
@@ -35,6 +36,7 @@
     },
     "EDUCATION": {
         "TITLE": "Education",
+        "IN_PROGRESS": "In Progress",
         "MBA_DS": "MBA in Data Science and Analytics",
         "POS_STATS": "Postgraduate in Applied Statistics",
         "MBA_BI": "MBA in Business Intelligence",
@@ -49,5 +51,45 @@
         "TITLE": "The Strategist Behind the Code",
         "HOOK": "Transforming market volatility into clear signals. With a strong foundation in Economics and over 15 years of leadership, I don't just train models—I engineer competitive advantages. My work bridges the gap between complex algorithms and strategic decision-making, using high-end Data Science and Engineering to solve the problems that actually move the needle.",
         "HUMAN": "Beyond the code, I am a lifelong learner driven by curiosity. Whether I'm deep-diving into the latest papers on Large Language Models, exploring new econometric theories, or simply analyzing market trends over coffee, I believe that a balanced, inquisitive mind creates the most resilient solutions."
+    },
+    "PROJECTS_SECTION": {
+        "TITLE": "Selected Work"
+    },
+    "PROJECT_CARD": {
+        "BUSINESS_IMPACT": "Business Impact",
+        "GITHUB": "GitHub",
+        "LIVE_DEMO": "Live Demo"
+    },
+    "PROJECTS": {
+        "P1": {
+            "TITLE": "Nexus Equity Graph",
+            "SHORT_DESC": "Multi-agent AI System for Autonomous Financial Analysis using LangGraph.",
+            "IMPACT": "Orchestrated a team of specialized AI agents to analyze stock market data, reducing fundamental analysis time by 95%."
+        },
+        "P2": {
+            "TITLE": "Lastro.AI",
+            "SHORT_DESC": "Retrieval-Augmented Generation (RAG) system for unstructured document analysis.",
+            "IMPACT": "Built an intelligent document processing engine that extracts insights from complex PDF contracts with high accuracy."
+        },
+        "P3": {
+            "TITLE": "Bacen IF.data AutoScraper & Data Manager",
+            "SHORT_DESC": "End-to-end ETL pipeline for Central Bank of Brazil (IF.data) using Selenium, Polars, and DuckDB.",
+            "IMPACT": "Transformed days of manual reporting into a fully automated, reliable OLAP data engine, directly accelerating BI and financial analytics."
+        },
+        "P4": {
+            "TITLE": "PySGS SDK",
+            "SHORT_DESC": "Official-grade Python Wrapper for the Central Bank Time Series Management System.",
+            "IMPACT": "Developed an open-source tool simplifying access to 20,000+ economic indicators for the Brazilian data science community."
+        },
+        "P5": {
+            "TITLE": "PyFundamentus API",
+            "SHORT_DESC": "High-performance API for accessing B3 fundamentalist market data.",
+            "IMPACT": "Democratized access to financial valuations, supporting data-driven investment strategies for thousands of users."
+        },
+        "P6": {
+            "TITLE": "Economic Intelligence Suite",
+            "SHORT_DESC": "Predictive modeling suite for Brazilian macroeconomic indicators (GDP, Selic).",
+            "IMPACT": "Implemented ARIMA and Machine Learning models to forecast economic trends with high precision for strategic planning."
+        }
     }
 }
