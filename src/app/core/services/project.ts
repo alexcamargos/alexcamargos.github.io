@@ -33,12 +33,13 @@ export class ProjectService {
       },
       {
         id: 3,
-        title: 'Bacen Regulatory ETL',
-        shortDescription: 'Automated Data Pipeline for Central Bank of Brazil (IF.data) regulatory reporting.',
-        businessImpact: 'Engineered a resilient scraping engine that eliminates 100% of manual data collection for financial market intelligence.',
-        techStack: ['Python', 'Selenium', 'ETL', 'Automation'],
+        title: 'Bacen IF.data AutoScraper & Data Manager',
+        shortDescription: 'End-to-end ETL pipeline for Central Bank of Brazil (IF.data) using Selenium, Polars, and DuckDB.',
+        businessImpact: 'Transformed days of manual reporting into a fully automated, reliable OLAP data engine, directly accelerating BI and financial analytics.',
+        techStack: ['Python', 'Selenium', 'Polars', 'DuckDB', 'Pandera'],
         links: {
-          github: 'https://github.com/alexcamargos/bacen-ifdata-scraper'
+          github: 'https://github.com/alexcamargos/bacen-ifdata-scraper',
+          live: 'https://pypi.org/project/bacen-ifdata-scraper/'
         }
       },
       {
