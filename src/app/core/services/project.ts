@@ -13,9 +13,9 @@ export class ProjectService {
     const projects: Project[] = [
       {
         id: 1,
-        title: 'Nexus Equity Graph',
-        shortDescription: 'Multi-agent AI System for Autonomous Financial Analysis using LangGraph.',
-        businessImpact: 'Orchestrated a team of specialized AI agents to analyze stock market data, reducing fundamental analysis time by 95%.',
+        title: 'PROJECTS.P1.TITLE',
+        shortDescription: 'PROJECTS.P1.SHORT_DESC',
+        businessImpact: 'PROJECTS.P1.IMPACT',
         techStack: ['LangGraph', 'Python', 'LLMs', 'NetworkX'],
         links: {
           github: 'https://github.com/alexcamargos/nexus-equitygraph'
@@ -23,9 +23,9 @@ export class ProjectService {
       },
       {
         id: 2,
-        title: 'Lastro.AI',
-        shortDescription: 'Retrieval-Augmented Generation (RAG) system for unstructured document analysis.',
-        businessImpact: 'Built an intelligent document processing engine that extracts insights from complex PDF contracts with high accuracy.',
+        title: 'PROJECTS.P2.TITLE',
+        shortDescription: 'PROJECTS.P2.SHORT_DESC',
+        businessImpact: 'PROJECTS.P2.IMPACT',
         techStack: ['RAG', 'Vector DB', 'OpenAI API', 'Streamlit'],
         links: {
           github: 'https://github.com/alexcamargos/Lastro.AI'
@@ -33,9 +33,9 @@ export class ProjectService {
       },
       {
         id: 3,
-        title: 'Bacen IF.data AutoScraper & Data Manager',
-        shortDescription: 'End-to-end ETL pipeline for Central Bank of Brazil (IF.data) using Selenium, Polars, and DuckDB.',
-        businessImpact: 'Transformed days of manual reporting into a fully automated, reliable OLAP data engine, directly accelerating BI and financial analytics.',
+        title: 'PROJECTS.P3.TITLE',
+        shortDescription: 'PROJECTS.P3.SHORT_DESC',
+        businessImpact: 'PROJECTS.P3.IMPACT',
         techStack: ['Python', 'Selenium', 'Polars', 'DuckDB', 'Pandera'],
         links: {
           github: 'https://github.com/alexcamargos/bacen-ifdata-scraper',
@@ -44,9 +44,9 @@ export class ProjectService {
       },
       {
         id: 4,
-        title: 'PySGS SDK',
-        shortDescription: 'Official-grade Python Wrapper for the Central Bank Time Series Management System.',
-        businessImpact: 'Developed an open-source tool simplifying access to 20,000+ economic indicators for the Brazilian data science community.',
+        title: 'PROJECTS.P4.TITLE',
+        shortDescription: 'PROJECTS.P4.SHORT_DESC',
+        businessImpact: 'PROJECTS.P4.IMPACT',
         techStack: ['Python', 'API Development', 'PyPI', 'Open Source'],
         links: {
           github: 'https://github.com/alexcamargos/pysgs-bcb',
@@ -55,9 +55,9 @@ export class ProjectService {
       },
       {
         id: 5,
-        title: 'PyFundamentus API',
-        shortDescription: 'High-performance API for accessing B3 fundamentalist market data.',
-        businessImpact: 'Democratized access to financial valuations, supporting data-driven investment strategies for thousands of users.',
+        title: 'PROJECTS.P5.TITLE',
+        shortDescription: 'PROJECTS.P5.SHORT_DESC',
+        businessImpact: 'PROJECTS.P5.IMPACT',
         techStack: ['Python', 'Pandas', 'Web Scraping', 'Microservices'],
         links: {
           github: 'https://github.com/alexcamargos/pyFundamentus'
@@ -65,9 +65,9 @@ export class ProjectService {
       },
       {
         id: 6,
-        title: 'Economic Intelligence Suite',
-        shortDescription: 'Predictive modeling suite for Brazilian macroeconomic indicators (GDP, Selic).',
-        businessImpact: 'Implemented ARIMA and Machine Learning models to forecast economic trends with high precision for strategic planning.',
+        title: 'PROJECTS.P6.TITLE',
+        shortDescription: 'PROJECTS.P6.SHORT_DESC',
+        businessImpact: 'PROJECTS.P6.IMPACT',
         techStack: ['Time Series', 'Statsmodels', 'Scikit-Learn', 'Jupyter'],
         links: {
           github: 'https://github.com/alexcamargos/EconomicAnalysis'
