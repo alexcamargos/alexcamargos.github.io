@@ -1,5 +1,4 @@
 {
-    "HELLO": "Hello World",
     "NAV": {
         "ABOUT_ME": "About",
         "PROJECTS": "Projects",
@@ -13,17 +12,7 @@
         "BTN_PROJECTS": "View Work",
         "BTN_CV": "Download CV"
     },
-    "ABOUT": {
-        "TITLE": "Who I am",
-        "TEXT": "I bridge the gap between technical data engineering and strategic business decision-making. With 15+ years of experience, I transform raw data into actionable insights that drive business impact.",
-        "STATS": {
-            "YEARS": "15+ Years Experience",
-            "PROJECTS": "Data Pipelines Built",
-            "IMPACT": "Strategic Impact"
-        }
-    },
     "FOOTER": {
-        "RIGHTS": "All Rights Reserved",
         "BUILT_WITH": "Designed & Built by"
     },
     "SKILLS": {
@@ -32,7 +21,33 @@
         "MODELING_ML": "Modeling & Machine Learning",
         "VISUALIZATION_STORYTELLING": "Data Visualization & Storytelling",
         "ENGINEERING_DB": "Engineering & Databases",
-        "CLOUD_PIPELINES": "Cloud & Data Pipelines"
+        "CLOUD_PIPELINES": "Cloud & Data Pipelines",
+        "SUB": {
+            "LANGUAGES": "Languages",
+            "PROCESSING_LIBS": "Processing Libraries",
+            "VIZ_LIBS": "Visualization Libraries",
+            "BI": "Business Intelligence",
+            "LIBRARIES": "Libraries",
+            "TECHNIQUES": "Techniques",
+            "MODEL_VALIDATION": "Model Validation",
+            "BI_TOOLS": "BI Tools",
+            "CODE_DASHBOARDS": "Code Dashboards",
+            "SQL_DBS": "SQL Databases",
+            "NOSQL_DBS": "NoSQL Databases",
+            "ACCESS_TOOLS": "Access Tools",
+            "CLOUD_PLATFORMS": "Cloud Platforms",
+            "DATA_PLATFORMS": "Data Platforms",
+            "DEPLOYMENT": "Deployment"
+        },
+        "TAGS": {
+            "CLASSIFICATION": "Classification",
+            "REGRESSION": "Regression",
+            "CLUSTERING": "Clustering",
+            "CROSS_VALIDATION": "Cross-validation",
+            "PERFORMANCE_METRICS": "Performance Metrics (Accuracy, Precision, Recall, F1-Score, AUC-ROC)",
+            "DATA_STORYTELLING": "Data Storytelling",
+            "STAKEHOLDER_COMM": "Stakeholder Communication"
+        }
     },
     "EDUCATION": {
         "TITLE": "Education",
