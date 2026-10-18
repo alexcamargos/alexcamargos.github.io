@@ -1,35 +1,51 @@
-import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy, signal, HostListener } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../core/services/theme';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslateModule, RouterModule],
+  imports: [TranslateModule, RouterModule],
   templateUrl: './header.html',
-  styleUrl: './header.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
   themeService = inject(ThemeService);
   translate = inject(TranslateService);
-  isMobileMenuOpen = false;
+  isMobileMenuOpen = signal(false);
+  currentLang = signal(this.translate.currentLang || this.translate.defaultLang || 'en');
 
-  toggleTheme() {
+  constructor() {
+    this.translate.onLangChange
+      .pipe(takeUntilDestroyed())
+      .subscribe((event) => {
+        this.currentLang.set(event.lang);
+      });
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscapeKey(): void {
+    if (this.isMobileMenuOpen()) {
+      this.closeMobileMenu();
+    }
+  }
+
+  toggleTheme(): void {
     this.themeService.updateDarkMode();
   }
 
-  toggleMobileMenu() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  toggleMobileMenu(): void {
+    this.isMobileMenuOpen.update((open) => !open);
   }
 
-  closeMobileMenu() {
-    this.isMobileMenuOpen = false;
+  closeMobileMenu(): void {
+    this.isMobileMenuOpen.set(false);
   }
 
-  changeLanguage(lang: string) {
+  changeLanguage(lang: string): void {
+    this.currentLang.set(lang);
     this.translate.use(lang);
   }
 }

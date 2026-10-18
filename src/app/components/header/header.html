@@ -1,51 +1,53 @@
 <header
     class="fixed w-full top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-slate-950/90 border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-300">
-    <div class="container mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="container mx-auto px-3 sm:px-6 h-16 flex items-center justify-between gap-2">
 
         <!-- Logo / Brand -->
-        <a routerLink="/" fragment="hero" class="flex items-center gap-2 group" (click)="closeMobileMenu()">
+        <a routerLink="/" fragment="hero" class="flex items-center gap-1.5 sm:gap-2 group shrink-0" (click)="closeMobileMenu()">
             <div
-                class="w-8 h-8 bg-slate-900 dark:bg-white rounded-lg flex items-center justify-center text-white dark:text-slate-900 transition-colors">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                class="w-7 h-7 sm:w-8 sm:h-8 shrink-0 bg-slate-900 dark:bg-white rounded-lg flex items-center justify-center text-white dark:text-slate-900 transition-colors">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
             </div>
             <span
-                class="text-xl font-bold tracking-tight text-slate-800 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+                class="text-sm sm:text-base lg:text-xl font-bold tracking-tight whitespace-nowrap text-slate-800 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
                 Alexsander L. Camargos
             </span>
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-8">
+        <nav class="hidden md:flex items-center md:gap-4 lg:gap-8">
             <a routerLink="." fragment="about"
-                class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">{{
+                class="text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">{{
                 'NAV.ABOUT_ME' | translate }}</a>
             <a routerLink="." fragment="education"
-                class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">{{
+                class="text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">{{
                 'NAV.EDUCATION' | translate }}</a>
             <a routerLink="." fragment="projects"
-                class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">{{
+                class="text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">{{
                 'NAV.PROJECTS' | translate }}</a>
             <a routerLink="." fragment="skills"
-                class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">{{
+                class="text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">{{
                 'NAV.EXPERTISE' | translate }}</a>
         </nav>
 
         <!-- Right Side Actions -->
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-1.5 sm:gap-4 shrink-0">
             <!-- Language Selector -->
-            <div class="flex gap-2 text-sm font-medium border-r border-slate-200 dark:border-slate-700 pr-4">
-                <button (click)="changeLanguage('en')"
-                    class="hover:text-sky-600 dark:hover:text-sky-400 text-slate-600 dark:text-slate-300 transition-colors">EN</button>
-                <button (click)="changeLanguage('pt')"
-                    class="hover:text-sky-600 dark:hover:text-sky-400 text-slate-600 dark:text-slate-300 transition-colors">PT</button>
+            <div class="flex gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium border-r border-slate-200 dark:border-slate-700 pr-2 sm:pr-4">
+                <button type="button" (click)="changeLanguage('en')"
+                    [attr.aria-pressed]="currentLang() === 'en'"
+                    [class]="currentLang() === 'en' ? 'text-sky-600 dark:text-sky-400 font-bold transition-colors' : 'hover:text-sky-600 dark:hover:text-sky-400 text-slate-600 dark:text-slate-300 transition-colors'">EN</button>
+                <button type="button" (click)="changeLanguage('pt')"
+                    [attr.aria-pressed]="currentLang() === 'pt'"
+                    [class]="currentLang() === 'pt' ? 'text-sky-600 dark:text-sky-400 font-bold transition-colors' : 'hover:text-sky-600 dark:hover:text-sky-400 text-slate-600 dark:text-slate-300 transition-colors'">PT</button>
             </div>
 
             <!-- Theme Toggle -->
-            <button (click)="toggleTheme()"
-                class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400"
+            <button type="button" (click)="toggleTheme()"
+                class="p-1.5 sm:p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400"
                 aria-label="Toggle Theme">
                 <!-- Sun Icon -->
                 <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,20 +62,26 @@
             </button>
 
             <!-- Mobile Menu Button -->
-            <button (click)="toggleMobileMenu()" class="md:hidden p-2 text-slate-600 dark:text-slate-300"
-                aria-label="Open Menu">
+            <button type="button" (click)="toggleMobileMenu()"
+                class="md:hidden p-1.5 sm:p-2 text-slate-600 dark:text-slate-300"
+                aria-label="Open Menu" [attr.aria-expanded]="isMobileMenuOpen()">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path *ngIf="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    @if (!isMobileMenuOpen()) {
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4 6h16M4 12h16M4 18h16" />
-                    <path *ngIf="isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    }
+                    @if (isMobileMenuOpen()) {
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M6 18L18 6M6 6l12 12" />
+                    }
                 </svg>
             </button>
         </div>
     </div>
 
     <!-- Mobile Menu Drawer -->
-    <div *ngIf="isMobileMenuOpen"
+    @if (isMobileMenuOpen()) {
+    <div
         class="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 absolute w-full shadow-xl">
         <nav class="flex flex-col p-4 space-y-4">
             <a routerLink="." fragment="about" (click)="closeMobileMenu()"
@@ -90,4 +98,5 @@
                 'NAV.EXPERTISE' | translate }}</a>
         </nav>
     </div>
+    }
 </header>
