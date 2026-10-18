@@ -1,5 +1,4 @@
 {
-    "HELLO": "Olá Mundo",
     "NAV": {
         "ABOUT_ME": "Sobre",
         "PROJECTS": "Projetos",
@@ -13,17 +12,7 @@
         "BTN_PROJECTS": "Ver Projetos",
         "BTN_CV": "Baixar CV"
     },
-    "ABOUT": {
-        "TITLE": "Quem sou eu",
-        "TEXT": "Faço a ponte entre a engenharia de dados técnica e a tomada de decisão estratégica. Com mais de 15 anos de experiência, transformo dados brutos em insights acionáveis que geram impacto de negócio.",
-        "STATS": {
-            "YEARS": "15+ Anos de XP",
-            "PROJECTS": "Pipelines Criados",
-            "IMPACT": "Impacto Estratégico"
-        }
-    },
     "FOOTER": {
-        "RIGHTS": "Todos os direitos reservados",
         "BUILT_WITH": "Design e Desenvolvimento por"
     },
     "SKILLS": {
@@ -32,7 +21,33 @@
         "MODELING_ML": "Modelagem & Machine Learning",
         "VISUALIZATION_STORYTELLING": "Visualização de Dados & Storytelling",
         "ENGINEERING_DB": "Engenharia & Banco de Dados",
-        "CLOUD_PIPELINES": "Cloud & Pipelines de Dados"
+        "CLOUD_PIPELINES": "Cloud & Pipelines de Dados",
+        "SUB": {
+            "LANGUAGES": "Linguagens",
+            "PROCESSING_LIBS": "Bibliotecas de Processamento",
+            "VIZ_LIBS": "Bibliotecas de Visualização",
+            "BI": "Business Intelligence",
+            "LIBRARIES": "Bibliotecas",
+            "TECHNIQUES": "Técnicas",
+            "MODEL_VALIDATION": "Validação de Modelos",
+            "BI_TOOLS": "Ferramentas de BI",
+            "CODE_DASHBOARDS": "Dashboards via Código",
+            "SQL_DBS": "Bancos de Dados SQL",
+            "NOSQL_DBS": "Bancos de Dados NoSQL",
+            "ACCESS_TOOLS": "Ferramentas de Acesso",
+            "CLOUD_PLATFORMS": "Plataformas em Nuvem",
+            "DATA_PLATFORMS": "Plataformas de Dados",
+            "DEPLOYMENT": "Deploy & Infraestrutura"
+        },
+        "TAGS": {
+            "CLASSIFICATION": "Classificação",
+            "REGRESSION": "Regressão",
+            "CLUSTERING": "Clusterização",
+            "CROSS_VALIDATION": "Validação Cruzada",
+            "PERFORMANCE_METRICS": "Métricas de Desempenho (Acurácia, Precisão, Recall, F1-Score, AUC-ROC)",
+            "DATA_STORYTELLING": "Data Storytelling",
+            "STAKEHOLDER_COMM": "Comunicação com Stakeholders"
+        }
     },
     "EDUCATION": {
         "TITLE": "Formação Acadêmica",
