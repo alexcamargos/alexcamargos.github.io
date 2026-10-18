@@ -9,9 +9,7 @@
     "test": "ng test",
     "e2e": "cypress run",
     "e2e:open": "cypress open",
-    "e2e:headless": "cypress run --headless --browser chrome",
-    "build:gh": "ng build --base-href /alexcamargos.github.io/ && copy dist\\alcamargos-portfolio\\browser\\index.html dist\\alcamargos-portfolio\\browser\\404.html",
-    "deploy": "npx angular-cli-ghpages --dir=dist/alcamargos-portfolio/browser"
+    "e2e:headless": "cypress run --headless --browser chrome"
   },
   "prettier": {
     "printWidth": 100,
@@ -36,10 +34,7 @@
     "@angular/router": "^21.1.0",
     "@ngx-translate/core": "^17.0.0",
     "@ngx-translate/http-loader": "^17.0.0",
-    "autoprefixer": "^10.4.24",
-    "postcss": "^8.5.6",
     "rxjs": "~7.8.0",
-    "tailwindcss": "^3.4.19",
     "tslib": "^2.3.0",
     "zone.js": "^0.16.0"
   },
@@ -47,8 +42,11 @@
     "@angular/build": "^21.1.2",
     "@angular/cli": "^21.1.2",
     "@angular/compiler-cli": "^21.1.0",
+    "autoprefixer": "^10.4.24",
     "cypress": "^15.10.0",
     "jsdom": "^27.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }
