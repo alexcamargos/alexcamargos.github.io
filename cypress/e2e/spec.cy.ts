@@ -244,8 +244,8 @@ describe('Portfolio SPA - E2E Tests', () => {
     // ============================================================================
     describe('Critical Elements', () => {
         it('should display the profile photo without being broken', () => {
-            // Scroll to the about/background section where the photo is
-            cy.get('#background').scrollIntoView();
+            // Scroll to the about section where the photo is
+            cy.get('#about').scrollIntoView();
 
             // Find the profile image
             cy.get('img[alt*="Camargos"], img[src*="profile"]')
@@ -274,11 +274,11 @@ describe('Portfolio SPA - E2E Tests', () => {
         });
 
         it('should display education cards', () => {
-            // Education cards are in the background section
-            cy.get('#background').scrollIntoView();
+            // Education cards are in the education section
+            cy.get('#education').scrollIntoView();
 
             // Find education cards by their structure
-            cy.get('#background .grid h4').should('have.length.greaterThan', 0);
+            cy.get('#education .grid h4').should('have.length.greaterThan', 0);
         });
 
         it('should display the skills/expertise section with categories', () => {
@@ -286,6 +286,15 @@ describe('Portfolio SPA - E2E Tests', () => {
 
             // Should have multiple skill category cards
             cy.get('#skills .grid > div').should('have.length.greaterThan', 0);
+        });
+
+        it('should navigate to #projects when clicking Hero primary CTA and link CV CTA to LinkedIn', () => {
+            cy.get('#hero a[href*="linkedin.com/in/alexcamargos"]')
+                .should('be.visible')
+                .and('have.attr', 'target', '_blank');
+
+            cy.get('#hero button[fragment="projects"]').click();
+            cy.url().should('include', '#projects');
         });
     });
 
