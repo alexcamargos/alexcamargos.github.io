@@ -1,4 +1,4 @@
-# Alexandre Camargos | Portfolio V1
+# Alexsander Lopes Camargos | Portfolio V1
 
 *A Data Science and Strategic Decision-Making portfolio built with modern software engineering practices.*
 
@@ -106,16 +106,16 @@ I'm always looking to grow and connect with like-minded professionals. Feel free
 
 ## Color Reference
 
-| Color          | Hex                                                                |
-|----------------|:------------------------------------------------------------------:|
-| Navy           | ![#0a192f](https://placehold.co/10x10/0a192f/0a192f.png) `#0a192f` |
-| Light Navy     | ![#112240](https://placehold.co/10x10/112240/112240.png) `#112240` |
-| Lightest Navy  | ![#233554](https://placehold.co/10x10/233554/233554.png) `#233554` |
-| Slate          | ![#8892b0](https://placehold.co/10x10/8892b0/8892b0.png) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://placehold.co/10x10/a8b2d1/a8b2d1.png) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://placehold.co/10x10/ccd6f6/ccd6f6.png) `#ccd6f6` |
-| White          | ![#e6f1ff](https://placehold.co/10x10/e6f1ff/e6f1ff.png) `#e6f1ff` |
-| Green Accent   | ![#64ffda](https://placehold.co/10x10/64ffda/64ffda.png) `#64ffda` |
+| Color               | Hex                                                                |
+|---------------------|:------------------------------------------------------------------:|
+| Slate 950 (Dark BG) | ![#020617](https://placehold.co/10x10/020617/020617.png) `#020617` |
+| Slate 900 (Primary) | ![#0f172a](https://placehold.co/10x10/0f172a/0f172a.png) `#0f172a` |
+| Slate 800 (Surface) | ![#1e293b](https://placehold.co/10x10/1e293b/1e293b.png) `#1e293b` |
+| Slate 400 (Muted)   | ![#94a3b8](https://placehold.co/10x10/94a3b8/94a3b8.png) `#94a3b8` |
+| Slate 50 (Light BG) | ![#f8fafc](https://placehold.co/10x10/f8fafc/f8fafc.png) `#f8fafc` |
+| Sky 700 (Accent)    | ![#0369a1](https://placehold.co/10x10/0369a1/0369a1.png) `#0369a1` |
+| Sky 400 (Accent Lt) | ![#38bdf8](https://placehold.co/10x10/38bdf8/38bdf8.png) `#38bdf8` |
+| Emerald 500 (Impact)| ![#10b981](https://placehold.co/10x10/10b981/10b981.png) `#10b981` |
 
 ## License
 
