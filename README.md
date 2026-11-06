@@ -33,6 +33,8 @@ The original goal was to create a platform that not only listed my work but also
 
 ## Key Features
 
+- **Static Editorial Blog** — AkitaOnRails-inspired layout with featured highlights carousel, tabular index, Markdown, syntax highlighting (Prism.js), and LaTeX/KaTeX math formulas
+- **Automated Dev.to Sync** — Idempotent sync pipeline consuming the Forem API with canonical URL preservation
 - **Optimized Performance** — Lazy Loading and tree-shaking for fast load times
 - **Persistent Dark/Light Mode** — Theme preference saved in localStorage
 - **Multi-language Support (i18n)** — Full English and Portuguese translations
@@ -80,7 +82,8 @@ src/
 ├── app/
 │   ├── core/               # Core services, models, and singletons
 │   │   ├── models/         # TypeScript interfaces and types
-│   │   └── services/       # Shared services (theme, translation, etc.)
+│   │   ├── services/       # Shared services (theme, translation, blog, etc.)
+│   │   └── utils/          # Date formatting and helper utilities
 │   │
 │   ├── components/         # Reusable UI components (dumb/presentational)
 │   │   ├── header/         # Top navigation bar
@@ -88,12 +91,14 @@ src/
 │   │   └── project-card/   # Project showcase cards
 │   │
 │   └── pages/              # Route-level components (smart/container)
-│       └── home/           # Main landing page
+│       ├── home/           # Main landing page
+│       └── blog/           # Editorial blog pages (index and reader)
 │
 ├── assets/
+│   ├── content/            # Markdown articles and generated articles.json
 │   └── i18n/               # Translation files (en.json, pt.json)
 │
-└── styles.scss             # Global styles and Tailwind imports
+└── styles.scss             # Global styles, Prism, KaTeX, and Tailwind imports
 ```
 
 ## Contact
