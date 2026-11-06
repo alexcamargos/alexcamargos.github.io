@@ -1,0 +1,31 @@
+<article class="aor-index-row group py-5 border-b border-slate-200/80 dark:border-slate-800/80 hover:bg-slate-50/50 dark:hover:bg-slate-900/30 transition-colors duration-150">
+  <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+    <!-- Coluna 1 (fixa): Data abreviada -->
+    <div class="sm:w-20 shrink-0">
+      <time [attr.datetime]="article().date" class="text-xs sm:text-sm font-mono text-slate-400 dark:text-slate-500 font-medium">
+        {{ formatShortDate(article().date) }}
+      </time>
+    </div>
+
+    <!-- Coluna 2 (expansiva): Título do artigo e resumo do texto -->
+    <div class="flex-1 min-w-0">
+      <h3 class="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+        <a [routerLink]="['/blog', article().slug]" class="focus:outline-none focus:underline">
+          {{ article().title }}
+        </a>
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 line-clamp-2 mt-1 leading-relaxed">
+        {{ article().description }}
+      </p>
+    </div>
+
+    <!-- Coluna 3: Tags associadas ao post -->
+    <div class="sm:w-52 shrink-0 flex flex-wrap sm:justify-end gap-1.5 pt-1 sm:pt-0">
+      @for (tag of article().tags; track tag) {
+        <span class="text-xs font-mono text-slate-400 dark:text-slate-500 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">
+          #{{ tag }}
+        </span>
+      }
+    </div>
+  </div>
+</article>
