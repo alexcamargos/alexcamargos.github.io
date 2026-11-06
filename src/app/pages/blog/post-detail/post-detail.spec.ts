@@ -35,6 +35,16 @@ description: "Resumo de teste"
 
 Paragrafo de conteudo do artigo.`;
 
+  beforeAll(() => {
+    (globalThis as any).katex = {
+      renderToString: (tex: string) => `<span class="katex">${tex}</span>`
+    };
+    (globalThis as any).renderMathInElement = (el: HTMLElement) => el;
+    (globalThis as any).Prism = {
+      highlightAllUnder: () => {}
+    };
+  });
+
   beforeEach(async () => {
     mockBlogService = {
       loadArticles: () => of([mockArticle]),
