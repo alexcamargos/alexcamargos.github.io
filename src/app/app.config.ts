@@ -1,9 +1,10 @@
 import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter, withInMemoryScrolling, withRouterConfig } from '@angular/router';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withRouterConfig } from '@angular/router';
 import { routes } from './app.routes';
-import { provideHttpClient } from '@angular/common/http';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader, TRANSLATE_HTTP_LOADER_CONFIG } from '@ngx-translate/http-loader';
+import { provideMarkdown } from 'ngx-markdown';
 
 // Factory function obrigatória para AOT compilation
 export function HttpLoaderFactory() {
@@ -15,6 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(
       routes,
+      withComponentInputBinding(),
       withInMemoryScrolling({
         scrollPositionRestoration: 'enabled',
         anchorScrolling: 'enabled'
@@ -24,6 +26,9 @@ export const appConfig: ApplicationConfig = {
       })
     ),
     provideHttpClient(), // Essencial para carregar os JSONs
+    provideMarkdown({
+      loader: HttpClient
+    }),
     {
       provide: TRANSLATE_HTTP_LOADER_CONFIG,
       useValue: {
