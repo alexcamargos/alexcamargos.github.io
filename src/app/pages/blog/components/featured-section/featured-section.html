@@ -1,0 +1,81 @@
+@if (articles().length > 0) {
+<section class="aor-featured mb-16" aria-labelledby="featured-heading">
+  <!-- Cabeçalho com controle ativo -->
+  <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-200 dark:border-slate-800">
+    <div class="flex items-center gap-3">
+      <h2 id="featured-heading" class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+        {{ 'BLOG.FEATURED_TITLE' | translate }}
+      </h2>
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-medium bg-sky-100 text-sky-800 dark:bg-sky-950/70 dark:text-sky-300">
+        Curadoria
+      </span>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <span class="text-xs sm:text-sm font-mono text-slate-500 dark:text-slate-400" aria-live="polite">
+        {{ counterText() }}
+      </span>
+      <div class="flex items-center gap-1">
+        <button
+          type="button"
+          (click)="prev()"
+          [disabled]="!canPrev()"
+          class="w-8 h-8 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-lg leading-none"
+          [attr.aria-label]="'BLOG.PREV_POSTS' | translate"
+        >
+          &lsaquo;
+        </button>
+        <button
+          type="button"
+          (click)="next()"
+          [disabled]="!canNext()"
+          class="w-8 h-8 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-lg leading-none"
+          [attr.aria-label]="'BLOG.NEXT_POSTS' | translate"
+        >
+          &rsaquo;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trilho de cards horizontais (3 desktop, 2 tablet, 1 mobile) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    @for (article of visibleArticles(); track article.slug) {
+      <article
+        class="aor-featured-card group flex flex-col justify-between p-6 rounded-xl border border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-md transition-all duration-200"
+      >
+        <div>
+          <!-- Data no topo -->
+          <time
+            [attr.datetime]="article.date"
+            class="block text-xs font-mono font-medium text-slate-500 dark:text-slate-400 mb-3"
+          >
+            {{ formatDate(article.date) }}
+          </time>
+
+          <!-- Título como link -->
+          <h3 class="font-bold text-lg sm:text-xl text-slate-900 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors line-clamp-2 mb-3">
+            <a [routerLink]="['/blog', article.slug]" class="focus:outline-none focus:underline">
+              {{ article.title }}
+            </a>
+          </h3>
+
+          <!-- Parágrafo de introdução / lead -->
+          <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3 leading-relaxed mb-6">
+            {{ article.description }}
+          </p>
+        </div>
+
+        <!-- Lista de tags no rodapé prefixadas com hash -->
+        <div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap gap-2 text-xs font-mono">
+          @for (tag of article.tags; track tag) {
+            <span class="text-slate-500 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+              #{{ tag }}
+            </span>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>
+}
