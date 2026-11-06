@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "arquitetura-dados-medallion-duckdb",
+    "title": "Arquitetura Medallion com DuckDB e Parquet para Pipelines Locais",
+    "description": "Como estruturar camadas Bronze, Silver e Gold em ambientes analíticos compactos utilizando DuckDB e formato colunar Parquet.",
+    "date": "2026-11-04",
+    "published": true,
+    "featured": true,
+    "tags": [
+      "datascience",
+      "python",
+      "dataengineering",
+      "duckdb"
+    ],
+    "canonical_url": "https://alcamargos.com/blog/arquitetura-dados-medallion-duckdb",
+    "devto_id": null,
+    "series": null,
+    "cover_image": null,
+    "readingTime": 2,
+    "contentPath": "assets/content/articles/arquitetura-dados-medallion-duckdb.md",
+    "excerpt": "Como estruturar camadas Bronze, Silver e Gold em ambientes analíticos compactos utilizando DuckDB e formato colunar Parquet."
+  },
+  {
+    "slug": "inferencia-bayesiana-precificacao-dinamica",
+    "title": "Inferencia Bayesiana Aplicada a Modelos de Precificacao Dinamica",
+    "description": "Modelagem probabilistica da elasticidade de demanda utilizando distribuicoes a priori e atualizacao bayesiana.",
+    "date": "2026-11-02",
+    "published": true,
+    "featured": true,
+    "tags": [
+      "datascience",
+      "economics",
+      "python",
+      "statistics"
+    ],
+    "canonical_url": "https://alcamargos.com/blog/inferencia-bayesiana-precificacao-dinamica",
+    "devto_id": null,
+    "series": null,
+    "cover_image": null,
+    "readingTime": 1,
+    "contentPath": "assets/content/articles/inferencia-bayesiana-precificacao-dinamica.md",
+    "excerpt": "Modelagem probabilistica da elasticidade de demanda utilizando distribuicoes a priori e atualizacao bayesiana."
+  },
+  {
+    "slug": "otimizacao-queries-grandes-volumes",
+    "title": "Otimizacao de Queries Analiticas para Grandes Volumes em SQL",
+    "description": "Tecnicas praticas para reducao de custo computacional em bancos relacionais e colunares.",
+    "date": "2026-10-28",
+    "published": true,
+    "featured": true,
+    "tags": [
+      "sql",
+      "dataengineering",
+      "database",
+      "analytics"
+    ],
+    "canonical_url": "https://alcamargos.com/blog/otimizacao-queries-grandes-volumes",
+    "devto_id": null,
+    "series": null,
+    "cover_image": null,
+    "readingTime": 1,
+    "contentPath": "assets/content/articles/otimizacao-queries-grandes-volumes.md",
+    "excerpt": "Tecnicas praticas para reducao de custo computacional em bancos relacionais e colunares."
+  },
+  {
+    "slug": "pipelines-dados-reativos-angular",
+    "title": "Pipelines de Dados Reativos em SPAs com Angular Signals",
+    "description": "Construcao de interfaces analiticas com baixo acoplamento e reatividade declarativa utilizando Angular 21.",
+    "date": "2026-10-20",
+    "published": true,
+    "featured": true,
+    "tags": [
+      "angular",
+      "typescript",
+      "frontend",
+      "webdev"
+    ],
+    "canonical_url": "https://alcamargos.com/blog/pipelines-dados-reativos-angular",
+    "devto_id": null,
+    "series": null,
+    "cover_image": null,
+    "readingTime": 1,
+    "contentPath": "assets/content/articles/pipelines-dados-reativos-angular.md",
+    "excerpt": "Construcao de interfaces analiticas com baixo acoplamento e reatividade declarativa utilizando Angular 21."
+  },
+  {
+    "slug": "governanca-dados-single-source-truth",
+    "title": "Governanca de Dados e a Busca pela Fonte Unica da Verdade",
+    "description": "Estrategias organizacionais e tecnicas para alinhar metricas de negocio entre departamentos sem silos de informacao.",
+    "date": "2026-10-10",
+    "published": true,
+    "featured": false,
+    "tags": [
+      "datascience",
+      "governance",
+      "analytics",
+      "business"
+    ],
+    "canonical_url": "https://alcamargos.com/blog/governanca-dados-single-source-truth",
+    "devto_id": null,
+    "series": null,
+    "cover_image": null,
+    "readingTime": 1,
+    "contentPath": "assets/content/articles/governanca-dados-single-source-truth.md",
+    "excerpt": "Estrategias organizacionais e tecnicas para alinhar metricas de negocio entre departamentos sem silos de informacao."
+  }
+]
