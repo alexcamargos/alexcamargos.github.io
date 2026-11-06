@@ -1,0 +1,64 @@
+<div class="min-h-screen pt-24 pb-20 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+
+    <!-- Cabeçalho Principal do Blog -->
+    <header class="mb-12 border-b border-slate-200 dark:border-slate-800 pb-8">
+      <div class="flex items-center gap-2 text-xs font-mono text-sky-600 dark:text-sky-400 font-semibold uppercase tracking-wider mb-2">
+        <span>Blog Editorial</span>
+        <span>•</span>
+        <span>Data & Engineering</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+        {{ 'BLOG.TITLE' | translate }}
+      </h1>
+      <p class="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        {{ 'BLOG.SUBTITLE' | translate }}
+      </p>
+    </header>
+
+    @if (isLoading()) {
+      <div class="py-20 flex flex-col items-center justify-center text-slate-500">
+        <svg class="animate-spin h-8 w-8 text-sky-600 dark:text-sky-400 mb-4" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+        </svg>
+        <span class="text-sm font-mono">{{ 'BLOG.LOADING' | translate }}</span>
+      </div>
+    } @else if (error()) {
+      <div class="p-6 rounded-xl border border-red-200 bg-red-50 dark:bg-red-950/30 dark:border-red-900/50 text-red-700 dark:text-red-300">
+        <p class="font-semibold">{{ 'BLOG.ERROR_TITLE' | translate }}</p>
+        <p class="text-sm mt-1">{{ error() }}</p>
+      </div>
+    } @else {
+      <!-- 1. Seção de Destaques (Carrossel Horizontal) -->
+      @if (featuredArticles().length > 0) {
+        <app-featured-section [articles]="featuredArticles()"></app-featured-section>
+      }
+
+      <!-- 2. Listagem Cronológica em Linhas Editoriais -->
+      <section class="mt-8" aria-labelledby="all-posts-heading">
+        <div class="flex items-center justify-between pb-3 mb-2 border-b border-slate-200 dark:border-slate-800">
+          <h2 id="all-posts-heading" class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+            {{ 'BLOG.ALL_POSTS_TITLE' | translate }}
+          </h2>
+          <span class="text-xs font-mono text-slate-500 dark:text-slate-400">
+            {{ articles().length }} {{ articles().length === 1 ? 'artigo' : 'artigos' }}
+          </span>
+        </div>
+
+        @if (articles().length === 0) {
+          <p class="py-12 text-center text-slate-500 text-sm">
+            {{ 'BLOG.EMPTY_POSTS' | translate }}
+          </p>
+        } @else {
+          <div class="divide-y-0">
+            @for (article of articles(); track article.slug) {
+              <app-post-list-row [article]="article"></app-post-list-row>
+            }
+          </div>
+        }
+      </section>
+    }
+
+  </div>
+</div>
