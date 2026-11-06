@@ -1,0 +1,110 @@
+<div class="min-h-screen pt-24 pb-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+
+    <!-- Navegação de Retorno Superior -->
+    <nav class="mb-8" aria-label="Navegação secundária">
+      <a
+        routerLink="/blog"
+        class="inline-flex items-center gap-2 text-xs sm:text-sm font-mono text-slate-500 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors group"
+      >
+        <span class="transform group-hover:-translate-x-1 transition-transform">&larr;</span>
+        <span>{{ 'BLOG.BACK_TO_BLOG' | translate }}</span>
+      </a>
+    </nav>
+
+    @if (isLoading()) {
+      <div class="py-24 flex flex-col items-center justify-center text-slate-500">
+        <svg class="animate-spin h-8 w-8 text-sky-600 dark:text-sky-400 mb-4" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+        </svg>
+        <span class="text-sm font-mono">{{ 'BLOG.LOADING_POST' | translate }}</span>
+      </div>
+    } @else if (notFound() || !article()) {
+      <div class="p-8 sm:p-12 text-center rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+          {{ 'BLOG.POST_NOT_FOUND_TITLE' | translate }}
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 max-w-md mx-auto">
+          {{ 'BLOG.POST_NOT_FOUND_MSG' | translate }}
+        </p>
+        <a
+          routerLink="/blog"
+          class="inline-flex items-center px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-medium text-sm transition-colors"
+        >
+          {{ 'BLOG.BACK_TO_BLOG' | translate }}
+        </a>
+      </div>
+    } @else {
+      <!-- Artigo Carregado -->
+      <article>
+        <!-- Cabeçalho do Post -->
+        <header class="mb-10 pb-8 border-b border-slate-200 dark:border-slate-800">
+          <!-- Tags do artigo -->
+          <div class="flex flex-wrap gap-2 text-xs font-mono mb-4">
+            @for (tag of article()!.tags; track tag) {
+              <span class="text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-950/60 px-2 py-0.5 rounded">
+                #{{ tag }}
+              </span>
+            }
+          </div>
+
+          <!-- Título Principal -->
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight mb-6">
+            {{ article()!.title }}
+          </h1>
+
+          <!-- Metadados: Data, Tempo de Leitura, etc. -->
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs sm:text-sm font-mono text-slate-500 dark:text-slate-400">
+            <time [attr.datetime]="article()!.date">
+              {{ formatDate(article()!.date) }}
+            </time>
+            <span>&bull;</span>
+            <span>{{ article()!.readingTime }} min de leitura</span>
+            @if (article()!.devto_id) {
+              <span>&bull;</span>
+              <span class="text-slate-400 dark:text-slate-500">Sincronizado via Dev.to</span>
+            }
+          </div>
+
+          <!-- Resumo / Lead destacado -->
+          @if (article()!.description) {
+            <p class="mt-6 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal italic border-l-2 border-sky-500 pl-4 py-1">
+              {{ article()!.description }}
+            </p>
+          }
+        </header>
+
+        <!-- Área de Conteúdo Markdown -->
+        <div class="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-sky-600 dark:prose-a:text-sky-400 prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-800">
+          <markdown
+            [data]="cleanMarkdown()"
+            [katex]="true"
+            [lineNumbers]="true"
+          ></markdown>
+        </div>
+
+        <!-- Rodapé do Artigo -->
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <a
+            routerLink="/blog"
+            class="inline-flex items-center gap-2 text-sm font-mono text-slate-600 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors group"
+          >
+            <span class="transform group-hover:-translate-x-1 transition-transform">&larr;</span>
+            <span>{{ 'BLOG.BACK_TO_BLOG' | translate }}</span>
+          </a>
+
+          @if (article()!.canonical_url) {
+            <div class="text-xs font-mono text-slate-400 dark:text-slate-500">
+              <span>URL Canônica: </span>
+              <a [href]="article()!.canonical_url" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                {{ article()!.canonical_url }}
+              </a>
+            </div>
+          }
+        </footer>
+      </article>
+    }
+
+  </div>
+</div>
