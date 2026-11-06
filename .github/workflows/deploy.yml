@@ -1,8 +1,8 @@
 # =============================================================================
-# GitHub Pages Deploy Workflow - Angular v18+ SPA
+# GitHub Pages Deploy Workflow - Angular v21 SPA & Dev.to Sync
 # =============================================================================
-# Este workflow faz o build e deploy automático do portfolio Angular para
-# GitHub Pages com suporte a roteamento SPA e domínio customizado.
+# Este workflow executa os testes unitários, sincronização com Dev.to,
+# build de produção do blog e deploy automático para o GitHub Pages.
 # =============================================================================
 
 name: Deploy Angular to GitHub Pages
@@ -15,50 +15,78 @@ on:
       - feature/v1-angular-rewrite
   workflow_dispatch:
 
-# Permissões necessárias para GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
-# Permite apenas um deploy por vez, cancelando execuções anteriores em andamento
 concurrency:
   group: 'pages'
   cancel-in-progress: true
 
 jobs:
   # ==========================================================================
-  # JOB: Build
+  # JOB: Build e Testes
   # ==========================================================================
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout do repositório
+      - name: Checkout do repositorio
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
-      - name: 🟢 Setup Node.js 20
+      - name: Setup Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: 📦 Instalação de dependências
+      - name: Instalacao de dependencias
         run: npm ci
 
-      - name: 🔨 Build de produção
+      - name: Execucao de testes unitarios
+        run: npm test
+
+      - name: Geracao do indice de artigos
+        run: npm run posts:index
+
+      - name: Sincronizacao de artigos com o Dev.to
+        if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: node scripts/sync-devto.js
+
+      - name: Commit e push de novos devto_id
+        if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain src/assets/content/articles/)" ]; then
+            git add src/assets/content/articles/
+            node scripts/generate-posts-index.js
+            git add src/assets/content/articles.json
+            git commit -m "chore(blog): atualizar devto_id dos artigos sincronizados [skip ci]"
+            git push
+          else
+            echo "Nenhum devto_id alterado localmente."
+          fi
+
+      - name: Build de producao
         run: npm run build
 
-      - name: 🔀 Correção de roteamento SPA (404.html)
+      - name: Correcao de roteamento SPA (404.html)
         run: cp dist/alcamargos-portfolio/browser/index.html dist/alcamargos-portfolio/browser/404.html
 
-      - name: 🌐 Criação do arquivo CNAME
+      - name: Criacao do arquivo CNAME
         run: echo "alcamargos.com" > dist/alcamargos-portfolio/browser/CNAME
 
-      - name: 📄 Setup GitHub Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: 📤 Upload do artefato de build
+      - name: Upload do artefato de build
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist/alcamargos-portfolio/browser
@@ -75,6 +103,6 @@ jobs:
     needs: build
 
     steps:
-      - name: 🚀 Deploy para GitHub Pages
+      - name: Deploy para GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
