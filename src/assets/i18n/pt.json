@@ -3,7 +3,8 @@
         "ABOUT_ME": "Sobre",
         "PROJECTS": "Projetos",
         "EXPERTISE": "Expertise",
-        "EDUCATION": "Formação"
+        "EDUCATION": "Formação",
+        "BLOG": "Blog"
     },
     "HERO": {
         "TITLE_1": "Traduzindo Dados em",
@@ -106,5 +107,21 @@
             "SHORT_DESC": "Conjunto de modelagem preditiva para indicadores macroeconômicos brasileiros (PIB, Selic).",
             "IMPACT": "Implementou modelos ARIMA e de Machine Learning para prever tendências econômicas com alta precisão para planejamento estratégico."
         }
+    },
+    "BLOG": {
+        "TITLE": "Notas & Artigos",
+        "SUBTITLE": "Explorações analíticas sobre engenharia de dados, business intelligence, modelos estatísticos e desenvolvimento de software.",
+        "FEATURED_TITLE": "Destaques",
+        "ALL_POSTS_TITLE": "Artigos Recentes",
+        "PREV_POSTS": "Artigos anteriores",
+        "NEXT_POSTS": "Próximos artigos",
+        "READING_TIME": "min de leitura",
+        "BACK_TO_BLOG": "Voltar aos artigos",
+        "LOADING": "Carregando catálogo de artigos...",
+        "LOADING_POST": "Carregando artigo...",
+        "ERROR_TITLE": "Erro ao carregar conteúdo",
+        "EMPTY_POSTS": "Nenhum artigo publicado no momento.",
+        "POST_NOT_FOUND_TITLE": "Artigo não encontrado",
+        "POST_NOT_FOUND_MSG": "O artigo solicitado não existe ou foi movido."
     }
 }

@@ -3,7 +3,8 @@
         "ABOUT_ME": "About",
         "PROJECTS": "Projects",
         "EXPERTISE": "Expertise",
-        "EDUCATION": "Education"
+        "EDUCATION": "Education",
+        "BLOG": "Blog"
     },
     "HERO": {
         "TITLE_1": "Translating Data into",
@@ -106,5 +107,21 @@
             "SHORT_DESC": "Predictive modeling suite for Brazilian macroeconomic indicators (GDP, Selic).",
             "IMPACT": "Implemented ARIMA and Machine Learning models to forecast economic trends with high precision for strategic planning."
         }
+    },
+    "BLOG": {
+        "TITLE": "Notes & Articles",
+        "SUBTITLE": "Analytical explorations on data engineering, business intelligence, statistical modeling, and software engineering.",
+        "FEATURED_TITLE": "Featured",
+        "ALL_POSTS_TITLE": "Recent Articles",
+        "PREV_POSTS": "Previous articles",
+        "NEXT_POSTS": "Next articles",
+        "READING_TIME": "min read",
+        "BACK_TO_BLOG": "Back to articles",
+        "LOADING": "Loading articles catalog...",
+        "LOADING_POST": "Loading article...",
+        "ERROR_TITLE": "Failed to load content",
+        "EMPTY_POSTS": "No articles published at this time.",
+        "POST_NOT_FOUND_TITLE": "Article not found",
+        "POST_NOT_FOUND_MSG": "The requested article does not exist or has been moved."
     }
 }
