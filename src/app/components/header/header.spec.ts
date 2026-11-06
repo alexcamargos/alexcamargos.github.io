@@ -36,4 +36,13 @@ describe('HeaderComponent', () => {
     component.onEscapeKey();
     expect(component.isMobileMenuOpen()).toBe(false);
   });
+
+  it('deve conter o link de navegacao para o blog', () => {
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    const blogLinks = Array.from(compiled.querySelectorAll('a')).filter(
+      (a) => a.getAttribute('routerLink') === '/blog'
+    );
+    expect(blogLinks.length).toBeGreaterThanOrEqual(1);
+  });
 });
