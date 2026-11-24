@@ -235,7 +235,7 @@ describe('Portfolio SPA - E2E Tests', () => {
             cy.wait(500);
 
             // Check hero buttons contain Portuguese text
-            cy.get('button').invoke('text').should('match', /Ver Projetos|Baixar CV/);
+            cy.get('button').invoke('text').should('match', /Ver Projetos|Ver Currículo/);
         });
     });
 
@@ -288,8 +288,8 @@ describe('Portfolio SPA - E2E Tests', () => {
             cy.get('#skills .grid > div').should('have.length.greaterThan', 0);
         });
 
-        it('should navigate to #projects when clicking Hero primary CTA and link CV CTA to LinkedIn', () => {
-            cy.get('#hero a[href*="linkedin.com/in/alexcamargos"]')
+        it('should navigate to #projects when clicking Hero primary CTA and link CV CTA to resume page', () => {
+            cy.get('#hero a[href="https://alcamargos.com/curriculo/"]')
                 .should('be.visible')
                 .and('have.attr', 'target', '_blank');
 
