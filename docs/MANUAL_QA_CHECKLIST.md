@@ -28,7 +28,7 @@ Este checklist complementa os testes E2E automatizados com verificações visuai
 |---|-------------|--------|-------------|
 | 1.1.1 | Animação de digitação do código Python está fluida e sem travamentos | | |
 | 1.1.2 | Gradiente do título "Strategic Decisions" está visualmente agradável | | |
-| 1.1.3 | Botões "View Work" e "Download CV" têm hover effect suave | | |
+| 1.1.3 | Botões "View Work" e "View CV" têm hover effect suave | | |
 | 1.1.4 | Simulação do IDE (window com bolinhas coloridas) está bem alinhada | | |
 | 1.1.5 | Espaçamento entre elementos está equilibrado em desktop | | |
 
